@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>选择地区</description>
+   <name>choose_chaoyang</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>183e5253-a430-4273-b454-5ddfe8d755eb</testCaseGuid>
+   <variable>
+      <defaultValue>'com.goldlokedu.app'</defaultValue>
+      <description></description>
+      <id>de70c5cc-c0a9-4713-bf69-0239ee423d0f</id>
+      <masked>false</masked>
+      <name>AppID</name>
+   </variable>
+</TestCaseEntity>

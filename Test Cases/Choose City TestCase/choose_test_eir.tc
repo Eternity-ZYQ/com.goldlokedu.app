@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>选择地区</description>
+   <name>choose_test_eir</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>80da56a0-50a9-41a9-b2bc-f37376dd8504</testCaseGuid>
+   <variable>
+      <defaultValue>'com.goldlokedu.app'</defaultValue>
+      <description></description>
+      <id>d96ac452-7175-40f9-baa2-5639f2641742</id>
+      <masked>false</masked>
+      <name>AppID</name>
+   </variable>
+</TestCaseEntity>

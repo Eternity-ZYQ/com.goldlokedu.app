@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>选择地区</description>
+   <name>choose_jiexi</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b203febe-8320-48ae-becd-0673106cc7a1</testCaseGuid>
+   <variable>
+      <defaultValue>'com.goldlokedu.app'</defaultValue>
+      <description></description>
+      <id>d80dbc23-ddbf-46cf-bf24-6657dad3a268</id>
+      <masked>false</masked>
+      <name>AppID</name>
+   </variable>
+</TestCaseEntity>

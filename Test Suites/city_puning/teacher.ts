@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>teacher</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>420ccc6c-d524-4268-a1ad-70812d39ab3c</testSuiteGuid>
+   <testCaseLink>
+      <guid>7a68cdcb-ef17-47ac-ae11-a0af3a5752c3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Choose City TestCase/choose_puning</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6e52069e-792d-4ab8-900f-f9c96897c129</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8457d450-01ab-44b7-860c-b429fabc0722</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login And Page TestCase/login</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4212fc4c-9516-4a3d-9d54-f702f66b43fe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>657befc2-ee61-4b69-becc-516ead9be0cd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>df713f3d-3f81-4f71-a197-c4877a109a8e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Teacher/Headmaster/_Campus/_Interactive Management/tap_sms</testCaseId>
+   </testCaseLink>
+</TestSuiteEntity>

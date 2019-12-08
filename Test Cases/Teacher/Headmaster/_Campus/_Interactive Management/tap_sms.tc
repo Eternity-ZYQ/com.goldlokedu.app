@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击手机短信模块进入</description>
+   <name>tap_sms</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>737f50cd-81b4-4c1e-8b53-2e8c5acc6581</testCaseGuid>
+</TestCaseEntity>
