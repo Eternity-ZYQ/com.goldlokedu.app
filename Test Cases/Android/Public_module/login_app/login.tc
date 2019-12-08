@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>登录账号</description>
+   <name>login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1084a30e-2a3b-4577-a2e5-7cb9370d9afb</testCaseGuid>
+   <variable>
+      <defaultValue>'18344264447'</defaultValue>
+      <description>账号</description>
+      <id>c6afe534-6eec-484b-9bc0-5fbff028c5d2</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'123456a@'</defaultValue>
+      <description>密码</description>
+      <id>f5fcfc94-1a67-4519-aa60-65443fbe08b9</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

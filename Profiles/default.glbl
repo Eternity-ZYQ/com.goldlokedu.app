@@ -5,8 +5,18 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
-      <description></description>
+      <description>ios包名</description>
       <initValue>'com.goldlokedu.app'</initValue>
       <name>AppId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>安卓包名</description>
+      <initValue>'com.goldlokedu.tgoldlokedu '</initValue>
+      <name>G_AppId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>超时时间</description>
+      <initValue>'10'</initValue>
+      <name>G_Timeout</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
