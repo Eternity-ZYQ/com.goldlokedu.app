@@ -14,30 +14,30 @@
       <guid>798d8e54-eebb-47db-b7bb-b6d2fcce4d01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Public_module/start_app/start_app</testCaseId>
+      <testCaseId>Test Cases/Android/Public_module/start_app/start_app</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4b906a2f-89c8-4e33-b7e5-62e2b5424b44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Public_module/choose_city/choose_city_puning</testCaseId>
+      <testCaseId>Test Cases/Android/Public_module/choose_city/choose_city_puning</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b44a84e1-ff94-40ec-b8f3-0d5f5b3c1e3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Public_module/login_app/login</testCaseId>
+      <testCaseId>Test Cases/Android/Public_module/login_app/login</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>f2e41fdb-cc4c-46b2-86e1-b5fa6bf33087</variableId>
+         <variableId>c6afe534-6eec-484b-9bc0-5fbff028c5d2</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>558bf93f-e308-46ce-ac51-55848c1d2741</variableId>
+         <variableId>f5fcfc94-1a67-4519-aa60-65443fbe08b9</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
