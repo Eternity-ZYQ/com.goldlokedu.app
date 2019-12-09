@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Ordinary_teacher,,,,2019-12-09 12:17:29,2019-12-09 12:17:44,14.883s,INCOMPLETE
+,,,,,,,
+Test Cases/Android/Public_module/start_app/start_app,,开启app,,2019-12-09 12:17:30,2019-12-09 12:17:42,11.903s,PASSED
+"startExistingApplication(G_AppId, STOP_ON_FAILURE)",,开启app,,2019-12-09 12:17:30,2019-12-09 12:17:42,11.516s,PASSED
+,,,,,,,
+Test Cases/Android/Public_module/choose_city/choose_city_puning,,选择普宁地区,,2019-12-09 12:17:42,2019-12-09 12:17:43,1.437s,FAILED
+"tap(findTestObject(""Object Repository/login_page_element/change_city_btn""), 0)",,点击左上角选择地区,,2019-12-09 12:17:42,2019-12-09 12:17:43,0.922s,FAILED
+,,,,,,,
+Test Cases/Android/Public_module/login_app/login,,登录账号,,2019-12-09 12:17:43,2019-12-09 12:17:44,1.032s,FAILED
+"clearText(findTestObject(""Object Repository/login_page_element/username_text""), 0)",,清楚账号,,2019-12-09 12:17:43,2019-12-09 12:17:44,0.824s,FAILED
