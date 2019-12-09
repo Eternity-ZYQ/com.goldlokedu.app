@@ -14,15 +14,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 '清楚账号'
-Mobile.clearText(findTestObject('Object Repository/Android/login_page_element/username_text'), 0)
+Mobile.clearText(findTestObject('Android/Login Page Element/username_text'), 0)
 
 '输入账号'
-Mobile.setText(findTestObject('Object Repository/Android/login_page_element/username_text'), username, 0)
+Mobile.setText(findTestObject('Android/Login Page Element/username_text'), username, 0)
 
 '输入密码'
-Mobile.setText(findTestObject('Android/login_page_element/password_text'), password, 0)
+Mobile.setText(findTestObject('Android/Login Page Element/password_text'), password, 0)
 
 '点击登录按钮登录'
-Mobile.tap(findTestObject('Object Repository/Android/login_page_element/login_btn'), 0)
+Mobile.tap(findTestObject('Android/Login Page Element/login_btn'), 0)
 
 
