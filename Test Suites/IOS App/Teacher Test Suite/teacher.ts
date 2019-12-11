@@ -14,7 +14,7 @@
       <guid>7a68cdcb-ef17-47ac-ae11-a0af3a5752c3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IOS App/Choose City/choose_puning</testCaseId>
+      <testCaseId>Test Cases/IOS App/Public Module/Choose City/choose_puning</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -26,7 +26,7 @@
       <guid>8457d450-01ab-44b7-860c-b429fabc0722</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IOS App/Login And Page/login</testCaseId>
+      <testCaseId>Test Cases/IOS App/Public Module/Login And Page/login</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

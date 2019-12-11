@@ -13,11 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-"点击左上角选择地区"
+'点击左上角选择地区'
 Mobile.tap(findTestObject('Android/Login Page Element/change_city_btn'), 0)
 
-
-"选择普宁地区"
-Mobile.tap(findTestObject('Android/City Element/cityAndImage_puning'), 0)
-
+'选择潮南地区'
+Mobile.tap(findTestObject('Android/City Element/city_chaonan_text'), 0)
 

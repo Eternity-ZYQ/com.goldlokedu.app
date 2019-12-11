@@ -14,19 +14,19 @@
       <guid>798d8e54-eebb-47db-b7bb-b6d2fcce4d01</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Public_module/Start App/start_app</testCaseId>
+      <testCaseId>Test Cases/Android/Public Module/Start App/start_app</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4b906a2f-89c8-4e33-b7e5-62e2b5424b44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Public_module/Choose City/choose_city_puning</testCaseId>
+      <testCaseId>Test Cases/Android/Public Module/Choose City/choose_city_jiexi</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b44a84e1-ff94-40ec-b8f3-0d5f5b3c1e3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Public_module/Login And Page/login</testCaseId>
+      <testCaseId>Test Cases/Android/Public Module/Login And Page/login</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
