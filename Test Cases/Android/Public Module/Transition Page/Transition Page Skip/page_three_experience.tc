@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>过渡页第三页点击体验</description>
+   <name>page_three_experience</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f125c222-6097-4ada-8785-4778e938de2f</testCaseGuid>
+</TestCaseEntity>

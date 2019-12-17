@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>过渡页第二页对比</description>
+   <name>transition_page_two_comparison</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a692e11-b464-4501-b042-57937c6be64f</testCaseGuid>
+</TestCaseEntity>

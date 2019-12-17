@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>过渡页第三也对比</description>
+   <name>transition_page_three_comparison</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5ffc4c49-8c68-4dbe-8d72-3b5bad5755fa</testCaseGuid>
+</TestCaseEntity>

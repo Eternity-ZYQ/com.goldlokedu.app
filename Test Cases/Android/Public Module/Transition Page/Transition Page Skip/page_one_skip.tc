@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>过渡页第一页跳过</description>
+   <name>page_one_skip</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9c226c0-4789-4cb3-b90e-d45db2b38903</testCaseGuid>
+</TestCaseEntity>

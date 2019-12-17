@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="48.205" tests="3" failures="0" errors="0">
+   <testsuite name="Ordinary_teacher" tests="3" failures="0" errors="0" time="48.205" timestamp="2019-12-13 15:19:41" hostname="faz - 192.168.2.28" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20191213_151934/Android/Teacher Test Suite/Ordinary_teacher/20191213_151934"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20191213_151934/Android/Teacher Test Suite/Ordinary_teacher/20191213_151934/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20191213_151934/Android/Teacher Test Suite/Ordinary_teacher/20191213_151934/appium.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="faz - 192.168.2.28"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.15.1\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.1.2.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.15.1"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.28"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="21.632" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2019-12-13 15:19:42 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2019-12-13 15:19:43 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2019-12-13 15:19:49 - [MESSAGE][INFO] - Appium server started on port 54,305
+
+2019-12-13 15:20:04 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Public Module/Choose City/choose_city_jiexi" time="15.591" classname="Test Cases/Android/Public Module/Choose City/choose_city_jiexi" status="PASSED">
+         <system-out><![CDATA[2019-12-13 15:20:04 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Choose City/choose_city_jiexi: Test Cases/Android/Public Module/Choose City/choose_city_jiexi
+
+2019-12-13 15:20:04 - [TEST_STEP][PASSED] - tap(findTestObject("Android/Login Page Element/change_city_btn"), 0): Tapped on element 'Object Repository/Android/Login Page Element/change_city_btn'
+
+2019-12-13 15:20:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-13 15:20:17 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Login Page Element/change_city_btn'
+
+2019-12-13 15:20:17 - [TEST_STEP][PASSED] - tap(findTestObject("Android/City Element/city_jiexi_text"), 0): Tapped on element 'Object Repository/Android/City Element/city_jiexi_text'
+
+2019-12-13 15:20:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-13 15:20:20 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/City Element/city_jiexi_text']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Public Module/Login And Page/login" time="9.644" classname="Test Cases/Android/Public Module/Login And Page/login" status="PASSED">
+         <system-out><![CDATA[2019-12-13 15:20:20 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Login And Page/login: Test Cases/Android/Public Module/Login And Page/login
+
+2019-12-13 15:20:20 - [TEST_STEP][PASSED] - clearText(findTestObject("Android/Login Page Element/username_text"), 0): Element 'Object Repository/Android/Login Page Element/username_text' text is cleared
+
+2019-12-13 15:20:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-13 15:20:21 - [MESSAGE][PASSED] - Element 'Object Repository/Android/Login Page Element/username_text' text is cleared
+
+2019-12-13 15:20:21 - [TEST_STEP][PASSED] - setText(findTestObject("Android/Login Page Element/username_text"), username, 0): Text '18344264447' has been set to element 'Object Repository/Android/Login Page Element/username_text'
+
+2019-12-13 15:20:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-13 15:20:24 - [MESSAGE][PASSED] - Text '18344264447' has been set to element 'Object Repository/Android/Login Page Element/username_text'
+
+2019-12-13 15:20:24 - [TEST_STEP][PASSED] - setText(findTestObject("Android/Login Page Element/password_text"), password, 0): Text '123456a@' has been set to element 'Object Repository/Android/Login Page Element/password_text'
+
+2019-12-13 15:20:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-13 15:20:26 - [MESSAGE][PASSED] - Text '123456a@' has been set to element 'Object Repository/Android/Login Page Element/password_text'
+
+2019-12-13 15:20:26 - [TEST_STEP][PASSED] - tap(findTestObject("Android/Login Page Element/login_btn"), 0): Tapped on element 'Object Repository/Android/Login Page Element/login_btn'
+
+2019-12-13 15:20:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-13 15:20:29 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Login Page Element/login_btn']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-13 15:19:41 - [TEST_SUITE][PASSED] - Ordinary_teacher: Test Cases/Android/Public Module/Login And Page/login]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
