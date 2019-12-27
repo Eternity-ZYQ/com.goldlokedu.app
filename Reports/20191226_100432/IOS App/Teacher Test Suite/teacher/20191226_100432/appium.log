@@ -1,0 +1,63 @@
+[35m[Appium][39m Welcome to Appium v1.16.0
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 54129
+[35m[Appium][39m   chromeDriverPort: 54131
+[35m[Appium][39m   tmpDir: /var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T//Katalon/Appium/Temp1577325905429
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:54129
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.16.0"}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m7 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"newCommandTimeout":1800,"realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","automationName":"XCUITest","bundleId":"com.goldlokedu.app","waitForAppScript":"true;","platformName":"iOS","udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","deviceId":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","deviceName":"","wdaLocalPort":54075},"capabilities":{"firstMatch":[{"appium:automationName":"XCUITest","appium:bundleId":"com.goldlokedu.app","deviceId":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","appium:deviceName":"","appium:newCommandTimeout":1800,"platformName":"ios","realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","appium:udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","appium:waitForAppScript":"true;","appium:wdaLocalPort":54075}]}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"newCommandTimeout":1800,"realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","automationName":"XCUITest","bundleId":"com.goldlokedu.app","waitForAppScript":"true;","platformName":"iOS","udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","deviceId":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","deviceName":"","wdaLocalPort":54075},null,{"firstMatch":[{"appium:automationName":"XCUITest","appium:bundleId":"com.goldlokedu.app","deviceId":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","appium:deviceName":"","appium:newCommandTimeout":1800,"platformName":"ios","realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","appium:udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","appium:waitForAppScript":"true;","appium:wdaLocalPort":54075}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1577325908638 (10:05:08 GMT+0800 (China Standard Time))
+[35m[BaseDriver][39m The capabilities ["deviceId","realDeviceLogger"] are not standard capabilities and should have an extension prefix
+[35m[Appium][39m Appium v1.16.0 creating new XCUITestDriver (v3.10.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "appium:deviceId": "e6d787265ef659f59b738dbf66bcbf75a4ec54a1",
+[debug] [35m[BaseDriver][39m     "platformName": "ios",
+[debug] [35m[BaseDriver][39m     "appium:realDeviceLogger": "/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole",
+[debug] [35m[BaseDriver][39m     "appium:automationName": "XCUITest",
+[debug] [35m[BaseDriver][39m     "appium:bundleId": "com.goldlokedu.app",
+[debug] [35m[BaseDriver][39m     "appium:deviceName": "",
+[debug] [35m[BaseDriver][39m     "appium:newCommandTimeout": 1800,
+[debug] [35m[BaseDriver][39m     "appium:udid": "e6d787265ef659f59b738dbf66bcbf75a4ec54a1",
+[debug] [35m[BaseDriver][39m     "appium:waitForAppScript": "true;",
+[debug] [35m[BaseDriver][39m     "appium:wdaLocalPort": 54075
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   deviceId
+[35m[XCUITest][39m 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+[35m[BaseDriver][39m Session created with session id: 9493b397-095b-4d10-ada3-4997228762cf
+[debug] [35m[XCUITest][39m Current user: 'faz'
+[debug] [35m[XCUITest][39m Available devices: e6d787265ef659f59b738dbf66bcbf75a4ec54a1
+[debug] [35m[XCUITest][39m Creating iDevice object with udid 'e6d787265ef659f59b738dbf66bcbf75a4ec54a1'
+[35m[XCUITest][39m Determining device to run tests on: udid: 'e6d787265ef659f59b738dbf66bcbf75a4ec54a1', real device: true
+[35m[XCUITest][39m No platformVersion specified. Using device version: '13.2.2'
+[35m[XCUITest][39m Normalized platformVersion capability value '13.2.2' to '13.2'
+[debug] [35m[BaseDriver][39m Event 'xcodeDetailsRetrieved' logged at 1577325909501 (10:05:09 GMT+0800 (China Standard Time))
+[debug] [35m[BaseDriver][39m Event 'appConfigured' logged at 1577325909502 (10:05:09 GMT+0800 (China Standard Time))
+[debug] [35m[BaseDriver][39m Event 'resetStarted' logged at 1577325909503 (10:05:09 GMT+0800 (China Standard Time))
+[debug] [35m[XCUITest][39m Reset: running ios real device reset flow
+[debug] [35m[BaseDriver][39m Event 'resetComplete' logged at 1577325909503 (10:05:09 GMT+0800 (China Standard Time))
+[debug] [35m[XCUITest][39m Crash reports root '/Users/faz/Library/Logs/CrashReporter/MobileDevice/烟雾弹' does not exist. Got nothing to gather.
+[debug] [35m[BaseDriver][39m Event 'logCaptureStarted' logged at 1577325909824 (10:05:09 GMT+0800 (China Standard Time))
+[35m[XCUITest][39m Setting up real device
+[35m[DevCon Factory][39m Releasing connections for e6d787265ef659f59b738dbf66bcbf75a4ec54a1 device on any port number
+[35m[DevCon Factory][39m No cached connections have been found
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1577325915021 (10:05:15 GMT+0800 (China Standard Time))
+[debug] [35m[W3C][39m Encountered internal error running command: Error: Failed to receive any data within the timeout: 5000
+[debug] [35m[W3C][39m     at Timeout._onTimeout (/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-ios-device/lib/plist-service/index.js:56:16)
+[debug] [35m[W3C][39m     at listOnTimeout (internal/timers.js:531:17)
+[debug] [35m[W3C][39m     at processTimers (internal/timers.js:475:7)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m6422 ms - 599[39m
+[35m[HTTP][39m [90m[39m

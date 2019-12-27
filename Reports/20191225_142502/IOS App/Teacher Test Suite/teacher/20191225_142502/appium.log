@@ -1,0 +1,248 @@
+[35m[Appium][39m Welcome to Appium v1.16.0
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 50318
+[35m[Appium][39m   chromeDriverPort: 50321
+[35m[Appium][39m   tmpDir: /var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T//Katalon/Appium/Temp1577255133724
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:50318
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.16.0"}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m13 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"newCommandTimeout":1800,"realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","automationName":"XCUITest","bundleId":"com.goldlokedu.app","waitForAppScript":"true;","platformName":"iOS","udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","deviceId":"","deviceName":"","wdaLocalPort":50274},"capabilities":{"firstMatch":[{"appium:automationName":"XCUITest","appium:bundleId":"com.goldlokedu.app","deviceId":"","appium:deviceName":"","appium:newCommandTimeout":1800,"platformName":"ios","realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","appium:udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","appium:waitForAppScript":"true;","appium:wdaLocalPort":50274}]}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"newCommandTimeout":1800,"realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","automationName":"XCUITest","bundleId":"com.goldlokedu.app","waitForAppScript":"true;","platformName":"iOS","udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","deviceId":"","deviceName":"","wdaLocalPort":50274},null,{"firstMatch":[{"appium:automationName":"XCUITest","appium:bundleId":"com.goldlokedu.app","deviceId":"","appium:deviceName":"","appium:newCommandTimeout":1800,"platformName":"ios","realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","appium:udid":"e6d787265ef659f59b738dbf66bcbf75a4ec54a1","appium:waitForAppScript":"true;","appium:wdaLocalPort":50274}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1577255136356 (14:25:36 GMT+0800 (China Standard Time))
+[35m[BaseDriver][39m The capabilities ["deviceId","realDeviceLogger"] are not standard capabilities and should have an extension prefix
+[35m[Appium][39m Appium v1.16.0 creating new XCUITestDriver (v3.10.1) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "appium:deviceId": "",
+[debug] [35m[BaseDriver][39m     "platformName": "ios",
+[debug] [35m[BaseDriver][39m     "appium:realDeviceLogger": "/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole",
+[debug] [35m[BaseDriver][39m     "appium:automationName": "XCUITest",
+[debug] [35m[BaseDriver][39m     "appium:bundleId": "com.goldlokedu.app",
+[debug] [35m[BaseDriver][39m     "appium:deviceName": "",
+[debug] [35m[BaseDriver][39m     "appium:newCommandTimeout": 1800,
+[debug] [35m[BaseDriver][39m     "appium:udid": "e6d787265ef659f59b738dbf66bcbf75a4ec54a1",
+[debug] [35m[BaseDriver][39m     "appium:waitForAppScript": "true;",
+[debug] [35m[BaseDriver][39m     "appium:wdaLocalPort": 50274
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   deviceId
+[35m[XCUITest][39m 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+[35m[BaseDriver][39m Session created with session id: fc98eb7f-766a-438a-b50f-ec16ce74e2f0
+[debug] [35m[XCUITest][39m Current user: 'faz'
+[debug] [35m[XCUITest][39m Available devices: e6d787265ef659f59b738dbf66bcbf75a4ec54a1
+[debug] [35m[XCUITest][39m Creating iDevice object with udid 'e6d787265ef659f59b738dbf66bcbf75a4ec54a1'
+[35m[XCUITest][39m Determining device to run tests on: udid: 'e6d787265ef659f59b738dbf66bcbf75a4ec54a1', real device: true
+[35m[XCUITest][39m No platformVersion specified. Using device version: '13.2.2'
+[35m[XCUITest][39m Normalized platformVersion capability value '13.2.2' to '13.2'
+[debug] [35m[BaseDriver][39m Event 'xcodeDetailsRetrieved' logged at 1577255137072 (14:25:37 GMT+0800 (China Standard Time))
+[debug] [35m[BaseDriver][39m Event 'appConfigured' logged at 1577255137073 (14:25:37 GMT+0800 (China Standard Time))
+[debug] [35m[BaseDriver][39m Event 'resetStarted' logged at 1577255137073 (14:25:37 GMT+0800 (China Standard Time))
+[debug] [35m[XCUITest][39m Reset: running ios real device reset flow
+[debug] [35m[BaseDriver][39m Event 'resetComplete' logged at 1577255137074 (14:25:37 GMT+0800 (China Standard Time))
+[debug] [35m[XCUITest][39m Crash reports root '/Users/faz/Library/Logs/CrashReporter/MobileDevice/烟雾弹' does not exist. Got nothing to gather.
+[debug] [35m[BaseDriver][39m Event 'logCaptureStarted' logged at 1577255137331 (14:25:37 GMT+0800 (China Standard Time))
+[35m[XCUITest][39m Setting up real device
+[35m[XCUITest][39m Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[35m[XCUITest][39m Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[debug] [35m[XCUITest][39m No obsolete cached processes from previous WDA sessions listening on port 50274 have been found
+[35m[DevCon Factory][39m Requesting connection for device e6d787265ef659f59b738dbf66bcbf75a4ec54a1 on local port 50274, device port 50274
+[debug] [35m[DevCon Factory][39m Cached connections count: 0
+[35m[DevCon Factory][39m Successfully requested the connection for e6d787265ef659f59b738dbf66bcbf75a4ec54a1:50274
+[debug] [35m[XCUITest][39m Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[XCUITest][39m WDA is not listening at 'http://localhost:50274/'
+[debug] [35m[XCUITest][39m WDA is currently not running. There is nothing to cache
+[debug] [35m[XCUITest][39m Trying to start WebDriverAgent 1 times with 10000ms interval
+[debug] [35m[XCUITest][39m These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+[debug] [35m[BaseDriver][39m Event 'wdaStartAttempted' logged at 1577255137612 (14:25:37 GMT+0800 (China Standard Time))
+[35m[XCUITest][39m Launching WebDriverAgent on the device
+[35m[WebDriverAgent][39m Fetching dependencies
+[35m[WebDriverAgent][39m Dependencies up-to-date
+[debug] [35m[XCUITest][39m Killing running processes 'xcodebuild.*e6d787265ef659f59b738dbf66bcbf75a4ec54a1' for the device e6d787265ef659f59b738dbf66bcbf75a4ec54a1...
+[debug] [35m[XCUITest][39m 'pgrep -ifn xcodebuild.*e6d787265ef659f59b738dbf66bcbf75a4ec54a1' didn't detect any matching processes. Return code: 1
+[debug] [35m[XCUITest][39m Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=e6d787265ef659f59b738dbf66bcbf75a4ec54a1 IPHONEOS_DEPLOYMENT_TARGET=13.2 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[debug] [35m[XCUITest][39m Output from xcodebuild will only be logged if any errors are present there. To change this, use 'showXcodeLog' desired capability
+[debug] [35m[XCUITest][39m Waiting up to 60000ms for WebDriverAgent to start
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[XCUITest][39m Log file for xcodebuild test: /Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-39-+0800.xcresult/Staging/2_Test/Diagnostics/WebDriverAgentRunner-46B8BA55-15CD-4595-98E1-B0DC84622A3A/WebDriverAgentRunner-B8684ECD-D4CF-443E-9308-B839B6CDF7D2/Session-WebDriverAgentRunner-2019-12-25_142540-0QMJ6D.log
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[35m[XCUITest][39m Launching WebDriverAgent on the device
+[35m[WebDriverAgent][39m Fetching dependencies
+[35m[WebDriverAgent][39m Dependencies up-to-date
+[debug] [35m[XCUITest][39m Killing running processes 'xcodebuild.*e6d787265ef659f59b738dbf66bcbf75a4ec54a1' for the device e6d787265ef659f59b738dbf66bcbf75a4ec54a1...
+[debug] [35m[XCUITest][39m 'pgrep -ifn xcodebuild.*e6d787265ef659f59b738dbf66bcbf75a4ec54a1' didn't detect any matching processes. Return code: 1
+[debug] [35m[XCUITest][39m Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=e6d787265ef659f59b738dbf66bcbf75a4ec54a1 IPHONEOS_DEPLOYMENT_TARGET=13.2 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[debug] [35m[XCUITest][39m Output from xcodebuild will only be logged if any errors are present there. To change this, use 'showXcodeLog' desired capability
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[XCUITest][39m Waiting up to 60000ms for WebDriverAgent to start
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[XCUITest][39m Log file for xcodebuild test: /Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult/Staging/2_Test/Diagnostics/WebDriverAgentRunner-62FBAFC3-B2FB-412F-AB25-D8D2C5004A8A/WebDriverAgentRunner-098607CE-EF37-424A-A1A9-689A9D7EB7DE/Session-WebDriverAgentRunner-2019-12-25_142543-TZr1RO.log
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:50274/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[BaseDriver][39m Event 'wdaStartFailed' logged at 1577255143658 (14:25:43 GMT+0800 (China Standard Time))
+[debug] [35m[XCUITest][39m Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+[debug] [35m[XCUITest][39m xcodebuild error message:
+[debug] [35m[XCUITest][39m 
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.328 xcodebuild[4584:100485] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 "The folder “WebDriverAgentRunner_iphoneos13.2-arm64.xctestrun” doesn’t exist." UserInfo={NSFilePath=/Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Build/Products/WebDriverAgentRunner_iphoneos13.2-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fb642fca350 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+[debug] [35m[XCUITest][39m ** TEST BUILD FAILED **
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.348 xcodebuild[4584:100485]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+[debug] [35m[XCUITest][39m /Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult/Staging/2_Test/Diagnostics/WebDriverAgentRunner-62FBAFC3-B2FB-412F-AB25-D8D2C5004A8A/WebDriverAgentRunner-098607CE-EF37-424A-A1A9-689A9D7EB7DE/Session-WebDriverAgentRunner-2019-12-25_142543-TZr1RO.log
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.351 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: (34865073-452B-4FB4-91C4-CCE30B030728) Beginning test session WebDriverAgentRunner-34865073-452B-4FB4-91C4-CCE30B030728 at 2019-12-25 14:25:43.350 with Xcode 11C29 on target 📱<DVTiOSDevice (0x7fb6431c4350), 烟雾弹, iPhone, 13.2.2 (17B102), e6d787265ef659f59b738dbf66bcbf75a4ec54a1> {
+[debug] [35m[XCUITest][39m 		deviceSerialNumber:         DNPQTPW4GRY7
+[debug] [35m[XCUITest][39m 		identifier:                 e6d787265ef659f59b738dbf66bcbf75a4ec54a1
+[debug] [35m[XCUITest][39m 		deviceClass:                iPhone
+[debug] [35m[XCUITest][39m 		deviceName:                 烟雾弹
+[debug] [35m[XCUITest][39m 		deviceIdentifier:           e6d787265ef659f59b738dbf66bcbf75a4ec54a1
+[debug] [35m[XCUITest][39m 		productVersion:             13.2.2
+[debug] [35m[XCUITest][39m 		buildVersion:               17B102
+[debug] [35m[XCUITest][39m 		deviceSoftwareVersion:      13.2.2 (17B102)
+[debug] [35m[XCUITest][39m 		deviceArchitecture:         arm64
+[debug] [35m[XCUITest][39m 		deviceTotalCapacity:        122728800256
+[debug] [35m[XCUITest][39m 		deviceAvailableCapacity:    97945034752
+[debug] [35m[XCUITest][39m 		deviceIsTransient:          NO
+[debug] [35m[XCUITest][39m 		ignored:                    NO
+[debug] [35m[XCUITest][39m 		deviceIsBusy:               NO
+[debug] [35m[XCUITest][39m 		deviceIsPaired:             YES
+[debug] [35m[XCUITest][39m 		deviceIsActivated:          YES
+[debug] [35m[XCUITest][39m 		deviceActivationState:      Activated
+[debug] [35m[XCUITest][39m 		isPasscodeLocked:           NO
+[debug] [35m[XCUITest][39m 		deviceType:                 <DVTDeviceType:0x7fb642c7cc90 Xcode.DeviceType.iPhone>
+[debug] [35m[XCUITest][39m 		supportedDeviceFamilies:    (
+[debug] [35m[XCUITest][39m     1
+[debug] [35m[XCUITest][39m )
+[debug] [35m[XCUITest][39m 		applications:              (null)
+[debug] [35m[XCUITest][39m 		provisioningProfiles:      (null)
+[debug] [35m[XCUITest][39m 		hasInternalSupport:        NO
+[debug] [35m[XCUITest][39m 		hasWritableSystem:         NO
+[debug] [35m[XCUITest][39m 		isSupportedOS:             YES
+[debug] [35m[XCUITest][39m 		bootArgs:                  (null)
+[debug] [35m[XCUITest][39m 		nextBootArgs:              (null)
+[debug] [35m[XCUITest][39m 		connected:                 YES
+[debug] [35m[XCUITest][39m 		isWirelessEnabled:         NO
+[debug] [35m[XCUITest][39m 		connectionType:            direct
+[debug] [35m[XCUITest][39m 		hostname:                  yanwudan.local.
+[debug] [35m[XCUITest][39m 		bonjourServiceName:        1c:5c:f2:b1:d0:2e@fe80::1e5c:f2ff:feb1:d02e._apple-mobdev2._tcp.local.
+[debug] [35m[XCUITest][39m 		activeProxiedDevice:       (null)
+[debug] [35m[XCUITest][39m 		} (13.2.2 (17B102))
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.507 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: (34865073-452B-4FB4-91C4-CCE30B030728) Finished requesting crash reports. Continuing with testing.
+[debug] [35m[XCUITest][39m *** If you believe this error represents a bug, please attach the result bundle at /Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.528 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: 0.188 elapsed -- Testing started completed.
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.528 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.528 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: 0.188 sec, +0.188 sec -- end
+[debug] [35m[XCUITest][39m 2019-12-25 14:25:43.529 xcodebuild[4584:100483] Error Domain=NSCocoaErrorDomain Code=260 "The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fb642ef5f30 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+[debug] [35m[XCUITest][39m Test session results, code coverage, and logs:
+[debug] [35m[XCUITest][39m 	/Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult
+[debug] [35m[XCUITest][39m Testing started on '烟雾弹'
+[debug] [35m[XCUITest][39m Testing failed:
+[debug] [35m[XCUITest][39m 	Signing for "WebDriverAgentRunner" requires a development team. Select a development team in the Signing & Capabilities editor.
+[debug] [35m[XCUITest][39m 	WebDriverAgentRunner:
+[debug] [35m[XCUITest][39m 		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+[debug] [35m[XCUITest][39m ** TEST EXECUTE FAILED **. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+[35m[XCUITest][39m Quitting and uninstalling WebDriverAgent
+[35m[XCUITest][39m Shutting down sub-processes
+[debug] [35m[XCUITest][39m Uninstalling WDAs: 'com.zyq.WebDriverAgentRunner.xctrunner'
+[35m[DevCon Factory][39m Releasing connections for e6d787265ef659f59b738dbf66bcbf75a4ec54a1 device on any port number
+[35m[DevCon Factory][39m Found cached connections to release: ["e6d787265ef659f59b738dbf66bcbf75a4ec54a1:50274"]
+[35m[DevCon Factory][39m Releasing the listener for 'e6d787265ef659f59b738dbf66bcbf75a4ec54a1:50274'
+[debug] [35m[DevCon Factory][39m Cached connections count: 0
+[debug] [35m[XCUITest][39m Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1577255144297 (14:25:44 GMT+0800 (China Standard Time))
+[debug] [35m[W3C][39m Encountered internal error running command: Error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65
+[debug] [35m[W3C][39m xcodebuild error message:
+[debug] [35m[W3C][39m 
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.328 xcodebuild[4584:100485] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 "The folder “WebDriverAgentRunner_iphoneos13.2-arm64.xctestrun” doesn’t exist." UserInfo={NSFilePath=/Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Build/Products/WebDriverAgentRunner_iphoneos13.2-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fb642fca350 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+[debug] [35m[W3C][39m ** TEST BUILD FAILED **
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.348 xcodebuild[4584:100485]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+[debug] [35m[W3C][39m /Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult/Staging/2_Test/Diagnostics/WebDriverAgentRunner-62FBAFC3-B2FB-412F-AB25-D8D2C5004A8A/WebDriverAgentRunner-098607CE-EF37-424A-A1A9-689A9D7EB7DE/Session-WebDriverAgentRunner-2019-12-25_142543-TZr1RO.log
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.351 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: (34865073-452B-4FB4-91C4-CCE30B030728) Beginning test session WebDriverAgentRunner-34865073-452B-4FB4-91C4-CCE30B030728 at 2019-12-25 14:25:43.350 with Xcode 11C29 on target 📱<DVTiOSDevice (0x7fb6431c4350), 烟雾弹, iPhone, 13.2.2 (17B102), e6d787265ef659f59b738dbf66bcbf75a4ec54a1> {
+[debug] [35m[W3C][39m 		deviceSerialNumber:         DNPQTPW4GRY7
+[debug] [35m[W3C][39m 		identifier:                 e6d787265ef659f59b738dbf66bcbf75a4ec54a1
+[debug] [35m[W3C][39m 		deviceClass:                iPhone
+[debug] [35m[W3C][39m 		deviceName:                 烟雾弹
+[debug] [35m[W3C][39m 		deviceIdentifier:           e6d787265ef659f59b738dbf66bcbf75a4ec54a1
+[debug] [35m[W3C][39m 		productVersion:             13.2.2
+[debug] [35m[W3C][39m 		buildVersion:               17B102
+[debug] [35m[W3C][39m 		deviceSoftwareVersion:      13.2.2 (17B102)
+[debug] [35m[W3C][39m 		deviceArchitecture:         arm64
+[debug] [35m[W3C][39m 		deviceTotalCapacity:        122728800256
+[debug] [35m[W3C][39m 		deviceAvailableCapacity:    97945034752
+[debug] [35m[W3C][39m 		deviceIsTransient:          NO
+[debug] [35m[W3C][39m 		ignored:                    NO
+[debug] [35m[W3C][39m 		deviceIsBusy:               NO
+[debug] [35m[W3C][39m 		deviceIsPaired:             YES
+[debug] [35m[W3C][39m 		deviceIsActivated:          YES
+[debug] [35m[W3C][39m 		deviceActivationState:      Activated
+[debug] [35m[W3C][39m 		isPasscodeLocked:           NO
+[debug] [35m[W3C][39m 		deviceType:                 <DVTDeviceType:0x7fb642c7cc90 Xcode.DeviceType.iPhone>
+[debug] [35m[W3C][39m 		supportedDeviceFamilies:    (
+[debug] [35m[W3C][39m     1
+[debug] [35m[W3C][39m )
+[debug] [35m[W3C][39m 		applications:              (null)
+[debug] [35m[W3C][39m 		provisioningProfiles:      (null)
+[debug] [35m[W3C][39m 		hasInternalSupport:        NO
+[debug] [35m[W3C][39m 		hasWritableSystem:         NO
+[debug] [35m[W3C][39m 		isSupportedOS:             YES
+[debug] [35m[W3C][39m 		bootArgs:                  (null)
+[debug] [35m[W3C][39m 		nextBootArgs:              (null)
+[debug] [35m[W3C][39m 		connected:                 YES
+[debug] [35m[W3C][39m 		isWirelessEnabled:         NO
+[debug] [35m[W3C][39m 		connectionType:            direct
+[debug] [35m[W3C][39m 		hostname:                  yanwudan.local.
+[debug] [35m[W3C][39m 		bonjourServiceName:        1c:5c:f2:b1:d0:2e@fe80::1e5c:f2ff:feb1:d02e._apple-mobdev2._tcp.local.
+[debug] [35m[W3C][39m 		activeProxiedDevice:       (null)
+[debug] [35m[W3C][39m 		} (13.2.2 (17B102))
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.507 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: (34865073-452B-4FB4-91C4-CCE30B030728) Finished requesting crash reports. Continuing with testing.
+[debug] [35m[W3C][39m *** If you believe this error represents a bug, please attach the result bundle at /Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.528 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: 0.188 elapsed -- Testing started completed.
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.528 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.528 xcodebuild[4584:100483] [MT] IDETestOperationsObserverDebug: 0.188 sec, +0.188 sec -- end
+[debug] [35m[W3C][39m 2019-12-25 14:25:43.529 xcodebuild[4584:100483] Error Domain=NSCocoaErrorDomain Code=260 "The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app, NSUnderlyingError=0x7fb642ef5f30 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+[debug] [35m[W3C][39m Test session results, code coverage, and logs:
+[debug] [35m[W3C][39m 	/Users/faz/Library/Developer/Xcode/DerivedData/WebDriverAgent-aiaejbhejflmruhkhsmeebmhbaia/Logs/Test/Test-WebDriverAgentRunner-2019.12.25_14-25-43-+0800.xcresult
+[debug] [35m[W3C][39m Testing started on '烟雾弹'
+[debug] [35m[W3C][39m Testing failed:
+[debug] [35m[W3C][39m 	Signing for "WebDriverAgentRunner" requires a development team. Select a development team in the Signing & Capabilities editor.
+[debug] [35m[W3C][39m 	WebDriverAgentRunner:
+[debug] [35m[W3C][39m 		WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. (Underlying error: The file “WebDriverAgentRunner-Runner.app” couldn’t be opened because there is no such file. The file doesn’t exist. (Underlying error: The operation couldn’t be completed. No such file or directory)))
+[debug] [35m[W3C][39m ** TEST EXECUTE FAILED **. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+[debug] [35m[W3C][39m     at quitAndUninstall (/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:519:15)
+[debug] [35m[W3C][39m     at /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:549:11
+[debug] [35m[W3C][39m     at wrapped (/usr/local/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:35:13)
+[debug] [35m[W3C][39m     at retry (/usr/local/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:18:13)
+[debug] [35m[W3C][39m     at retryInterval (/usr/local/lib/node_modules/appium/node_modules/asyncbox/lib/asyncbox.js:45:10)
+[debug] [35m[W3C][39m     at /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:529:7
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[31m500[39m [90m7972 ms - 11159[39m
+[35m[HTTP][39m [90m[39m

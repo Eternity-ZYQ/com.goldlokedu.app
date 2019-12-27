@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="16.879" tests="2" failures="0" errors="1">
+   <testsuite name="Ordinary_teacher" tests="2" failures="0" errors="1" time="16.879" timestamp="2019-12-27 17:32:01" hostname="faz - 192.168.2.28" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20191227_172933/Android/Teacher Test Suite/Ordinary_teacher/20191227_172933"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20191227_172933/Android/Teacher Test Suite/Ordinary_teacher/20191227_172933/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20191227_172933/Android/Teacher Test Suite/Ordinary_teacher/20191227_172933/appium.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="faz - 192.168.2.28"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.16.0\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.16.0"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.28"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="15.138" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2019-12-27 17:32:02 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2019-12-27 17:32:02 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2019-12-27 17:32:03 - [MESSAGE][INFO] - User set preference: ['appPackage', 'com.goldlokedu.tgoldlokedu']
+
+2019-12-27 17:32:03 - [MESSAGE][INFO] - User set preference: ['appActivity', 'com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity']
+
+2019-12-27 17:32:03 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2019-12-27 17:32:06 - [MESSAGE][INFO] - Appium server started on port 52,406
+
+2019-12-27 17:32:17 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison" time="0.668" classname="Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison" status="ERROR">
+         <error type="ERROR" message="Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison FAILED.
+Reason:
+java.lang.IllegalArgumentException: Cannot find test case 'Test Cases/Object Repository/Android/Transition Page Element/transition_page_one_layout'
+	at com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(TestCaseFactory.java:72)
+	at com.kms.katalon.core.testcase.TestCaseFactory$findTestCase.callStatic(Unknown Source)
+	at transition_page_one_comparison.run(transition_page_one_comparison:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577438983629.run(TempTestSuite1577438983629.groovy:36)
+"/>
+         <system-out><![CDATA[2019-12-27 17:32:17 - [TEST_CASE][ERROR] - Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison: Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison FAILED.
+Reason:
+java.lang.IllegalArgumentException: Cannot find test case 'Test Cases/Object Repository/Android/Transition Page Element/transition_page_one_layout'
+	at com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(TestCaseFactory.java:72)
+	at com.kms.katalon.core.testcase.TestCaseFactory$findTestCase.callStatic(Unknown Source)
+	at transition_page_one_comparison.run(transition_page_one_comparison:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577438983629.run(TempTestSuite1577438983629.groovy:36)
+
+
+2019-12-27 17:32:18 - [TEST_STEP][PASSED] - isPresent = verifyElementExist(findTestCase("Object Repository/Android/Transition Page Element/transition_page_one_layout"), G_Timeout, CONTINUE_ON_FAILURE): null]]></system-out>
+         <system-err><![CDATA[2019-12-27 17:32:17 - [TEST_CASE][ERROR] - Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison: Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison FAILED.
+Reason:
+java.lang.IllegalArgumentException: Cannot find test case 'Test Cases/Object Repository/Android/Transition Page Element/transition_page_one_layout'
+	at com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(TestCaseFactory.java:72)
+	at com.kms.katalon.core.testcase.TestCaseFactory$findTestCase.callStatic(Unknown Source)
+	at transition_page_one_comparison.run(transition_page_one_comparison:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577438983629.run(TempTestSuite1577438983629.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-27 17:32:01 - [TEST_SUITE][ERROR] - Ordinary_teacher: Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison FAILED.
+Reason:
+java.lang.IllegalArgumentException: Cannot find test case 'Test Cases/Object Repository/Android/Transition Page Element/transition_page_one_layout'
+	at com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(TestCaseFactory.java:72)
+	at com.kms.katalon.core.testcase.TestCaseFactory$findTestCase.callStatic(Unknown Source)
+	at transition_page_one_comparison.run(transition_page_one_comparison:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577438983629.run(TempTestSuite1577438983629.groovy:36)]]></system-out>
+      <system-err><![CDATA[2019-12-27 17:32:01 - [TEST_SUITE][ERROR] - Ordinary_teacher: Test Cases/Android/Public Module/Transition Page/Transition Page Comparison/transition_page_one_comparison FAILED.
+Reason:
+java.lang.IllegalArgumentException: Cannot find test case 'Test Cases/Object Repository/Android/Transition Page Element/transition_page_one_layout'
+	at com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(TestCaseFactory.java:72)
+	at com.kms.katalon.core.testcase.TestCaseFactory$findTestCase.callStatic(Unknown Source)
+	at transition_page_one_comparison.run(transition_page_one_comparison:25)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577438983629.run(TempTestSuite1577438983629.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>
