@@ -44,6 +44,6 @@
       <guid>df713f3d-3f81-4f71-a197-c4877a109a8e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/IOS App/Teacher (1)/Headmaster/_Campus/_Interactive Management/tap_sms</testCaseId>
+      <testCaseId>Test Cases/IOS App/Teacher/Headmaster/_Campus/_Interactive Management/tap_sms</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
