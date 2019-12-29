@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>选择普宁地区</description>
+   <description>选择揭西地区</description>
    <name>choose_city_jiexi</name>
    <tag></tag>
    <comment></comment>

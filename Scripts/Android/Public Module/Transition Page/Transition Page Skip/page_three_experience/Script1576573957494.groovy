@@ -15,3 +15,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+"点击过渡页按钮-立即体验"
+Mobile.doubleTap(findTestObject('Object Repository/Android/Transition Page Element/tarnsition_page_three_experience_tv'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)

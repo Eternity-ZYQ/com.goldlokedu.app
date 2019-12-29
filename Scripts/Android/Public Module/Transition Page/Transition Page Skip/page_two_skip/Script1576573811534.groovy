@@ -15,3 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+
+
+"点击第二页跳转"
+Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_two_skip'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)

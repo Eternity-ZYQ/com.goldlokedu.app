@@ -14,5 +14,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-"点击过度页第一页的跳转"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"获取屏幕高度"
+y=Mobile.getDeviceHeight()
+
+
+"获取屏幕宽度"
+x=Mobile.getDeviceWidth()
+
+
+"左滑到第二页"
+Mobile.swipe(x-80,  900, 0, 0, FailureHandling.CONTINUE_ON_FAILURE)

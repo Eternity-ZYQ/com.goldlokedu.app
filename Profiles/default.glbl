@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>超时时间</description>
-      <initValue>'10'</initValue>
+      <initValue>10</initValue>
       <name>G_Timeout</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -21,9 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 //MobileDriverFactory.getDriver().setSetting(Setting.IMAGE_MATCH_THRESHOLD, 0.6)
 
 
-'通过图像空间查看过渡页是否一致'
-boolean isPresent = Mobile.verifyElementExist(findTestCase("Object Repository/Android/Transition Page Element/transition_page_one_layout"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+//'通过图像空间查看过渡页是否一致'
+//boolean isPresent = Mobile.verifyImagePresent("E:/庄意强/katalonworkspace/com.goldlokedu.app/Data Files/Image/Transition Page/Transition_one.jpg", FailureHandling.CONTINUE_ON_FAILURE)
 
-"判断是都相同"
-assert isPresent==true
+//"判断是都相同"
+//assert isPresent==true
 
