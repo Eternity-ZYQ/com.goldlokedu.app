@@ -91,7 +91,7 @@
    <testCaseLink>
       <guid>16f1c734-f1ca-481a-93a1-15a71a25c8b4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/tap_bottom_my</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -99,5 +99,29 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/tap_bottom_campus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2483acc0-2cbf-4052-9d4a-cab0b3df6fb8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/tap_logout_btn</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4aa5167a-fdd0-4c94-9993-f71099853ea4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/cancel_logout</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd43f853-f6b7-412e-8800-ec439a446664</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/tap_logout_btn</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>381180c9-fff0-4a29-b9e0-6d232f0d7a4c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/sure_logout</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
