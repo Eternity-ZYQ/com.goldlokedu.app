@@ -82,4 +82,22 @@
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Public Module/Privacy Policy Page/tap_agree_btn</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c4b30afc-ae0d-4225-aab1-5bf5916f8753</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/tap_bottom_resources</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>16f1c734-f1ca-481a-93a1-15a71a25c8b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/tap_bottom_my</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b09c1e9a-14d3-4522-8d6e-a44f3d03c266</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/tap_bottom_campus</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
