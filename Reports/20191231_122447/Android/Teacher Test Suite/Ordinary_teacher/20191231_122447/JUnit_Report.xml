@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="13.606" tests="2" failures="0" errors="1">
+   <testsuite name="Ordinary_teacher" tests="2" failures="0" errors="1" time="13.606" timestamp="2019-12-31 12:25:05" hostname="faz - 192.168.2.28" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_122447/Android/Teacher Test Suite/Ordinary_teacher/20191231_122447"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_122447/Android/Teacher Test Suite/Ordinary_teacher/20191231_122447/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20191231_122447/Android/Teacher Test Suite/Ordinary_teacher/20191231_122447/appium.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="faz - 192.168.2.28"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.16.0\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.16.0"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.28"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="12.448" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2019-12-31 12:25:05 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2019-12-31 12:25:06 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2019-12-31 12:25:06 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2019-12-31 12:25:09 - [MESSAGE][INFO] - Appium server started on port 50,445
+
+2019-12-31 12:25:18 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/tap_test" time="0.393" classname="Test Cases/Android/Bottom Navigation/Campus/tap_test" status="ERROR">
+         <error type="ERROR" message="Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/faz/git/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/tap_test/Script1577762241641.groovy: 19: unable to resolve class WebElement 
+ @ line 19, column 12.
+   WebElement element = Mobile.findImageElement(&quot;/Users/faz/Desktop/test.png&quot;)
+              ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577766297274.run(TempTestSuite1577766297274.groovy:36)
+"/>
+         <system-out><![CDATA[2019-12-31 12:25:18 - [TEST_CASE][ERROR] - Test Cases/Android/Bottom Navigation/Campus/tap_test: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/faz/git/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/tap_test/Script1577762241641.groovy: 19: unable to resolve class WebElement 
+ @ line 19, column 12.
+   WebElement element = Mobile.findImageElement("/Users/faz/Desktop/test.png")
+              ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577766297274.run(TempTestSuite1577766297274.groovy:36)]]></system-out>
+         <system-err><![CDATA[2019-12-31 12:25:18 - [TEST_CASE][ERROR] - Test Cases/Android/Bottom Navigation/Campus/tap_test: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/faz/git/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/tap_test/Script1577762241641.groovy: 19: unable to resolve class WebElement 
+ @ line 19, column 12.
+   WebElement element = Mobile.findImageElement("/Users/faz/Desktop/test.png")
+              ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577766297274.run(TempTestSuite1577766297274.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-31 12:25:05 - [TEST_SUITE][ERROR] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/faz/git/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/tap_test/Script1577762241641.groovy: 19: unable to resolve class WebElement 
+ @ line 19, column 12.
+   WebElement element = Mobile.findImageElement("/Users/faz/Desktop/test.png")
+              ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577766297274.run(TempTestSuite1577766297274.groovy:36)]]></system-out>
+      <system-err><![CDATA[2019-12-31 12:25:05 - [TEST_SUITE][ERROR] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/Users/faz/git/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/tap_test/Script1577762241641.groovy: 19: unable to resolve class WebElement 
+ @ line 19, column 12.
+   WebElement element = Mobile.findImageElement("/Users/faz/Desktop/test.png")
+              ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577766297274.run(TempTestSuite1577766297274.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

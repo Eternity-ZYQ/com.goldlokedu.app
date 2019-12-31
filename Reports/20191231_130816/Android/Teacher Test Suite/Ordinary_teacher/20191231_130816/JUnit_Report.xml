@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="23.02" tests="2" failures="1" errors="0">
+   <testsuite name="Ordinary_teacher" tests="2" failures="1" errors="0" time="23.02" timestamp="2019-12-31 13:08:35" hostname="faz - 192.168.2.28" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_130816/Android/Teacher Test Suite/Ordinary_teacher/20191231_130816"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_130816/Android/Teacher Test Suite/Ordinary_teacher/20191231_130816/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20191231_130816/Android/Teacher Test Suite/Ordinary_teacher/20191231_130816/appium.log"/>
+         <property name="attachments" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_130816/Android/Teacher Test Suite/Ordinary_teacher/20191231_130816/1577768937025.png"/>
+         <property name="hostName" value="faz - 192.168.2.28"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.16.0\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.16.0"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.28"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="13.127" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2019-12-31 13:08:36 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2019-12-31 13:08:36 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2019-12-31 13:08:37 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2019-12-31 13:08:39 - [MESSAGE][INFO] - Appium server started on port 53,278
+
+2019-12-31 13:08:49 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/tap_test" time="9.015" classname="Test Cases/Android/Bottom Navigation/Campus/tap_test" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	... 19 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAJ6ADAAQAAAABAAAAJwAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+ICIElDQ19QUk9GSUxFAAEBAAACEGFwcGwEAAAAbW50clJHQiBYWVogB+MADAAfAAkAGwAFYWNzcEFQUEwAAAAAQVBQTAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsnx7aQf7A71Su1k6X6RjREQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKZGVzYwAAAPwAAABiY3BydAAAAWAAAAAjd3RwdAAAAYQAAAAUclhZWgAAAZgAAAAUZ1hZWgAAAawAAAAUYlhZWgAAAcAAAAAUclRSQwAAAdQAAAAQY2hhZAAAAeQAAAAsYlRSQwAAAdQAAAAQZ1RSQwAAAdQAAAAQZGVzYwAAAAAAAAAIUzI3RTM5MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHRleHQAAAAAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTkAAFhZWiAAAAAAAADzFgABAAAAARbKWFlaIAAAAAAAAGRgAAAzswAAAbJYWVogAAAAAAAAbSEAAL1iAAAOe1hZWiAAAAAAAAAlVgAADusAAMMAcGFyYQAAAAAAAAAAAAH2BHNmMzIAAAAAAAEMcgAABfj///MdAAAHugAA/XL///ud///9pAAAA9kAAMBx/8AAEQgAJwAnAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMAAgICAgICAwICAwUDAwMFBgUFBQUGCAYGBgYGCAoICAgICAgKCgoKCgoKCgwMDAwMDA4ODg4ODw8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/dAAQAA//aAAwDAQACEQMRAD8A/ea/vjEfJhPzdz6VhMxYlmOT6mqWqanY6TYXWsatcJa2lpG8080jBUjjQFmZiegAGTX5y/Fj9rHWPHOl3Xhj4W2c+j6Ze5jk1qd/Kung5DfZYACU8wcLI7KygkhAcGidSMFdnl5tnOGwVP2uJmkvxfoup926H8Tfh94l8RXvhLw/4gstQ1nTt5uLWGZXlj8tgj5AP8DEBsfdJAODVyDxvE/jdvB2l2s9zJa25nvLqMD7NasdvlQyMTzLIpLBACQoDNgMpP5eeD/FF34S8B22qeGnis9R8AX6XkUrwtcCPSdQ/wBF1AtErI0qRl452XcCSu7PBr7d8EeOviLd6b4g8J21jY674w0O+MUl2zrYWM9vcIk1pdyCMSyDzIX24RGy8bDIGCZpVudXOXI88hjsPHEQ0T/qx9d2d2t0mejr1FXK4Dw7LrVrp1m2vvBJqQiUXJtlZYDLj5vLDkttz0yc10f9qv8A3RWnKe8f/9D9Jv2yI9Zf9n/X5NIDukEtnLeLHnc1mlzGZwcfw7cl+20HPGa+XdCHwEvfgLNqM9wW8atv8sI0m/fv/dgL/q/L2Y3E8jnvgV+n+p6bbXdvc6XqUCXFtcI0UsUihkkjcYZWU8EMDgg1+a3xR/YRv7V7vWvgrr8lpCTvGjXJ+XGcskF0SSvHCLIrAHqwHTDEUXLVHw/FvDtXFyVWioyfK42krpX6rzR4r4H1fTdO8RRW+s4k0rUUksNQjJ+9aXaGKXOOeFbcPQgGvtH9nbwl4osZfElxqXiRbnxLoCweGvLktR9nWysMzWU8iRyI8zywThxIXGNzLjg15b4A/ZB+BnxE8Jxapp+seIIdQt5Htr8SzxRXcF5EcSwzwtE6Ruh4wowRhgWBDH7K+Gfwr0f4Y2l6llf3ur32omH7Te38iyTyLbxiGFPkVECxooAAUZ5JJJJow1Bw3MuC+GsRl0JU6s1KL1Vr6O2v6HdaLDrcGnpH4hure9vQW3S2sD20RBPygRvLMwIGATvOTzgdK1avWFt9olyw+RetbH9nW/oa6rn3qP/R/fG6tI7leeHHQ1zs9tLbtiQfiK62sTVvvL9KpMDi7Dw5oml6vqWvafaJBf6wYjdyrkGYwKUjLDOMhTjIGSMZ6CuptrCW4wx+VPWqNdNp3/HuPrTYWLMMKQII4xgD9alooqAP/9k=}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	... 21 more
+"/>
+         <system-out><![CDATA[2019-12-31 13:08:49 - [TEST_CASE][FAILED] - Test Cases/Android/Bottom Navigation/Campus/tap_test: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	... 19 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	... 21 more
+
+
+2019-12-31 13:08:49 - [TEST_STEP][FAILED] - isPresent = verifyImagePresent("/Users/faz/Desktop/test.png"): Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+
+2019-12-31 13:08:58 - [MESSAGE][FAILED] - Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+[[ATTACHMENT|/Users/faz/git/com.goldlokedu.app/Reports/20191231_130816/Android/Teacher Test Suite/Ordinary_teacher/20191231_130816/1577768937025.png]]
+
+2019-12-31 13:08:58 - [TEST_STEP][PASSED] - assets(isPresent == true): null]]></system-out>
+         <system-err><![CDATA[2019-12-31 13:08:49 - [TEST_CASE][FAILED] - Test Cases/Android/Bottom Navigation/Campus/tap_test: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	... 19 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	... 21 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-31 13:08:35 - [TEST_SUITE][FAILED] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	... 19 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAJ6ADAAQAAAABAAAAJwAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+ICIElDQ19QUk9GSUxFAAEBAAACEGFwcGwEAAAAbW50clJHQiBYWVogB+MADAAfAAkAGwAFYWNzcEFQUEwAAAAAQVBQTAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsnx7aQf7A71Su1k6X6RjREQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKZGVzYwAAAPwAAABiY3BydAAAAWAAAAAjd3RwdAAAAYQAAAAUclhZWgAAAZgAAAAUZ1hZWgAAAawAAAAUYlhZWgAAAcAAAAAUclRSQwAAAdQAAAAQY2hhZAAAAeQAAAAsYlRSQwAAAdQAAAAQZ1RSQwAAAdQAAAAQZGVzYwAAAAAAAAAIUzI3RTM5MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHRleHQAAAAAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTkAAFhZWiAAAAAAAADzFgABAAAAARbKWFlaIAAAAAAAAGRgAAAzswAAAbJYWVogAAAAAAAAbSEAAL1iAAAOe1hZWiAAAAAAAAAlVgAADusAAMMAcGFyYQAAAAAAAAAAAAH2BHNmMzIAAAAAAAEMcgAABfj///MdAAAHugAA/XL///ud///9pAAAA9kAAMBx/8AAEQgAJwAnAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMAAgICAgICAwICAwUDAwMFBgUFBQUGCAYGBgYGCAoICAgICAgKCgoKCgoKCgwMDAwMDA4ODg4ODw8PDw8PDw8PD//bAEMBAgICBAQEBwQEBxALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/dAAQAA//aAAwDAQACEQMRAD8A/ea/vjEfJhPzdz6VhMxYlmOT6mqWqanY6TYXWsatcJa2lpG8080jBUjjQFmZiegAGTX5y/Fj9rHWPHOl3Xhj4W2c+j6Ze5jk1qd/Kung5DfZYACU8wcLI7KygkhAcGidSMFdnl5tnOGwVP2uJmkvxfoup926H8Tfh94l8RXvhLw/4gstQ1nTt5uLWGZXlj8tgj5AP8DEBsfdJAODVyDxvE/jdvB2l2s9zJa25nvLqMD7NasdvlQyMTzLIpLBACQoDNgMpP5eeD/FF34S8B22qeGnis9R8AX6XkUrwtcCPSdQ/wBF1AtErI0qRl452XcCSu7PBr7d8EeOviLd6b4g8J21jY674w0O+MUl2zrYWM9vcIk1pdyCMSyDzIX24RGy8bDIGCZpVudXOXI88hjsPHEQ0T/qx9d2d2t0mejr1FXK4Dw7LrVrp1m2vvBJqQiUXJtlZYDLj5vLDkttz0yc10f9qv8A3RWnKe8f/9D9Jv2yI9Zf9n/X5NIDukEtnLeLHnc1mlzGZwcfw7cl+20HPGa+XdCHwEvfgLNqM9wW8atv8sI0m/fv/dgL/q/L2Y3E8jnvgV+n+p6bbXdvc6XqUCXFtcI0UsUihkkjcYZWU8EMDgg1+a3xR/YRv7V7vWvgrr8lpCTvGjXJ+XGcskF0SSvHCLIrAHqwHTDEUXLVHw/FvDtXFyVWioyfK42krpX6rzR4r4H1fTdO8RRW+s4k0rUUksNQjJ+9aXaGKXOOeFbcPQgGvtH9nbwl4osZfElxqXiRbnxLoCweGvLktR9nWysMzWU8iRyI8zywThxIXGNzLjg15b4A/ZB+BnxE8Jxapp+seIIdQt5Htr8SzxRXcF5EcSwzwtE6Ruh4wowRhgWBDH7K+Gfwr0f4Y2l6llf3ur32omH7Te38iyTyLbxiGFPkVECxooAAUZ5JJJJow1Bw3MuC+GsRl0JU6s1KL1Vr6O2v6HdaLDrcGnpH4hure9vQW3S2sD20RBPygRvLMwIGATvOTzgdK1avWFt9olyw+RetbH9nW/oa6rn3qP/R/fG6tI7leeHHQ1zs9tLbtiQfiK62sTVvvL9KpMDi7Dw5oml6vqWvafaJBf6wYjdyrkGYwKUjLDOMhTjIGSMZ6CuptrCW4wx+VPWqNdNp3/HuPrTYWLMMKQII4xgD9alooqAP/9k=}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	... 21 more]]></system-out>
+      <system-err><![CDATA[2019-12-31 13:08:35 - [TEST_SUITE][FAILED] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/tap_test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Failed to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at Script1577762241641.run(Script1577762241641.groovy:21)
+	... 13 more
+)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:23)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:35)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.verifyImagePresent(MobileBuiltInKeywords.groovy:2223)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$verifyImagePresent$0.call(Unknown Source)
+	at tap_test.run(tap_test:21)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1577768906189.run(TempTestSuite1577768906189.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Image '/Users/faz/Desktop/test.png' doesn not present on screen
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:62)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	... 19 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'opencv4nodejs' module is required to use OpenCV features. Please install it first ('npm i -g opencv4nodejs') and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'FazAiZhongdeMacBook-Pro.local', ip: '192.168.2.28', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.appium.driver.SwipeableAndroidDriver
+Capabilities {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .Settings, appPackage: com.android.settings, autoGrantPermissions: true, automationName: uiautomator2, deviceId: VBJ4C18519001467, deviceName: HUAWEI COL-AL10 (Android 9), newCommandTimeout: 1800, platform: ANDROID, platformName: android, platformVersion: 9, systemPort: 8209, udid: VBJ4C18519001467}, deviceApiLevel: 28, deviceId: VBJ4C18519001467, deviceManufacturer: HUAWEI, deviceModel: COL-AL10, deviceName: VBJ4C18519001467, deviceScreenDensity: 480, deviceScreenSize: 1080x2280, deviceUDID: VBJ4C18519001467, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 1800, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 9, statBarHeight: 90, systemPort: 8209, takesScreenshot: true, udid: VBJ4C18519001467, viewportRect: {height: 2100, left: 0, top: 90, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98b149b5-d5eb-4d83-9b93-fa5391e9dedc
+*** Element info: {Using=-image, value=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}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at com.kms.katalon.core.appium.driver.SwipeableAndroidDriver.execute(SwipeableAndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at io.appium.java_client.FindsByImage.findElementsByImage(FindsByImage.java:61)
+	at com.kms.katalon.core.mobile.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:48)
+	... 21 more]]></system-err>
+   </testsuite>
+</testsuites>

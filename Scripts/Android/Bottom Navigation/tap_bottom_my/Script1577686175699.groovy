@@ -16,4 +16,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 "点击底部--我的"
-Mobile.doubleTap(findTestObject('Object Repository/Android/Bottom Bavigation/bottom_my_btn'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/bottom_my_btn'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="45.765" tests="2" failures="0" errors="0">
+   <testsuite name="Ordinary_teacher" tests="2" failures="0" errors="0" time="45.765" timestamp="2019-12-31 13:29:37" hostname="faz - 192.168.2.28" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_132918/Android/Teacher Test Suite/Ordinary_teacher/20191231_132918"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20191231_132918/Android/Teacher Test Suite/Ordinary_teacher/20191231_132918/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20191231_132918/Android/Teacher Test Suite/Ordinary_teacher/20191231_132918/appium.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="faz - 192.168.2.28"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.16.0\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.16.0"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.28"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="14.032" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2019-12-31 13:29:37 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2019-12-31 13:29:38 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2019-12-31 13:29:39 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2019-12-31 13:29:42 - [MESSAGE][INFO] - Appium server started on port 55,377
+
+2019-12-31 13:29:51 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/tap_test" time="30.862" classname="Test Cases/Android/Bottom Navigation/Campus/tap_test" status="PASSED">
+         <system-out><![CDATA[2019-12-31 13:29:52 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/tap_test: Test Cases/Android/Bottom Navigation/Campus/tap_test
+
+2019-12-31 13:29:52 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image"), 0): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:29:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-31 13:29:58 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:29:58 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image"), 0): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:29:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-31 13:30:06 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:30:06 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image"), 0): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:30:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-31 13:30:14 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:30:14 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image"), 0): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image'
+
+2019-12-31 13:30:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-12-31 13:30:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/notice_image']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-31 13:29:37 - [TEST_SUITE][PASSED] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/tap_test]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

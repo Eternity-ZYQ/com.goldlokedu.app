@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击+按钮</description>
+   <name>tap_plus_layout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efebcc53-7c6a-4611-8eb9-2cde393b47c7</testCaseGuid>
+</TestCaseEntity>

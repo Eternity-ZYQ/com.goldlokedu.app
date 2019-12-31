@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击成绩</description>
+   <name>tap_achievement_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89e7a5e9-702c-407f-ae1c-e5ccc1330c08</testCaseGuid>
+</TestCaseEntity>

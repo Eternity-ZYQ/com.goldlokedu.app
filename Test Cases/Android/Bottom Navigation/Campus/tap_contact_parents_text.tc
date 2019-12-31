@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击联系家长</description>
+   <name>tap_contact_parents_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>66178b61-9e1f-42c7-8b21-7331c0274688</testCaseGuid>
+</TestCaseEntity>

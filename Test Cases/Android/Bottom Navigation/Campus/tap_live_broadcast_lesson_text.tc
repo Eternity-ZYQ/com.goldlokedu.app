@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击直播课</description>
+   <name>tap_live_broadcast_lesson_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b630d57-91cd-4350-af80-449462a91d8c</testCaseGuid>
+</TestCaseEntity>

@@ -109,19 +109,109 @@
    <testCaseLink>
       <guid>4aa5167a-fdd0-4c94-9993-f71099853ea4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/cancel_logout</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cd43f853-f6b7-412e-8800-ec439a446664</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/tap_logout_btn</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>381180c9-fff0-4a29-b9e0-6d232f0d7a4c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/sure_logout</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7f969d0c-7509-40c6-af5b-a7cf9575f4fe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_achievement_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>96ba77d5-0f15-4488-be35-51d04307b4b7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_attendance_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ac2a002e-23a7-47a6-b20f-1aa77c06d87a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_class_card_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2addea3b-d273-4f11-9dc5-d6879faf3aa3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_class_circle_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8bd7bac2-8701-4e70-aac3-a7cfe73b2c9e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_contact_parents_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a52827e-3e24-41c7-aa72-a24bd8971f6c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_homework_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a32cab1c-7b06-4671-ae59-0a7faf359587</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_interactive_course_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>370ad1cd-9b5f-40ec-ae03-725af1ea4a3b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_leave_record_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>faae76e1-ebff-437d-8904-822845069a5d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_live_broadcast_lesson_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>837f1eab-038c-4335-9860-0fec9df60238</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_plus_layout</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f41acfb7-a64e-401d-ad4d-87791246ff8b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_rating_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>398260a2-62fc-4c43-9d08-5af6c7bffb80</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_schedule_card_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d02fc3c4-40b0-498c-a6b5-869bfb233402</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_small_bell_image</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>44557519-7e74-4c2a-9225-5963e15ecdc1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a994efd1-b32c-4313-9455-264d90cd469f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_vote_text</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

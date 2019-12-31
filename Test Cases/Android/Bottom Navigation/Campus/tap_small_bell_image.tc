@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击小铃铛</description>
+   <name>tap_small_bell_image</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6f14ea9-c1e2-42ab-81d8-44cac15fbdce</testCaseGuid>
+</TestCaseEntity>
