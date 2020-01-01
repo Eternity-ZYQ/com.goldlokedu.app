@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 //存在问题,若退出按钮没初见在屏幕上,需要向上拉,直到退出按钮出现在屏幕上
 '判断按钮在不在屏幕上'
 boolean isPresent = Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/My/Logout/logout_btn'), 
-    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+    GlobalVariable.G_Timeout, FailureHandling.OPTIONAL)
 
 '不存在则上拉一下屏幕'
 if (!(isPresent)) {
