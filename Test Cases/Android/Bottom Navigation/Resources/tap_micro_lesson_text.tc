@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击微课</description>
+   <name>tap_micro_lesson_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d40769b5-77ec-49b6-bf76-074f191780b4</testCaseGuid>
+</TestCaseEntity>

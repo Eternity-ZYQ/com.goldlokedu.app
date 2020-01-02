@@ -103,7 +103,7 @@
    <testCaseLink>
       <guid>2483acc0-2cbf-4052-9d4a-cab0b3df6fb8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/My/Logout/tap_logout_btn</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -213,5 +213,77 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_vote_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>466d35f6-5792-4a5c-8de6-d4a1f62d07a5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_notice_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cbd92f97-7514-436b-8c2f-0efe383cb160</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Resources/tap_item_bank_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0e049988-04a5-4ccc-9632-f6b6a121e0ff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Resources/tap_micro_lesson_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91a4d74b-2fd8-4bcb-8015-4735c549adaf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Resources/tap_read_aloud_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bcb50962-63b5-4381-9435-d8491ea0d373</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Resources/tap_u-class_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e16f7b4d-805b-4bae-bbe3-841eac7dbb7d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Resources/tap_courseware_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6c1c3e93-3b3d-4086-b774-2fd182ccc25c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_version_update_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7635e7ed-f3a6-4e11-9ea8-abac619bd092</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_contact_customer_service_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b272986-f071-4fe8-8f91-a7536025aff8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_my_download_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>79b9cc83-412a-424a-ae3e-6045f6b79020</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_help_center_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b7ac66c4-2a7d-4208-b8f9-af539701ff56</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_eye_protection_mode_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>26962032-ddf1-4e2f-b768-4620daaec5b3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_personal_data_text</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

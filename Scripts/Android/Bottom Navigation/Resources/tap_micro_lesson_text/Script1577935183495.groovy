@@ -15,7 +15,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-'点击投票'
-Mobile.tap(findTestObject('Android/Bottom Bavigation/Campus/Interactive Management/vote_text'), GlobalVariable.G_Timeout, 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
+"点击微课"
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Resources/micro_lesson_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)

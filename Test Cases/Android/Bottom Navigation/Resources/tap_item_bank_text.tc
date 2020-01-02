@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击题库</description>
+   <name>tap_item_bank_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ec1a3c4f-6a57-4bf7-b656-edf01c53c622</testCaseGuid>
+</TestCaseEntity>

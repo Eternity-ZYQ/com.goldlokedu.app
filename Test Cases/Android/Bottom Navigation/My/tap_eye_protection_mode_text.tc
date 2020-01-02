@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击护眼模式</description>
+   <name>tap_eye_protection_mode_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa98550c-1426-41a9-b3d6-b119e489a6a7</testCaseGuid>
+</TestCaseEntity>

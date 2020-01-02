@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击联系客服</description>
+   <name>tap_contact_customer_service_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05b0f9f4-1c04-4fb2-b80b-18e08e9763db</testCaseGuid>
+</TestCaseEntity>

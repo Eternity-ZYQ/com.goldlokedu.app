@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击诵读</description>
+   <name>tap_read_aloud_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb65b0e6-84ad-4e44-afd9-7b88b501417b</testCaseGuid>
+</TestCaseEntity>

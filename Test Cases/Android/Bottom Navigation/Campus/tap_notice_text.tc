@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击学校通知</description>
+   <name>tap_notice_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>173f17f8-ffd9-49e7-8844-0e757da80f4d</testCaseGuid>
+</TestCaseEntity>
