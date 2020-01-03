@@ -161,10 +161,10 @@
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_homework_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a32cab1c-7b06-4671-ae59-0a7faf359587</guid>
+      <guid>26962032-ddf1-4e2f-b768-4620daaec5b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_interactive_course_text</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_personal_data_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>370ad1cd-9b5f-40ec-ae03-725af1ea4a3b</guid>
@@ -281,9 +281,9 @@
       <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_eye_protection_mode_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>26962032-ddf1-4e2f-b768-4620daaec5b3</guid>
+      <guid>a32cab1c-7b06-4671-ae59-0a7faf359587</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/My/tap_personal_data_text</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_interactive_course_text</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
