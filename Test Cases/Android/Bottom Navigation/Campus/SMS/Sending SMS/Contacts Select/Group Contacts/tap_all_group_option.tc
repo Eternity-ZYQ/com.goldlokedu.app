@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击教师通讯录全选</description>
+   <name>tap_all_group_option</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87c846ce-8b4d-4930-a8d4-2c9f8fdbab4e</testCaseGuid>
+</TestCaseEntity>

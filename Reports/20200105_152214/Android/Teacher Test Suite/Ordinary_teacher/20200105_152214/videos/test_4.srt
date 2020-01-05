@@ -1,0 +1,8 @@
+1
+00:00:00,103 --> 00:00:00,104
+1. to = findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn")
+
+2
+00:00:00,133 --> 00:00:00,133
+7. 点击全选
+

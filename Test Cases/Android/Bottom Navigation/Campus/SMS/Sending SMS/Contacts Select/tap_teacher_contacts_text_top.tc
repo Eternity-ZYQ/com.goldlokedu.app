@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击顶部教师通讯录</description>
+   <name>tap_teacher_contacts_text_top</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6a7cafd7-3df4-4b15-a285-dcbd5f6e16f0</testCaseGuid>
+</TestCaseEntity>

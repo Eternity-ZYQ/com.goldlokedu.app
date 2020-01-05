@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846357</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Android/Teacher Test Suite/Ordinary_teacher</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Ordinary_teacher</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Android/Teacher Test Suite/Ordinary_teacher</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846368</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = Administrator - PC-20190203YURK</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">Administrator - PC-20190203YURK</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846369</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 7 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 7 64bit</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846369</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 192.168.3.4</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">192.168.3.4</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846370</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 7.2.0.1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">7.2.0.1</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846523</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Public Module/Start App/start_app</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Public Module/Start App/start_app</property>
+  <property name="description">\u5F00\u542Fapp</property>
+  <property name="id">Test Cases/Android/Public Module/Start App/start_app</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Public Module\\Start App\\start_app.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:26</date>
+  <millis>1578239846824</millis>
+  <sequence>7</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : startExistingApplication(G_AppId, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">16</property>
+  <property name="stepIndex">1</property>
+  <property name="description">\u5F00\u542Fapp</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:27</date>
+  <millis>1578239847099</millis>
+  <sequence>9</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>User set preference: [&amp;apos;deviceId&amp;apos;, &amp;apos;VBJ4C18519001467&amp;apos;]</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:28</date>
+  <millis>1578239848954</millis>
+  <sequence>10</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Appium server started on port 62,776</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858100</millis>
+  <sequence>12</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>appiumVersion = 1.15.1</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="appiumVersion">1.15.1</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858101</millis>
+  <sequence>13</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>appiumServerStatus = {\&amp;quot;value\&amp;quot;:{\&amp;quot;build\&amp;quot;:{\&amp;quot;version\&amp;quot;:\&amp;quot;1.15.1\&amp;quot;}},\&amp;quot;sessionId\&amp;quot;:null,\&amp;quot;status\&amp;quot;:0}</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="appiumServerStatus">{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.15.1\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858114</millis>
+  <sequence>14</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>deviceId = VBJ4C18519001467</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="deviceId">VBJ4C18519001467</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858114</millis>
+  <sequence>15</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>deviceName = HUAWEI COL-AL10 (Android 9)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="deviceName">HUAWEI COL-AL10 (Android 9)</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858114</millis>
+  <sequence>16</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>deviceModel = COL-AL10</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="deviceModel">COL-AL10</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858115</millis>
+  <sequence>17</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>deviceManufacturer = HUAWEI</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="deviceManufacturer">HUAWEI</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858116</millis>
+  <sequence>18</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>deviceOS = Android</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="deviceOS">Android</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858117</millis>
+  <sequence>19</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>deviceOSVersion = 9</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="deviceOSVersion">9</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858651</millis>
+  <sequence>20</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Starting app with application ID: &amp;apos;com.goldlokedu.tgoldlokedu &amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858652</millis>
+  <sequence>21</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : startExistingApplication(G_AppId, STOP_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:38</date>
+  <millis>1578239858652</millis>
+  <sequence>22</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Public Module/Start App/start_app</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:40</date>
+  <millis>1578239860660</millis>
+  <sequence>23</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Public Module/Start App/start_app</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:40</date>
+  <millis>1578239860665</millis>
+  <sequence>24</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</property>
+  <property name="description">\u70B9\u51FB\u624B\u673A\u77ED\u4FE1</property>
+  <property name="id">Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Bottom Navigation\\Campus\\tap_sms_text.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:40</date>
+  <millis>1578239860773</millis>
+  <sequence>26</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : tap(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">19</property>
+  <property name="stepIndex">1</property>
+  <property name="description">\u70B9\u51FB\u624B\u673A\u77ED\u4FE1</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:45</date>
+  <millis>1578239865641</millis>
+  <sequence>30</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Tapped on element &amp;apos;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:45</date>
+  <millis>1578239865641</millis>
+  <sequence>31</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : tap(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:45</date>
+  <millis>1578239865641</millis>
+  <sequence>32</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:47</date>
+  <millis>1578239867662</millis>
+  <sequence>33</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:47</date>
+  <millis>1578239867666</millis>
+  <sequence>34</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image</property>
+  <property name="description">\u70B9\u51FB\u6DFB\u52A0\u8054\u7CFB\u4EBA\u6309\u94AE</property>
+  <property name="id">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Bottom Navigation\\Campus\\SMS\\Sending SMS\\tap_add_contacts_image.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:47</date>
+  <millis>1578239867766</millis>
+  <sequence>36</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : tap(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">19</property>
+  <property name="stepIndex">1</property>
+  <property name="description">\u70B9\u51FB\u6DFB\u52A0\u8054\u7CFB\u4EBA+\u6309\u94AE</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:49</date>
+  <millis>1578239869198</millis>
+  <sequence>40</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Tapped on element &amp;apos;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:49</date>
+  <millis>1578239869199</millis>
+  <sequence>41</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : tap(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:49</date>
+  <millis>1578239869199</millis>
+  <sequence>42</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:51</date>
+  <millis>1578239871242</millis>
+  <sequence>43</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:51</date>
+  <millis>1578239871244</millis>
+  <sequence>44</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</property>
+  <property name="description">\u70B9\u51FB\u6559\u5E08\u901A\u8BAF\u5F55\u5168\u9009</property>
+  <property name="id">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Bottom Navigation\\Campus\\SMS\\Sending SMS\\Contacts Select\\Teacher Contacts\\tap_all_teacher_option.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:51</date>
+  <millis>1578239871336</millis>
+  <sequence>46</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : to = findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">19</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:51</date>
+  <millis>1578239871366</millis>
+  <sequence>48</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : to = findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn\&amp;quot;)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:51</date>
+  <millis>1578239871366</millis>
+  <sequence>49</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : tap(to, G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">22</property>
+  <property name="stepIndex">2</property>
+  <property name="description">\u70B9\u51FB\u5168\u9009</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:52</date>
+  <millis>1578239872634</millis>
+  <sequence>52</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Tapped on element &amp;apos;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:52</date>
+  <millis>1578239872634</millis>
+  <sequence>53</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : tap(to, G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:52</date>
+  <millis>1578239872635</millis>
+  <sequence>54</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:54</date>
+  <millis>1578239874675</millis>
+  <sequence>55</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:54</date>
+  <millis>1578239874678</millis>
+  <sequence>56</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn</property>
+  <property name="description">\u70B9\u51FB\u786E\u5B9A\u6309\u94AE</property>
+  <property name="id">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Bottom Navigation\\Campus\\SMS\\Sending SMS\\Contacts Select\\tap_sure_btn.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:54</date>
+  <millis>1578239874767</millis>
+  <sequence>58</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : tap(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">18</property>
+  <property name="stepIndex">1</property>
+  <property name="description">\u70B9\u51FB\u53F3\u4E0A\u89D2\u786E\u5B9A\u6309\u94AE</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:56</date>
+  <millis>1578239876772</millis>
+  <sequence>62</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Tapped on element &amp;apos;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:56</date>
+  <millis>1578239876772</millis>
+  <sequence>63</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : tap(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:56</date>
+  <millis>1578239876772</millis>
+  <sequence>64</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878776</millis>
+  <sequence>65</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878779</millis>
+  <sequence>66</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content</property>
+  <property name="description">\u8F93\u5165\u77ED\u4FE1\u5185\u5BB9</property>
+  <property name="id">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Bottom Navigation\\Campus\\SMS\\Sending SMS\\set_text_to_sms_content.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878886</millis>
+  <sequence>68</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : setText(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext\&amp;quot;), getDate() + \&amp;quot;\u6D4B\u8BD5\u77ED\u4FE1\&amp;quot;, G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">1</property>
+  <property name="description">\u8BBE\u7F6E\u5185\u5BB9</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878912</millis>
+  <sequence>70</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : setText(findTestObject(\&amp;quot;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext\&amp;quot;), getDate() + \&amp;quot;\u6D4B\u8BD5\u77ED\u4FE1\&amp;quot;, G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878912</millis>
+  <sequence>71</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : date = new java.util.Date()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">31</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878913</millis>
+  <sequence>72</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : date = new java.util.Date()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878913</millis>
+  <sequence>73</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : df = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">32</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878917</millis>
+  <sequence>74</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : df = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878918</millis>
+  <sequence>75</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : time = df.format(date)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">33</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878919</millis>
+  <sequence>76</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : time = df.format(date)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:57:58</date>
+  <millis>1578239878920</millis>
+  <sequence>77</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : return time</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">34</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881279</millis>
+  <sequence>80</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Text &amp;apos;2020-01-05 23:57:58\u6D4B\u8BD5\u77ED\u4FE1&amp;apos; has been set to element &amp;apos;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881279</millis>
+  <sequence>81</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : return time</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881279</millis>
+  <sequence>82</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : getDate()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">26</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881280</millis>
+  <sequence>83</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : getDate()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881280</millis>
+  <sequence>84</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : date = new java.util.Date()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">31</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881281</millis>
+  <sequence>85</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : date = new java.util.Date()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881281</millis>
+  <sequence>86</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : df = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">32</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881281</millis>
+  <sequence>87</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : df = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881281</millis>
+  <sequence>88</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : time = df.format(date)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">33</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881282</millis>
+  <sequence>89</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : time = df.format(date)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881283</millis>
+  <sequence>90</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : return time</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">34</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881283</millis>
+  <sequence>91</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : return time</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:01</date>
+  <millis>1578239881283</millis>
+  <sequence>92</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:03</date>
+  <millis>1578239883320</millis>
+  <sequence>93</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:03</date>
+  <millis>1578239883323</millis>
+  <sequence>94</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text</property>
+  <property name="description">\u70B9\u51FB\u53F3\u4E0A\u89D2\u53D1\u9001\u6309\u94AE</property>
+  <property name="id">Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text</property>
+  <property name="source">E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Test Cases\\Android\\Bottom Navigation\\Campus\\SMS\\Sending SMS\\tap_send_sms_text.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:03</date>
+  <millis>1578239883412</millis>
+  <sequence>96</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : tap(findTestObject(\&amp;quot;Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">19</property>
+  <property name="stepIndex">1</property>
+  <property name="description">\u70B9\u51FB\u53F3\u4E0A\u89D2\u53D1\u9001\u6309\u94AE</property>
+</record>
+<record>
+  <date>2020-01-05T23:58:05</date>
+  <millis>1578239885777</millis>
+  <sequence>100</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Tapped on element &amp;apos;Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:05</date>
+  <millis>1578239885777</millis>
+  <sequence>101</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : tap(findTestObject(\&amp;quot;Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text\&amp;quot;), G_Timeout, CONTINUE_ON_FAILURE)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:05</date>
+  <millis>1578239885777</millis>
+  <sequence>102</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:07</date>
+  <millis>1578239887816</millis>
+  <sequence>103</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:07</date>
+  <millis>1578239887816</millis>
+  <sequence>104</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:07</date>
+  <millis>1578239887825</millis>
+  <sequence>107</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End listener action : exportKatalonReports</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-05T23:58:08</date>
+  <millis>1578239888475</millis>
+  <sequence>108</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Android/Teacher Test Suite/Ordinary_teacher</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

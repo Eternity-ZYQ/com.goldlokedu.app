@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="42.359" tests="7" failures="0" errors="1">
+   <testsuite name="Ordinary_teacher" tests="7" failures="0" errors="1" time="42.359" timestamp="2020-01-05 23:53:22" hostname="Administrator - PC-20190203YURK" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200105_235302\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200105_235302"/>
+         <property name="logFiles" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200105_235302\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200105_235302\\appium.log, E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200105_235302\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200105_235302\\execution0.log"/>
+         <property name="attachments" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200105_235302\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200105_235302/videos\\test_6.avi"/>
+         <property name="hostName" value="Administrator - PC-20190203YURK"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.15.1\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.15.1"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.3.4"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="15.438" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2020-01-05 23:53:23 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2020-01-05 23:53:23 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2020-01-05 23:53:23 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2020-01-05 23:53:26 - [MESSAGE][INFO] - Appium server started on port 61,757
+
+2020-01-05 23:53:36 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/tap_sms_text" time="8.722" classname="Test Cases/Android/Bottom Navigation/Campus/tap_sms_text" status="PASSED">
+         <system-out><![CDATA[2020-01-05 23:53:38 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/tap_sms_text: Test Cases/Android/Bottom Navigation/Campus/tap_sms_text
+
+2020-01-05 23:53:38 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text'
+
+2020-01-05 23:53:45 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image" time="3.941" classname="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image" status="PASSED">
+         <system-out><![CDATA[2020-01-05 23:53:47 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image
+
+2020-01-05 23:53:47 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image'
+
+2020-01-05 23:53:49 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option" time="3.494" classname="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option" status="PASSED">
+         <system-out><![CDATA[2020-01-05 23:53:51 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option
+
+2020-01-05 23:53:51 - [TEST_STEP][PASSED] - to = findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn"): null
+
+2020-01-05 23:53:51 - [TEST_STEP][PASSED] - tap(to, G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn'
+
+2020-01-05 23:53:52 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn" time="3.878" classname="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn" status="PASSED">
+         <system-out><![CDATA[2020-01-05 23:53:54 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn
+
+2020-01-05 23:53:54 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn'
+
+2020-01-05 23:53:56 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content" time="2.121" classname="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content" status="ERROR">
+         <error type="ERROR" message="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 19.
+   	SimpleDateFormat df = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;)
+                     ^
+
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 24.
+   	SimpleDateFormat df = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;)
+                          ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578239582011.run(TempTestSuite1578239582011.groovy:36)
+"/>
+         <system-out><![CDATA[2020-01-05 23:53:58 - [TEST_CASE][ERROR] - Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 19.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                     ^
+
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 24.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                          ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578239582011.run(TempTestSuite1578239582011.groovy:36)
+
+
+2020-01-05 23:54:00 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content' .
+
+2020-01-05 23:54:00 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content' .
+[[ATTACHMENT|E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200105_235302\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200105_235302/videos\\test_6.avi]]]]></system-out>
+         <system-err><![CDATA[2020-01-05 23:53:58 - [TEST_CASE][ERROR] - Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 19.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                     ^
+
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 24.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                          ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578239582011.run(TempTestSuite1578239582011.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text" time="3.87" classname="Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text" status="PASSED">
+         <system-out><![CDATA[2020-01-05 23:54:00 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text
+
+2020-01-05 23:54:00 - [TEST_STEP][PASSED] - tap(findTestObject("Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'
+
+2020-01-05 23:54:02 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-05 23:53:22 - [TEST_SUITE][ERROR] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 19.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                     ^
+
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 24.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                          ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578239582011.run(TempTestSuite1578239582011.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-01-05 23:53:22 - [TEST_SUITE][ERROR] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 19.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                     ^
+
+file:/E:/庄意强/katalonworkspace/com.goldlokedu.app/Scripts/Android/Bottom%20Navigation/Campus/SMS/Sending%20SMS/set_text_to_sms_content/Script1578206120785.groovy: 29: unable to resolve class SimpleDateFormat 
+ @ line 29, column 24.
+   	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                          ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578239582011.run(TempTestSuite1578239582011.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

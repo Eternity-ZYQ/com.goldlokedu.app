@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击手机短信左上角返回按钮</description>
+   <name>tap_back_image</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6d2166d4-05f1-4e4c-bdd5-bd10a4c2e3c7</testCaseGuid>
+</TestCaseEntity>

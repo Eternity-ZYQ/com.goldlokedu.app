@@ -91,7 +91,7 @@
    <testCaseLink>
       <guid>16f1c734-f1ca-481a-93a1-15a71a25c8b4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/tap_bottom_my</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -205,7 +205,7 @@
    <testCaseLink>
       <guid>44557519-7e74-4c2a-9225-5963e15ecdc1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_sms_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -285,5 +285,35 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_interactive_course_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e773456a-9193-4d7e-94a1-c8fe8a6ee8c8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_add_contacts_image</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c227c9f8-ee49-4d55-abee-8a8d1e8823d0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5bf11bcb-8262-42f7-8cf6-37798f12a071</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/Contacts Select/tap_sure_btn</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e91962a3-c5f9-4c86-b7c8-6fa67074d1c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/set_text_to_sms_content</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>04aeaac0-a7e3-4571-9661-ed929e876712</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/SMS/Sending SMS/tap_send_sms_text</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
