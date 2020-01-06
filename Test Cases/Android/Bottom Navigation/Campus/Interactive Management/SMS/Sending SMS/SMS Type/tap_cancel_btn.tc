@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击取消按钮</description>
+   <name>tap_cancel_btn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0e41f84-efef-4a6a-a7f9-8df1adb59bf4</testCaseGuid>
+</TestCaseEntity>
