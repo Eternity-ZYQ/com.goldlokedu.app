@@ -14,5 +14,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-"点击短信类型---文本----通知"
-Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_type_option_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"获取文本"
+str=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+println("这是我抓到的文本"+str)

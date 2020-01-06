@@ -311,15 +311,27 @@
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>04aeaac0-a7e3-4571-9661-ed929e876712</guid>
+      <guid>71c32ae3-a043-4629-b15b-f866c4e949f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sms_type</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e6459f51-5508-4667-a324-887c5252d915</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>04aeaac0-a7e3-4571-9661-ed929e876712</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/tap_send_sms_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>993a9a07-377d-45c1-913d-bef9ba1ec7b4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/tap_send_immediately_text</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

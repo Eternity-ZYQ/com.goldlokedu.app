@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ordinary_teacher" time="68.067" tests="8" failures="2" errors="0">
+   <testsuite name="Ordinary_teacher" tests="8" failures="2" errors="0" time="68.067" timestamp="2020-01-07 00:06:17" hostname="Administrator - PC-20190203YURK" id="Test Suites/Android/Teacher Test Suite/Ordinary_teacher">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508"/>
+         <property name="logFiles" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508\\appium.log, E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508\\execution0.log"/>
+         <property name="attachments" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508\\1578326826363.png, E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508/videos\\test_6.avi, E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508\\1578326841683.png, E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508/videos\\test_8.avi"/>
+         <property name="hostName" value="Administrator - PC-20190203YURK"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.15.1\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.15.1"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.3.4"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Start App/start_app" time="15.039" classname="Test Cases/Android/Public Module/Start App/start_app" status="PASSED">
+         <system-out><![CDATA[2020-01-07 00:06:17 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2020-01-07 00:06:17 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2020-01-07 00:06:18 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2020-01-07 00:06:20 - [MESSAGE][INFO] - Appium server started on port 57,781
+
+2020-01-07 00:06:30 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu ']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/tap_sms_text" time="10.225" classname="Test Cases/Android/Bottom Navigation/Campus/tap_sms_text" status="PASSED">
+         <system-out><![CDATA[2020-01-07 00:06:32 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/tap_sms_text: Test Cases/Android/Bottom Navigation/Campus/tap_sms_text
+
+2020-01-07 00:06:32 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text'
+
+2020-01-07 00:06:40 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_add_contacts_image" time="5.677" classname="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_add_contacts_image" status="PASSED">
+         <system-out><![CDATA[2020-01-07 00:06:42 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_add_contacts_image: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_add_contacts_image
+
+2020-01-07 00:06:42 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image'
+
+2020-01-07 00:06:46 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option" time="3.74" classname="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option" status="PASSED">
+         <system-out><![CDATA[2020-01-07 00:06:48 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option
+
+2020-01-07 00:06:48 - [TEST_STEP][PASSED] - to = findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn"): null
+
+2020-01-07 00:06:48 - [TEST_STEP][PASSED] - tap(to, G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn'
+
+2020-01-07 00:06:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_sure_btn" time="4.018" classname="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_sure_btn" status="PASSED">
+         <system-out><![CDATA[2020-01-07 00:06:52 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_sure_btn: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_sure_btn
+
+2020-01-07 00:06:52 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn'
+
+2020-01-07 00:06:54 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content" time="13.266" classname="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:76)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:83)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.setText(MobileBuiltInKeywords.groovy:476)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$setText$1.call(Unknown Source)
+	at set_text_to_sms_content.run(set_text_to_sms_content:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)
+"/>
+         <system-out><![CDATA[2020-01-07 00:06:56 - [TEST_CASE][FAILED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:76)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:83)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.setText(MobileBuiltInKeywords.groovy:476)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$setText$1.call(Unknown Source)
+	at set_text_to_sms_content.run(set_text_to_sms_content:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)
+
+
+2020-01-07 00:06:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext"), getDate() + "测试短信", G_Timeout, CONTINUE_ON_FAILURE): null
+
+2020-01-07 00:06:56 - [TEST_STEP][PASSED] - date = new java.util.Date(): null
+
+2020-01-07 00:06:56 - [TEST_STEP][PASSED] - df = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2020-01-07 00:06:56 - [TEST_STEP][PASSED] - time = df.format(date): null
+
+2020-01-07 00:06:56 - [TEST_STEP][FAILED] - return time: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+
+2020-01-07 00:07:07 - [MESSAGE][FAILED] - Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+[[ATTACHMENT|E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508\\1578326826363.png]]
+
+2020-01-07 00:07:09 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content' .
+
+2020-01-07 00:07:09 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content' .
+[[ATTACHMENT|E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508/videos\\test_6.avi]]]]></system-out>
+         <system-err><![CDATA[2020-01-07 00:06:56 - [TEST_CASE][FAILED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:76)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:83)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.setText(MobileBuiltInKeywords.groovy:476)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$setText$1.call(Unknown Source)
+	at set_text_to_sms_content.run(set_text_to_sms_content:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sms_type" time="2.103" classname="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sms_type" status="PASSED">
+         <system-out><![CDATA[2020-01-07 00:07:09 - [TEST_CASE][PASSED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sms_type: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sms_type
+
+2020-01-07 00:07:09 - [TEST_STEP][PASSED] - return null: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text" time="13.141" classname="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:443)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at get_text.run(get_text:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)
+"/>
+         <system-out><![CDATA[2020-01-07 00:07:11 - [TEST_CASE][FAILED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:443)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at get_text.run(get_text:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)
+
+
+2020-01-07 00:07:11 - [TEST_STEP][FAILED] - str = getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view"), G_Timeout, CONTINUE_ON_FAILURE): Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view not found
+
+2020-01-07 00:07:22 - [MESSAGE][FAILED] - Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view not found
+[[ATTACHMENT|E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508\\1578326841683.png]]
+
+2020-01-07 00:07:22 - [TEST_STEP][PASSED] - println(str): null
+
+2020-01-07 00:07:24 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text' .
+
+2020-01-07 00:07:24 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text' .
+[[ATTACHMENT|E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_000508\\Android\\Teacher Test Suite\\Ordinary_teacher\\20200107_000508/videos\\test_8.avi]]]]></system-out>
+         <system-err><![CDATA[2020-01-07 00:07:11 - [TEST_CASE][FAILED] - Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/options_view not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:443)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at get_text.run(get_text:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-07 00:06:17 - [TEST_SUITE][FAILED] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:76)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:83)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.setText(MobileBuiltInKeywords.groovy:476)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$setText$1.call(Unknown Source)
+	at set_text_to_sms_content.run(set_text_to_sms_content:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-01-07 00:06:17 - [TEST_SUITE][FAILED] - Ordinary_teacher: Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:76)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:83)
+	at com.kms.katalon.core.mobile.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.setText(MobileBuiltInKeywords.groovy:476)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$setText$1.call(Unknown Source)
+	at set_text_to_sms_content.run(set_text_to_sms_content:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1578326708782.run(TempTestSuite1578326708782.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>
