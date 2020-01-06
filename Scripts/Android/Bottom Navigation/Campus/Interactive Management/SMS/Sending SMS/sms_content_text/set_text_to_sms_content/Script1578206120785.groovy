@@ -3,9 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import java.text.SimpleDateFormat
-
+import java.text.SimpleDateFormat as SimpleDateFormat
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -21,16 +19,17 @@ import com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword as SetDateCale
 
 '设置内容'
 Mobile.setText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext'), 
-    getDate()+'测试短信', GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+    getDate() + '测试短信', GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE) //获取当前系统时间
 
 
 
-
-//获取当前系统时间
 String getDate() {
-	Date date=new Date()
-	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-	String time=df.format(date)
-	return time
+    Date date = new Date()
+
+    SimpleDateFormat df = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
+
+    String time = df.format(date)
+
+    return time
 }
 

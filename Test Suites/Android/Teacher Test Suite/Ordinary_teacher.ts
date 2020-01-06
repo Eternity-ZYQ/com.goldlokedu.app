@@ -182,7 +182,7 @@
       <guid>837f1eab-038c-4335-9860-0fec9df60238</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_plus_layout</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Plus/tap_plus_layout</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f41acfb7-a64e-401d-ad4d-87791246ff8b</guid>
@@ -200,7 +200,7 @@
       <guid>d02fc3c4-40b0-498c-a6b5-869bfb233402</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/tap_small_bell_image</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Small Bell/tap_small_bell_image</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>44557519-7e74-4c2a-9225-5963e15ecdc1</guid>
@@ -290,7 +290,7 @@
       <guid>e773456a-9193-4d7e-94a1-c8fe8a6ee8c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/tap_add_contacts_image</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_add_contacts_image</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c227c9f8-ee49-4d55-abee-8a8d1e8823d0</guid>
@@ -308,12 +308,18 @@
       <guid>e91962a3-c5f9-4c86-b7c8-6fa67074d1c7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/set_text_to_sms_content</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>04aeaac0-a7e3-4571-9661-ed929e876712</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/tap_send_sms_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>993a9a07-377d-45c1-913d-bef9ba1ec7b4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/tap_send_immediately_text</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

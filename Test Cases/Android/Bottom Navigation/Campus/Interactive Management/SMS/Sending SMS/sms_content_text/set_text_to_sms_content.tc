@@ -3,6 +3,6 @@
    <description>输入短信内容</description>
    <name>set_text_to_sms_content</name>
    <tag></tag>
-   <comment>获取时间</comment>
+   <comment></comment>
    <testCaseGuid>9b46d0fc-d684-420b-89f8-81ab760772af</testCaseGuid>
 </TestCaseEntity>

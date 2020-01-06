@@ -15,5 +15,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-"点击添加联系人+按钮"
-Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"点击短信确认框的立即发送按钮"
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/send_immediately_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
