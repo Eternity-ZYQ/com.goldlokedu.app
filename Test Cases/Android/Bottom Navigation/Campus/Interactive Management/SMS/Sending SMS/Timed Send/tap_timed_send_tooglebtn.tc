@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击定时发送按钮</description>
+   <name>tap_timed_send_tooglebtn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dbe4605c-5321-4481-995e-3ea1e24eb34c</testCaseGuid>
+</TestCaseEntity>

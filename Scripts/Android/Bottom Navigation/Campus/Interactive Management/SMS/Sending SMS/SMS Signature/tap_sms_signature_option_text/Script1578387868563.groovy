@@ -14,6 +14,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import net.sf.saxon.trans.GlobalVariableManager
-"点击确定按钮"
-Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Selection Box/sure_btn"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+
+"点击短信署名栏"
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_signature_option_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)

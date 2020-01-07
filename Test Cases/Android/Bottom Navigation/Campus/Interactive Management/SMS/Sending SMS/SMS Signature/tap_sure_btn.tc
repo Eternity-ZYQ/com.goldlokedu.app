@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击确定按钮</description>
+   <name>tap_sure_btn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0b2332b-f217-48ee-8c34-6067bf6ed4d4</testCaseGuid>
+</TestCaseEntity>

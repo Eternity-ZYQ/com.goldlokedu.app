@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>点击需要回复栏</description>
+   <name>tap_need_reply_option_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04195d86-7b58-46bd-902d-beaef5bd6655</testCaseGuid>
+</TestCaseEntity>

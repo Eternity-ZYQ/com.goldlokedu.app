@@ -289,38 +289,62 @@
    <testCaseLink>
       <guid>e773456a-9193-4d7e-94a1-c8fe8a6ee8c8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_add_contacts_image</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c227c9f8-ee49-4d55-abee-8a8d1e8823d0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/Teacher Contacts/tap_all_teacher_option</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5bf11bcb-8262-42f7-8cf6-37798f12a071</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select/tap_sure_btn</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e91962a3-c5f9-4c86-b7c8-6fa67074d1c7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_text/set_text_to_sms_content</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>71c32ae3-a043-4629-b15b-f866c4e949f3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sms_type</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e6459f51-5508-4667-a324-887c5252d915</guid>
+      <guid>9052261c-2e61-4860-a4e3-4f65157eb55b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/get_text</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Type/tap_sure_btn</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c09990dc-ffa3-4404-a819-b13ba46b0fb8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Need Reply/tap_need_reply_option_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2779fb7a-d26a-4224-8116-75df911d6514</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/Need Reply/tap_sure_btn</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d95d484d-6dd3-4820-b3ad-0304c93f5a57</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Signature/tap_sms_signature_option_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8fc60147-583e-4fe3-9290-35e144becec5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Signature/tap_sure_btn</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>04aeaac0-a7e3-4571-9661-ed929e876712</guid>
@@ -333,5 +357,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/tap_send_immediately_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>56c85801-9715-48e2-a8ea-bec3778ea311</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sent SMS/tap_sent_sms_text_top</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

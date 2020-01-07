@@ -17,12 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword as SetDateCalendarKeyword
 
+//"获取当前时间"
+//time=getDate()
+//
+//"合成发送文本"
+//conent=time + '测试短信'
+
+"获取发送内容"
+TestData data=findTestData("Data Files/Test Data/test_internal_data")
+ content=data.getValue("sms_content", 1)
+
+
 '设置内容'
 Mobile.setText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext'), 
-    getDate() + '测试短信', GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE) //获取当前系统时间
+    content, GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE) 
 
-
-
+//获取当前系统时间
 String getDate() {
     Date date = new Date()
 
