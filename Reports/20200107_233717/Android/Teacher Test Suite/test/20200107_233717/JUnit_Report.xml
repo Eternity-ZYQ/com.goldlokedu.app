@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="test" time="24.998" tests="1" failures="0" errors="0">
+   <testsuite name="test" tests="1" failures="0" errors="0" time="24.998" timestamp="2020-01-07 23:37:44" hostname="Administrator - PC-20190203YURK" id="Test Suites/Android/Teacher Test Suite/test">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_233717\\Android\\Teacher Test Suite\\test\\20200107_233717"/>
+         <property name="logFiles" value="E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_233717\\Android\\Teacher Test Suite\\test\\20200107_233717\\appium.log, E:\\\u5E84\u610F\u5F3A\\katalonworkspace\\com.goldlokedu.app\\Reports\\20200107_233717\\Android\\Teacher Test Suite\\test\\20200107_233717\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Administrator - PC-20190203YURK"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.15.1\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.15.1"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.3.4"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Public Module/Transition Page/Transition Page Skip/page_one_skip" time="24.215" classname="Test Cases/Android/Public Module/Transition Page/Transition Page Skip/page_one_skip" status="PASSED">
+         <system-out><![CDATA[2020-01-07 23:37:44 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Transition Page/Transition Page Skip/page_one_skip: Test Cases/Android/Public Module/Transition Page/Transition Page Skip/page_one_skip
+
+2020-01-07 23:37:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Android/Public Module/Start App/start_app"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Android/Public Module/Start App/start_app' successfully
+
+2020-01-07 23:37:45 - [TEST_CASE][PASSED] - Test Cases/Android/Public Module/Start App/start_app: Test Cases/Android/Public Module/Start App/start_app
+
+2020-01-07 23:37:45 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2020-01-07 23:37:45 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2020-01-07 23:37:48 - [MESSAGE][INFO] - Appium server started on port 61,274
+
+2020-01-07 23:38:04 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2020-01-07 23:38:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Public Module/Start App/start_app' successfully
+
+2020-01-07 23:38:04 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Transition Page Element/transition_page_one_skip_btn"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'
+
+2020-01-07 23:38:06 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_one_skip_btn']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-07 23:37:44 - [TEST_SUITE][PASSED] - test: Test Cases/Android/Public Module/Transition Page/Transition Page Skip/page_one_skip]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

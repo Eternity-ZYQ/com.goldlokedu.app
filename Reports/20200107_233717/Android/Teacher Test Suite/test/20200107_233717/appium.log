@@ -1,0 +1,353 @@
+[35m[Appium][39m Welcome to Appium v1.15.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 61274
+[35m[Appium][39m   chromeDriverPort: 61277
+[35m[Appium][39m   tmpDir: C:\Users\ADMINI~1\AppData\Local\Temp\\Katalon\Appium\Temp1578411465700
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:61274
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.15.1"}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m7 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.android.settings","deviceId":"VBJ4C18519001467","deviceName":"HUAWEI COL-AL10 (Android 9)","platform":"ANDROID","appActivity":".Settings","newCommandTimeout":1800,"platformVersion":"9","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"VBJ4C18519001467","systemPort":8218},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"VBJ4C18519001467","appium:deviceName":"HUAWEI COL-AL10 (Android 9)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"9","appium:systemPort":8218,"appium:udid":"VBJ4C18519001467"}]}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.android.settings","deviceId":"VBJ4C18519001467","deviceName":"HUAWEI COL-AL10 (Android 9)","platform":"ANDROID","appActivity":".Settings","newCommandTimeout":1800,"platformVersion":"9","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"VBJ4C18519001467","systemPort":8218},null,{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"VBJ4C18519001467","appium:deviceName":"HUAWEI COL-AL10 (Android 9)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"9","appium:systemPort":8218,"appium:udid":"VBJ4C18519001467"}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1578411469205 (23:37:49 GMT+0800 (GMT+08:00))
+[35m[BaseDriver][39m The capabilities ["deviceId","platform"] are not standard capabilities and should have an extension prefix
+[35m[Appium][39m Appium v1.15.1 creating new AndroidUiautomator2Driver (v1.37.2) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "appium:deviceId": "VBJ4C18519001467",
+[debug] [35m[BaseDriver][39m     "appium:platform": "ANDROID",
+[debug] [35m[BaseDriver][39m     "platformName": "android",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": ".Settings",
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.android.settings",
+[debug] [35m[BaseDriver][39m     "appium:autoGrantPermissions": true,
+[debug] [35m[BaseDriver][39m     "appium:automationName": "uiautomator2",
+[debug] [35m[BaseDriver][39m     "appium:deviceName": "HUAWEI COL-AL10 (Android 9)",
+[debug] [35m[BaseDriver][39m     "appium:newCommandTimeout": 1800,
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "9",
+[debug] [35m[BaseDriver][39m     "appium:systemPort": 8218,
+[debug] [35m[BaseDriver][39m     "appium:udid": "VBJ4C18519001467"
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   deviceId
+[35m[BaseDriver][39m   platform
+[35m[BaseDriver][39m Session created with session id: e0e24e71-b68f-4a35-a181-dbbb6ea731de
+[35m[UiAutomator2][39m Starting 'com.android.settings' directly on the device
+[35m[ADB][39m Found 3 'build-tools' folders under 'C:\Users\Administrator\.katalon\tools\android_sdk' (newest first):
+[35m[ADB][39m     C:/Users/Administrator/.katalon/tools/android_sdk/build-tools/29.0.2
+[35m[ADB][39m     C:/Users/Administrator/.katalon/tools/android_sdk/build-tools/29.0.0
+[35m[ADB][39m     C:/Users/Administrator/.katalon/tools/android_sdk/build-tools/28.0.3
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe'
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m Connected devices: [{"udid":"VBJ4C18519001467","state":"device"}]
+[35m[AndroidDriver][39m Using device: VBJ4C18519001467
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Setting device id to VBJ4C18519001467
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 28
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 9
+[debug] [35m[ADB][39m Device API level: 28
+[35m[UiAutomator2][39m Relaxing hidden api policy
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell settings put global hidden_api_policy_pre_p_apps 1'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell settings put global hidden_api_policy_p_apps 1'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell settings put global hidden_api_policy 1'
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.settings'
+[35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\emulator\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\tools\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\build-tools\\29.0.2\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\build-tools\\29.0.0\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\Administrator\.katalon\tools\android_sdk'?
+[35m[ADB][39m Using 'aapt.exe' from 'C:\Users\Administrator\.katalon\tools\android_sdk\build-tools\29.0.2\aapt.exe'
+[debug] [35m[ADB][39m The version code of the installed 'io.appium.settings' is greater than the application version code (20 > 19)
+[debug] [35m[ADB][39m There is no need to downgrade 'io.appium.settings'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pgrep -f io\\.appium\\.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am start -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pgrep -f io\\.appium\\.settings'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pgrep -f io\\.appium\\.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell appops set io.appium.settings android\:mock_location allow'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.uiautomator2.server'
+[35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\emulator\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\tools\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\build-tools\\29.0.2\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\build-tools\\29.0.0\\apkanalyzer.bat","C:\\Users\\Administrator\\.katalon\\tools\\android_sdk\\build-tools\\28.0.3\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\Administrator\.katalon\tools\android_sdk'?
+[debug] [35m[ADB][39m The version code of the installed 'io.appium.uiautomator2.server' is greater than the application version code (45 > 41)
+[debug] [35m[UiAutomator2][39m io.appium.uiautomator2.server installation state: newerVersionInstalled
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk
+[35m[ADB][39m Using 'apksigner.bat' from 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\apksigner.bat'
+[debug] [35m[ADB][39m Starting 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\apksigner.bat' with args '["verify","--print-certs","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.3.0.apk"]'
+[35m[ADB][39m Got an error during apksigner execution: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.3.0.apk' exited with code 1
+[35m[ADB][39m apksigner stderr: Error: Unable to access jarfile C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\..\framework\apksigner.jar
+[35m[ADB][39m 
+[35m[ADB][39m Cannot use apksigner tool for signature verification. Original error: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.3.0.apk' exited with code 1
+[debug] [35m[ADB][39m Defaulting to verify.jar
+[debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' is already signed.
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server.test' is installed
+[debug] [35m[ADB][39m Checking app cert for C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\apksigner.bat' with args '["verify","--print-certs","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk"]'
+[35m[ADB][39m Got an error during apksigner execution: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk' exited with code 1
+[35m[ADB][39m apksigner stderr: Error: Unable to access jarfile C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\..\framework\apksigner.jar
+[35m[ADB][39m 
+[35m[ADB][39m Cannot use apksigner tool for signature verification. Original error: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk' exited with code 1
+[debug] [35m[ADB][39m Defaulting to verify.jar
+[debug] [35m[ADB][39m 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+[35m[UiAutomator2][39m Server packages are going to be (re)installed
+[35m[UiAutomator2][39m Full packages reinstall is going to be performed
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 uninstall io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell 'ls -t -1 /data/local/tmp/appium_cache 2>&1 || echo _ERROR_''
+[debug] [35m[ADB][39m The count of applications in the cache: 10
+[35m[ADB][39m The application at 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' is already cached to '/data/local/tmp/appium_cache/0cc1725a60a05dbb5d0d09256f2fc6ece7e3b10f.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pm install -r /data/local/tmp/appium_cache/0cc1725a60a05dbb5d0d09256f2fc6ece7e3b10f.apk'
+[35m[ADB][39m The installation of 'appium-uiautomator2-server-v4.3.0.apk' took 0.976s
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server.test' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am force-stop io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 uninstall io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server.test' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server.test was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell 'ls -t -1 /data/local/tmp/appium_cache 2>&1 || echo _ERROR_''
+[debug] [35m[ADB][39m The count of applications in the cache: 10
+[35m[ADB][39m The application at 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already cached to '/data/local/tmp/appium_cache/cd247f042368990c9f33b2d7bf2390d8cf4f4e24.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pm install -r /data/local/tmp/appium_cache/cd247f042368990c9f33b2d7bf2390d8cf4f4e24.apk'
+[35m[ADB][39m The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 0.454s
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[UiAutomator2][39m Waiting up to 30000ms for services to be available
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pm list instrumentation'
+[debug] [35m[UiAutomator2][39m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8218
+[debug] [35m[ADB][39m Forwarding system: 8218 to device: 6790
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 forward tcp\:8218 tcp\:6790'
+[debug] [35m[UiAutomator2][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.android.settings
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package com.android.settings'
+[debug] [35m[ADB][39m 'com.android.settings' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am force-stop com.android.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pm clear com.android.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys package com.android.settings'
+[debug] [35m[ADB][39m Retrieving requested permissions
+[debug] [35m[ADB][39m Retrieved 256 permission(s) from ["requested"] group(s)
+[debug] [35m[ADB][39m Retrieving granted permissions
+[debug] [35m[ADB][39m Retrieved 194 permission(s) from ["install","runtime"] group(s)
+[debug] [35m[ADB][39m Granting permissions ["android.permission.ACCESS_HAND_WRITING_INTRODUCE_PAGE"] to 'com.android.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","com.android.settings","android.permission.ACCESS_HAND_WRITING_INTRODUCE_PAGE",";"]]
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell pm grant com.android.settings android.permission.ACCESS_HAND_WRITING_INTRODUCE_PAGE \;'
+[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.settings' application (stop and clear)
+[debug] [35m[UiAutomator2][39m Performing shallow cleanup of automation leftovers
+[debug] [35m[UiAutomator2][39m No obsolete sessions have been detected (Error: socket hang up)
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am force-stop io.appium.uiautomator2.server.test'
+[35m[UiAutomator2][39m Starting UIAutomator2 server 4.3.0
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' and test from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","VBJ4C18519001467","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8218/wd/hub/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8218/wd/hub/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[Instrumentation][39m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8218/wd/hub/status] with no body
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8218/wd/hub/status] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"None","value":{"ready":true,"message":"UiAutomator2 Server is ready to accept commands"}}
+[debug] [35m[UiAutomator2][39m The initialization of the instrumentation process took 4109ms
+[debug] [35m[WD Proxy][39m Matched '/session' to command name 'createSession'
+[debug] [35m[WD Proxy][39m Proxying [POST /session] to [POST http://localhost:8218/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceId":"VBJ4C18519001467","platform":"ANDROID","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"HUAWEI COL-AL10 (Android 9)","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467"},"platformName":"android","deviceId":"VBJ4C18519001467","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"VBJ4C18519001467","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467","deviceUDID":"VBJ4C18519001467"}],"alwaysMatch":{}}}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"sessionId":"c9c77746-e013-4772-b675-1880650b902d","capabilities":{"firstMatch":[{"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceId":"VBJ4C18519001467","platform":"ANDROID","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"HUAWEI COL-AL10 (Android 9)","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467"},"platformName":"android","deviceId":"VBJ4C18519001467","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"VBJ4C18519001467","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467","deviceUDID":"VBJ4C18519001467"}],"alw...
+[35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/info] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/appium/device/info] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"androidId":"12e3bb971141fbc0","manufacturer":"HUAWEI","model":"COL-AL10","brand":"HONOR","apiVersion":"28","platformVersion":"9","carrierName":"中国电信","realDisplaySize":"1080x2280","displayDensity":480,"networks":[{"type":1,"typeName":"WIFI","subtype":0,"subtypeName":"","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":null,"isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"NET_CAPABILITY_SUPL","networkCapabilities":"","linkUpstreamBandwidthKbps":1048576,"linkDownBandwidthKbps":1048576,"signalStrength":-63,"networkSpecifier":null,"SSID":null}}],"locale":"zh_CN_#Hans","timeZone":"Asia\/Shanghai"}}
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell dumpsys window'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m Starting 'com.android.settings/.Settings and waiting for 'com.android.settings/.Settings'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am start -W -n com.android.settings/.Settings -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/appium/device/pixel_ratio] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":3}
+[debug] [35m[WD Proxy][39m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/appium/device/system_bars] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"statusBar":90}}
+[debug] [35m[WD Proxy][39m Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [35m[WD Proxy][39m Proxying [GET /window/current/size] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/window/current/size] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"height":2190,"width":1080}}
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session e0e24e71-b68f-4a35-a181-dbbb6ea731de added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1578411483195 (23:38:03 GMT+0800 (GMT+08:00))
+[debug] [35m[W3C (e0e24e71)][39m Cached the protocol value 'W3C' for the new session e0e24e71-b68f-4a35-a181-dbbb6ea731de
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.createSession() result: {"capabilities":{"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceId":"VBJ4C18519001467","platform":"ANDROID","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"HUAWEI COL-AL10 (Android 9)","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467"},"platformName":"android","deviceId":"VBJ4C18519001467","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"VBJ4C18519001467","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467","deviceUDID":"VBJ4C18519001467","deviceApiLevel":28,"deviceScreenSize":"1080x2280","deviceScreenDensity":480,"deviceModel":"COL-AL10","deviceManufacturer":"HUAWEI",...
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m13993 ms - 1179[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.getSession() with args: ["e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[WD Proxy][39m Matched '/' to command name 'getSession'
+[debug] [35m[WD Proxy][39m Proxying [GET /] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{}}
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceId":"VBJ4C18519001467","platform":"ANDROID","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"HUAWEI COL-AL10 (Android 9)","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467"},"platformName":"android","deviceId":"VBJ4C18519001467","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"VBJ4C18519001467","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467","deviceUDID":"VBJ4C18519001467","deviceApiLevel":28,"deviceScreenSize":"1080x2280","deviceScreenDensity":480,"deviceModel":"COL-AL10","deviceManufacturer":"HUAWEI","pixelRatio":3,"...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de [39m[32m200[39m [90m36 ms - 1111[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.getSession() with args: ["e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[UiAutomator2][39m Getting session details from server to mix in
+[debug] [35m[WD Proxy][39m Matched '/' to command name 'getSession'
+[debug] [35m[WD Proxy][39m Proxying [GET /] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{}}
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.getSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceId":"VBJ4C18519001467","platform":"ANDROID","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"HUAWEI COL-AL10 (Android 9)","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467"},"platformName":"android","deviceId":"VBJ4C18519001467","appActivity":".Settings","appPackage":"com.android.settings","autoGrantPermissions":true,"automationName":"uiautomator2","deviceName":"VBJ4C18519001467","newCommandTimeout":1800,"platformVersion":"9","systemPort":8218,"udid":"VBJ4C18519001467","deviceUDID":"VBJ4C18519001467","deviceApiLevel":28,"deviceScreenSize":"1080x2280","deviceScreenDensity":480,"deviceModel":"COL-AL10","deviceManufacturer":"HUAWEI","pixelRatio":3,"...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de [39m[32m200[39m [90m13 ms - 1111[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[GENERIC][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[GENERIC][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.15.1"}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.timeouts() with args: [null,null,null,null,30000,"e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[BaseDriver][39m W3C timeout argument: {"implicit":30000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 30000ms
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/timeouts [39m[32m200[39m [90m5 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/appium/device/activate_app[39m
+[35m[HTTP][39m [90m{"bundleId":"com.goldlokedu.tgoldlokedu "}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.activateApp() with args: ["com.goldlokedu.tgoldlokedu ",null,null,null,"e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[AndroidDriver][39m Activating 'com.goldlokedu.tgoldlokedu ' with 'adb shell monkey -p com.goldlokedu.tgoldlokedu  -c android.intent.category.LAUNCHER 1' command
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell monkey -p 'com.goldlokedu.tgoldlokedu ' -c android.intent.category.LAUNCHER 1'
+[debug] [35m[AndroidDriver][39m Command stdout: bash arg: -p
+[debug] [35m[AndroidDriver][39m   bash arg: com.goldlokedu.tgoldlokedu
+[debug] [35m[AndroidDriver][39m   bash arg: -c
+[debug] [35m[AndroidDriver][39m   bash arg: android.intent.category.LAUNCHER
+[debug] [35m[AndroidDriver][39m   bash arg: 1
+[debug] [35m[AndroidDriver][39m Events injected: 1
+[debug] [35m[AndroidDriver][39m ## Network stats: elapsed time=52ms (0ms mobile, 0ms wifi, 52ms not connected)
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.activateApp() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/appium/device/activate_app [39m[32m200[39m [90m633 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.timeouts() with args: [null,null,null,null,50,"e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[BaseDriver][39m W3C timeout argument: {"implicit":50}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 50ms
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.getWindowRect() with args: ["e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[WD Proxy][39m Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [35m[WD Proxy][39m Proxying [GET /window/current/size] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/window/current/size] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"height":2190,"width":1080}}
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.getWindowRect() result: {"width":1080,"height":2190,"x":0,"y":0}
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/window/rect [39m[32m200[39m [90m24 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").text(\"跳过\").packageName(\"com.goldlokedu.tgoldlokedu\")"}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").text(\"跳过\").packageName(\"com.goldlokedu.tgoldlokedu\")","e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 50 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").text(\"跳过\").packageName(\"com.goldlokedu.tgoldlokedu\")","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":[]}
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.findElements() result: []
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/elements [39m[32m200[39m [90m363 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/elements[39m
+[35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.TextView\").text(\"跳过\").packageName(\"com.goldlokedu.tgoldlokedu\")"}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.TextView\").text(\"跳过\").packageName(\"com.goldlokedu.tgoldlokedu\")","e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 50 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.TextView\").text(\"跳过\").packageName(\"com.goldlokedu.tgoldlokedu\")","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":[{"ELEMENT":"20ef5355-2a96-4370-b69a-bbc53a577662","element-6066-11e4-a52e-4f735466cecf":"20ef5355-2a96-4370-b69a-bbc53a577662"}]}
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"20ef5355-2a96-4370-b69a-bbc53a577662","ELEMENT":"20ef5355-2a96-4370-b69a-bbc53a577662"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/elements [39m[32m200[39m [90m1230 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/element/20ef5355-2a96-4370-b69a-bbc53a577662/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (e0e24e71)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/element/20ef5355-2a96-4370-b69a-bbc53a577662/location' to command name 'getLocation'
+[debug] [35m[WD Proxy][39m Proxying [GET /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/element/20ef5355-2a96-4370-b69a-bbc53a577662/location] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/element/20ef5355-2a96-4370-b69a-bbc53a577662/location] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"x":918,"y":225}}
+[35m[WD Proxy][39m Replacing sessionId c9c77746-e013-4772-b675-1880650b902d with e0e24e71-b68f-4a35-a181-dbbb6ea731de
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/element/20ef5355-2a96-4370-b69a-bbc53a577662/location [39m[32m200[39m [90m64 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.timeouts() with args: [null,null,null,null,30000,"e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[BaseDriver][39m W3C timeout argument: {"implicit":30000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 30000ms
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/touch/perform[39m
+[35m[HTTP][39m [90m{"actions":[{"action":"tap","options":{"x":1,"y":1,"element":"20ef5355-2a96-4370-b69a-bbc53a577662"}},{"action":"release","options":{}}]}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.performTouch() with args: [[{"action":"tap","options":{"x":1,"y":1,"element":"20ef5355-2a96-4370-b69a-bbc53a577662"}},{"action":"release","options":{}}],"e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[35m[UiAutomator2][39m calling get location: 20ef5355-2a96-4370-b69a-bbc53a577662
+[debug] [35m[WD Proxy][39m Matched '/element/20ef5355-2a96-4370-b69a-bbc53a577662/location' to command name 'getLocation'
+[debug] [35m[WD Proxy][39m Proxying [GET /element/20ef5355-2a96-4370-b69a-bbc53a577662/location] to [GET http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/element/20ef5355-2a96-4370-b69a-bbc53a577662/location] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":{"x":918,"y":225}}
+[debug] [35m[WD Proxy][39m Matched '/element/20ef5355-2a96-4370-b69a-bbc53a577662/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /element/20ef5355-2a96-4370-b69a-bbc53a577662/click] to [POST http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d/element/20ef5355-2a96-4370-b69a-bbc53a577662/click] with body: {"element":"20ef5355-2a96-4370-b69a-bbc53a577662","x":919,"y":226}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":null}
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.performTouch() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de/touch/perform [39m[32m200[39m [90m799 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (e0e24e71)][39m Calling AppiumDriver.deleteSession() with args: ["e0e24e71-b68f-4a35-a181-dbbb6ea731de"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1578411488840 (23:38:08 GMT+0800 (GMT+08:00))
+[35m[Appium][39m Removing session e0e24e71-b68f-4a35-a181-dbbb6ea731de from our master session list
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[debug] [35m[WD Proxy][39m Matched '/' to command name 'deleteSession'
+[debug] [35m[WD Proxy][39m Proxying [DELETE /] to [DELETE http://localhost:8218/wd/hub/session/c9c77746-e013-4772-b675-1880650b902d] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"c9c77746-e013-4772-b675-1880650b902d","value":null}
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell am force-stop com.android.settings'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Removing forwarded port socket connection: 8218 
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 forward --remove tcp\:8218'
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell settings delete global hidden_api_policy_pre_p_apps'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell settings delete global hidden_api_policy_p_apps'
+[debug] [35m[ADB][39m Running 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s VBJ4C18519001467 shell settings delete global hidden_api_policy'
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1578411489315 (23:38:09 GMT+0800 (GMT+08:00))
+[debug] [35m[W3C (e0e24e71)][39m Received response: null
+[debug] [35m[W3C (e0e24e71)][39m But deleting session, so not returning
+[debug] [35m[W3C (e0e24e71)][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/e0e24e71-b68f-4a35-a181-dbbb6ea731de [39m[32m200[39m [90m477 ms - 14[39m
+[35m[HTTP][39m [90m[39m
