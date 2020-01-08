@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="test" time="27.201" tests="1" failures="0" errors="0">
+   <testsuite name="test" tests="1" failures="0" errors="0" time="27.201" timestamp="2020-01-08 15:53:39" hostname="faz - 192.168.2.119" id="Test Suites/Android/Teacher Test Suite/test">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20200108_155322/Android/Teacher Test Suite/test/20200108_155322"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20200108_155322/Android/Teacher Test Suite/test/20200108_155322/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20200108_155322/Android/Teacher Test Suite/test/20200108_155322/appium.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="faz - 192.168.2.119"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.16.0\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.0.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.16.0"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.119"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Login Module/Transition Page Module/page_one_skip" time="26.643" classname="Test Cases/Android/Login Module/Transition Page Module/page_one_skip" status="PASSED">
+         <system-out><![CDATA[2020-01-08 15:53:39 - [TEST_CASE][PASSED] - Test Cases/Android/Login Module/Transition Page Module/page_one_skip: Test Cases/Android/Login Module/Transition Page Module/page_one_skip
+
+2020-01-08 15:53:39 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2020-01-08 15:53:39 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2020-01-08 15:53:39 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2020-01-08 15:53:39 - [TEST_STEP][PASSED] - i = 0: null
+
+2020-01-08 15:53:39 - [TEST_STEP][PASSED] - println("看看是不是没调用也执行" + (i++)): null
+
+2020-01-08 15:53:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Android/Login Module/Start App/start_app"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Android/Login Module/Start App/start_app' successfully
+
+2020-01-08 15:53:40 - [TEST_CASE][PASSED] - Test Cases/Android/Login Module/Start App/start_app: Test Cases/Android/Login Module/Start App/start_app
+
+2020-01-08 15:53:41 - [TEST_STEP][PASSED] - startExistingApplication(G_AppId, STOP_ON_FAILURE): Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2020-01-08 15:53:42 - [MESSAGE][INFO] - User set preference: ['deviceId', 'VBJ4C18519001467']
+
+2020-01-08 15:53:47 - [MESSAGE][INFO] - Appium server started on port 53,217
+
+2020-01-08 15:54:01 - [MESSAGE][PASSED] - Starting app with application ID: 'com.goldlokedu.tgoldlokedu '
+
+2020-01-08 15:54:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Login Module/Start App/start_app' successfully
+
+2020-01-08 15:54:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Login Module/Transition Page Module/tap_page_one_skip"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Android/Login Module/Transition Page Module/tap_page_one_skip' successfully
+
+2020-01-08 15:54:01 - [TEST_CASE][PASSED] - Test Cases/Android/Login Module/Transition Page Module/tap_page_one_skip: Test Cases/Android/Login Module/Transition Page Module/tap_page_one_skip
+
+2020-01-08 15:54:01 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Transition Page Element/transition_page_one_skip_btn"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'
+
+2020-01-08 15:54:03 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'
+
+2020-01-08 15:54:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Login Module/Transition Page Module/tap_page_one_skip' successfully
+
+2020-01-08 15:54:03 - [TEST_STEP][PASSED] - closeApplication(CONTINUE_ON_FAILURE): Close app successfully
+
+2020-01-08 15:54:04 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-08 15:53:39 - [TEST_SUITE][PASSED] - test: Test Cases/Android/Login Module/Transition Page Module/page_one_skip]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

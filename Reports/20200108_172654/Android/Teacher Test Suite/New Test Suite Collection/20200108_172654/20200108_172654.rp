@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCollectionEntity>
+   <description></description>
+   <name>20200108_172654</name>
+   <tag></tag>
+   <displayName>20200108_172654</displayName>
+   <reportItemDescriptions>
+      <ReportItemDescription>
+         <reportLocation>Reports/20200108_172654/Android/Teacher Test Suite/test/20200108_172657</reportLocation>
+         <runConfigDescription>
+            <groupName>Mobile</groupName>
+            <profileName>default</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>HUAWEI COL-AL10 (Android 9)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>VBJ4C18519001467</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </runConfigDescription>
+      </ReportItemDescription>
+   </reportItemDescriptions>
+   <testSuiteCollectionId>Test Suites/Android/Teacher Test Suite/New Test Suite Collection</testSuiteCollectionId>
+</ReportCollectionEntity>

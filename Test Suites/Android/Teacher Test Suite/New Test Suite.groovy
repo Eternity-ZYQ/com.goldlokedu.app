@@ -55,10 +55,9 @@ def setupTestCase() {
 /**
  * Run after each test case ends.
  */
-@TearDownTestCase(skipped = true) //  change skipped to be false to activate this method.
+@TearDownTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
 	// Put your code here.
-	
 }
 
 /**
