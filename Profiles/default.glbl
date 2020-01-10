@@ -19,4 +19,9 @@
       <initValue>10</initValue>
       <name>G_Timeout</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>测试安装包路径</description>
+      <initValue>'Data Files//Test APK//1.apk'</initValue>
+      <name>G_App_Path</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

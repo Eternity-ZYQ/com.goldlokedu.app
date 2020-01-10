@@ -16,15 +16,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 '开启app'
-//Mobile.callTestCase(findTestCase('Android/Login Module/Start App/start_app'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+//Mobile.startApplication(GlobalVariable.G_App_Path, false, FailureHandling.OPTIONAL)
 Mobile.startExistingApplication(GlobalVariable.G_AppId, FailureHandling.CONTINUE_ON_FAILURE)
 "点击过度页第一页跳过按钮"
 Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Transition Page Module/tap_page_one_skip"), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 
-Mobile.delay(5)
 "关闭app"
 Mobile.closeApplication()
 
-'开启app'
-Mobile.startExistingApplication(GlobalVariable.G_AppId, FailureHandling.CONTINUE_ON_FAILURE)
