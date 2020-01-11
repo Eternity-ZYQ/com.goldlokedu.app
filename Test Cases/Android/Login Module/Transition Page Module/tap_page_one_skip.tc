@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击过渡页第一页跳过按钮</description>
-   <name>tap_page_one_skip</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>048fe574-7ef2-4d6a-8f18-fa0f62d8278f</testCaseGuid>
-</TestCaseEntity>

@@ -15,11 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+'清除账号'
+Mobile.clearText(findTestObject('Android/Login Page Element/username_text'), GlobalVariable.G_Timeout)
 
-"点击过度页第一页跳过按钮"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_Timeout,
-	FailureHandling.CONTINUE_ON_FAILURE)
+"从文件中取出账号密码"
+TestData td=findTestData("Data Files/User Information/Account/teacher")
+account=td.getValue("account", 1)
+password=td.getValue("password", 1)
 
+'输入账号'
+Mobile.setText(findTestObject('Android/Login Page Element/username_text'), account, GlobalVariable.G_Timeout)
 
+'输入密码'
+Mobile.setText(findTestObject('Android/Login Page Element/password_text'), password, GlobalVariable.G_Timeout)
 
+'点击登录按钮登录'
+Mobile.tap(findTestObject('Android/Login Page Element/login_btn'), GlobalVariable.G_Timeout)
 
+Mobile.delay(2)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>处于底部资源栏</description>
+   <name>resources_page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6010528-950a-4c92-8b3c-7d5a2b084767</testCaseGuid>
+</TestCaseEntity>

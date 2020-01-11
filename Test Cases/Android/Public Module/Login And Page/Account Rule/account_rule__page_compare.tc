@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>账号规则页面对比</description>
-   <name>account_rule__page_compare</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1c6ab9eb-efaf-429a-9f29-5cea63ce77b6</testCaseGuid>
-</TestCaseEntity>

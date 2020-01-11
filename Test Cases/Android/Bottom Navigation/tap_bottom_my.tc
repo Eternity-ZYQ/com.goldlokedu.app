@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击底部导航栏&quot;我的&quot;</description>
-   <name>tap_bottom_my</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d47f28d3-1d58-4762-a501-df7eb56129b9</testCaseGuid>
-</TestCaseEntity>

@@ -24,7 +24,7 @@ import com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword as SetDateCale
 //conent=time + '测试短信'
 
 "获取发送内容"
-TestData data=findTestData("Data Files/Test Data/test_internal_data")
+TestData data=findTestData("null")
  content=data.getValue("sms_content", 1)
 
 

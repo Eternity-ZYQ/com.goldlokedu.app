@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击账号规则</description>
-   <name>tap_accout_rule</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>fd085972-38ac-460a-b261-4090280f6ba2</testCaseGuid>
-</TestCaseEntity>

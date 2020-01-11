@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>处于校园页面</description>
+   <name>campus_page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad6bee19-8b0c-4798-b3eb-a3b16d28dbf3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>同意隐私政策</description>
+   <name>agree_privacy_policy</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6e805542-c8a2-4099-ac22-82e63b7245c5</testCaseGuid>
+</TestCaseEntity>

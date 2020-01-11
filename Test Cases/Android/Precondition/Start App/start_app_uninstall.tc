@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>安装app并且使用玩后会卸载</description>
+   <name>start_app_uninstall</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e65d148c-bff9-4f26-8ca0-d1828ef98073</testCaseGuid>
+</TestCaseEntity>

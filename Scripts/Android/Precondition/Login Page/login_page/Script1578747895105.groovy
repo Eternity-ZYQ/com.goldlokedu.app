@@ -15,11 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+"前置条件------打开已存在的app"
+Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_existing_app"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
-"点击过度页第一页跳过按钮"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_Timeout,
-	FailureHandling.CONTINUE_ON_FAILURE)
-
-
-
-
+"选择地区"
+//地区选择普宁
+//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_puning"), null, FailureHandling.STOP_ON_FAILURE)
+//地区选择揭西
+Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_jiexi"), null, FailureHandling.STOP_ON_FAILURE)
+//地区选择普宁其他
+//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_puningqita"), null, FailureHandling.STOP_ON_FAILURE)
+//地区选择潮阳
+//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_chaoyang"), null, FailureHandling.STOP_ON_FAILURE)
+//地区选择潮南
+//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_chaonan"), null, FailureHandling.STOP_ON_FAILURE)

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击底部校园</description>
-   <name>tap_bottom_campus</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>28495f0a-efb3-4b0e-b29f-65ebb95f268b</testCaseGuid>
-</TestCaseEntity>

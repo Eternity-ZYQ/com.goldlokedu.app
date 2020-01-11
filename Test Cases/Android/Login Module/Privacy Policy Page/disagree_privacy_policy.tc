@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>不同意隐私政策</description>
+   <name>disagree_privacy_policy</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f32eb84b-c51d-40c7-baa1-ada774c97d45</testCaseGuid>
+</TestCaseEntity>

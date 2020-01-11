@@ -15,11 +15,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
-"点击过度页第一页跳过按钮"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_Timeout,
-	FailureHandling.CONTINUE_ON_FAILURE)
+"处于登陆页面"
+Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Login Page/login_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
 
+"教师正确登陆"
+Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Login/Teacher Success/login_success"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
 
+"点击底部状态栏--资源"
+Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/bottom_Resources_btn'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
