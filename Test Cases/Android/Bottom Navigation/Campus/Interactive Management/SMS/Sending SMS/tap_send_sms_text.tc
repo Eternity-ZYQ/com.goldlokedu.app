@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击右上角发送按钮</description>
-   <name>tap_send_sms_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>468bb1fd-71bf-4b24-8f8d-7a01e180af51</testCaseGuid>
-</TestCaseEntity>

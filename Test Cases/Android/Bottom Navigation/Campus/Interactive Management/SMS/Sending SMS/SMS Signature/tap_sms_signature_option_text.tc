@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击短信署名栏</description>
-   <name>tap_sms_signature_option_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>36950b6e-acf9-43a1-aa16-b69d59eaed13</testCaseGuid>
-</TestCaseEntity>

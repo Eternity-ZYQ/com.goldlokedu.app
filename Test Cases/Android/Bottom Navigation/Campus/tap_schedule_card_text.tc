@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击课程表</description>
-   <name>tap_schedule_card_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e31458a6-6721-4dc1-a45e-d16c656b20ae</testCaseGuid>
-</TestCaseEntity>

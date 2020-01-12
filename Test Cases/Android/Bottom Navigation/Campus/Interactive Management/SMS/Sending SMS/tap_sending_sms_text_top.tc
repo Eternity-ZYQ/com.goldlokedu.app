@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击top发送短信模块</description>
-   <name>tap_sending_sms_text_top</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c7db9afb-16be-4e43-b412-03e6056e2e97</testCaseGuid>
-</TestCaseEntity>

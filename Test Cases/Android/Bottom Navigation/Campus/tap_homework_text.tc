@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击作业</description>
-   <name>tap_homework_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>74faa8c4-8cbf-44bd-b973-17bc3fc87714</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击请假记录</description>
-   <name>tap_leave_record_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4aae8091-f822-4b9e-bb63-d15889469460</testCaseGuid>
-</TestCaseEntity>

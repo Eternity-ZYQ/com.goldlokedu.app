@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击添加联系人按钮</description>
-   <name>tap_add_contacts_image</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b20273c1-55a4-441e-8207-fef3076c606a</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击顶部学生通讯录</description>
-   <name>tap_student_contacts_text_top</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>72e4c9d7-18b4-4f30-8099-4dc4b67b2076</testCaseGuid>
-</TestCaseEntity>

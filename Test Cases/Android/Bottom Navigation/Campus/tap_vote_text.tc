@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击投票</description>
-   <name>tap_vote_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e6ddc0bc-4bb1-4b7f-8a1f-4af55e48517f</testCaseGuid>
-</TestCaseEntity>

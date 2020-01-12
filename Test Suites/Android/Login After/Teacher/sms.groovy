@@ -50,10 +50,8 @@ def tearDown() {
 @SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
-	"前置条件：开启app并登陆到达校园"
-	//打开app
-	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Teacher/Bottom Navigation/Campus Page/campus_page"), null, FailureHandling.STOP_ON_FAILURE)
-	
+	"前置条件:处于手机短信页面"
+	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Teacher/Bottom Navigation/Campus Page/sms_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
 }
@@ -64,7 +62,7 @@ def setupTestCase() {
 @TearDownTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
 	// Put your code here.
-	"场景还原：关闭app"
+	"场景还原:关闭app"
 	Mobile.closeApplication(FailureHandling.STOP_ON_FAILURE)
 }
 

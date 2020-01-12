@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击互动课</description>
-   <name>tap_interactive_course_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>12cab150-a07c-4b96-b7a6-e09950aaa945</testCaseGuid>
-</TestCaseEntity>

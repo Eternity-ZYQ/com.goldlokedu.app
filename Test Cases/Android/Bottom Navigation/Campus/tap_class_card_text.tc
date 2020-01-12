@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击班牌</description>
-   <name>tap_class_card_text</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e4542e22-a2da-44bb-ba3f-733325765e4e</testCaseGuid>
-</TestCaseEntity>

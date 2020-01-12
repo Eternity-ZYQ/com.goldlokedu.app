@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>点击左上叫返回按钮</description>
-   <name>tap_back_image</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>030fb56b-40ab-4447-a0e2-4721d4009fcf</testCaseGuid>
-</TestCaseEntity>
