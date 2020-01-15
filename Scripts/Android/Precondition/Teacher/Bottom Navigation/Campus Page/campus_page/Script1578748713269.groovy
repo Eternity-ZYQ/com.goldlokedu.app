@@ -22,6 +22,8 @@ Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Login Page/log
 "教师正确登陆"
 Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Login/Teacher Success/login_success"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
+"点击同意隐私政策按钮"
+Mobile.tap(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_agree_btn"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 "点击底部栏校园按钮"
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/bottom_campus_btn'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)

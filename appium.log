@@ -289,3 +289,4 @@
 [35m[XCUITest][39m WebDriverAgent uninstall failed. Perhaps, it is already uninstalled? Original error: {}
 [35m[DevCon Factory][39m Releasing connections for F72BCA53-02FE-4542-AF79-8AD3582C1B1A device on any port number
 [35m[DevCon Factory][39m Found cached connections to release: ["F72BCA53-02FE-4542-AF79-8AD3582C1B1A:51454"]
+[35m[Appium][39m Received SIGTERM - shutting down

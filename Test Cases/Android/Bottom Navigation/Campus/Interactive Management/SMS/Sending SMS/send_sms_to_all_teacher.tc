@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fec7b42b-5d7d-42bf-a93e-4886ed35a5dd</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>教师联系人文本,确认页面需要对比是否一致</description>
+      <id>d62a8d5e-7219-4b2d-a926-2131fd003109</id>
+      <masked>false</masked>
+      <name>teacher_contacts_text</name>
+   </variable>
 </TestCaseEntity>

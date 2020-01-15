@@ -17,5 +17,8 @@ import internal.GlobalVariable as GlobalVariable
 "开启app至登录到首页"
 Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Teacher/Bottom Navigation/Campus Page/campus_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
+
+
+
 "点击手机短信"
 Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
