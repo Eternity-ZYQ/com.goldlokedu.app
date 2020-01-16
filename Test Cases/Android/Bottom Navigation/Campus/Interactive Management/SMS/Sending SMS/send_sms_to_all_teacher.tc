@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>teacher_contacts_text</name>
    </variable>
+   <variable>
+      <defaultValue>'发送成功'</defaultValue>
+      <description>手机短信发送成功的toast文本</description>
+      <id>39fc2538-b57e-4fb9-80e8-fa75dc6827c4</id>
+      <masked>false</masked>
+      <name>sms_toast_success_text</name>
+   </variable>
 </TestCaseEntity>
