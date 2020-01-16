@@ -15,8 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-"前置条件------打开已存在的app"
-Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_existing_app"), null, FailureHandling.CONTINUE_ON_FAILURE)
+"前置条件------打开已存在的app到默认普宁城市的登录页面"
+Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Choose City/to_choose_city_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
+
+
 
 "选择地区"
 //地区选择普宁

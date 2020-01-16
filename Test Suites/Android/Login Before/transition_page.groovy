@@ -50,8 +50,8 @@ def tearDown() {
 @SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
-	"登录模块用例前置条件----安装并打开app"
-	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_app"), [:], FailureHandling.STOP_ON_FAILURE)
+	"登录模块用例前置条件----安装并打开app并跳过隐私政策"
+	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy"), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 /**

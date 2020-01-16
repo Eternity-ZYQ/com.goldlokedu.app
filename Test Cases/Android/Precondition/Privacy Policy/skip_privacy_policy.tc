@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>前置条件:跳过隐私政策</description>
+   <name>skip_privacy_policy</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0ee4880-0390-4624-8ad4-f554232129d7</testCaseGuid>
+</TestCaseEntity>

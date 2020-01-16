@@ -51,7 +51,7 @@ def tearDown() {
 def setupTestCase() {
 	// Put your code here.
 	"前置条件------打开已存在的app"
-	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_existing_app"), null, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Choose City/to_choose_city_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 /**
