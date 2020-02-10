@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发送手机短信给全部教师</description>
+   <name>send_sms_to_all_student</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>63217238-3c9d-408f-9525-14d809eca6d5</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>学生联系人文本,确认页面需要对比是否一致</description>
+      <id>c5cac5ae-4873-4dd1-8210-287b57ecfdb2</id>
+      <masked>false</masked>
+      <name>student_contacts_text</name>
+   </variable>
+   <variable>
+      <defaultValue>'发送成功'</defaultValue>
+      <description>手机短信发送成功的toast文本</description>
+      <id>b1a139b2-88ed-4bb7-ab7a-4866bfc27a2c</id>
+      <masked>false</masked>
+      <name>sms_toast_success_text</name>
+   </variable>
+</TestCaseEntity>

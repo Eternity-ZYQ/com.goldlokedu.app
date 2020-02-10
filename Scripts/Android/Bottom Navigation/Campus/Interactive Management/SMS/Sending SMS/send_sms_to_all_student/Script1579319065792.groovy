@@ -25,8 +25,8 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/add_contacts_image'), 
     GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-'点击教师通讯录tab栏'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/teacher_contacts_text'), 
+'点击学生讯录tab栏'
+Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/student_contacts_text'), 
     GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '点击全选按钮'
@@ -37,12 +37,12 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn'), 
     GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-'选择联系人教师栏是否出现'
-Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/teacher_text'), 
+'选择联系人学生栏是否出现'
+Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/student_text'), 
     GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-//获取教师联系人文本,后面短信确认页的时候对比
-teacher_contacts_text = Mobile.getText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/teacher_contacts_text'), 
+//获取学生联系人文本,后面短信确认页的时候对比
+student_contacts_text = Mobile.getText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/student_contacts_text'), 
     GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '清空手机短信内容'
