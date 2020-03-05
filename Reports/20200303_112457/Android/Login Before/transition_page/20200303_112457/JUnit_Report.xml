@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="transition_page" time="88.668" tests="3" failures="0" errors="0">
+   <testsuite name="transition_page" tests="3" failures="0" errors="0" time="88.668" timestamp="2020-03-03 11:25:10" hostname="faz - 192.168.2.21" id="Test Suites/Android/Login Before/transition_page">
+      <properties>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457"/>
+         <property name="logFiles" value="/Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457/execution0.log, /Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457/appium.log"/>
+         <property name="attachments" value="/Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457/1583205961973.png, /Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457/1583205990572.png"/>
+         <property name="hostName" value="faz - 192.168.2.21"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{\&quot;value\&quot;:{\&quot;build\&quot;:{\&quot;version\&quot;:\&quot;1.16.0\&quot;}},\&quot;sessionId\&quot;:null,\&quot;status\&quot;:0}"/>
+         <property name="katalonVersion" value="7.2.2.1"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.16.0"/>
+         <property name="deviceModel" value="COL-AL10"/>
+         <property name="hostAddress" value="192.168.2.21"/>
+         <property name="deviceManufacturer" value="HUAWEI"/>
+         <property name="deviceId" value="VBJ4C18519001467"/>
+         <property name="deviceName" value="HUAWEI COL-AL10 (Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Android/Login Module/Transition Page Module/page_one_skip" time="27.034" classname="Test Cases/Android/Login Module/Transition Page Module/page_one_skip" status="PASSED">
+         <system-out><![CDATA[2020-03-03 11:25:10 - [TEST_CASE][PASSED] - Test Cases/Android/Login Module/Transition Page Module/page_one_skip: Test Cases/Android/Login Module/Transition Page Module/page_one_skip
+
+2020-03-03 11:25:11 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2020-03-03 11:25:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy' successfully
+
+2020-03-03 11:25:11 - [TEST_CASE][PASSED] - Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy: Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy
+
+2020-03-03 11:25:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_app"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Android/Precondition/Start App/start_app' successfully
+
+2020-03-03 11:25:12 - [TEST_CASE][PASSED] - Test Cases/Android/Precondition/Start App/start_app: Test Cases/Android/Precondition/Start App/start_app
+
+2020-03-03 11:25:12 - [TEST_STEP][PASSED] - startApplication(G_App_Path, false, CONTINUE_ON_FAILURE): Started app at: '/Users/faz/git/com.goldlokedu.app/Data Files/Test APK/1.apk'
+
+2020-03-03 11:25:12 - [MESSAGE][INFO] - User set preference: ['appActivity', 'com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity']
+
+2020-03-03 11:25:12 - [MESSAGE][INFO] - User set preference: ['appPackage', 'com.goldlokedu.tgoldlokedu']
+
+2020-03-03 11:25:12 - [MESSAGE][INFO] - User set preference: ['deviceId', '']
+
+2020-03-03 11:25:15 - [MESSAGE][INFO] - Appium server started on port 59,854
+
+2020-03-03 11:25:34 - [MESSAGE][PASSED] - Started app at: '/Users/faz/git/com.goldlokedu.app/Data Files/Test APK/1.apk'
+
+2020-03-03 11:25:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Precondition/Start App/start_app' successfully
+
+2020-03-03 11:25:34 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_agree_btn"), G_Timeout, OPTIONAL): Tapped on element 'Object Repository/Android/Privacy Policy/privacy_policy_agree_btn'
+
+2020-03-03 11:25:35 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Privacy Policy/privacy_policy_agree_btn'
+
+2020-03-03 11:25:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy' successfully
+
+2020-03-03 11:25:35 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2020-03-03 11:25:35 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Transition Page Element/transition_page_one_skip_btn"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'
+
+2020-03-03 11:25:37 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'
+
+2020-03-03 11:25:37 - [TEST_STEP][PASSED] - Start tear down : tearDownTestCase: Method 'tearDownTestCase' complete successfully
+
+2020-03-03 11:25:37 - [TEST_STEP][PASSED] - closeApplication(STOP_ON_FAILURE): Close app successfully
+
+2020-03-03 11:25:38 - [MESSAGE][PASSED] - Close app successfully
+
+2020-03-03 11:25:38 - [MESSAGE][PASSED] - Method 'tearDownTestCase' complete successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Login Module/Transition Page Module/page_two_skip" time="29.882" classname="Test Cases/Android/Login Module/Transition Page Module/page_two_skip" status="PASSED">
+         <system-out><![CDATA[2020-03-03 11:25:38 - [TEST_CASE][PASSED] - Test Cases/Android/Login Module/Transition Page Module/page_two_skip: Test Cases/Android/Login Module/Transition Page Module/page_two_skip
+
+2020-03-03 11:25:38 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2020-03-03 11:25:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy' successfully
+
+2020-03-03 11:25:38 - [TEST_CASE][PASSED] - Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy: Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy
+
+2020-03-03 11:25:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_app"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Android/Precondition/Start App/start_app' successfully
+
+2020-03-03 11:25:38 - [TEST_CASE][PASSED] - Test Cases/Android/Precondition/Start App/start_app: Test Cases/Android/Precondition/Start App/start_app
+
+2020-03-03 11:25:38 - [TEST_STEP][PASSED] - startApplication(G_App_Path, false, CONTINUE_ON_FAILURE): Started app at: '/Users/faz/git/com.goldlokedu.app/Data Files/Test APK/1.apk'
+
+2020-03-03 11:25:38 - [MESSAGE][INFO] - User set preference: ['appActivity', 'com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity']
+
+2020-03-03 11:25:38 - [MESSAGE][INFO] - User set preference: ['appPackage', 'com.goldlokedu.tgoldlokedu']
+
+2020-03-03 11:25:38 - [MESSAGE][INFO] - User set preference: ['deviceId', '']
+
+2020-03-03 11:25:39 - [MESSAGE][INFO] - Appium server started on port 60,089
+
+2020-03-03 11:25:51 - [MESSAGE][PASSED] - Started app at: '/Users/faz/git/com.goldlokedu.app/Data Files/Test APK/1.apk'
+
+2020-03-03 11:25:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Precondition/Start App/start_app' successfully
+
+2020-03-03 11:25:51 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_agree_btn"), G_Timeout, OPTIONAL): Object Object Repository/Android/Privacy Policy/privacy_policy_agree_btn not found
+
+2020-03-03 11:26:02 - [MESSAGE][WARNING] - Object Object Repository/Android/Privacy Policy/privacy_policy_agree_btn not found
+[[ATTACHMENT|/Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457/1583205961973.png]]
+
+2020-03-03 11:26:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy' successfully
+
+2020-03-03 11:26:02 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2020-03-03 11:26:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Pubilc Action/left_slide_screen"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Android/Pubilc Action/left_slide_screen' successfully
+
+2020-03-03 11:26:03 - [TEST_CASE][PASSED] - Test Cases/Android/Pubilc Action/left_slide_screen: Test Cases/Android/Pubilc Action/left_slide_screen
+
+2020-03-03 11:26:03 - [TEST_STEP][PASSED] - y = getDeviceHeight(): Current device physical height is 2190
+
+2020-03-03 11:26:03 - [MESSAGE][PASSED] - Current device physical height is 2190
+
+2020-03-03 11:26:03 - [TEST_STEP][PASSED] - x = getDeviceWidth(): Current device physical width is 1080
+
+2020-03-03 11:26:03 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+2020-03-03 11:26:03 - [TEST_STEP][PASSED] - swipe(x - 80, 900, 0, 0, CONTINUE_ON_FAILURE): Swiped from 1,000,900 to 0,0
+
+2020-03-03 11:26:05 - [MESSAGE][PASSED] - Swiped from 1,000,900 to 0,0
+
+2020-03-03 11:26:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Pubilc Action/left_slide_screen' successfully
+
+2020-03-03 11:26:05 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Transition Page Element/transition_page_two_skip"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_two_skip'
+
+2020-03-03 11:26:07 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Transition Page Element/transition_page_two_skip'
+
+2020-03-03 11:26:07 - [TEST_STEP][PASSED] - Start tear down : tearDownTestCase: Method 'tearDownTestCase' complete successfully
+
+2020-03-03 11:26:07 - [TEST_STEP][PASSED] - closeApplication(STOP_ON_FAILURE): Close app successfully
+
+2020-03-03 11:26:07 - [MESSAGE][PASSED] - Close app successfully
+
+2020-03-03 11:26:07 - [MESSAGE][PASSED] - Method 'tearDownTestCase' complete successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Android/Login Module/Transition Page Module/page_three_experience" time="31.321" classname="Test Cases/Android/Login Module/Transition Page Module/page_three_experience" status="PASSED">
+         <system-out><![CDATA[2020-03-03 11:26:07 - [TEST_CASE][PASSED] - Test Cases/Android/Login Module/Transition Page Module/page_three_experience: Test Cases/Android/Login Module/Transition Page Module/page_three_experience
+
+2020-03-03 11:26:07 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2020-03-03 11:26:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy' successfully
+
+2020-03-03 11:26:07 - [TEST_CASE][PASSED] - Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy: Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy
+
+2020-03-03 11:26:08 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Precondition/Start App/start_app"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Android/Precondition/Start App/start_app' successfully
+
+2020-03-03 11:26:08 - [TEST_CASE][PASSED] - Test Cases/Android/Precondition/Start App/start_app: Test Cases/Android/Precondition/Start App/start_app
+
+2020-03-03 11:26:08 - [TEST_STEP][PASSED] - startApplication(G_App_Path, false, CONTINUE_ON_FAILURE): Started app at: '/Users/faz/git/com.goldlokedu.app/Data Files/Test APK/1.apk'
+
+2020-03-03 11:26:08 - [MESSAGE][INFO] - User set preference: ['appActivity', 'com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity']
+
+2020-03-03 11:26:08 - [MESSAGE][INFO] - User set preference: ['appPackage', 'com.goldlokedu.tgoldlokedu']
+
+2020-03-03 11:26:08 - [MESSAGE][INFO] - User set preference: ['deviceId', '']
+
+2020-03-03 11:26:09 - [MESSAGE][INFO] - Appium server started on port 60,355
+
+2020-03-03 11:26:19 - [MESSAGE][PASSED] - Started app at: '/Users/faz/git/com.goldlokedu.app/Data Files/Test APK/1.apk'
+
+2020-03-03 11:26:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Precondition/Start App/start_app' successfully
+
+2020-03-03 11:26:19 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_agree_btn"), G_Timeout, OPTIONAL): Object Object Repository/Android/Privacy Policy/privacy_policy_agree_btn not found
+
+2020-03-03 11:26:31 - [MESSAGE][WARNING] - Object Object Repository/Android/Privacy Policy/privacy_policy_agree_btn not found
+[[ATTACHMENT|/Users/faz/git/com.goldlokedu.app/Reports/20200303_112457/Android/Login Before/transition_page/20200303_112457/1583205990572.png]]
+
+2020-03-03 11:26:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Precondition/Privacy Policy/skip_privacy_policy' successfully
+
+2020-03-03 11:26:31 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2020-03-03 11:26:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Pubilc Action/left_slide_screen"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Android/Pubilc Action/left_slide_screen' successfully
+
+2020-03-03 11:26:31 - [TEST_CASE][PASSED] - Test Cases/Android/Pubilc Action/left_slide_screen: Test Cases/Android/Pubilc Action/left_slide_screen
+
+2020-03-03 11:26:31 - [TEST_STEP][PASSED] - y = getDeviceHeight(): Current device physical height is 2190
+
+2020-03-03 11:26:32 - [MESSAGE][PASSED] - Current device physical height is 2190
+
+2020-03-03 11:26:32 - [TEST_STEP][PASSED] - x = getDeviceWidth(): Current device physical width is 1080
+
+2020-03-03 11:26:32 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+2020-03-03 11:26:32 - [TEST_STEP][PASSED] - swipe(x - 80, 900, 0, 0, CONTINUE_ON_FAILURE): Swiped from 1,000,900 to 0,0
+
+2020-03-03 11:26:33 - [MESSAGE][PASSED] - Swiped from 1,000,900 to 0,0
+
+2020-03-03 11:26:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Pubilc Action/left_slide_screen' successfully
+
+2020-03-03 11:26:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Test Cases/Android/Pubilc Action/left_slide_screen"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Android/Pubilc Action/left_slide_screen' successfully
+
+2020-03-03 11:26:33 - [TEST_CASE][PASSED] - Test Cases/Android/Pubilc Action/left_slide_screen: Test Cases/Android/Pubilc Action/left_slide_screen
+
+2020-03-03 11:26:33 - [TEST_STEP][PASSED] - y = getDeviceHeight(): Current device physical height is 2190
+
+2020-03-03 11:26:34 - [MESSAGE][PASSED] - Current device physical height is 2190
+
+2020-03-03 11:26:34 - [TEST_STEP][PASSED] - x = getDeviceWidth(): Current device physical width is 1080
+
+2020-03-03 11:26:34 - [MESSAGE][PASSED] - Current device physical width is 1080
+
+2020-03-03 11:26:34 - [TEST_STEP][PASSED] - swipe(x - 80, 900, 0, 0, CONTINUE_ON_FAILURE): Swiped from 1,000,900 to 0,0
+
+2020-03-03 11:26:35 - [MESSAGE][PASSED] - Swiped from 1,000,900 to 0,0
+
+2020-03-03 11:26:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Android/Pubilc Action/left_slide_screen' successfully
+
+2020-03-03 11:26:35 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Android/Transition Page Element/tarnsition_page_three_experience_tv"), G_Timeout, CONTINUE_ON_FAILURE): Tapped on element 'Object Repository/Android/Transition Page Element/tarnsition_page_three_experience_tv'
+
+2020-03-03 11:26:37 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/Transition Page Element/tarnsition_page_three_experience_tv'
+
+2020-03-03 11:26:37 - [TEST_STEP][PASSED] - tap(findTestObject("Android/City Element/city_puning_text"), G_Timeout): Tapped on element 'Object Repository/Android/City Element/city_puning_text'
+
+2020-03-03 11:26:38 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Android/City Element/city_puning_text'
+
+2020-03-03 11:26:38 - [TEST_STEP][PASSED] - Start tear down : tearDownTestCase: Method 'tearDownTestCase' complete successfully
+
+2020-03-03 11:26:38 - [TEST_STEP][PASSED] - closeApplication(STOP_ON_FAILURE): Close app successfully
+
+2020-03-03 11:26:39 - [MESSAGE][PASSED] - Close app successfully
+
+2020-03-03 11:26:39 - [MESSAGE][PASSED] - Method 'tearDownTestCase' complete successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-03 11:25:10 - [TEST_SUITE][PASSED] - transition_page: Test Cases/Android/Login Module/Transition Page Module/page_three_experience]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
