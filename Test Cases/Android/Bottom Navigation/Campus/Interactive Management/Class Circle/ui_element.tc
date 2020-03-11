@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>固定的UI元素验证</description>
+   <name>ui_element</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d138148-3ce1-45e1-8d7a-c6b3873910ed</testCaseGuid>
+</TestCaseEntity>
