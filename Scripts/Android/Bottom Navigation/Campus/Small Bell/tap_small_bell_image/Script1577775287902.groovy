@@ -16,4 +16,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 "点击小铃铛"
-Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/small_bell_image"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/small_bell_image"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)

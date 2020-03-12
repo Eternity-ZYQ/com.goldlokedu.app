@@ -19,7 +19,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 "班级圈标题"
-String title=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_circle_title"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+String title=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_circle_title"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyMatch("班级圈",title, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 
@@ -34,42 +34,42 @@ Mobile.verifyMatch("班级圈",title, false, FailureHandling.CONTINUE_ON_FAILURE
 
 
 "班级tab控件"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_tab_btn"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_tab_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 "班级tab标题控件"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_tab_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_tab_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
 
 "班训标题图标"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_icon_image"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_icon_image"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 "班训标题文字"
-String class_training_title=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+String class_training_title=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyMatch("班训",class_training_title, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
 "公告标题图标"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_icon_image"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_icon_image"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 "公告标题文字"
-String notice=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+String notice=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyMatch("公告",notice, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
 
 "相册标题图标"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Album/album_icon_image"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Album/album_icon_image"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 "相册标题文字"
-String album=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Album/album_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+String album=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Album/album_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyMatch("相册",album, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
 "动态标题图标"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_icon_image"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_icon_image"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 "动态标题文字"
-String dynamic=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+String dynamic=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyMatch("动态",dynamic, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 

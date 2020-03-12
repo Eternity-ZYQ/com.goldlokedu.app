@@ -16,12 +16,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>超时时间</description>
-      <initValue>10</initValue>
+      <initValue>5</initValue>
       <name>G_Timeout</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>测试安装包路径</description>
       <initValue>'Data Files//Test APK//1.apk'</initValue>
       <name>G_App_Path</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短时间超时</description>
+      <initValue>2</initValue>
+      <name>G_short_timeout</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

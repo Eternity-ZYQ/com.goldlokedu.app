@@ -19,7 +19,13 @@
    <testCaseLink>
       <guid>42e2740e-2436-43f1-842e-8aec3cd49b92</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/class_training_change</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1b869a68-b123-4060-b5f2-8beba04a1b05</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/notice_publish</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

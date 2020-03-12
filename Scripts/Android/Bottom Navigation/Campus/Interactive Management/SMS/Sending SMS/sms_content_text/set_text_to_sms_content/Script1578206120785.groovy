@@ -30,7 +30,7 @@ TestData data=findTestData("null")
 
 '设置内容'
 Mobile.setText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext'), 
-    content, GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE) 
+    content, GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE) 
 
 //获取当前系统时间
 String getDate() {

@@ -20,4 +20,4 @@ Mobile.callTestCase(findTestCase("Test Cases/Android/Pubilc Action/left_slide_sc
 
 
 "点击第二页跳转"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_two_skip'), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_two_skip'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)

@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 '清除账号'
-Mobile.clearText(findTestObject('Android/Login Page Element/username_text'), GlobalVariable.G_Timeout)
+Mobile.clearText(findTestObject('Android/Login Page Element/username_text'), GlobalVariable.G_short_timeout)
 
 "从文件中取出账号密码"
 TestData td=findTestData("Data Files/User Information/Account/teacher")
@@ -24,12 +24,12 @@ account=td.getValue("account", 1)
 password=td.getValue("password", 1)
 
 '输入账号'
-Mobile.setText(findTestObject('Android/Login Page Element/username_text'), account, GlobalVariable.G_Timeout)
+Mobile.setText(findTestObject('Android/Login Page Element/username_text'), account, GlobalVariable.G_short_timeout)
 
 '输入密码'
-Mobile.setText(findTestObject('Android/Login Page Element/password_text'), password, GlobalVariable.G_Timeout)
+Mobile.setText(findTestObject('Android/Login Page Element/password_text'), password, GlobalVariable.G_short_timeout)
 
 '点击登录按钮登录'
-Mobile.tap(findTestObject('Android/Login Page Element/login_btn'), GlobalVariable.G_Timeout)
+Mobile.tap(findTestObject('Android/Login Page Element/login_btn'), GlobalVariable.G_short_timeout)
 
 Mobile.delay(2)

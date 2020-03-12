@@ -16,11 +16,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 "点击班训模块修改按钮"
-Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_change_layout"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_change_layout"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 "查看顶部标题title是否为班训"
-Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_title_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_title_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 "获取当前时间"
@@ -30,16 +30,16 @@ String time=CustomKeywords.'time.SystemTime.get_system_time'()
 String class_training_content=time+"测试班训"
 
 "输入班训内容"
-Mobile.setText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_edittext"), class_training_content, GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.setText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_edittext"), class_training_content, GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 "点击保存"
-Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_save_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_save_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
 "返回班级圈页面,验证是否发布成功"
 "获取班级圈页面班训的内容"
-String content=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_content_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+String content=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_content_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 "对比之前发布的班训是否一致"
 Mobile.verifyMatch(class_training_content, content, false, FailureHandling.CONTINUE_ON_FAILURE)
 

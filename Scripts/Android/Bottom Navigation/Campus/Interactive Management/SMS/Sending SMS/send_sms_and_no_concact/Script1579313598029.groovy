@@ -19,7 +19,7 @@ import io.appium.java_client.AppiumDriver
 import com.kms.katalon.core.util.KeywordUtil
 '点击发送短信tap栏'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
-    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
@@ -38,7 +38,7 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 
 '点击发送'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
-    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 //
 //AppiumDriver driver = MobileDriverFactory.getDriver()
 //def toast = driver.findElementByXPath("//android.widget.Toast[@text='亲,请选择接收人~']")

@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 "点击过度页第一页跳过按钮"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_Timeout,
+Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_short_timeout,
 	FailureHandling.CONTINUE_ON_FAILURE)
 
 

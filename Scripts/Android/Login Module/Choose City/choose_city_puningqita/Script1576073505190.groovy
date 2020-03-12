@@ -14,9 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 '点击左上角选择地区'
-Mobile.tap(findTestObject('Android/Login Page Element/change_city_btn'), GlobalVariable.G_Timeout)
+Mobile.tap(findTestObject('Android/Login Page Element/change_city_btn'), GlobalVariable.G_short_timeout)
 
 '选择普宁其他地区'
-Mobile.tap(findTestObject('Android/City Element/city_puningqita_text'), GlobalVariable.G_Timeout)
+Mobile.tap(findTestObject('Android/City Element/city_puningqita_text'), GlobalVariable.G_short_timeout)
 
 
