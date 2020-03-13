@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>向上滑动</description>
-   <name>wipe_up</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>10cdc30c-0ed1-4477-91c8-a3f5d0b32a53</testCaseGuid>
-</TestCaseEntity>

@@ -15,17 +15,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-"左滑页面到第二个过渡页"
-CustomKeywords.'public_action.slide_screen.left_slide_screen'()
-
-"左滑页面到第三个过渡页"
-CustomKeywords.'public_action.slide_screen.left_slide_screen'()
-
-
-"点击过渡页按钮-立即体验"
-Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/tarnsition_page_three_experience_tv'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-
-
-//这里多执行一步是为了后面开启app不用进入过度页
-'选择普宁地区'
-Mobile.tap(findTestObject('Android/City Element/city_puning_text'), GlobalVariable.G_short_timeout)

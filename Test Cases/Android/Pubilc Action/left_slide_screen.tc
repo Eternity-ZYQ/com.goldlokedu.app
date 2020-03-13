@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>左滑屏幕</description>
-   <name>left_slide_screen</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3f222843-f4fe-4531-b014-2bf699e931e8</testCaseGuid>
-</TestCaseEntity>

@@ -22,7 +22,7 @@ boolean isPresent = Mobile.verifyElementExist(findTestObject('Object Repository/
 
 '不存在则上拉一下屏幕'
 if (!(isPresent)) {
-    Mobile.callTestCase(findTestCase('Android/Pubilc Action/wipe_up'), [:], FailureHandling.CONTINUE_ON_FAILURE)
+    Mobile.callTestCase(findTestCase('null'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 '点击退出'

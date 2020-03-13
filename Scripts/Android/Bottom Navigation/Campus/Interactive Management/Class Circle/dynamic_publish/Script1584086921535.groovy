@@ -14,13 +14,5 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-"获取设备高度"
-y=Mobile.getDeviceHeight()
-
-"获取设备宽度"
-x=Mobile.getDeviceWidth()
-
-
-"向上滑动屏幕"
-Mobile.swipe(new BigDecimal(x/2).intValue(), new BigDecimal(y*2/3).intValue(), new BigDecimal(x/2).intValue(), new BigDecimal(y/3).intValue())
-
+"点击更多按钮"
+Mobile.tap(findTestObject(""), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)

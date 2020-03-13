@@ -29,4 +29,9 @@
       <initValue>2</initValue>
       <name>G_short_timeout</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>移动端测试环境host</description>
+      <initValue>'http://192.168.2.243'</initValue>
+      <name>MobileHost</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

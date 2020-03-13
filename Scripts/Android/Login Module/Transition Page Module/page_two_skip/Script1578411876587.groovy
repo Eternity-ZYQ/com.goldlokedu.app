@@ -16,7 +16,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 "左滑页面到第二个过渡页"
-Mobile.callTestCase(findTestCase("Test Cases/Android/Pubilc Action/left_slide_screen"), [:], FailureHandling.CONTINUE_ON_FAILURE)
+CustomKeywords.'public_action.slide_screen.left_slide_screen'()
+
 
 
 "点击第二页跳转"

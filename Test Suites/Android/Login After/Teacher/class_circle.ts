@@ -25,7 +25,13 @@
    <testCaseLink>
       <guid>1b869a68-b123-4060-b5f2-8beba04a1b05</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/notice_publish</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e363f2d9-5493-440f-8fee-f7166cdaa3be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/album_publish</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

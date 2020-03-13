@@ -1,11 +1,11 @@
-package time
+package public_action
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import java.text.SimpleDateFormat as SimpleDateFormat
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -20,30 +20,50 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class SystemTime {
+public class slide_screen {
+
+
+	//屏幕向左滑动到第二页
 	@Keyword
-	public String get_system_time(){
-		Date date = new Date()
+	public void left_slide_screen(){
+		"获取屏幕高度"
+		def y=Mobile.getDeviceHeight()
 
-		SimpleDateFormat df = new SimpleDateFormat('yy-MM-dd HH:mm:ss')
 
-		String time = df.format(date)
+		"获取屏幕宽度"
+		def x=Mobile.getDeviceWidth()
 
-		return time
+
+		"左滑到第二页"
+		Mobile.swipe(x-80,  900, 0, 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+
 	}
-
-
-
-
-
+	
+	
+	//向上滑动屏幕
 	@Keyword
-	public String get_day_time(){
-		Date date = new Date()
-
-		SimpleDateFormat df = new SimpleDateFormat('yy-MM-dd')
-
-		String time = df.format(date)
-
-		return time
+	public void wipe_up(){
+		"获取设备高度"
+		def y=Mobile.getDeviceHeight()
+		
+		"获取设备宽度"
+		def x=Mobile.getDeviceWidth()
+		
+		
+		"向上滑动屏幕"
+		Mobile.swipe(new BigDecimal(x/2).intValue(), new BigDecimal(y*2/3).intValue(), new BigDecimal(x/2).intValue(), new BigDecimal(y/3).intValue())
+		
+		
+		
+		
+		
 	}
+	
+	
+	
+
+
+
+
 }
