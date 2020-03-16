@@ -34,4 +34,9 @@
       <initValue>'http://192.168.2.243'</initValue>
       <name>MobileHost</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>token值</description>
+      <initValue>'paH6UbZboprxVEyJvP_FkGiodjn65LuLkahPaG0CsgA5haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
+      <name>access_token</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

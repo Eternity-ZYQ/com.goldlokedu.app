@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>切换城市</description>
-   <name>change_city</name>
+   <description>ios获取app菜单</description>
+   <name>ios_app_menu</name>
    <tag></tag>
-   <elementGuidId>96b227f1-48c9-451f-aa9d-c9eabc3d6157</elementGuidId>
+   <elementGuidId>f5d49393-19d6-4def-983c-97fa2fe43b86</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${GlobalVariable.access_token}</value>
+   </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/available_district</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/menu/app/ios?version=1.0</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
+
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -31,11 +39,17 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
-WS.verifyResponseStatusCode(response, 200)
+if(WS.verifyResponseStatusCode(response, 200)){
+	&quot;验证body中code为200&quot;
+	WS.verifyElementPropertyValue(response, 'code', 200)
+	
+	
+}
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200)
+
+
+
+
 
 
 

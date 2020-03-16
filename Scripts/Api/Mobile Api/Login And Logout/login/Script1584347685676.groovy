@@ -15,3 +15,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+"选择地区"
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Change City/change_city"), FailureHandling.CONTINUE_ON_FAILURE)
+
+"登录"
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Login And Logout/teacher_login"), FailureHandling.CONTINUE_ON_FAILURE)
+
+"获取app菜单"
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/menu/ios_app_menu"),FailureHandling.CONTINUE_ON_FAILURE)
+
+"获取小铃铛列表:10条"
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Bell/bell_reminder_search"),FailureHandling.CONTINUE_ON_FAILURE)
