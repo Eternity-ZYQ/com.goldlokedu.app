@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>小铃铛查看更改成已读状态</description>
-   <name>bell_reminder_view</name>
+   <name>bell_reminder_view_all</name>
    <tag></tag>
-   <elementGuidId>83ed64b7-eaa5-41ff-99cd-fa5b0282448a</elementGuidId>
+   <elementGuidId>cd740a08-89b3-4490-a03e-63e158c82381</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;reminder_ids\&quot;: [\&quot;${GlobalVariable.reminder_id}\&quot;]\n}&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;owner_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
    <httpBodyType>text</httpBodyType>
@@ -19,7 +19,7 @@
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
+      <value>application/json</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
