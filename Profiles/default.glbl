@@ -39,4 +39,14 @@
       <initValue>'paH6UbZboprxVEyJvP_FkGiodjn65LuLkahPaG0CsgA5haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
       <name>access_token</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>小铃铛数据id</description>
+      <initValue>'c672fd0b-67d9-4a02-b1d0-077519f9b8b9'</initValue>
+      <name>reminder_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>用户ID值,唯一</description>
+      <initValue>'5bc7cf85-e3bb-4d21-ad94-614555840c85'</initValue>
+      <name>user_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

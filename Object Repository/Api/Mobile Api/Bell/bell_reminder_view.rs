@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>小铃铛列表</description>
-   <name>bell_reminder_search</name>
+   <description>小铃铛查看更改成已读状态</description>
+   <name>bell_reminder_view</name>
    <tag></tag>
-   <elementGuidId>27b8e208-8317-4c23-bfbb-28ba3f0afd7b</elementGuidId>
+   <elementGuidId>83ed64b7-eaa5-41ff-99cd-fa5b0282448a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;from\&quot;: 0\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;reminder_ids\&quot;: [\&quot;${GlobalVariable.reminder_id}\&quot;]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -30,7 +30,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/reminder/search</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/reminder/view</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -53,32 +53,11 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 if(WS.verifyResponseStatusCode(response, 200)){
 	
-	&quot;返回体包含:total&quot;
-	assertThat(response.getResponseText()).contains('total')
+	WS.verifyElementPropertyValue(response, 'code', 200)
 	
-	
-	save_message(response)
-	
-}
-
-
-
-//保存第一条,为点击后改变成已读状态做数据准备
-private void save_message(ResponseObject response){
-	def jsonSlurper = new JsonSlurper()
-	
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	def reminder_id=jsonResponse.data[0].reminder_id
-	
-	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;reminder_id&quot;, reminder_id)
-	
-	//println(reminder_id)
 	
 	
 }
-
-
 
 
 
