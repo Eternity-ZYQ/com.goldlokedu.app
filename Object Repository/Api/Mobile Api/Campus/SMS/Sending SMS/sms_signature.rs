@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>打电话学生通讯录</description>
-   <name>student_mobile_contact</name>
+   <description>短信署名</description>
+   <name>sms_signature</name>
    <tag></tag>
-   <elementGuidId>66305182-dd5a-4954-954d-3fe6b8cc6f39</elementGuidId>
+   <elementGuidId>0889d3bc-4d8c-4e23-96fa-1983003c604f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/studentByKlass?klass_id=${GlobalVariable.class_id}&amp;module=sms&amp;type=app</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/signature?sender_id=${GlobalVariable.user_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,14 +39,21 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
+
 if(WS.verifyResponseStatusCode(response, 200)){
+	
+	&quot;验证返回体包含:data&quot;
+	assertThat(response.getResponseText()).contains('data')
+	
+}
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200)
 
 
 
-}</verificationScript>
+
+
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

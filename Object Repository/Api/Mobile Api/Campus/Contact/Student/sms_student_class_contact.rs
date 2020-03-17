@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>打电话学生通讯录</description>
-   <name>student_mobile_contact</name>
+   <description>手机短信学生班级通讯录</description>
+   <name>sms_student_class_contact</name>
    <tag></tag>
-   <elementGuidId>66305182-dd5a-4954-954d-3fe6b8cc6f39</elementGuidId>
+   <elementGuidId>537031f8-6a57-4606-8729-0894aba23fe7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/studentByKlass?klass_id=${GlobalVariable.class_id}&amp;module=sms&amp;type=app</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/student/app?module=mobile</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
