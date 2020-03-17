@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>小铃铛查看更改成已读状态</description>
-   <name>bell_reminder_all_erase</name>
+   <description>小铃铛全部已读</description>
+   <name>bell_reminder_view_all</name>
    <tag></tag>
-   <elementGuidId>61ec1385-56c1-443a-bfb3-1756a41e04d6</elementGuidId>
+   <elementGuidId>cd740a08-89b3-4490-a03e-63e158c82381</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;owner_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -29,8 +29,8 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/reminder/erase</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/reminder/view</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

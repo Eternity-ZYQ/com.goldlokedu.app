@@ -49,4 +49,24 @@
       <initValue>'5bc7cf85-e3bb-4d21-ad94-614555840c85'</initValue>
       <name>user_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>班级id</description>
+      <initValue>'91a8f66e-d2df-4a1c-a7fc-feb86ace3b75'</initValue>
+      <name>class_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>学校id</description>
+      <initValue>'7e8866de-f21b-479a-84de-7b495f3a8ac7'</initValue>
+      <name>user_school_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>帮助中心数据id</description>
+      <initValue>'6f9959c2-8c1c-4be8-b364-e1653124d911'</initValue>
+      <name>question_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>是否开通短信功能</description>
+      <initValue>true</initValue>
+      <name>can_send</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

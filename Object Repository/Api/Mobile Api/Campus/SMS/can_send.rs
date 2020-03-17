@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>Andorid获取app菜单</description>
-   <name>android_app_menu</name>
+   <description>学校是否开通短信业务</description>
+   <name>can_send</name>
    <tag></tag>
-   <elementGuidId>241d7cba-8bd4-4a3e-be9f-ca709180e3d9</elementGuidId>
+   <elementGuidId>7106de5f-6b67-4157-9fea-bfec58527850</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/menu/app/android?version=1.0</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/business/check/general/school/${GlobalVariable.user_school_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -40,12 +40,26 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 if(WS.verifyResponseStatusCode(response, 200)){
-	&quot;验证body中code为200&quot;
-	WS.verifyElementPropertyValue(response, 'code', 200)
+	
+	&quot;验证返回体正确:can_send&quot;
+	assertThat(response.getResponseText()).contains('can_send')
+	&quot;保存信息&quot;
+	save_message(response)
+}
+
+
+//保存信息
+private void save_message(ResponseObject response){
+	
+	def jsonSlurper = new JsonSlurper()
+	
+	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+	
+	&quot;保存can_send&quot;
+	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;can_send&quot;, jsonResponse.can_send)
 	
 	
 }
-
 
 
 

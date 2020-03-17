@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>Andorid获取app菜单</description>
-   <name>android_app_menu</name>
+   <description>打电话教师通讯录</description>
+   <name>teacher_mobile_contact_</name>
    <tag></tag>
-   <elementGuidId>241d7cba-8bd4-4a3e-be9f-ca709180e3d9</elementGuidId>
+   <elementGuidId>a66dad48-d15f-49c5-b5a1-9e68dbead549</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,14 +19,13 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/menu/app/android?version=1.0</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/teacher/app?module=mobile</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
-
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -39,20 +38,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
-	&quot;验证body中code为200&quot;
-	WS.verifyElementPropertyValue(response, 'code', 200)
-	
-	
-}
+
+&quot;文本code值:200&quot;
+WS.verifyElementPropertyValue(response, 'code', 200)
 
 
 
-
-
-
-
-
-</verificationScript>
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>Andorid获取app菜单</description>
-   <name>android_app_menu</name>
+   <description>打电话学生通讯录</description>
+   <name>student_mobile_contact</name>
    <tag></tag>
-   <elementGuidId>241d7cba-8bd4-4a3e-be9f-ca709180e3d9</elementGuidId>
+   <elementGuidId>66305182-dd5a-4954-954d-3fe6b8cc6f39</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/menu/app/android?version=1.0</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/studentByKlass?klass_id=${GlobalVariable.class_id}&amp;module=mobile&amp;type=app</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,20 +39,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
-	&quot;验证body中code为200&quot;
-	WS.verifyElementPropertyValue(response, 'code', 200)
-	
-	
-}
+
+&quot;文本code值:200&quot;
+WS.verifyElementPropertyValue(response, 'code', 200)
 
 
 
-
-
-
-
-
-</verificationScript>
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
