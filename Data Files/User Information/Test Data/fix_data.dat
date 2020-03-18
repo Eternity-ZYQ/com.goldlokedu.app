@@ -8,17 +8,37 @@
    <dataFileGUID>7a56de6f-1f5b-4904-a713-baa07c087517</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>%E6%B5%8B%E8%AF%95%E5%BA%84 %E6%B5%8B%E8%AF%95%E5%AD%A6%E7%94%9F%E5%BA%8472</data>
-   <data>18344264447 18344264447</data>
-   <data>null null</data>
+   <data>%E6%B5%8B%E8%AF%95%E5%BA%84 18344264447 %E6%B5%8B%E8%AF%95%E5%AD%A6%E7%94%9F%E5%BA%8472 18344264447 %E6%B5%8B%E8%AF%95%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E6%A0%87%E9%A2%981 %E6%B5%8B%E8%AF%95%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E5%86%85%E5%AE%B91</data>
+   <data>null null null null null null</data>
+   <data>null null null null null null</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>teacher_contact_search</name>
+      <name>teacher_contact_search_name</name>
       <size>3</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
-      <name>student_contact_search</name>
+      <name>teacher_contact_search_mobile</name>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>student_contact_search_name</name>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>3</columnIndex>
+      <name>student_contact_search_mobile</name>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>4</columnIndex>
+      <name>sms_template_title</name>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>5</columnIndex>
+      <name>sms_template_content</name>
       <size>3</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

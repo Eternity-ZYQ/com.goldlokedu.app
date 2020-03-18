@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>短信类型</description>
-   <name>sms_type</name>
+   <description>手机短信分组通讯录</description>
+   <name>sms_group_contact</name>
    <tag></tag>
-   <elementGuidId>fd842b07-1965-4b8b-bea7-765cfe031e98</elementGuidId>
+   <elementGuidId>db7e0fed-d839-4d35-a4c6-ed22c8eeead4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/hsi/category?school_id=${user_school_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/group_list</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,55 +39,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
-	&quot;返回体包含:data&quot;
-	assertThat(response.getResponseText()).contains('data')
-	
-	
-	
-	
-	
-	&quot;保存信息&quot;
-	save_message(response)
-	
-}
+
+&quot;文本code值:200&quot;
+WS.verifyElementPropertyValue(response, 'code', 200)
 
 
 
-
-//保存信息
-private void save_message(ResponseObject response){
-	
-	//def jsonSlurper = new JsonSlurper()
-	
-	//def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	//WS.comment(jsonResponse.data.size+&quot;&quot;)
-	
-	
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</verificationScript>
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

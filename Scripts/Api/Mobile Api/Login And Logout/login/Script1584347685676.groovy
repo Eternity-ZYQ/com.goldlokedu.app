@@ -26,3 +26,6 @@ WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/menu/io
 
 "获取小铃铛列表:10条"
 WS.sendRequestAndVerify(findTestObject("Api/Mobile Api/Campus/Bell/bell_reminder_search"),FailureHandling.CONTINUE_ON_FAILURE)
+
+
+CustomKeywords

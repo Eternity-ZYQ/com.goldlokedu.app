@@ -69,4 +69,39 @@
       <initValue>true</initValue>
       <name>can_send</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短信分组id</description>
+      <initValue>'6ffbda6b-f92d-4cd4-9ef9-c495f8fe0fb6'</initValue>
+      <name>sms_group_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>用户名字</description>
+      <initValue>'测试庄'</initValue>
+      <name>user_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短信类型</description>
+      <initValue>'b13765b6-deeb-4d5d-b3ec-17048d97bef4'</initValue>
+      <name>sms_type</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>发送短信内容</description>
+      <initValue>'「普宁市流沙第五小学」测试(收到请回复 1)'</initValue>
+      <name>sms_content</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>定时短信发送时间</description>
+      <initValue>'20200318T202934+0800'</initValue>
+      <name>sms_timed</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>定时短信draft_id</description>
+      <initValue>'201d7fda-b038-4c4c-94e0-475398b505a5'</initValue>
+      <name>sms_timed_item_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短信模板template_id</description>
+      <initValue>'069d848d-0205-4f30-9fac-a355d0a6ee56'</initValue>
+      <name>sms_template_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -94,7 +94,10 @@ private void save_message(ResponseObject response){
 	&quot;保存user_school_id&quot;
 	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;user_school_id&quot;, jsonResponse.user_school_id)
 	
+	&quot;保存user_name&quot;
+	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;user_name&quot;, jsonResponse.user_name)
 	
+	//WS.comment(GlobalVariable.user_name)
 	
 	
 	
