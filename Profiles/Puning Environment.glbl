@@ -30,8 +30,8 @@
       <name>G_short_timeout</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>移动端测试环境host</description>
-      <initValue>'http://192.168.2.243'</initValue>
+      <description>移动端普宁环境host</description>
+      <initValue>'http://api.pnyjy.com'</initValue>
       <name>MobileHost</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
