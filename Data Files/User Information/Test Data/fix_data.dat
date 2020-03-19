@@ -8,9 +8,9 @@
    <dataFileGUID>7a56de6f-1f5b-4904-a713-baa07c087517</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>%E6%B5%8B%E8%AF%95%E5%BA%84 18344264447 %E6%B5%8B%E8%AF%95%E5%AD%A6%E7%94%9F%E5%BA%8472 18344264447 %E6%B5%8B%E8%AF%95%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E6%A0%87%E9%A2%981 %E6%B5%8B%E8%AF%95%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E5%86%85%E5%AE%B91</data>
-   <data>null null null null null null</data>
-   <data>null null null null null null</data>
+   <data>%E6%B5%8B%E8%AF%95%E5%BA%84 18344264447 %E6%B5%8B%E8%AF%95%E5%AD%A6%E7%94%9F%E5%BA%8472 18344264447 %E6%B5%8B%E8%AF%95%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E6%A0%87%E9%A2%981 %E6%B5%8B%E8%AF%95%E6%B7%BB%E5%8A%A0%E6%A8%A1%E6%9D%BF%E5%86%85%E5%AE%B91 %E7%BC%96%E8%BE%91%E7%8F%AD%E8%AE%AD%E5%86%85%E5%AE%B9-%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%E5%A4%A9%E5%A4%A9%E5%90%91%E4%B8%8A</data>
+   <data>null null null null null null null</data>
+   <data>null null null null null null null</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>teacher_contact_search_name</name>
@@ -39,6 +39,11 @@
    <internalDataColumns>
       <columnIndex>5</columnIndex>
       <name>sms_template_content</name>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>6</columnIndex>
+      <name>class_training_content_slogan</name>
       <size>3</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>教师个人资料</description>
-   <name>individual_teacher</name>
+   <description>教师关联的班级</description>
+   <name>teacher_related_class</name>
    <tag></tag>
-   <elementGuidId>ee917387-c161-48c4-ac4c-bb7a49bd5363</elementGuidId>
+   <elementGuidId>cede1001-b74f-4d88-a51e-61aa6a6d9e5a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/individual/teacher/${GlobalVariable.user_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/teacher/information/${GlobalVariable.user_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,8 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
