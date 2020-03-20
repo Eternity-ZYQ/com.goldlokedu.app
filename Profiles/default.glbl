@@ -104,4 +104,14 @@
       <initValue>'069d848d-0205-4f30-9fac-a355d0a6ee56'</initValue>
       <name>sms_template_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>公告bulletin_id</description>
+      <initValue>'59af0b7f-1dd1-40b4-ae23-d634f8ac6e1c'</initValue>
+      <name>notice_bulletin_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>相册album_id</description>
+      <initValue>'c5b54880-645e-4c7d-926c-ef554a4c1db8'</initValue>
+      <name>album_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

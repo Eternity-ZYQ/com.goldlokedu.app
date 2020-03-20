@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>用户头像</description>
-   <name>user_head_image</name>
+   <description>最新的一条公告</description>
+   <name>new_notice</name>
    <tag></tag>
-   <elementGuidId>d2a07bb2-793d-4ce9-8086-e55dac92eebf</elementGuidId>
+   <elementGuidId>74622638-934a-481c-8374-69e06c8442fe</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,13 +19,14 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/user/avatar/${GlobalVariable.user_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/bulletin/board?klass_id=${GlobalVariable.class_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
+
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -41,9 +42,12 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
+	assertThat(response.getResponseText()).contains('bulletin_id')
+}
 
 
 
-}</verificationScript>
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>用户头像</description>
-   <name>user_head_image</name>
+   <description>获取相册列表</description>
+   <name>album_list</name>
    <tag></tag>
-   <elementGuidId>d2a07bb2-793d-4ce9-8086-e55dac92eebf</elementGuidId>
+   <elementGuidId>5d616ff5-8747-4ab2-8213-5200b9d223f3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,13 +19,14 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/user/avatar/${GlobalVariable.user_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/album/class/albums?class_id=${GlobalVariable.class_id}&amp;from=0&amp;size=15</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
+
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -38,12 +39,11 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
-
-
-
+	assertThat(response.getResponseText()).contains('total')
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
