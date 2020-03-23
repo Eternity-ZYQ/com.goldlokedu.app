@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>token值</description>
-      <initValue>'paH6UbZboprxVEyJvP_FkGiodjn65LuLkahPaG0CsgA5haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
+      <initValue>'QRp56ZLmf4GsuKc-Ht5AO985bMrB1k5CSv7vTLQoeaU5haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
       <name>access_token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -123,5 +123,20 @@
       <description>上传后关联或下载的picture_id</description>
       <initValue>'68a1276a-b59e-4ea3-9589-149ba7fa199f'</initValue>
       <name>album_upload_and_download_picture_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>动态moment_id</description>
+      <initValue>'5d7ecc09-19e0-48e6-9e97-7ce74651b575'</initValue>
+      <name>dynamic_moment_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>上传或下载的动态picture_id</description>
+      <initValue>'33f79c75-fb00-441b-8540-60f31afb152d'</initValue>
+      <name>dynamic_upload_or_download_picture_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>动态评论的comment_id</description>
+      <initValue>'41157293-8536-49a3-8366-846a55dd5dfb'</initValue>
+      <name>dynamic_comment_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
