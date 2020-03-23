@@ -29,8 +29,8 @@ public class FileSize {
 			System.out.println("文件不存在！！！");
 			return -1;
 		}
-		//return  file.length();
-		return  file;
+		return  file.length();
+		
 	}
 
 
@@ -38,20 +38,15 @@ public class FileSize {
 	@Keyword
 	public long getFileSize(String fileName){
 		FileChannel fc= null;
-	
+
 		File f= new File(fileName);
 		if (f.exists() && f.isFile()){
 			FileInputStream fis= new FileInputStream(f);
 			fc= fis.getChannel();
-			//logger.info(fc.size());
-			//return fc.size();
+		
 			return fc.size()
 
 
+		}
 	}
-
-
-}
-
-
 }

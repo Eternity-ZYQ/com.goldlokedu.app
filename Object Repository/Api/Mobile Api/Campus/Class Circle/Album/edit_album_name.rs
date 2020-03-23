@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>上传相册图片</description>
-   <name>upload_album_picture</name>
+   <description>修改相册名称</description>
+   <name>edit_album_name</name>
    <tag></tag>
-   <elementGuidId>5ea508be-f520-417b-9959-a3cdbad81eb2</elementGuidId>
+   <elementGuidId>bd9376d9-6571-4565-b26b-02846c82fd70</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;,
-  &quot;parameters&quot;: [
-    {
-      &quot;name&quot;: &quot;file&quot;,
-      &quot;value&quot;: &quot;Data Files/Image/Upload Test Image/timg.jpeg&quot;,
-      &quot;type&quot;: &quot;File&quot;
-    }
-  ]
+  &quot;text&quot;: &quot;{\n\t\&quot;album_name\&quot;: \&quot;修改后的相册名称\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${GlobalVariable.class_id}\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
-   <httpBodyType>form-data</httpBodyType>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>multipart/form-data</value>
+      <value>application/json</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -34,16 +28,9 @@
       <type>Main</type>
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>X-File-Size</name>
-      <type>Main</type>
-      <value>207554</value>
-   </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/album/storage?class_id=${GlobalVariable.class_id}</restUrl>
+   <restRequestMethod>PATCH</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/album/album/${GlobalVariable.album_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -63,13 +50,15 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-//def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;Data Files/Image/Upload Test Image/timg (1).jpeg&quot;)
-//WS.comment(size+&quot;&quot;)
-
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
-	assertThat(response.getResponseText()).contains('picture_id')
-}</verificationScript>
+	WS.verifyElementPropertyValue(response, 'result', 'Success')
+
+}
+
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -114,4 +114,14 @@
       <initValue>'c5b54880-645e-4c7d-926c-ef554a4c1db8'</initValue>
       <name>album_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>批量删除相册中的图片</description>
+      <initValue>'&quot;559b7c52-18b6-4f6f-9aca-9c4fa3aeb277&quot;, &quot;f71805e9-5724-42a8-b8dc-a4d0183c9f64&quot;'</initValue>
+      <name>album_pictures</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>上传后关联或下载的picture_id</description>
+      <initValue>'68a1276a-b59e-4ea3-9589-149ba7fa199f'</initValue>
+      <name>album_upload_and_download_picture_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
