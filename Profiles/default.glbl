@@ -70,9 +70,9 @@
       <name>can_send</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>短信分组id</description>
+      <description>分组id</description>
       <initValue>'6ffbda6b-f92d-4cd4-9ef9-c495f8fe0fb6'</initValue>
-      <name>sms_group_id</name>
+      <name>group_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>用户名字</description>
@@ -138,5 +138,15 @@
       <description>动态评论的comment_id</description>
       <initValue>'41157293-8536-49a3-8366-846a55dd5dfb'</initValue>
       <name>dynamic_comment_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>投票数据id</description>
+      <initValue>'71f946e1-6762-4dfc-ab97-c871511dedc9'</initValue>
+      <name>vote_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>投票图片id</description>
+      <initValue>'80c60577-c53b-4831-a24d-51c8fa6f851f'</initValue>
+      <name>vote_picture_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

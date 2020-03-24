@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>手机短信分组组员通讯录</description>
-   <name>sms_group_user_contact</name>
+   <description>学生通讯录,适用投票和通知</description>
+   <name>student_contact_new_no_rule</name>
    <tag></tag>
-   <elementGuidId>3a2ec9f1-c8f6-4608-bec7-fdced1b76d65</elementGuidId>
+   <elementGuidId>25f10ac6-a056-4c6a-82b3-1e2a7f1a99ba</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/group_users?id=${GlobalVariable.group_id}&amp;module=sms&amp;type=dorm</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/studentByKlass?klass_id=${GlobalVariable.class_id}&amp;module=vote&amp;type=app</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,11 +42,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200)
-
-
-
+	WS.verifyElementPropertyValue(response, 'code', 200)
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
