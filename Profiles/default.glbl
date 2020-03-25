@@ -55,6 +55,11 @@
       <name>class_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>班级名称</description>
+      <initValue>'六年级九班'</initValue>
+      <name>class_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>学校id</description>
       <initValue>'7e8866de-f21b-479a-84de-7b495f3a8ac7'</initValue>
       <name>user_school_id</name>
@@ -141,12 +146,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>投票数据id</description>
-      <initValue>'71f946e1-6762-4dfc-ab97-c871511dedc9'</initValue>
+      <initValue>'df6541cd-64c0-456f-9d3e-bc7850587dbe'</initValue>
       <name>vote_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>投票图片id</description>
       <initValue>'80c60577-c53b-4831-a24d-51c8fa6f851f'</initValue>
       <name>vote_picture_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>选项id</description>
+      <initValue>3399</initValue>
+      <name>voted_options_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

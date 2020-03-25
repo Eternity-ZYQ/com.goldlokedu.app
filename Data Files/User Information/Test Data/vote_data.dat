@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>投票的测试数据</description>
+   <name>vote_data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>0d03037a-5173-4e05-a9c3-accbe1790600</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>%E6%96%87%E5%AD%97%E6%8A%95%E7%A5%A8%E6%B5%8B%E8%AF%95%E6%A0%87%E9%A2%98 20200325T235959%2B0800 %E5%9B%BE%E7%89%87%E6%8A%95%E7%A5%A8%E6%B5%8B%E8%AF%95%E6%A0%87%E9%A2%98</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>publish_vote_title</name>
+      <size>1</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>vote_expiration</name>
+      <size>1</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>publish_pivture_vote_title</name>
+      <size>1</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
