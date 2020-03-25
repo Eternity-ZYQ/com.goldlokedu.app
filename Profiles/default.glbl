@@ -159,4 +159,9 @@
       <initValue>3399</initValue>
       <name>voted_options_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>通知的数据id</description>
+      <initValue>'3d17208c-d074-4476-aa09-daa32092963f'</initValue>
+      <name>notification_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>通知测试数据</description>
+   <name>notification_data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>55f77e12-0892-4a10-8a73-9cdf0517d88b</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>%E6%B5%8B%E8%AF%95%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%9A%E7%9F%A5%E6%A0%87%E9%A2%98 %E6%B5%8B%E8%AF%95%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%9A%E7%9F%A5%E5%86%85%E5%AE%B9</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>title</name>
+      <size>1</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>content</name>
+      <size>1</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
