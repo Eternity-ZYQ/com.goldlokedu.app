@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>判断是否为班主任</description>
-   <name>judge_adviser</name>
+   <description>管理的年级</description>
+   <name>manager_grade</name>
    <tag></tag>
-   <elementGuidId>621ec738-ea2b-4f5a-8368-415dec75ed85</elementGuidId>
+   <elementGuidId>4558dc6e-b858-4183-ad9b-9d8a138a8a68</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/teacher/judge_adviser?klass_id=${GlobalVariable.class_id}&amp;user_id=${GlobalVariable.user_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/teacher/manager_grade/${GlobalVariable.user_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -44,6 +44,8 @@ if(WS.verifyResponseStatusCode(response, 200)){
 
 &quot;文本code值:200&quot;
 WS.verifyElementPropertyValue(response, 'code', 200)
+
+
 
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

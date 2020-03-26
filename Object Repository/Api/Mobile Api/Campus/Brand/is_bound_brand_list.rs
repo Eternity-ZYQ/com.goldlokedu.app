@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>判断是否为班主任</description>
-   <name>judge_adviser</name>
+   <description>已绑定班牌列表</description>
+   <name>is_bound_brand_list</name>
    <tag></tag>
-   <elementGuidId>621ec738-ea2b-4f5a-8368-415dec75ed85</elementGuidId>
+   <elementGuidId>d3e09560-a1dd-4605-9fda-9d1f6336279e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;is_bound\&quot;: true,\n\t\&quot;from\&quot;: 0\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -18,8 +29,8 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/teacher/judge_adviser?klass_id=${GlobalVariable.class_id}&amp;user_id=${GlobalVariable.user_id}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/brand_mdm_service/binding/school</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,9 +53,11 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200)
+	assertThat(response.getResponseText()).contains('total')
 
-}</verificationScript>
+}
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

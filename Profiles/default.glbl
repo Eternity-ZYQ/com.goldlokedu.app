@@ -184,4 +184,9 @@
       <initValue>'e15bc067-f438-4471-bc22-c25cbf16bad9'</initValue>
       <name>leave_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>班牌设备id</description>
+      <initValue>'CC:79:CF:DA:36:86'</initValue>
+      <name>device_token</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
