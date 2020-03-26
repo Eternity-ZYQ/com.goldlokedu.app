@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>请假测试护具</description>
+   <name>leave_data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>55f8ae68-f265-4815-b150-3d05b176a471</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>%E6%88%91%E4%B8%8D%E5%90%8C%E6%84%8F%2C%E5%9B%A0%E4%B8%BA%E4%BD%A0%E8%AF%B4%E8%B0%8E</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>refuse_reason</name>
+      <size>1</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
