@@ -164,4 +164,19 @@
       <initValue>'3d17208c-d074-4476-aa09-daa32092963f'</initValue>
       <name>notification_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>学生id</description>
+      <initValue>'7ac583d0-6440-4e4f-a011-6c7f52d31f6c'</initValue>
+      <name>student_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>学生名字</description>
+      <initValue>'测试学生庄72'</initValue>
+      <name>student_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>联系家长聊天记录长度</description>
+      <initValue>133</initValue>
+      <name>next_poll_counter</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
