@@ -219,4 +219,19 @@
       <initValue>'05d67e56-59de-4999-89a4-b17015ccc769'</initValue>
       <name>interactive_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>图片路径</description>
+      <initValue>'/onlineclass/attachments/pictures/a057ebc5-edf0-4f9d-b4a2-34e7565d8097'</initValue>
+      <name>u_class_picture_uri</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>优课课程id</description>
+      <initValue>'a9435a53-4097-4c8f-aecb-40146ad73423'</initValue>
+      <name>u_class_course_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>优课课程视频id</description>
+      <initValue>'25f60165-3ac6-45e5-9636-3659bd9eac09'</initValue>
+      <name>u_class_course_video_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
