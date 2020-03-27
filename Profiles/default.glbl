@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>token值</description>
-      <initValue>'QRp56ZLmf4GsuKc-Ht5AO985bMrB1k5CSv7vTLQoeaU5haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
+      <initValue>'rCpw37KjgrHEZMPLJSYRh0uP75g6Iai6WgToGLkDut85haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
       <name>access_token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -208,5 +208,15 @@
       <description>成绩id</description>
       <initValue>'59919595-b3a9-481e-9ea6-6d9cffcc74ea'</initValue>
       <name>exam_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>直播课id</description>
+      <initValue>'klass_9c7603a1-c807-4817-8cf6-c920b7751cbe'</initValue>
+      <name>live_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>互动课id</description>
+      <initValue>'05d67e56-59de-4999-89a4-b17015ccc769'</initValue>
+      <name>interactive_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
