@@ -204,4 +204,9 @@
       <initValue>'b0ee43a3-4014-4df4-9d87-50694d12a5ca'</initValue>
       <name>homework_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>成绩id</description>
+      <initValue>'59919595-b3a9-481e-9ea6-6d9cffcc74ea'</initValue>
+      <name>exam_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
