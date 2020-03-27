@@ -189,4 +189,19 @@
       <initValue>'CC:79:CF:DA:36:86'</initValue>
       <name>device_token</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>作业图片id</description>
+      <initValue>'ce5ffe8f-4272-4a29-b4b4-6f3b270c6e50'</initValue>
+      <name>homework_picture_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>科目id</description>
+      <initValue>'813978f4-52d5-4df1-b2a3-c64b4f0561ad'</initValue>
+      <name>course_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>作业id</description>
+      <initValue>'b0ee43a3-4014-4df4-9d87-50694d12a5ca'</initValue>
+      <name>homework_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

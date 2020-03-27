@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>作业模块测试数据</description>
+   <name>homework_data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>a0d6c3e5-55c1-4062-a8ab-9a12a73ec161</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>%E6%B5%8B%E8%AF%95%E5%8F%91%E9%80%81%E4%BD%9C%E4%B8%9A%E5%86%85%E5%AE%B9</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>homework_content</name>
+      <size>1</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
