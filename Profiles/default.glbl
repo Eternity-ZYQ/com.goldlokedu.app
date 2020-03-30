@@ -249,4 +249,19 @@
       <initValue>'3f3fb3a8-38e0-47f8-bcab-32025c22c1c8'</initValue>
       <name>u_class_filter_publishing_house</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>课件课程详情</description>
+      <initValue>'77ffb577-9917-414b-afb9-e41c6942da30'</initValue>
+      <name>courseware_course_ware_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>题库数据id</description>
+      <initValue>'5c0e1a4d-5d40-4012-a261-2fff0464d55e'</initValue>
+      <name>item_bank_examination_paper_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>微课数据id</description>
+      <initValue>'c421f70e-16f4-4856-aa46-dda893eb1753'</initValue>
+      <name>micro_lecture_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
