@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>年级/学科筛选项</description>
-   <name>grade_or_course_filter</name>
+   <name>grade_or_course_filter_page</name>
    <tag></tag>
    <elementGuidId>cae3a7cf-48d9-4465-add5-b92f3cd7eedb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

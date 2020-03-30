@@ -234,4 +234,19 @@
       <initValue>'25f60165-3ac6-45e5-9636-3659bd9eac09'</initValue>
       <name>u_class_course_video_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>筛选年级code值</description>
+      <initValue>'g1'</initValue>
+      <name>u_class_filter_grade_code</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>筛选学科code值</description>
+      <initValue>'chinese'</initValue>
+      <name>u_class_filter_subject_code</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>筛选教材</description>
+      <initValue>'3f3fb3a8-38e0-47f8-bcab-32025c22c1c8'</initValue>
+      <name>u_class_filter_publishing_house</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
