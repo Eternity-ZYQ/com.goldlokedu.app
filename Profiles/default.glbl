@@ -264,4 +264,14 @@
       <initValue>'c421f70e-16f4-4856-aa46-dda893eb1753'</initValue>
       <name>micro_lecture_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短信署名</description>
+      <initValue>'啊啊啊'</initValue>
+      <name>sms_signature</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短信署名id</description>
+      <initValue>'4602849e-136f-430b-b5f2-fe34b6f27e3a'</initValue>
+      <name>sms_signature_id</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
