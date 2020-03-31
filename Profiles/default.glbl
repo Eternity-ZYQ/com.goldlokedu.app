@@ -60,6 +60,11 @@
       <name>class_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>年级id</description>
+      <initValue>'cf6f0909-c061-42d0-8fb3-68e4ef0e4282'</initValue>
+      <name>grade_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>学校id</description>
       <initValue>'7e8866de-f21b-479a-84de-7b495f3a8ac7'</initValue>
       <name>user_school_id</name>
@@ -273,5 +278,10 @@
       <description>短信署名id</description>
       <initValue>'4602849e-136f-430b-b5f2-fe34b6f27e3a'</initValue>
       <name>sms_signature_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>未上报体温数据id</description>
+      <initValue>'53c92b23-eb9d-45f6-9310-1c6d6b1b7280'</initValue>
+      <name>temperature_record_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
