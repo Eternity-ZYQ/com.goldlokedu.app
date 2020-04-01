@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>教师作业列表</description>
-   <name>homewrok_list</name>
+   <description>历史聊天记录</description>
+   <name>chat_history_latest_list</name>
    <tag></tag>
-   <elementGuidId>af49c5e8-d4fd-4a3b-956e-3230516f831f</elementGuidId>
+   <elementGuidId>fa2e23b4-2f3b-40d9-b748-8e899702590c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/teacher/homework?from=0&amp;size=10</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=15&amp;target_id=${GlobalVariable.teacher_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,17 +39,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
 
-	assertThat(response.getResponseText()).contains('total')
+	assertThat(response.getResponseText()).contains('next_poll_counter')
 
 }
-
-
-
-
-
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

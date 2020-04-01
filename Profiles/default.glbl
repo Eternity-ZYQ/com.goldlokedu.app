@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>token值</description>
-      <initValue>'rCpw37KjgrHEZMPLJSYRh0uP75g6Iai6WgToGLkDut85haf-JhmjdUAi3_DMoFnUW4lP9hRx0eFS8svWwA3W527WveWZuEq4MbWUFyhc44HTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
+      <initValue>'3m9aZSaUweyZBUlOCz_1exlJ0XEwLmzeuHWUQ_8kCEzZtBK6HL73RaxCQRC94cUVqzdAytoqp1PwPjUeMOpwvOopF89DZ9Sx7_Ppn-usZ2nTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
       <name>access_token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>用户ID值,唯一</description>
-      <initValue>'5bc7cf85-e3bb-4d21-ad94-614555840c85'</initValue>
+      <initValue>'7ac583d0-6440-4e4f-a011-6c7f52d31f6c'</initValue>
       <name>user_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -86,7 +86,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>用户名字</description>
-      <initValue>'测试庄'</initValue>
+      <initValue>'测试学生庄72'</initValue>
       <name>user_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -180,8 +180,8 @@
       <name>student_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>联系家长聊天记录长度</description>
-      <initValue>133</initValue>
+      <description>联系家长/联系老师聊天记录长度</description>
+      <initValue>135</initValue>
       <name>next_poll_counter</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -288,5 +288,10 @@
       <description>学院代码</description>
       <initValue>'10558'</initValue>
       <name>college_school_code</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>教师id</description>
+      <initValue>'5bc7cf85-e3bb-4d21-ad94-614555840c85'</initValue>
+      <name>teacher_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

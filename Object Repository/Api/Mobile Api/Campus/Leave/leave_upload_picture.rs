@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>作业时间筛选列表</description>
-   <name>homework_time_filter_list</name>
+   <description>请假模块图片上传</description>
+   <name>leave_upload_picture</name>
    <tag></tag>
-   <elementGuidId>9accb384-cbdf-4643-8847-b95115abe8fc</elementGuidId>
+   <elementGuidId>f5a03fa6-5c60-4eba-93f1-9f0990008722</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;Data Files/Image/Upload Test Image/timg(9).jpg&quot;,
+      &quot;type&quot;: &quot;File&quot;
+    }
+  ]
+}</httpBodyContent>
+   <httpBodyType>form-data</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>multipart/form-data</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>x-file-size</name>
+      <type>Main</type>
+      <value>36924</value>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -18,8 +42,8 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/teacher/homework?from=0&amp;size=10&amp;from_date=20200127T000000-0800&amp;to_date=20200327T235959-0800</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/leave/attachments/upload</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -39,13 +63,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200)){
-	
-	assertThat(response.getResponseText()).contains('total')
 
+	assertThat(response.getResponseText()).contains('total')
 }
 
-</verificationScript>
+//def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;Data Files/Image/Upload Test Image/timg(9).jpg&quot;)
+//WS.comment(''+size)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

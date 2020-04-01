@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>学生班级信息</description>
-   <name>student_information_class</name>
+   <description>查询学生班级信息</description>
+   <name>query_student_information_class</name>
    <tag></tag>
    <elementGuidId>2853522c-35ab-4f38-9733-e71ac765a633</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
