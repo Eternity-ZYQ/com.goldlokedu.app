@@ -284,4 +284,9 @@
       <initValue>'53c92b23-eb9d-45f6-9310-1c6d6b1b7280'</initValue>
       <name>temperature_record_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>学院代码</description>
+      <initValue>'10558'</initValue>
+      <name>college_school_code</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
