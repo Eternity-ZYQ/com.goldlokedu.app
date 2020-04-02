@@ -294,4 +294,19 @@
       <initValue>'5bc7cf85-e3bb-4d21-ad94-614555840c85'</initValue>
       <name>teacher_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>选课计划id</description>
+      <initValue>'f9d87ff8-de42-46a8-9be2-f16c815cec40'</initValue>
+      <name>course_select_plan_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>选课选项id</description>
+      <initValue>'ced872b0-6638-4bce-a7b0-dfa4056aad33'</initValue>
+      <name>combination_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>选项内容</description>
+      <initValue>'单打独斗'</initValue>
+      <name>combination_name</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
