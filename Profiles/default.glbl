@@ -3,7 +3,7 @@
    <description></description>
    <name>default</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>ios包名</description>
       <initValue>'com.goldlokedu.app'</initValue>
@@ -36,42 +36,42 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>token值</description>
-      <initValue>'3m9aZSaUweyZBUlOCz_1exlJ0XEwLmzeuHWUQ_8kCEzZtBK6HL73RaxCQRC94cUVqzdAytoqp1PwPjUeMOpwvOopF89DZ9Sx7_Ppn-usZ2nTVgT2V3LaXtEDseLmqVZXNwIpg7xP47vG9qBa84eQ-SAutJEnvFHIf_dqzlvyJvQ'</initValue>
+      <initValue>''</initValue>
       <name>access_token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>小铃铛数据id</description>
-      <initValue>'c672fd0b-67d9-4a02-b1d0-077519f9b8b9'</initValue>
+      <initValue>''</initValue>
       <name>reminder_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>用户ID值,唯一</description>
-      <initValue>'7ac583d0-6440-4e4f-a011-6c7f52d31f6c'</initValue>
+      <initValue>''</initValue>
       <name>user_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>班级id</description>
-      <initValue>'91a8f66e-d2df-4a1c-a7fc-feb86ace3b75'</initValue>
+      <initValue>''</initValue>
       <name>class_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>班级名称</description>
-      <initValue>'六年级九班'</initValue>
+      <initValue>''</initValue>
       <name>class_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>年级id</description>
-      <initValue>'cf6f0909-c061-42d0-8fb3-68e4ef0e4282'</initValue>
+      <initValue>''</initValue>
       <name>grade_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>学校id</description>
-      <initValue>'7e8866de-f21b-479a-84de-7b495f3a8ac7'</initValue>
+      <initValue>''</initValue>
       <name>user_school_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>帮助中心数据id</description>
-      <initValue>'6f9959c2-8c1c-4be8-b364-e1653124d911'</initValue>
+      <initValue>''</initValue>
       <name>question_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -81,22 +81,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>分组id</description>
-      <initValue>'6ffbda6b-f92d-4cd4-9ef9-c495f8fe0fb6'</initValue>
+      <initValue>''</initValue>
       <name>group_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>用户名字</description>
-      <initValue>'测试学生庄72'</initValue>
+      <initValue>''</initValue>
       <name>user_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>短信类型</description>
-      <initValue>'b13765b6-deeb-4d5d-b3ec-17048d97bef4'</initValue>
+      <initValue>''</initValue>
       <name>sms_type</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>发送短信内容</description>
-      <initValue>'「普宁市流沙第五小学」测试(收到请回复 1)'</initValue>
+      <initValue>''</initValue>
       <name>sms_content</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -106,77 +106,77 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>定时短信draft_id</description>
-      <initValue>'201d7fda-b038-4c4c-94e0-475398b505a5'</initValue>
+      <initValue>''</initValue>
       <name>sms_timed_item_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>短信模板template_id</description>
-      <initValue>'069d848d-0205-4f30-9fac-a355d0a6ee56'</initValue>
+      <initValue>''</initValue>
       <name>sms_template_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>公告bulletin_id</description>
-      <initValue>'59af0b7f-1dd1-40b4-ae23-d634f8ac6e1c'</initValue>
+      <initValue>''</initValue>
       <name>notice_bulletin_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>相册album_id</description>
-      <initValue>'c5b54880-645e-4c7d-926c-ef554a4c1db8'</initValue>
+      <initValue>''</initValue>
       <name>album_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>批量删除相册中的图片</description>
-      <initValue>'&quot;559b7c52-18b6-4f6f-9aca-9c4fa3aeb277&quot;, &quot;f71805e9-5724-42a8-b8dc-a4d0183c9f64&quot;'</initValue>
+      <initValue>''</initValue>
       <name>album_pictures</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>上传后关联或下载的picture_id</description>
-      <initValue>'68a1276a-b59e-4ea3-9589-149ba7fa199f'</initValue>
+      <initValue>''</initValue>
       <name>album_upload_and_download_picture_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>动态moment_id</description>
-      <initValue>'5d7ecc09-19e0-48e6-9e97-7ce74651b575'</initValue>
+      <initValue>''</initValue>
       <name>dynamic_moment_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>上传或下载的动态picture_id</description>
-      <initValue>'33f79c75-fb00-441b-8540-60f31afb152d'</initValue>
+      <initValue>''</initValue>
       <name>dynamic_upload_or_download_picture_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>动态评论的comment_id</description>
-      <initValue>'41157293-8536-49a3-8366-846a55dd5dfb'</initValue>
+      <initValue>''</initValue>
       <name>dynamic_comment_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>投票数据id</description>
-      <initValue>'df6541cd-64c0-456f-9d3e-bc7850587dbe'</initValue>
+      <initValue>''</initValue>
       <name>vote_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>投票图片id</description>
-      <initValue>'80c60577-c53b-4831-a24d-51c8fa6f851f'</initValue>
+      <initValue>''</initValue>
       <name>vote_picture_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>选项id</description>
-      <initValue>3399</initValue>
+      <initValue>0</initValue>
       <name>voted_options_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>通知的数据id</description>
-      <initValue>'3d17208c-d074-4476-aa09-daa32092963f'</initValue>
+      <initValue>''</initValue>
       <name>notification_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>学生id</description>
-      <initValue>'7ac583d0-6440-4e4f-a011-6c7f52d31f6c'</initValue>
+      <initValue>''</initValue>
       <name>student_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>学生名字</description>
-      <initValue>'测试学生庄72'</initValue>
+      <initValue>''</initValue>
       <name>student_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -186,127 +186,127 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>请假id</description>
-      <initValue>'e15bc067-f438-4471-bc22-c25cbf16bad9'</initValue>
+      <initValue>''</initValue>
       <name>leave_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>班牌设备id</description>
-      <initValue>'CC:79:CF:DA:36:86'</initValue>
+      <initValue>''</initValue>
       <name>device_token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>作业图片id</description>
-      <initValue>'ce5ffe8f-4272-4a29-b4b4-6f3b270c6e50'</initValue>
+      <initValue>''</initValue>
       <name>homework_picture_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>科目id</description>
-      <initValue>'813978f4-52d5-4df1-b2a3-c64b4f0561ad'</initValue>
+      <initValue>''</initValue>
       <name>course_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>作业id</description>
-      <initValue>'b0ee43a3-4014-4df4-9d87-50694d12a5ca'</initValue>
+      <initValue>''</initValue>
       <name>homework_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>成绩id</description>
-      <initValue>'59919595-b3a9-481e-9ea6-6d9cffcc74ea'</initValue>
+      <initValue>''</initValue>
       <name>exam_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>直播课id</description>
-      <initValue>'klass_9c7603a1-c807-4817-8cf6-c920b7751cbe'</initValue>
+      <initValue>''</initValue>
       <name>live_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>互动课id</description>
-      <initValue>'05d67e56-59de-4999-89a4-b17015ccc769'</initValue>
+      <initValue>''</initValue>
       <name>interactive_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>图片路径</description>
-      <initValue>'/onlineclass/attachments/pictures/a057ebc5-edf0-4f9d-b4a2-34e7565d8097'</initValue>
+      <initValue>''</initValue>
       <name>u_class_picture_uri</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>优课课程id</description>
-      <initValue>'a9435a53-4097-4c8f-aecb-40146ad73423'</initValue>
+      <initValue>''</initValue>
       <name>u_class_course_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>优课课程视频id</description>
-      <initValue>'25f60165-3ac6-45e5-9636-3659bd9eac09'</initValue>
+      <initValue>''</initValue>
       <name>u_class_course_video_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>筛选年级code值</description>
-      <initValue>'g1'</initValue>
+      <initValue>''</initValue>
       <name>u_class_filter_grade_code</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>筛选学科code值</description>
-      <initValue>'chinese'</initValue>
+      <initValue>''</initValue>
       <name>u_class_filter_subject_code</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>筛选教材</description>
-      <initValue>'3f3fb3a8-38e0-47f8-bcab-32025c22c1c8'</initValue>
+      <initValue>''</initValue>
       <name>u_class_filter_publishing_house</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>课件课程详情</description>
-      <initValue>'77ffb577-9917-414b-afb9-e41c6942da30'</initValue>
+      <initValue>''</initValue>
       <name>courseware_course_ware_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>题库数据id</description>
-      <initValue>'5c0e1a4d-5d40-4012-a261-2fff0464d55e'</initValue>
+      <initValue>''</initValue>
       <name>item_bank_examination_paper_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>微课数据id</description>
-      <initValue>'c421f70e-16f4-4856-aa46-dda893eb1753'</initValue>
+      <initValue>''</initValue>
       <name>micro_lecture_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>短信署名</description>
-      <initValue>'啊啊啊'</initValue>
+      <initValue>''</initValue>
       <name>sms_signature</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>短信署名id</description>
-      <initValue>'4602849e-136f-430b-b5f2-fe34b6f27e3a'</initValue>
+      <initValue>''</initValue>
       <name>sms_signature_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>未上报体温数据id</description>
-      <initValue>'53c92b23-eb9d-45f6-9310-1c6d6b1b7280'</initValue>
+      <initValue>''</initValue>
       <name>temperature_record_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>学院代码</description>
-      <initValue>'10558'</initValue>
+      <initValue>''</initValue>
       <name>college_school_code</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>教师id</description>
-      <initValue>'5bc7cf85-e3bb-4d21-ad94-614555840c85'</initValue>
+      <initValue>''</initValue>
       <name>teacher_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>选课计划id</description>
-      <initValue>'f9d87ff8-de42-46a8-9be2-f16c815cec40'</initValue>
+      <initValue>''</initValue>
       <name>course_select_plan_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>选课选项id</description>
-      <initValue>'ced872b0-6638-4bce-a7b0-dfa4056aad33'</initValue>
+      <initValue>''</initValue>
       <name>combination_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>选项内容</description>
-      <initValue>'单打独斗'</initValue>
+      <initValue>''</initValue>
       <name>combination_name</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

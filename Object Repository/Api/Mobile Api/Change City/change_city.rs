@@ -32,13 +32,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-WS.verifyResponseStatusCode(response, 200)
+if(WS.verifyResponseStatusCode(response, 200)){
 
 &quot;文本code值:200&quot;
 WS.verifyElementPropertyValue(response, 'code', 200)
 
 
 
-</verificationScript>
+
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

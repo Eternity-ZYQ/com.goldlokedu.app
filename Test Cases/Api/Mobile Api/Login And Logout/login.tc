@@ -3,6 +3,8 @@
    <description></description>
    <name>login</name>
    <tag></tag>
-   <comment></comment>
+   <comment>&quot; + jsonResponse
+jsonResponse.data[1].children[1].url
+GlobalVariable.MobileHost</comment>
    <testCaseGuid>a5c0ef87-8cc1-4540-8bad-66e0d854300c</testCaseGuid>
 </TestCaseEntity>

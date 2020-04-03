@@ -11,9 +11,9 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>83979865-4e8a-4225-a87d-2c167ba3cde4</testSuiteGuid>
    <testCaseLink>
-      <guid>38f0a3d1-1545-47f3-b59c-a96b50c52219</guid>
+      <guid>a5f2d208-db9a-4198-a582-b6515f08cb0c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Login And Logout/test</testCaseId>
+      <testCaseId>Test Cases/Api/Mobile Api/Login And Logout/login</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -61,7 +61,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 if(WS.verifyResponseStatusCode(response, 200)){
 	
 	&quot;保存用户信息&quot;
-	save_message(response)	
+	//save_message(response)	
 }
 
 
