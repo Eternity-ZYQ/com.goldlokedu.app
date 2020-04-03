@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>登录用例</description>
    <name>login</name>
    <tag></tag>
-   <comment>&quot; + jsonResponse
-jsonResponse.data[1].children[1].url
-GlobalVariable.MobileHost</comment>
+   <comment>登录用例:</comment>
    <testCaseGuid>a5c0ef87-8cc1-4540-8bad-66e0d854300c</testCaseGuid>
 </TestCaseEntity>

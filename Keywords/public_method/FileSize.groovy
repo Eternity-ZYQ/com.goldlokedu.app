@@ -30,7 +30,6 @@ public class FileSize {
 			return -1;
 		}
 		return  file.length();
-		
 	}
 
 
@@ -43,10 +42,8 @@ public class FileSize {
 		if (f.exists() && f.isFile()){
 			FileInputStream fis= new FileInputStream(f);
 			fc= fis.getChannel();
-		
+
 			return fc.size()
-
-
 		}
 	}
 }

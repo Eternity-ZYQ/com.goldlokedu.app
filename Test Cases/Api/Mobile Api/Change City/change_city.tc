@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>选择城市</description>
+   <name>change_city</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1e34b93-49d6-47da-8af0-77790e9e155c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>首页轮播图</description>
+   <name>carousel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ec413904-ea1b-4bdf-be72-1745e8866700</testCaseGuid>
+</TestCaseEntity>

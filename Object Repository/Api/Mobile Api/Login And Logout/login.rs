@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>登录接口</description>
-   <name>student_login</name>
+   <name>login</name>
    <tag></tag>
-   <elementGuidId>2d4026b5-3e03-4117-819c-715853d95c85</elementGuidId>
+   <elementGuidId>f2e6867b-c657-4ea4-9dcd-a801ffd5232e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -30,15 +30,15 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('User Information/Account/student').getValue(1, 1)</defaultValue>
-      <description>学生账号</description>
+      <defaultValue>''</defaultValue>
+      <description>账号</description>
       <id>0cb87c45-32da-458b-b067-37a6c663d0e9</id>
       <masked>false</masked>
       <name>account</name>
    </variables>
    <variables>
-      <defaultValue>findTestData('User Information/Account/student').getValue(2, 1)</defaultValue>
-      <description>学生密码</description>
+      <defaultValue>''</defaultValue>
+      <description>密码</description>
       <id>46a04cfd-83f9-4835-92ee-15c48db0623c</id>
       <masked>false</masked>
       <name>password</name>
@@ -51,6 +51,8 @@ import com.kms.katalon.core.webservice.verification.WSResponseManager
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testdata.TestData as TestData
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
@@ -58,10 +60,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;登录请求成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200,FailureHandling.OPTIONAL)){
 	
-	//&quot;保存用户信息&quot;
-	//save_message(response)	
+	
 }
 
 
@@ -116,8 +117,9 @@ private void save_message(ResponseObject response){
 
 
 
-def jsonSlurper = new JsonSlurper()
 
-def jsonResponse = jsonSlurper.parseText(response.getResponseText())</verificationScript>
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

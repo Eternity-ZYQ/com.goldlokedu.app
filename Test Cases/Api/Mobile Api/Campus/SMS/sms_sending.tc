@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>短信用例</description>
+   <name>sms_sending</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39d59a2c-a83a-4d06-8cd1-f5222da50db2</testCaseGuid>
+</TestCaseEntity>
