@@ -25,7 +25,7 @@ public class SystemTime {
 	public String get_system_time(){
 		Date date = new Date()
 
-		SimpleDateFormat df = new SimpleDateFormat('yy-MM-dd HH:mm:ss')
+		SimpleDateFormat df = new SimpleDateFormat('yyyy-MM-dd HH:mm:ss')
 
 		String time = df.format(date)
 

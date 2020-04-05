@@ -31,7 +31,13 @@
    <testCaseLink>
       <guid>55a1bff1-de41-4637-ba88-423256cd5040</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Carousel/carousel</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5683da49-5b9d-45c1-8e5c-1783249e0b9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sending</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

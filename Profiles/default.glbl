@@ -3,7 +3,7 @@
    <description></description>
    <name>default</name>
    <tag></tag>
-   <defaultProfile>false</defaultProfile>
+   <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>ios包名</description>
       <initValue>'com.goldlokedu.app'</initValue>
@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>移动端测试环境host</description>
-      <initValue>'http://192.168.2.243'</initValue>
+      <initValue>'http://goldokapp.natapp4.cc'</initValue>
       <name>MobileHost</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -161,7 +161,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>选项id</description>
-      <initValue>0</initValue>
+      <initValue>3399</initValue>
       <name>voted_options_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
