@@ -24,14 +24,14 @@ def jsonResponse = get_jsonResponse(response)
 
 //必须该学校开通了短信，才能发送短信
 if (jsonResponse.can_send) {
-    '成功发送短信'
-    success_now_sms()
+//    '成功发送及时短信'
+//    success_now_sms()
+//	
+	'发送定时短信'
+	success_timed_sms()
 } else {
     WS.comment('该学校未开通短信服务')
 }
-
-
-
 
 
 
@@ -69,6 +69,44 @@ def void success_now_sms() {
 	
 	'请求发送短信接口'
 	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str]))
+	
+	//WS.comment(response.responseText)
+	
+	//请求接口成功
+	if(WS.verifyResponseStatusCode(response, 200)){
+		
+		"文本result值:Success"
+		WS.verifyElementPropertyValue(response, 'result', 'Success')
+	
+	}
+		
+}
+
+
+def void success_timed_sms() {
+	//成功发送定时短信
+	//sms_type,sms_signature,sms_signature_id,sms_content
+	'保存sms_type到全局变量'
+	save_sms_type()
+	
+	'保存sms_signature，sms_signature_id'
+	save_sms_signature_and_sms_signature_id()
+	
+	'获取要发送的短信内容sms_content'
+	def sms_content=get_time_sms_contnt()
+	
+	'输出sms_content'
+	WS.comment(sms_content)
+
+	'组合接口字段address'
+	def address=address_factory()
+	
+	'设置定时发送时间：目前时间+1年'
+	sms_timed=CustomKeywords.'time.SystemTime.get_future_time'(1)
+	
+	
+	'请求发送定时短信接口'
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed]))
 	
 	//WS.comment(response.responseText)
 	
@@ -130,6 +168,18 @@ def String get_sms_contnt(){
 	return sms_content
 	
 }
+
+//获取发送定时短信的内容：当前时间时间+'接口测试定时短信'
+def String get_time_sms_contnt(){
+	
+	def time=CustomKeywords.'time.SystemTime.get_system_time'()
+	
+	def sms_content=time+'接口测试定时短信'
+	
+	return sms_content
+	
+}
+
 
 //获取一级加载级联系人列表：班级
 def Object get_first_order_contact(String object_path){
@@ -235,6 +285,7 @@ def String get_student_address(String student_ids,String klass_ids){
 
 	return student_address
 }
+
 
 
 //address进行组合

@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>address_str</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7f795254-f1e7-427a-9599-0ee6dfadb452</id>
+      <masked>false</masked>
+      <name>sms_timed</name>
+   </variable>
 </TestCaseEntity>

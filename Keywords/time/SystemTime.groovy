@@ -21,6 +21,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class SystemTime {
+
+
 	@Keyword
 	public String get_system_time(){
 		Date date = new Date()
@@ -35,7 +37,6 @@ public class SystemTime {
 
 
 
-
 	@Keyword
 	public String get_day_time(){
 		Date date = new Date()
@@ -46,4 +47,42 @@ public class SystemTime {
 
 		return time
 	}
+
+
+	@Keyword
+	public String get_future_time(int year){
+		Date date = new Date()
+		SimpleDateFormat df = new SimpleDateFormat('yyyy')
+		String str_years = df.format(date)
+		int years=Integer.parseInt(str_years)
+		int Month=date.getMonth()+1
+		int day=date.getDate()
+		int hours=date.getHours()
+		int minutes=date.getMinutes()
+		int seconds=date.getSeconds()
+		
+		
+	
+		String time = ''+(years+year)+full_time(Month)+full_time(day)+'T'+full_time(hours)+full_time(minutes)+full_time(seconds)+'+0800'
+
+		return time
+	}
+	
+	
+	public String full_time(int time){
+		String str_time
+		if(time<10){
+			
+			str_time='0'+time
+		}else{
+		
+			str_time=''+time
+		}
+		
+		
+		return str_time
+	}
+	
+	
+	
 }
