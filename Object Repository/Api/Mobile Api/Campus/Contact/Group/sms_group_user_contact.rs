@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/group_users?id=${GlobalVariable.group_id}&amp;module=sms&amp;type=dorm</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/group_users?id=${group_id}&amp;module=sms&amp;type=dorm</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>238e428a-7c66-4b12-a804-8aace980df1b</id>
+      <masked>false</masked>
+      <name>group_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

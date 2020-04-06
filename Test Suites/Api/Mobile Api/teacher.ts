@@ -39,5 +39,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sending</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b59ebed3-7da6-4c7c-bcb5-1056d5a2f3f8</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
