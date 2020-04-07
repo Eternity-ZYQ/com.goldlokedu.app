@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;name\&quot;: \&quot;${add_album_name}\&quot;,\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${GlobalVariable.class_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;name\&quot;: \&quot;${add_album_name}\&quot;,\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -42,6 +42,13 @@
       <id>b13070d6-c7e7-425b-8537-6cd1d6eb7dc0</id>
       <masked>false</masked>
       <name>add_album_name</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b0254f75-3904-490b-bd6f-f41dfb1c4793</id>
+      <masked>false</masked>
+      <name>class_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

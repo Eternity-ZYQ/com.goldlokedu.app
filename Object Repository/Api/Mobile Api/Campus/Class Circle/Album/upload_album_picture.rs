@@ -39,16 +39,30 @@
       <matchCondition>equals</matchCondition>
       <name>X-File-Size</name>
       <type>Main</type>
-      <value>207554</value>
+      <value>${X-File-Size}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/album/storage?class_id=${GlobalVariable.class_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/album/storage?class_id=${class_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a75f96c0-b99d-4289-acb0-a048b574502c</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
+   <variables>
+      <defaultValue>207554</defaultValue>
+      <description></description>
+      <id>9f21d262-0fc1-4486-a425-faf9e3705b98</id>
+      <masked>false</masked>
+      <name>X-File-Size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

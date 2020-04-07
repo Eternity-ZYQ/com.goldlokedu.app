@@ -30,12 +30,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/album/album/${GlobalVariable.album_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/album/album/${album_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d364a0c8-1cfc-4420-bf54-db864aa91efb</id>
+      <masked>false</masked>
+      <name>album_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

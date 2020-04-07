@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;class_id\&quot;: \&quot;91a8f66e-d2df-4a1c-a7fc-feb86ace3b75\&quot;,\n\t\&quot;pictures\&quot;: [${GlobalVariable.album_pictures}]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;class_id\&quot;: \&quot;${class_id\&quot;,\n\t\&quot;pictures\&quot;: [${album_pictures}]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,20 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>58f43c92-e61a-4bd7-b618-c76927315577</id>
+      <masked>false</masked>
+      <name>album_pictures</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5cdf3f14-3b28-41bc-8a35-f1b6f0157295</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

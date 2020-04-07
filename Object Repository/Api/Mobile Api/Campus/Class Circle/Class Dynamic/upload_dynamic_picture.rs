@@ -49,6 +49,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>101668</defaultValue>
+      <description></description>
+      <id>56751a42-110d-41d7-a7f0-ab61b9638ba1</id>
+      <masked>false</masked>
+      <name>x-file-size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

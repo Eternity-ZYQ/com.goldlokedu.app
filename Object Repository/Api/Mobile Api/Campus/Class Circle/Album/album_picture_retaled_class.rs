@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;class_id\&quot;: \&quot;${GlobalVariable.class_id}\&quot;,\n\t\&quot;pictures\&quot;: [{\n\t\t\&quot;picture_id\&quot;: \&quot;8dd25a57-917a-47d9-8971-c630c32a6575\&quot;,\n\t\t\&quot;name\&quot;: \&quot;image_test.jpg\&quot;\n\t}],\n\t\&quot;album_id\&quot;: \&quot;${GlobalVariable.album_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;,\n\t\&quot;pictures\&quot;: [{\n\t\t\&quot;picture_id\&quot;: \&quot;${picture_id}\&quot;,\n\t\t\&quot;name\&quot;: \&quot;${name}\&quot;\n\t}],\n\t\&quot;album_id\&quot;: \&quot;${album_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,34 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a698a7ff-2b64-4dcf-adab-da0d4bc0d47d</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>83110756-8b08-475f-a3ad-7133b50691d0</id>
+      <masked>false</masked>
+      <name>picture_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d084f2f1-7d18-4b16-8566-4d095d4df153</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>62006bb4-b69a-45d0-a3e3-a13908433e60</id>
+      <masked>false</masked>
+      <name>album_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

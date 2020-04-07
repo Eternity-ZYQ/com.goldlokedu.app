@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/album/picture/transport/${GlobalVariable.album_upload_and_download_picture_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/album/picture/transport/${album_upload_and_download_picture_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bd9a98eb-2535-49db-b979-df5688183a6f</id>
+      <masked>false</masked>
+      <name>album_upload_and_download_picture_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

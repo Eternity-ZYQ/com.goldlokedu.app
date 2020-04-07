@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;replied_user\&quot;: {\n\t\t\&quot;creator_name\&quot;: \&quot;测试学生庄72\&quot;,\n\t\t\&quot;creator\&quot;: \&quot;7ac583d0-6440-4e4f-a011-6c7f52d31f6c\&quot;\n\t},  \n\t\&quot;content\&quot;: \&quot;接口评论回复\&quot;,\n\t\&quot;moment_id\&quot;: \&quot;${GlobalVariable.dynamic_moment_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;replied_user\&quot;: {\n\t\t\&quot;creator_name\&quot;: \&quot;${creator_name}\&quot;,\n\t\t\&quot;creator\&quot;: \&quot;${creator}\&quot;\n\t},  \n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;moment_id\&quot;: \&quot;${dynamic_moment_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,34 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c9f65c71-de26-4327-8055-2b90493a2043</id>
+      <masked>false</masked>
+      <name>dynamic_moment_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f2e09251-efd9-423c-9490-d0ec1c2e5557</id>
+      <masked>false</masked>
+      <name>creator_name</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b0d42e6d-b4d6-4d2c-b4b3-dc25ea529b37</id>
+      <masked>false</masked>
+      <name>creator</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dda8deb3-f3db-473b-8ca1-7b2516f0e2ef</id>
+      <masked>false</masked>
+      <name>content</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

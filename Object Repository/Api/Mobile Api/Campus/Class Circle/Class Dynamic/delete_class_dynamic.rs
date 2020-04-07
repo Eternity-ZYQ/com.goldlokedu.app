@@ -23,12 +23,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/moment/class_moments/${GlobalVariable.class_id}/${GlobalVariable.dynamic_moment_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/moment/class_moments/${class_id}/${dynamic_moment_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bb13ce1c-9cf6-454c-af46-262023c051df</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6111ecb4-106d-4081-ac2e-503c08092a53</id>
+      <masked>false</masked>
+      <name>dynamic_moment_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
