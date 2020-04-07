@@ -108,7 +108,7 @@ def void success_timed_sms() {
 	'请求发送定时短信接口'
 	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed]))
 	
-	//WS.comment(response.responseText)
+	WS.comment('发送定时短信接'+response.responseText)
 	
 	//请求接口成功
 	if(WS.verifyResponseStatusCode(response, 200)){
@@ -128,9 +128,10 @@ def void save_sms_type() {
 
     def jsonResponse = get_jsonResponse(response)
 
+	WS.comment('sms_type接口数据'+jsonResponse)
 	def num=(int)(Math.random()*100)%jsonResponse.data.size
 	
-	WS.comment('sms_type:'+jsonResponse.data[num].category_id)
+	//WS.comment('sms_type:'+jsonResponse.data[num].category_id)
 	
 	
 	CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_type', jsonResponse.data[num].category_id)
@@ -144,16 +145,35 @@ def void save_sms_signature_and_sms_signature_id(){
 
 	def jsonResponse = get_jsonResponse(response)
 	
-	def num=(int)(Math.random()*100)%jsonResponse.data.size
-	//WS.comment('size:'+jsonResponse.data.size)
-	//WS.comment('num:'+num)
-	//WS.comment('sms_signature:'+jsonResponse.data[num].name)
-	//WS.comment('sms_signature_id'+jsonResponse.data[num].signature_id)
+	WS.comment('sms_signature接口数据:'+jsonResponse)
 	
-	'保存sms_signature到全局变量'
-	CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature', jsonResponse.data[num].name)
-	'保存sms_signature_id到全局变量'
-	CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature_id', jsonResponse.data[num].signature_id)
+	if(jsonResponse.data.size==0){
+		
+		'保存sms_signature到全局变量'
+		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature', '')
+		'保存sms_signature_id到全局变量'
+		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature_id', '')
+		
+		
+	}else if(jsonResponse.data.size>0){
+		
+		def num=(int)(Math.random()*100)%jsonResponse.data.size
+		
+		//WS.comment('num:'+num)
+		//WS.comment('sms_signature:'+jsonResponse.data[num].name)
+		//WS.comment('sms_signature_id'+jsonResponse.data[num].signature_id)
+		
+		'保存sms_signature到全局变量'
+		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature', jsonResponse.data[num].name)
+		'保存sms_signature_id到全局变量'
+		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature_id', jsonResponse.data[num].signature_id)
+		
+	}else{
+	
+		WS.comment('短信署名接口异常')
+	
+	}
+	
 	
 	
 }
@@ -200,7 +220,7 @@ def Object get_first_order_contact(String object_path){
 //获取二级加载学生联系人列表
 def Object get_second_order_contact(String object_path,String class_id){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path,[('class_id'):class_id]))
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('class_id'):class_id]))
 	
 	if(WS.verifyResponseStatusCode(response, 200)){
 		
@@ -290,8 +310,7 @@ def String get_student_address(String student_ids,String klass_ids){
 
 //address进行组合
 def String address_factory(){
-	"请求教师通讯录接口获取数据"
-	def teacher_jsonResponse=get_first_order_contact("Object Repository/Api/Mobile Api/Campus/Contact/Teacher/sms_teacher_contact")
+	
 	def teacher_ids     		//teacher_ids 教师id字段
 	def num						//未分组随机数
 	def num1					//其他部门随机数
@@ -308,28 +327,30 @@ def String address_factory(){
 	def num4					//宿舍随机数
 	def num5					//分组学生随机数
 	
+	"请求教师通讯录接口获取数据"
+	def teacher_jsonResponse=get_first_order_contact("Object Repository/Api/Mobile Api/Campus/Contact/Teacher/sms_teacher_contact")
+	WS.comment('教师通讯录接口获取数据：'+teacher_jsonResponse)
 	//教师模块逻辑：若是只有未分组，则在未分组中随机拿一个教师发送，若是存在未分组和其他部门，则其他部门随机拿一个部门及未分组随机一个教师
 	if(teacher_jsonResponse.data.children.size==1&&teacher_jsonResponse.data.children[0].sort_num==-1){
-		//WS.comment('进入未分组数据：'+teacher_jsonResponse)
 		//只有未分组，则只拿一个teacher_id，department_id为空
 		num=(int)(Math.random()*1000)%teacher_jsonResponse.data.children[0].children.size
 		teacher_ids='"'+teacher_jsonResponse.data.children[0].children[num].user_id+'"'
 		department_ids=''
 		address_str+='"'+teacher_jsonResponse.data.children[0].children[num].name+'"'
 		
-		//WS.comment('添加未分组教师后：'+address_str)
+		WS.comment('添加未分组教师后：'+address_str)
 		
 		
 		
 	}else if(teacher_jsonResponse.data.children.size>1){
-		//WS.comment('没有进入未分组数据：'+teacher_jsonResponse)
-		//WS.comment('没加数据之前：'+address_str)
+		
+		WS.comment('没加数据之前：'+address_str)
 		num=(int)(Math.random()*1000)%teacher_jsonResponse.data.children[0].children.size
 		teacher_ids='"'+teacher_jsonResponse.data.children[0].children[num].user_id+'"'		
 		num1=(int)(Math.random()*1000)%(teacher_jsonResponse.data.children.size-1)+1
 		department_ids='"'+teacher_jsonResponse.data.children[num1].department_id+'"'
 		address_str+='"'+teacher_jsonResponse.data.children[0].children[num].name+'",'+'"'+teacher_jsonResponse.data.children[num1].name+'"'
-		//WS.comment('加了数据之后：'+address_str)
+		WS.comment('加了数据之后：'+address_str)
 
 	}
 	
@@ -339,7 +360,7 @@ def String address_factory(){
 	
 	'请求学生通讯录接口获取班级数据'
 	def student_class_jsonResponse=get_first_order_contact('Object Repository/Api/Mobile Api/Campus/Contact/Student/sms_student_class_contact')
-	
+	WS.comment('学生通讯录接口获取班级数据'+student_class_jsonResponse)
 	if(student_class_jsonResponse.data.size==0){
 		
 		student_ids=''
@@ -350,28 +371,32 @@ def String address_factory(){
 		
 		klass_ids='"'+student_class_jsonResponse.data[0].id+'"'
 		address_str+=',"'+student_class_jsonResponse.data[0].name+'"'
-		//WS.comment(address_str)
+		WS.comment('只有一个班级,添加班级后'+address_str)
 	
 	
 	}else{
 		klass_ids='"'+student_class_jsonResponse.data[0].id+'"'
+		WS.comment('班级id:'+klass_ids)
 		address_str+=',"'+student_class_jsonResponse.data[0].name+'"'
+		WS.comment('多个班级添加其中一个班级后'+address_str)
 		num2=(int)(Math.random()*1000)%(student_class_jsonResponse.data.size-1)+1
 		
 		'请求学生通讯录接口获取班内学生数据'
-		def student_jsonResponse=get_second_order_contact('Object Repository/Api/Mobile Api/Campus/Contact/Student/sms_student_contact',student_class_jsonResponse.data[num2].id)
+		def student_jsonResponse=get_second_order_contact('Object Repository/Api/Mobile Api/Campus/Contact/Student/sms_student_contact',student_class_jsonResponse.data[num2].id)	
+		WS.comment('班内学生数据'+student_jsonResponse)
+		WS.comment('班内学生size'+student_jsonResponse.data.size)
 		num3=(int)(Math.random()*1000)%(student_jsonResponse.data.size)
 		
 		student_ids='"'+student_jsonResponse.data[num3].user_id+'"'
 		address_str+=',"'+student_jsonResponse.data[num3].name+'"'
-		//WS.comment(address_str)
+		WS.comment('多个班级添加其中一个班级中的学生后'+address_str)
 	}
 	student_address=get_student_address(student_ids,klass_ids)
 	
 	
 	'请求分组通讯录获取分组数据'
 	def group_jsonResponse=get_first_order_contact('Object Repository/Api/Mobile Api/Campus/Contact/Group/sms_group_contact')
-	
+	WS.comment('分组通讯录获取分组数据:'+group_jsonResponse)
 	if(group_jsonResponse.data.children.size==0){
 		
 		groip_student_ids=''
@@ -380,7 +405,7 @@ def String address_factory(){
 	}else{
 			
 		if(group_jsonResponse.data.children[0].children.size==1){
-			
+			groip_student_ids=''
 			dorm_ids='"'+group_jsonResponse.data.children[0].children[0].id+'"'
 			address_str+=',"'+group_jsonResponse.data.children[0].children[0].name+'"'
 			//WS.comment(address_str)

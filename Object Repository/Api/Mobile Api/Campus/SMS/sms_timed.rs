@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t${address}\n\t},\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;need_reply\&quot;: true,\n  \t\&quot;scheduled_date\&quot;: \&quot;${sms_timed}\&quot;,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${GlobalVariable.sms_type}\&quot;\n\t\&quot;signature\&quot;: \&quot;${GlobalVariable.sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${GlobalVariable.sms_signature_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t${address}\n\t},\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;need_reply\&quot;: true,\n  \t\&quot;scheduled_date\&quot;: \&quot;${sms_timed}\&quot;,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${GlobalVariable.sms_type}\&quot;,\n\t\&quot;signature\&quot;: \&quot;${GlobalVariable.sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${GlobalVariable.sms_signature_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -65,17 +65,17 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.comment(request.httpBody)
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
-
-	
-	
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;)
-
-
-
-}
+//&quot;请求服务器成功:200&quot;
+//if(WS.verifyResponseStatusCode(response, 200)){
+//
+//	
+//	
+//&quot;文本code值:200&quot;
+//WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;)
+//
+//
+//
+//}
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

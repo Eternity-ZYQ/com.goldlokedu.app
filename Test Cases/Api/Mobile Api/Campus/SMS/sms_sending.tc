@@ -8,14 +8,14 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>b59ebed3-7da6-4c7c-bcb5-1056d5a2f3f8</id>
+      <id>9a2b7a6f-8a8a-46a2-9cb0-c88ffe9d35f7</id>
       <masked>false</masked>
       <name>address_str</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7f795254-f1e7-427a-9599-0ee6dfadb452</id>
+      <id>18f37f32-5f64-4500-bb16-caa650635753</id>
       <masked>false</masked>
       <name>sms_timed</name>
    </variable>

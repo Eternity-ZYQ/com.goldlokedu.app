@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/student/app?module=sms</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/student/app?module=mobile</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/studentByKlass?klass_id=${class_id}&amp;module=mobile&amp;type=app</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/studentByKlass?klass_id=${class_id}&amp;module=sms&amp;type=app</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -46,14 +46,17 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+WS.comment(&quot;获取班级内学生请求体body:&quot;+request.httpBody)
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200)
-
-
-
-}</verificationScript>
+WS.comment(&quot;获取班级内学生请求体url:&quot;+request.getRestUrl())
+//&quot;请求服务器成功:200&quot;
+//if(WS.verifyResponseStatusCode(response, 200)){
+//
+//&quot;文本code值:200&quot;
+//WS.verifyElementPropertyValue(response, 'code', 200)
+//
+//
+//
+//}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
