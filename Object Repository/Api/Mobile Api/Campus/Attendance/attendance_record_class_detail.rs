@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/klass_detail?check_date=2020-03-26&amp;check_klass_id=${GlobalVariable.class_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/klass_detail?check_date=${check_date}&amp;check_klass_id=${class_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'2020-03-26'</defaultValue>
+      <description></description>
+      <id>c7f9298a-569c-47e3-b31a-de595c8d149e</id>
+      <masked>false</masked>
+      <name>check_date</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>97a7457c-1417-479b-b272-f4dc9947bf86</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>定时短信tab</description>
+   <name>sms_timed_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dd926633-391a-4906-aae8-e1bd39e0ec91</testCaseGuid>
+</TestCaseEntity>

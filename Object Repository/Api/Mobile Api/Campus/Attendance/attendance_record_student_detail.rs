@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/student_detail?append_prefix=1&amp;check_date=2020-04-01&amp;student_id=${GlobalVariable.user_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/student_detail?append_prefix=${append_prefix}&amp;check_date=${check_date}&amp;student_id=${student_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>ef7e63a2-1dde-42b3-9a7e-ec18537665c7</id>
+      <masked>false</masked>
+      <name>append_prefix</name>
+   </variables>
+   <variables>
+      <defaultValue>'2020-04-01'</defaultValue>
+      <description></description>
+      <id>19dd3f4b-28d8-40cf-84db-676a177b7707</id>
+      <masked>false</masked>
+      <name>check_date</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2dd30abc-75af-42e4-addc-051fa2b7aff3</id>
+      <masked>false</masked>
+      <name>student_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/exam_manage/exam_score/detail?exam_id=${GlobalVariable.exam_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/exam_manage/exam_score/detail?exam_id=${exam_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6df06788-b14c-4c2f-9a96-b6870a306135</id>
+      <masked>false</masked>
+      <name>exam_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

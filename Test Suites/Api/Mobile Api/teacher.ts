@@ -52,4 +52,10 @@
          <variableId>18f37f32-5f64-4500-bb16-caa650635753</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>0be22467-7095-47fb-9df3-807426347419</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sent</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

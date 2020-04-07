@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://192.168.2.243/hsi/mailbox/school_outbox?deliver_method=SMS&amp;from=0&amp;owner_id=${GlobalVariable.user_id}&amp;school_id=${GlobalVariable.user_school_id}&amp;size=10</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/mailbox/school_outbox?deliver_method=SMS&amp;from=${from}&amp;owner_id=${GlobalVariable.user_id}&amp;school_id=${GlobalVariable.user_school_id}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'10'</defaultValue>
+      <description></description>
+      <id>4b2660da-95ea-4c77-b0fb-9fde9ded10ba</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>c21f6b61-de1c-4dc6-b365-d70b13d51f6f</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

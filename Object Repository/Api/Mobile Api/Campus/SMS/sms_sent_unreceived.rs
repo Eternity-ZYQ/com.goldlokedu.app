@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>未绑定班牌列表</description>
-   <name>not_bound_brand_list</name>
+   <description>已读短信未收到</description>
+   <name>sms_sent_unreceived</name>
    <tag></tag>
-   <elementGuidId>fac1a55d-6f00-481b-91b8-4bf0437dc886</elementGuidId>
+   <elementGuidId>0b2d4953-c3f0-4a84-a8e4-a792268f21da</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;from\&quot;: 0,\n\t\&quot;is_bound\&quot;: ${is_bound}\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -29,33 +18,26 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/brand_mdm_service/binding/school</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/send_info_statistics?message_id=${message_id}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>10</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>21fd25d4-9d3e-4eb4-aeef-a30fd88a644f</id>
+      <id>c755d2ce-d28d-4c59-a020-16beb229d18e</id>
       <masked>false</masked>
-      <name>size</name>
+      <name>message_id</name>
    </variables>
    <variables>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>f58fbcec-139a-486a-aa46-0e413bd141d2</id>
+      <id>25dfa649-a6b3-4ee1-8357-cf47182149d6</id>
       <masked>false</masked>
-      <name>from</name>
-   </variables>
-   <variables>
-      <defaultValue>false</defaultValue>
-      <description></description>
-      <id>4d8bb39d-e175-4fa2-8eff-4984005a4494</id>
-      <masked>false</masked>
-      <name>is_bound</name>
+      <name>size</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -70,13 +52,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
-
-	assertThat(response.getResponseText()).contains('total')
-
-}
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

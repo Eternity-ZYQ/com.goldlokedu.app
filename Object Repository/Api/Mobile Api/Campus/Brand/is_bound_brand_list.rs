@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;is_bound\&quot;: true,\n\t\&quot;from\&quot;: 0\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n  \t\&quot;from\&quot;: 0,\n\t\&quot;is_bound\&quot;: ${is_bound}\t\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,27 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>5a205d5e-3321-4def-bbcc-b7b3f2d962a9</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>b1214fbf-7eb6-448e-bfe2-cb9becff6d2f</id>
+      <masked>false</masked>
+      <name>is_bound</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>09b9256e-5970-4981-9a40-b1e4f1b1749b</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

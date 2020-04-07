@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/exam_manage/exam/list?klass_id=${GlobalVariable.class_id}&amp;page=1&amp;school_id=${GlobalVariable.user_school_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/exam_manage/exam/list?klass_id=${class_id}&amp;page=${page}&amp;school_id=${GlobalVariable.user_school_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b3013325-9a20-4041-8f18-1520ef754055</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>98a85d79-9fab-4424-ac6c-3131d9a12a64</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

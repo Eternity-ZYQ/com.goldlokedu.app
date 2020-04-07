@@ -18,15 +18,15 @@ import groovy.json.JsonSlurper as JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 '判断该学校是否开通了短信业务'
-ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/can_send'))
+ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/can_send'),FailureHandling.CONTINUE_ON_FAILURE)
 
 def jsonResponse = get_jsonResponse(response)
 
 //必须该学校开通了短信，才能发送短信
 if (jsonResponse.can_send) {
-//    '成功发送及时短信'
-//    success_now_sms()
-//	
+    //'成功发送及时短信'
+    //success_now_sms()
+	
 	'发送定时短信'
 	success_timed_sms()
 } else {
@@ -68,16 +68,16 @@ def void success_now_sms() {
 	def address=address_factory()
 	
 	'请求发送短信接口'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str]))
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str]),FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//WS.comment(response.responseText)
 	
 	//请求接口成功
-	if(WS.verifyResponseStatusCode(response, 200)){
+	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		"文本result值:Success"
-		WS.verifyElementPropertyValue(response, 'result', 'Success')
-	
+		WS.verifyElementPropertyValue(response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
+		
 	}
 		
 }
@@ -106,15 +106,15 @@ def void success_timed_sms() {
 	
 	
 	'请求发送定时短信接口'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed]))
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed]), FailureHandling.CONTINUE_ON_FAILURE)
 	
 	WS.comment('发送定时短信接'+response.responseText)
 	
 	//请求接口成功
-	if(WS.verifyResponseStatusCode(response, 200)){
+	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		"文本result值:Success"
-		WS.verifyElementPropertyValue(response, 'result', 'Success')
+		WS.verifyElementPropertyValue(response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
 	
 	}
 		
@@ -124,7 +124,7 @@ def void success_timed_sms() {
 def void save_sms_type() {
 	
     '发送获取sms_type接口'
-    ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_type'))
+    ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_type'), FailureHandling.CONTINUE_ON_FAILURE)
 
     def jsonResponse = get_jsonResponse(response)
 
@@ -141,7 +141,7 @@ def void save_sms_type() {
 def void save_sms_signature_and_sms_signature_id(){
 	
 	'发送获取sms_signature，sms_signature_id接口'
-	ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_signature'))
+	ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_signature'), FailureHandling.CONTINUE_ON_FAILURE)
 
 	def jsonResponse = get_jsonResponse(response)
 	
@@ -204,12 +204,12 @@ def String get_time_sms_contnt(){
 //获取一级加载级联系人列表：班级
 def Object get_first_order_contact(String object_path){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path))
+	ResponseObject response=WS.sendRequest(findTestObject(object_path), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	if(WS.verifyResponseStatusCode(response, 200)){
+	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		WS.verifyElementPropertyValue(response, 'code', 200)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功')
+		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
 		
 		return get_jsonResponse(response)
 	}
@@ -220,12 +220,12 @@ def Object get_first_order_contact(String object_path){
 //获取二级加载学生联系人列表
 def Object get_second_order_contact(String object_path,String class_id){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('class_id'):class_id]))
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	if(WS.verifyResponseStatusCode(response, 200)){
+	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		WS.verifyElementPropertyValue(response, 'code', 200)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功')
+		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
 			
 		
 		return get_jsonResponse(response)
@@ -238,12 +238,12 @@ def Object get_second_order_contact(String object_path,String class_id){
 //获取二级加载分组联系人列表
 def Object get_group_second_order_contact(String object_path,String group_id){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path,[('group_id'):group_id]))
+	ResponseObject response=WS.sendRequest(findTestObject(object_path,[('group_id'):group_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	if(WS.verifyResponseStatusCode(response, 200)){
+	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		WS.verifyElementPropertyValue(response, 'code', 200)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功')
+		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
 			
 		
 		return get_jsonResponse(response)
