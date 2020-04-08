@@ -19,12 +19,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares?content=英语&amp;from=0&amp;size=10&amp;sorting_rules=1</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares?content=${content}&amp;from=${from}&amp;size=${size}&amp;sorting_rules=${sorting_rules}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'英语'</defaultValue>
+      <description></description>
+      <id>982607ed-0a22-4794-93be-47d8e39383d8</id>
+      <masked>false</masked>
+      <name>content</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a19aa955-b16e-46c0-bbe2-dd0eadfe6a86</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>9ed8751a-8404-4db7-9a7f-2303fa211350</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>4acef616-9fb9-457c-a9f9-bce7047bac33</id>
+      <masked>false</masked>
+      <name>sorting_rules</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

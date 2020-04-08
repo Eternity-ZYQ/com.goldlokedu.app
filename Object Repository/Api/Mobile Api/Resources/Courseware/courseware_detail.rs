@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares/${GlobalVariable.courseware_course_ware_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares/${courseware_course_ware_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>45c6ab15-0d69-4853-952f-fb3f2da87f26</id>
+      <masked>false</masked>
+      <name>courseware_course_ware_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

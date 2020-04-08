@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/health_report/aggregate/class?from_date=20200331T000000-0800&amp;class_id=${GlobalVariable.class_id}&amp;_=1585622834241</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/health_report/aggregate/class?from_date=${from_date}&amp;class_id=${class_id}&amp;_=${timestamp}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5e771594-f2aa-4943-bd0a-77d65f6f6f48</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
+   <variables>
+      <defaultValue>'1585622834241'</defaultValue>
+      <description></description>
+      <id>a1cbd96b-429b-4ec8-8373-67c26d12293e</id>
+      <masked>false</masked>
+      <name>timestamp</name>
+   </variables>
+   <variables>
+      <defaultValue>'20200331T000000-0800'</defaultValue>
+      <description></description>
+      <id>4bd0e130-ca3c-4ed8-8445-f26d4fab46bd</id>
+      <masked>false</masked>
+      <name>from_date</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

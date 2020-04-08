@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t\&quot;teacher_address\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [\&quot;${teacher_ids}\&quot;],\n\t\t\t\&quot;department_ids\&quot;: []\n\t\t},\n\t\t\&quot;groups_address\&quot;: {\n\t\t\t\&quot;group_ids\&quot;: [{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;student\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}, {\n\t\t\t\t\&quot;id_type\&quot;: \&quot;dorm\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}]\n\t\t},\n\t\t\&quot;student_address\&quot;: {\n\t\t\t\&quot;student_ids\&quot;: [],\n\t\t\t\&quot;klass_ids\&quot;: []\n\t\t}\n\t},\n\t\&quot;address_str\&quot;: [\&quot;${GlobalVariable.user_name}\&quot;],\n\t\&quot;need_reply\&quot;: true,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${GlobalVariable.sms_type}\&quot;,\n  \t\&quot;signature\&quot;: \&quot;${GlobalVariable.sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${GlobalVariable.sms_signature_id}\&quot;\n  \t\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t\&quot;teacher_address\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [\&quot;${teacher_ids}\&quot;],\n\t\t\t\&quot;department_ids\&quot;: []\n\t\t},\n\t\t\&quot;groups_address\&quot;: {\n\t\t\t\&quot;group_ids\&quot;: [{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;student\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}, {\n\t\t\t\t\&quot;id_type\&quot;: \&quot;dorm\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}]\n\t\t},\n\t\t\&quot;student_address\&quot;: {\n\t\t\t\&quot;student_ids\&quot;: [],\n\t\t\t\&quot;klass_ids\&quot;: []\n\t\t}\n\t},\n\t\&quot;address_str\&quot;: [\&quot;${GlobalVariable.user_name}\&quot;],\n\t\&quot;need_reply\&quot;: true,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${sms_type}\&quot;,\n  \t\&quot;signature\&quot;: \&quot;${sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${sms_signature_id}\&quot;\n  \t\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -84,6 +84,27 @@
       <id>1f2bb032-6725-4c9e-b648-8d921bbf6548</id>
       <masked>false</masked>
       <name>klass_ids</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f6ab2904-ef17-4583-96c8-b756406ba9b9</id>
+      <masked>false</masked>
+      <name>sms_type</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1b6dd9a8-90c3-4222-a389-eab514edb0dd</id>
+      <masked>false</masked>
+      <name>sms_signature</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4a023893-6093-4d6e-b1c7-8a043f899c6f</id>
+      <masked>false</masked>
+      <name>sms_signature_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

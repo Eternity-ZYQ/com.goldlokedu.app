@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;with_content\&quot;: false,\n\t\&quot;from\&quot;: 0,\n\t\&quot;show_in_app\&quot;: true\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: ${size},\n\t\&quot;with_content\&quot;: ${with_content},\n\t\&quot;from\&quot;: ${from},\n\t\&quot;show_in_app\&quot;: ${show_in_app}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,34 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>eaf671d3-afd4-4eaa-bdbc-ce009daf0da8</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>77eefca9-4cd7-431d-9203-f58d15b2a3c8</id>
+      <masked>false</masked>
+      <name>with_content</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>d400c0a2-f6b7-4adc-ae82-17f5ef7d1581</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>68d39e30-d05c-431b-a481-fe84bb863c2b</id>
+      <masked>false</masked>
+      <name>show_in_app</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

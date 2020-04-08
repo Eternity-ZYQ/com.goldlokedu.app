@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;voted_options\&quot;: [${GlobalVariable.voted_options_id}],\n\t\&quot;vote_id\&quot;: \&quot;${GlobalVariable.vote_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;voted_options\&quot;: [${voted_options}],\n\t\&quot;vote_id\&quot;: \&quot;${vote_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,20 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dd26f78f-4377-4d8c-89f2-7677b2315b9b</id>
+      <masked>false</masked>
+      <name>voted_options</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e98f7149-85eb-4dac-a211-37f06e01786e</id>
+      <masked>false</masked>
+      <name>vote_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

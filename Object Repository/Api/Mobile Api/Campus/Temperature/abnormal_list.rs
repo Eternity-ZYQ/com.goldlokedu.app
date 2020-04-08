@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/health_report/temperature/abnormal?_=1585645108118</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/health_report/temperature/abnormal?_=${timestamp}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'1585645108118'</defaultValue>
+      <description></description>
+      <id>65105724-e53a-4c75-b69e-9025030e625a</id>
+      <masked>false</masked>
+      <name>timestamp</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

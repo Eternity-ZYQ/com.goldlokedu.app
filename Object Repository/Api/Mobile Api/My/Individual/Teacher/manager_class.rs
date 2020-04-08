@@ -25,6 +25,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>7bc035eb-f680-4c7a-98d2-a22dc5a6f1ef</id>
+      <masked>false</masked>
+      <name>withEmptyKlass</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

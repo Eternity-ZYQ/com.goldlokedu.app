@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/poll?counter=${GlobalVariable.next_poll_counter}&amp;target_id=${GlobalVariable.student_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/poll?counter=${next_poll_counter}&amp;target_id=${student_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>381fac44-ee24-434e-be80-41181e3fb992</id>
+      <masked>false</masked>
+      <name>next_poll_counter</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>374d48c0-0070-47c6-8f66-80da39474379</id>
+      <masked>false</masked>
+      <name>student_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

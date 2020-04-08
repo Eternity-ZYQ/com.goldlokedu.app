@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares?from=0&amp;size=10&amp;sorting_rules=1</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares?from=${from}&amp;size=${size}&amp;sorting_rules=${sorting_rules}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>f4834b12-6e1e-4cb0-a8c6-7d6f932e5c73</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>8899b353-85a0-489d-9c1a-ca55404fc7d5</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>cd211d46-8ac8-4cf0-9028-785c10f2480b</id>
+      <masked>false</masked>
+      <name>sorting_rules</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

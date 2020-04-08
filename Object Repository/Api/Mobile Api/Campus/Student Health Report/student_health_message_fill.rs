@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/health_report/detail/fill/class/${GlobalVariable.class_id}?from_date=20200331T000000-0800&amp;_=1585622969440</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/health_report/detail/fill/class/${GlobalVariable.class_id}?from_date=${from_date}&amp;_=${timestamp}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'1585622969440'</defaultValue>
+      <description></description>
+      <id>80e142d3-9de3-478f-8269-1afe565e9059</id>
+      <masked>false</masked>
+      <name>timestamp</name>
+   </variables>
+   <variables>
+      <defaultValue>'20200331T000000-0800'</defaultValue>
+      <description></description>
+      <id>586c411c-a43f-4a28-9896-9a4e23b221d5</id>
+      <masked>false</masked>
+      <name>from_date</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

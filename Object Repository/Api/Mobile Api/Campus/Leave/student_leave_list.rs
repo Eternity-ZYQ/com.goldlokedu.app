@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;from\&quot;: 0,\n\t\&quot;size\&quot;: 10\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;from\&quot;: {from},\n\t\&quot;size\&quot;: ${size}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,20 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>e13b5544-18c7-485c-9e47-52b3db3a0e87</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>353d2575-a234-4be3-8573-1a463750dd12</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

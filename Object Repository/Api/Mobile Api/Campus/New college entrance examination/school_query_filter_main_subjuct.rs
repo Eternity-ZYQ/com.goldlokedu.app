@@ -19,12 +19,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySubject?from=0&amp;main_subject=物理&amp;school_code_or_name=${GlobalVariable.college_school_code}&amp;size=50</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySubject?from=${from}&amp;main_subject=${main_subject}&amp;school_code_or_name=${school_code_or_name}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>ae1dd9b1-a629-41f1-b0b4-61a834a72878</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>'物理'</defaultValue>
+      <description></description>
+      <id>6305cf62-2861-417e-85a5-0b0a35397647</id>
+      <masked>false</masked>
+      <name>main_subject</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c0b23f52-ee19-41a6-9654-e9e0ad7519a9</id>
+      <masked>false</masked>
+      <name>school_code_or_name</name>
+   </variables>
+   <variables>
+      <defaultValue>50</defaultValue>
+      <description></description>
+      <id>eccd99b7-d7b6-4f04-ab74-8b69ef7a7cf3</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

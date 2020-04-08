@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=15&amp;target_id=${GlobalVariable.teacher_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=15&amp;target_id=${teacher_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6586484a-50f8-4638-835b-22c6d79bff36</id>
+      <masked>false</masked>
+      <name>teacher_id</name>
+   </variables>
+   <variables>
+      <defaultValue>15</defaultValue>
+      <description></description>
+      <id>57573c3c-8761-4b2a-ac78-d531cc0ef18d</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

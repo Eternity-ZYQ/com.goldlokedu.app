@@ -19,12 +19,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/onlineclass/detailpage/search_course?from=0&amp;popularity_sort=desc&amp;publishing_house=3f3fb3a8-38e0-47f8-bcab-32025c22c1c8&amp;size=10</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/onlineclass/detailpage/search_course?from=${from}&amp;popularity_sort=${popularity_sort}&amp;publishing_house=${publishing_house}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>e417e6bb-580d-4a92-913c-75dec11c217b</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>b8e59b54-502f-467a-ae29-63b2aec3d8ef</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'desc'</defaultValue>
+      <description></description>
+      <id>b9007497-06db-44fe-b0d8-392f8080cabb</id>
+      <masked>false</masked>
+      <name>popularity_sort</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4e8aade1-2c1e-49e7-a008-2e726a594ea8</id>
+      <masked>false</masked>
+      <name>publishing_house</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

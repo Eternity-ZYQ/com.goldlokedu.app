@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;target_user_id\&quot;: \&quot;${GlobalVariable.teacher_id}\&quot;,\n\t\&quot;message\&quot;: \&quot;测试发送消息给老师\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;target_user_id\&quot;: \&quot;${teacher_id}\&quot;,\n\t\&quot;message\&quot;: \&quot;${message}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,20 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f141e244-40bd-4984-9daa-d439333f3167</id>
+      <masked>false</masked>
+      <name>teacher_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>398bd12d-b69a-4d58-96f7-9fe28b45a639</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -23,12 +23,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/teacher/homework/${GlobalVariable.homework_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homework/teacher/homework/${homework_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2dbacd8f-c369-498f-ae92-1e17565b6511</id>
+      <masked>false</masked>
+      <name>homework_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

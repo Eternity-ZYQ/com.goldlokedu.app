@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;from\&quot;: 0,\n\t\&quot;audit_states\&quot;: [\&quot;NotAudit\&quot;],\n\t\&quot;order_by\&quot;: \&quot;CreateTime\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: ${size},\n\t\&quot;from\&quot;: ${from},\n\t\&quot;audit_states\&quot;: [\&quot;${audit_states}\&quot;],\n\t\&quot;order_by\&quot;: \&quot;${order_by}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,34 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>cabceed9-cca8-4adf-8722-785cc58b87c4</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>aea3a985-ca57-4509-a3b3-891477645747</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>'NotAudit'</defaultValue>
+      <description></description>
+      <id>109c433d-6541-461a-958a-eda622da227c</id>
+      <masked>false</masked>
+      <name>audit_states</name>
+   </variables>
+   <variables>
+      <defaultValue>'CreateTime'</defaultValue>
+      <description></description>
+      <id>329b7823-29e3-42af-8afe-ec8c414c0eb7</id>
+      <masked>false</masked>
+      <name>order_by</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

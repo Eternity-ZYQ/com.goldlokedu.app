@@ -25,6 +25,34 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'20200127T000000-0800'</defaultValue>
+      <description></description>
+      <id>368c5da0-a17f-4e9b-ace8-9ea35f8de00c</id>
+      <masked>false</masked>
+      <name>from_date</name>
+   </variables>
+   <variables>
+      <defaultValue>'20200327T235959-0800'</defaultValue>
+      <description></description>
+      <id>1c209b51-6bf5-4f43-be7f-8f8143f15e40</id>
+      <masked>false</masked>
+      <name>to_date</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>7a8dd609-a598-415e-a931-aa7921da3996</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a8ccb579-420f-44e5-bfb4-1862f27fd649</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

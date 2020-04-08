@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/student/homework/list?course_id=${GlobalVariable.course_id}&amp;from=0&amp;size=10</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homework/student/homework/list?course_id=${course_id}&amp;from=${from}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e91b13b7-16a9-40c1-842b-04e1a0f14611</id>
+      <masked>false</masked>
+      <name>course_id</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>1ad3bf53-48f7-408d-9566-62b3da5d78cd</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>0fa27bf1-16f2-4d21-9a7d-8909f9062dc5</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

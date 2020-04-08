@@ -26,12 +26,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/onlineclass/attachments/videos/c99e3ac2-a6ff-4215-aceb-07034f7a3e16</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/onlineclass/attachments/videos/${video_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1f5d1616-cb0d-49b7-939c-4f8865de6886</id>
+      <masked>false</masked>
+      <name>video_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

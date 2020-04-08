@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;refuse_reason\&quot;: \&quot;${refuse_reason}\&quot;,\n\t\&quot;leave_id\&quot;: \&quot;${GlobalVariable.leave_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;refuse_reason\&quot;: \&quot;${refuse_reason}\&quot;,\n\t\&quot;leave_id\&quot;: \&quot;${leave_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -42,6 +42,13 @@
       <id>220d491f-84ec-41b8-a8c0-4b5a48332618</id>
       <masked>false</masked>
       <name>refuse_reason</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6f136d5d-0b10-4493-bdac-2580d8d1c504</id>
+      <masked>false</masked>
+      <name>leave_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

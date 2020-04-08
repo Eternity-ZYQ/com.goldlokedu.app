@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/onlineclass/personal/study?from=0&amp;size=10&amp;sort=learned_time</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/onlineclass/personal/study?from=${from}&amp;size=${size}&amp;sort=${sort}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a66621b5-6f8a-444b-b591-f2c4ad6bed3b</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>3b47ff16-a9c4-49e6-990d-12e5b8340091</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'learned_time'</defaultValue>
+      <description></description>
+      <id>4b51a734-0201-4e92-a191-2726816b35a3</id>
+      <masked>false</masked>
+      <name>sort</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

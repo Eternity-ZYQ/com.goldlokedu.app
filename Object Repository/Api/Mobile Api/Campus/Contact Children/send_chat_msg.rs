@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;origin\&quot;: \&quot;Parent\&quot;,\n\t\&quot;message_type\&quot;: \&quot;Text\&quot;,\n\t\&quot;message\&quot;: \&quot;哈哈哈哈\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;origin\&quot;: \&quot;${origin}\&quot;,\n\t\&quot;message_type\&quot;: \&quot;${message_type}\&quot;,\n\t\&quot;message\&quot;: \&quot;${message}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,27 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'Parent'</defaultValue>
+      <description></description>
+      <id>e6d9a56e-167b-42c9-a087-990d8b06aaa0</id>
+      <masked>false</masked>
+      <name>origin</name>
+   </variables>
+   <variables>
+      <defaultValue>'Text'</defaultValue>
+      <description></description>
+      <id>b3c01585-8294-49d6-ae89-2ffdc624c236</id>
+      <masked>false</masked>
+      <name>message_type</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e323f34f-87e5-41f4-b8f6-fb4504e66995</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t${address}\n\t},\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;need_reply\&quot;: true,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${GlobalVariable.sms_type}\&quot;,\n  \t\&quot;signature\&quot;: \&quot;${GlobalVariable.sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${GlobalVariable.sms_signature_id}\&quot;\n  \t\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t${address}\n\t},\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;need_reply\&quot;: true,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${sms_type}\&quot;,\n  \t\&quot;signature\&quot;: \&quot;${sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${sms_signature_id}\&quot;\n  \t\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -56,6 +56,27 @@
       <id>e3d1e609-6b21-4311-b8a6-6bddf8453f8c</id>
       <masked>false</masked>
       <name>address_str</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bd52f0b2-8d70-400c-9f9e-ef7d255e2842</id>
+      <masked>false</masked>
+      <name>sms_type</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>370aeef6-be63-44b4-af07-77c3a3d662ca</id>
+      <masked>false</masked>
+      <name>sms_signature</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>baab002e-2c49-406f-a34c-9c1836e70b2f</id>
+      <masked>false</masked>
+      <name>sms_signature_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

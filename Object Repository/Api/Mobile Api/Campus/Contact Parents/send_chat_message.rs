@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;message\&quot;: \&quot;${send_message}\&quot;,\n\t\&quot;target_user_id\&quot;: \&quot;${GlobalVariable.student_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;message\&quot;: \&quot;${send_message}\&quot;,\n\t\&quot;target_user_id\&quot;: \&quot;${student_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -42,6 +42,13 @@
       <id>a74709b5-714b-4a2c-aafb-18f7e87a1bc2</id>
       <masked>false</masked>
       <name>send_message</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4ff6c4eb-b8b8-43ef-b56e-18c0d578a951</id>
+      <masked>false</masked>
+      <name>student_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

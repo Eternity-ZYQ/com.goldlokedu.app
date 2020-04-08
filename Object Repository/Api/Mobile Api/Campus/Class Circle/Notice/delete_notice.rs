@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;bulletin_id\&quot;: \&quot;${GlobalVariable.notice_bulletin_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;bulletin_id\&quot;: \&quot;${notice_bulletin_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>469e9be8-95fb-47e7-af08-09be486abf32</id>
+      <masked>false</masked>
+      <name>notice_bulletin_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

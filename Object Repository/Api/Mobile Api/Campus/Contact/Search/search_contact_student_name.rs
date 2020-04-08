@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/name/contact_information?id=${GlobalVariable.user_school_id}&amp;name=${teacher_name}&amp;type=app</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/name/contact_information?id=${GlobalVariable.user_school_id}&amp;name=${student_name}&amp;type=app</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

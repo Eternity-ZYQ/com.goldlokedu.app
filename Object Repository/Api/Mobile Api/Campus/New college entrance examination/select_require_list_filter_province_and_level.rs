@@ -25,6 +25,34 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'本科'</defaultValue>
+      <description></description>
+      <id>6dcf83ad-6c09-4b52-a85e-70814904d585</id>
+      <masked>false</masked>
+      <name>degree</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>3118c382-4f16-4d5d-8027-fda94d1f9861</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>edd8ad69-0845-44e0-885f-eb1a6c542d38</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'广东'</defaultValue>
+      <description></description>
+      <id>048ad919-a775-408d-a32b-b625b2f11358</id>
+      <masked>false</masked>
+      <name>province</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

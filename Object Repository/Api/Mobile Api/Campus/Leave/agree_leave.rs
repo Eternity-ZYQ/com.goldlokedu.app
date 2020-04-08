@@ -23,12 +23,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/leave/leave/pass/${GlobalVariable.leave_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/leave/leave/pass/${leave_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ac07d09b-70b8-46e8-8557-43ad38b611e3</id>
+      <masked>false</masked>
+      <name>leave_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

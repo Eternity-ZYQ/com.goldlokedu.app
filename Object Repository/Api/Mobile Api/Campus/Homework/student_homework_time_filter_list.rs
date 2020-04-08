@@ -19,12 +19,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/student/homework/list?from=0&amp;from_date=20190401T000000-0800&amp;size=10&amp;to_date=20200401T235959-0800</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homework/student/homework/list?from=${from}&amp;from_date=${from_date}&amp;size=${size}&amp;to_date=${to_date}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>141bdf7e-8431-49ea-a6f7-42251131acfa</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>2763dbea-1632-418a-8fda-d53623aa8524</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'20190401T000000-0800'</defaultValue>
+      <description></description>
+      <id>4902e6b4-f76f-4ac9-bdd3-b6913b96ae36</id>
+      <masked>false</masked>
+      <name>from_date</name>
+   </variables>
+   <variables>
+      <defaultValue>'20200401T235959-0800'</defaultValue>
+      <description></description>
+      <id>cc4588fc-5b74-4918-af32-6d84ef63b056</id>
+      <masked>false</masked>
+      <name>to_date</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

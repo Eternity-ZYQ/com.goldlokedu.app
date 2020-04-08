@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/voting/transport/${GlobalVariable.vote_picture_id}?thumb=true</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/voting/transport/${vote_picture_id}?thumb=${thumb}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>728f9644-1509-4881-b312-008908068653</id>
+      <masked>false</masked>
+      <name>vote_picture_id</name>
+   </variables>
+   <variables>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>e659d1c0-8889-4c48-80fb-dc03669212e3</id>
+      <masked>false</masked>
+      <name>thumb</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

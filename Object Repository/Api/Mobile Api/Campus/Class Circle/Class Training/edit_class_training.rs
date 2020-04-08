@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;slogan\&quot;: \&quot;${class_training_content_slogan}\&quot;,\n\t\&quot;klass_id\&quot;: \&quot;${GlobalVariable.class_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;slogan\&quot;: \&quot;${class_training_content_slogan}\&quot;,\n\t\&quot;klass_id\&quot;: \&quot;${class_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -42,6 +42,13 @@
       <id>7c41d4b8-598b-4417-ac1f-0933375fa0c3</id>
       <masked>false</masked>
       <name>class_training_content_slogan</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0fdc1daa-0cd7-4c4f-bad6-66c825e72d98</id>
+      <masked>false</masked>
+      <name>class_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

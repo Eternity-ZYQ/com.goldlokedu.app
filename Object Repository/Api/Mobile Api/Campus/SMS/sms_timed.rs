@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t${address}\n\t},\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;need_reply\&quot;: true,\n  \t\&quot;scheduled_date\&quot;: \&quot;${sms_timed}\&quot;,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${GlobalVariable.sms_type}\&quot;,\n\t\&quot;signature\&quot;: \&quot;${GlobalVariable.sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${GlobalVariable.sms_signature_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;address\&quot;: {\n\t\t${address}\n\t},\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;need_reply\&quot;: true,\n  \t\&quot;scheduled_date\&quot;: \&quot;${sms_timed}\&quot;,\n\t\&quot;deliver_method\&quot;: [\&quot;SMS\&quot;],\n\t\&quot;payload\&quot;: {\n\t\t\&quot;content\&quot;: \&quot;${sms_content}\&quot;,\n\t\t\&quot;message_type\&quot;: \&quot;PlainText\&quot;\n\t},\n\t\&quot;sms_type\&quot;: \&quot;${sms_type}\&quot;,\n\t\&quot;signature\&quot;: \&quot;${sms_signature}\&quot;,\n  \t\&quot;signature_id\&quot;: \&quot;${sms_signature_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -49,6 +49,27 @@
       <id>a449beab-b714-43a7-be70-3e19e3d5b1d4</id>
       <masked>false</masked>
       <name>sms_timed</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e9e9701e-0987-4e76-913a-1746d80e15eb</id>
+      <masked>false</masked>
+      <name>sms_type</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f8fd776f-4649-4fce-ab6d-1ab82aa78c5c</id>
+      <masked>false</masked>
+      <name>sms_signature</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54eaecac-51d9-4c31-a3af-c906c57cfdc9</id>
+      <masked>false</masked>
+      <name>sms_signature_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

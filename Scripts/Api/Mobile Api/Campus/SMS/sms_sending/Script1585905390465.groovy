@@ -49,6 +49,7 @@ def Object get_jsonResponse(ResponseObject response) {
     return jsonResponse
 }
 
+//发送及时短信
 def void success_now_sms() {
 	//成功发送即时短信
 	//sms_type,sms_signature,sms_signature_id,sms_content
@@ -68,7 +69,7 @@ def void success_now_sms() {
 	def address=address_factory()
 	
 	'请求发送短信接口'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str]),FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]),FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//WS.comment(response.responseText)
 	
@@ -106,7 +107,7 @@ def void success_timed_sms() {
 	
 	
 	'请求发送定时短信接口'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed]), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
 	WS.comment('发送定时短信接'+response.responseText)
 	
@@ -120,7 +121,7 @@ def void success_timed_sms() {
 		
 }
 
-//保存sms_type到全局变量
+//保存sms_type到变量
 def void save_sms_type() {
 	
     '发送获取sms_type接口'
@@ -132,12 +133,12 @@ def void save_sms_type() {
 	def num=(int)(Math.random()*100)%jsonResponse.data.size
 	
 	//WS.comment('sms_type:'+jsonResponse.data[num].category_id)
+	'保存sms_type到变量'
+	sms_type=jsonResponse.data[num].category_id
 	
-	
-	CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_type', jsonResponse.data[num].category_id)
 }
 
-//保存sms_signature，sms_signature_id到全局变量
+//保存sms_signature，sms_signature_id到变量
 def void save_sms_signature_and_sms_signature_id(){
 	
 	'发送获取sms_signature，sms_signature_id接口'
@@ -149,10 +150,12 @@ def void save_sms_signature_and_sms_signature_id(){
 	
 	if(jsonResponse.data.size==0){
 		
-		'保存sms_signature到全局变量'
-		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature', '')
-		'保存sms_signature_id到全局变量'
-		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature_id', '')
+		'保存sms_signature到变量'
+		sms_signature=''
+		
+		'保存sms_signature_id到变量'
+		sms_signature_id=''
+		
 		
 		
 	}else if(jsonResponse.data.size>0){
@@ -163,10 +166,12 @@ def void save_sms_signature_and_sms_signature_id(){
 		//WS.comment('sms_signature:'+jsonResponse.data[num].name)
 		//WS.comment('sms_signature_id'+jsonResponse.data[num].signature_id)
 		
-		'保存sms_signature到全局变量'
-		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature', jsonResponse.data[num].name)
-		'保存sms_signature_id到全局变量'
-		CustomKeywords.'public_method.Helper.addGlobalVariable'('sms_signature_id', jsonResponse.data[num].signature_id)
+		'保存sms_signature到变量'
+		sms_signature=jsonResponse.data[num].name
+		
+		'保存sms_signature_id到变量'
+		sms_signature_id=jsonResponse.data[num].signature_id
+		
 		
 	}else{
 	

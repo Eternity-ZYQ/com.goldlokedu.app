@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/student/${GlobalVariable.student_id}?_=1585627289012</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/student/${student_id}?_=${timestamp}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>423a0d74-a9b3-4fac-a115-8473c41a1d7a</id>
+      <masked>false</masked>
+      <name>student_id</name>
+   </variables>
+   <variables>
+      <defaultValue>'1585627289012'</defaultValue>
+      <description></description>
+      <id>4c8c1645-30d3-491e-914c-12799e04cf18</id>
+      <masked>false</masked>
+      <name>timestamp</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

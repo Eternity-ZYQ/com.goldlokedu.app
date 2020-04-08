@@ -23,12 +23,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/hsi/temporary/${GlobalVariable.sms_timed_item_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/temporary/${sms_timed_item_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2a348b95-1d3f-458c-9f35-5a2ab28dc1fd</id>
+      <masked>false</masked>
+      <name>sms_timed_item_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

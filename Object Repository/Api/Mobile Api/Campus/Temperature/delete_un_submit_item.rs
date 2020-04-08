@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;record_ids\&quot;: [\&quot;${GlobalVariable.temperature_record_id}\&quot;]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;record_ids\&quot;: [\&quot;${record_ids}\&quot;]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>28d71897-754e-4bd7-83d6-914fc60ffe75</id>
+      <masked>false</masked>
+      <name>record_ids</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

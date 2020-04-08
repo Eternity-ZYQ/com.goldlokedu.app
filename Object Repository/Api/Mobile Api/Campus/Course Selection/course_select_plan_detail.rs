@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/elective/wizard?plan_id=${GlobalVariable.course_select_plan_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/elective/wizard?plan_id=${course_select_plan_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7bb11e86-18c3-41da-9b00-36cdfaefc03f</id>
+      <masked>false</masked>
+      <name>course_select_plan_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

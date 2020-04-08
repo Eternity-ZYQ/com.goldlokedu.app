@@ -39,7 +39,7 @@
       <matchCondition>equals</matchCondition>
       <name>x-file-size</name>
       <type>Main</type>
-      <value>101668</value>
+      <value>${x-file-size}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>

@@ -25,6 +25,27 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'interact'</defaultValue>
+      <description></description>
+      <id>61f5493d-831e-42a2-88d7-6d25ba2bd2d7</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>2545db1a-e913-4ceb-91d7-76492157c409</id>
+      <masked>false</masked>
+      <name>page_size</name>
+   </variables>
+   <variables>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>a81fa4d7-b37d-48d0-bc16-a608672a8e72</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

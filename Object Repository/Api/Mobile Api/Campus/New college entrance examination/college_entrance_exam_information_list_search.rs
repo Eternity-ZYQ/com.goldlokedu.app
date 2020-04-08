@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/news/query?from=0&amp;keyword=高考&amp;size=20</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/news/query?from=${from}&amp;keyword=${keyword}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>86a911f0-310e-45cd-8759-35c69d672d45</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>'高考'</defaultValue>
+      <description></description>
+      <id>3bbf66ac-f1b9-4c73-9690-47758cc0c7ab</id>
+      <masked>false</masked>
+      <name>keyword</name>
+   </variables>
+   <variables>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>f4cc3ec2-a0f1-4435-90e1-3ad2c13d8ecf</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

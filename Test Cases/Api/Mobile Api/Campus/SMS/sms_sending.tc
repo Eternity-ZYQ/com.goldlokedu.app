@@ -19,4 +19,25 @@
       <masked>false</masked>
       <name>sms_timed</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8120cfa5-0ab3-49c3-be4d-4e226ea3aed0</id>
+      <masked>false</masked>
+      <name>sms_signature</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a51aee38-ab76-41a0-9e84-36891e2831f6</id>
+      <masked>false</masked>
+      <name>sms_signature_id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6bb5a45e-1c4a-4b30-accf-81d69b917fcf</id>
+      <masked>false</masked>
+      <name>sms_type</name>
+   </variable>
 </TestCaseEntity>

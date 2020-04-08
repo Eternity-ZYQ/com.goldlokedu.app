@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/menu/app/ios?version=1.0</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/menu/app/ios?version=${version}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'1.0'</defaultValue>
+      <description></description>
+      <id>be25b191-19ba-4962-a5bc-83cd78834cf2</id>
+      <masked>false</masked>
+      <name>version</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

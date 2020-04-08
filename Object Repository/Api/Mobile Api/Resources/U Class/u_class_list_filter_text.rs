@@ -19,12 +19,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/onlineclass/detailpage/search_course?from=0&amp;popularity_sort=desc&amp;search_text=一年级&amp;size=10</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/onlineclass/detailpage/search_course?from=${from}&amp;popularity_sort=${popularity_sort}&amp;search_text=${search_text}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>aa329722-661c-4e2e-b187-b9839a3406ff</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>3fdc7a6d-ffff-453b-9703-2ed89eb81bc2</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>'desc'</defaultValue>
+      <description></description>
+      <id>e78a1461-f7c3-4a88-a864-f4fc5b3d766a</id>
+      <masked>false</masked>
+      <name>popularity_sort</name>
+   </variables>
+   <variables>
+      <defaultValue>'一年级'</defaultValue>
+      <description></description>
+      <id>c6d6feb9-4d8c-4b94-bc0c-f0ef0061f067</id>
+      <masked>false</masked>
+      <name>search_text</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

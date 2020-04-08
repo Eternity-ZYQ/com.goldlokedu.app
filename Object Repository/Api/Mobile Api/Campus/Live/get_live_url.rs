@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/live/general/interact_room/get_live_url?room_id=${GlobalVariable.live_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/live/general/interact_room/get_live_url?room_id=${live_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5cbae05a-d09a-4750-80ce-679501842cbc</id>
+      <masked>false</masked>
+      <name>live_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

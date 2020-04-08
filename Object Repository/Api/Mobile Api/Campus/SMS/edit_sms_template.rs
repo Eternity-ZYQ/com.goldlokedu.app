@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;template_id\&quot;: \&quot;${GlobalVariable.sms_template_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;template_id\&quot;: \&quot;${sms_template_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -49,6 +49,13 @@
       <id>9aea1372-b5b4-4122-9fa7-3a8ea7d7d382</id>
       <masked>false</masked>
       <name>title</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>30ceb4e9-2d21-4783-923d-58b3767d1a2d</id>
+      <masked>false</masked>
+      <name>sms_template_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

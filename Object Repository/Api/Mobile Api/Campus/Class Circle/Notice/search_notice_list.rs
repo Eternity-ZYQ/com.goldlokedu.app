@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://192.168.2.243/bulletin/search?from=0&amp;klass_id=${GlobalVariable.class_id}&amp;size=10</restUrl>
+   <restUrl>http://192.168.2.243/bulletin/search?from=${from}&amp;klass_id=${class_id}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9ea4ab60-af70-4c2d-8417-baa9c2b7c5e9</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>4b875d9b-fd46-4671-88c4-dd87668e3690</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>e6d445b3-dbdc-438b-9d8a-0de4c9cb34f0</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;max_option_amount\&quot;: 1,\n\t\&quot;vote_type\&quot;: 0,\n\t\&quot;vote_range\&quot;: \&quot;${GlobalVariable.user_name},${GlobalVariable.class_name}\&quot;,\n\t\&quot;title\&quot;: \&quot;${publish_vote_title}\&quot;,\n\t\&quot;expiration\&quot;: \&quot;${vote_expiration}\&quot;,\n\t\&quot;vote_options\&quot;: [{\n\t\t\&quot;sequential\&quot;: 0,\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项1\&quot;\n\t\t}\n\t}, {\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项2\&quot;\n\t\t},\n\t\t\&quot;sequential\&quot;: 1\n\t}, {\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项3\&quot;\n\t\t},\n\t\t\&quot;sequential\&quot;: 2\n\t}],\n\t\&quot;vote_participants\&quot;: {\n\t\t\&quot;student_participants\&quot;: {\n\t\t\t\&quot;class_ids\&quot;: [\&quot;GlobalVariable.class_id\&quot;]\n\t\t},\n\t\t\&quot;teacher_participants\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [\&quot;${GlobalVariable.user_id}\&quot;]\n\t\t}\n\t},\n\t\&quot;method\&quot;: 0\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;max_option_amount\&quot;: ${max_option_amount},\n\t\&quot;vote_type\&quot;: ${vote_type},\n\t\&quot;vote_range\&quot;: \&quot;${vote_range}\&quot;,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;expiration\&quot;: \&quot;${expiration}\&quot;,\n\t\&quot;vote_options\&quot;: [\n      {\n\t\t\&quot;sequential\&quot;: 0,\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项1\&quot;\n\t\t}\n\t}, {\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项2\&quot;\n\t\t},\n\t\t\&quot;sequential\&quot;: 1\n\t}, {\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项3\&quot;\n\t\t},\n\t\t\&quot;sequential\&quot;: 2\n\t}],\n\t\&quot;vote_participants\&quot;: {\n\t\t\&quot;student_participants\&quot;: {\n\t\t\t\&quot;class_ids\&quot;: [${class_ids}]\n\t\t},\n\t\t\&quot;teacher_participants\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [${teacher_ids}]\n\t\t}\n\t},\n\t\&quot;method\&quot;: 0\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -41,14 +41,49 @@
       <description>投票标题</description>
       <id>17769e63-1c39-45ca-ac8f-204123a4c687</id>
       <masked>false</masked>
-      <name>publish_vote_title</name>
+      <name>title</name>
    </variables>
    <variables>
       <defaultValue>findTestData('User Information/Test Data/vote_data').getValue(2, 1)</defaultValue>
       <description>截止日期</description>
       <id>c9526216-4b7f-4658-a625-9e60670cdd20</id>
       <masked>false</masked>
-      <name>vote_expiration</name>
+      <name>expiration</name>
+   </variables>
+   <variables>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>b7273cd7-c080-4c99-91fe-4c695c4016ca</id>
+      <masked>false</masked>
+      <name>max_option_amount</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>305405c6-ea36-4331-a445-79097785e1fe</id>
+      <masked>false</masked>
+      <name>vote_type</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6e709fd0-f575-42bf-81c4-9b4187653012</id>
+      <masked>false</masked>
+      <name>vote_range</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>25cb9ded-5e03-4b10-8c17-aae141b7c5e9</id>
+      <masked>false</masked>
+      <name>class_ids</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6a2ccdae-bf2c-4c08-8bdf-3f8331c34b69</id>
+      <masked>false</masked>
+      <name>teacher_ids</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

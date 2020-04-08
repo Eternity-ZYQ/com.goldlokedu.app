@@ -19,12 +19,26 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/pictures/${GlobalVariable.homework_picture_id}?thumb=true</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homework/pictures/${homework_picture_id}?thumb=${thumb}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>384ad622-ae63-41d2-a187-7297f4210ba2</id>
+      <masked>false</masked>
+      <name>homework_picture_id</name>
+   </variables>
+   <variables>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>96c3104b-6364-4e0d-affe-6d125ac65096</id>
+      <masked>false</masked>
+      <name>homework_picture_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

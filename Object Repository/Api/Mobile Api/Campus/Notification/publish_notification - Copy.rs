@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>发布通知</description>
-   <name>publish_notification</name>
+   <name>publish_notification - Copy</name>
    <tag></tag>
-   <elementGuidId>4d447154-3fb1-4891-9a58-4ccedc231c43</elementGuidId>
+   <elementGuidId>babf01e0-6a6d-4fec-b860-e278a1c51fed</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;need_sms_remind\&quot;: false,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;payload\&quot;: {\n\t\t\&quot;message_type\&quot;: \&quot;Html\&quot;,\n\t\t\&quot;content\&quot;: \&quot;${content}\&quot;\n\t},\n\t\&quot;address\&quot;: {\n\t\t\&quot;student_address\&quot;: {\n\t\t\t\&quot;klass_ids\&quot;: [\&quot;${GlobalVariable.class_id}\&quot;]\n\t\t},\n\t\t\&quot;teacher_address\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [\&quot;${GlobalVariable.user_id}\&quot;],\n\t\t\t\&quot;department_ids\&quot;: []\n\t\t},\n\t\t\&quot;groups_address\&quot;: {\n\t\t\t\&quot;group_ids\&quot;: [{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;student\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t},{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;dorm\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}]\n\t\t}\n\t}\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;address_str\&quot;: [\&quot;${GlobalVariable.class_name}\&quot;, \&quot;${GlobalVariable.user_name}\&quot;],\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;need_sms_remind\&quot;: false,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;payload\&quot;: {\n\t\t\&quot;message_type\&quot;: \&quot;Html\&quot;,\n\t\t\&quot;content\&quot;: \&quot;${content}\&quot;\n\t},\n\t\&quot;address\&quot;: {\n\t\t\&quot;student_address\&quot;: {\n\t\t\t\&quot;klass_ids\&quot;: [\&quot;${GlobalVariable.class_id}\&quot;]\n\t\t},\n\t\t\&quot;teacher_address\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [\&quot;${GlobalVariable.user_id}\&quot;],\n\t\t\t\&quot;department_ids\&quot;: []\n\t\t},\n\t\t\&quot;groups_address\&quot;: {\n\t\t\t\&quot;group_ids\&quot;: [{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;student\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t},{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;dorm\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}]\n\t\t}\n\t}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -63,29 +63,6 @@
       <id>8a4e8a74-0e67-4319-9eed-bd018561e779</id>
       <masked>false</masked>
       <name>need_sms_remind</name>
-   </variables>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description>&quot;address&quot;: {
-		&quot;student_address&quot;: {
-			&quot;klass_ids&quot;: [&quot;${GlobalVariable.class_id}&quot;]
-		},
-		&quot;teacher_address&quot;: {
-			&quot;teacher_ids&quot;: [&quot;${GlobalVariable.user_id}&quot;],
-			&quot;department_ids&quot;: []
-		},
-		&quot;groups_address&quot;: {
-			&quot;group_ids&quot;: [{
-				&quot;id_type&quot;: &quot;student&quot;,
-				&quot;ids&quot;: []
-			},{
-				&quot;id_type&quot;: &quot;dorm&quot;,
-				&quot;ids&quot;: []
-			}]
-		}</description>
-      <id>bbce9d01-8f78-473e-8bc7-a447046f3f4c</id>
-      <masked>false</masked>
-      <name>address</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

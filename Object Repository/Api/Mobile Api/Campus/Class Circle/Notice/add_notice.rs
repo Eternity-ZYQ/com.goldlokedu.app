@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;attachments\&quot;: {\n\t\t\&quot;data\&quot;: []\n\t},\n\t\&quot;klass_id\&quot;: \&quot;${GlobalVariable.class_id}\&quot;,\n\t\&quot;kind_id\&quot;: \&quot;Normal\&quot;,\n\t\&quot;content\&quot;: \&quot;${}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;attachments\&quot;: {\n\t\t\&quot;data\&quot;: []\n\t},\n\t\&quot;klass_id\&quot;: \&quot;${class_id}\&quot;,\n\t\&quot;kind_id\&quot;: \&quot;Normal\&quot;,\n\t\&quot;content\&quot;: \&quot;${content}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -42,6 +42,13 @@
       <id>38a067ca-1e45-4c0a-b573-b58c66e0eb6d</id>
       <masked>false</masked>
       <name>content</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>53036759-8826-42ce-a5c9-7c471c8e0b73</id>
+      <masked>false</masked>
+      <name>class_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

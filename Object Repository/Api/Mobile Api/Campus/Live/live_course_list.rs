@@ -19,12 +19,40 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/live/interactRoom/list?page=1&amp;page_size=10&amp;request_site=app&amp;type=live</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/live/interactRoom/list?page=${page}&amp;page_size=${page_size}&amp;request_site=${page_size}&amp;type=${type}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>64adc801-0266-4f2b-b795-bef6f6ea14ac</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>796ff825-e99d-4ced-96cd-9d17ad8a2b24</id>
+      <masked>false</masked>
+      <name>page_size</name>
+   </variables>
+   <variables>
+      <defaultValue>'app'</defaultValue>
+      <description></description>
+      <id>fc4242e7-7bf8-485c-a563-197dc3836a54</id>
+      <masked>false</masked>
+      <name>requese_site</name>
+   </variables>
+   <variables>
+      <defaultValue>'live'</defaultValue>
+      <description></description>
+      <id>4581cfec-d40d-41e3-be7d-f9afc0ee3873</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

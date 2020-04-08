@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;scrip_deliver\&quot;: [{\n\t\t\&quot;name\&quot;: \&quot;${GlobalVariable.combination_name}\&quot;,\n\t\t\&quot;id\&quot;: \&quot;${GlobalVariable.combination_id}\&quot;\n\t}],\n\t\&quot;plan_id\&quot;: \&quot;${GlobalVariable.course_select_plan_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;scrip_deliver\&quot;: [{\n\t\t\&quot;name\&quot;: \&quot;${combination_name}\&quot;,\n\t\t\&quot;id\&quot;: \&quot;${combination_id}\&quot;\n\t}],\n\t\&quot;plan_id\&quot;: \&quot;${course_select_plan_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,6 +36,27 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>80ed4c4f-930c-4949-a69a-b2bc8f0c3198</id>
+      <masked>false</masked>
+      <name>combination_name</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>529c830c-e4d1-4b97-82ae-f0c8aa86b12c</id>
+      <masked>false</masked>
+      <name>combination_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4211c69c-daac-4c53-924b-6bb9c191fb83</id>
+      <masked>false</masked>
+      <name>course_select_plan_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

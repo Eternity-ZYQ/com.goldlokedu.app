@@ -19,12 +19,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySchool?degree=本科&amp;from=0&amp;size=20</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySchool?degree=${degree}&amp;from=${from}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'本科'</defaultValue>
+      <description></description>
+      <id>8186f130-b543-40f8-ad3f-6c61650de85e</id>
+      <masked>false</masked>
+      <name>degree</name>
+   </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>f8a12008-1b6d-4d28-a69f-0e24d14db6ed</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>a0b13006-b4f3-4ee6-99c7-4fba1c3a6afd</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
