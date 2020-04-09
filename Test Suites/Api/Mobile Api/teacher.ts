@@ -37,7 +37,7 @@
    <testCaseLink>
       <guid>5683da49-5b9d-45c1-8e5c-1783249e0b9d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sending</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -73,7 +73,55 @@
    <testCaseLink>
       <guid>0be22467-7095-47fb-9df3-807426347419</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sent</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aee4bc55-faa0-46fe-b349-00fe1ad72c36</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_timed_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0048bdba-df0c-4858-9bc3-768ee4770036</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3ff33b3d-2c66-4868-98f2-25adf979022f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>78c936b9-7e2a-4cef-b227-1e347283e222</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_template_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4d723136-f56b-48f3-ba9b-9c79f4be1be8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>327b6134-e3c0-457d-ac49-ffe21d6a59d7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7e6b99aa-cd13-45be-b293-7df27731cb23</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3f53895b-9f41-47c5-a339-a98d6d95fdee</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

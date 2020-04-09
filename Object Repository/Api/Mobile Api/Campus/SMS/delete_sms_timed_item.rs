@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>删除定时短信</description>
-   <name>delete_timed_sms</name>
+   <description>删除定时短信数据</description>
+   <name>delete_sms_timed_item</name>
    <tag></tag>
-   <elementGuidId>d53823a4-9eb2-4ec4-a380-2a507e3ee80d</elementGuidId>
+   <elementGuidId>d26570e4-aa3e-462c-b351-b6434e160033</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -23,7 +23,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/hsi/temporary/${sms_timed_item_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/temporary/${draft_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,10 +31,10 @@
    <soapServiceFunction></soapServiceFunction>
    <variables>
       <defaultValue>''</defaultValue>
-      <description></description>
-      <id>2a348b95-1d3f-458c-9f35-5a2ab28dc1fd</id>
+      <description>定时短信条目的id</description>
+      <id>f215ae0a-6a64-4b4a-aea0-bdc44ab39c37</id>
       <masked>false</masked>
-      <name>sms_timed_item_id</name>
+      <name>draft_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -50,18 +50,6 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
-
-	
-	
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;)
-
-
-
-}
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

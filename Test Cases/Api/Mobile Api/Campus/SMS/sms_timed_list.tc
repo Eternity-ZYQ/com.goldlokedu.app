@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>定时短信tab</description>
+   <description>定时短信列表</description>
    <name>sms_timed_list</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dd926633-391a-4906-aae8-e1bd39e0ec91</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>定时短信列表数据条数</description>
+      <id>0048bdba-df0c-4858-9bc3-768ee4770036</id>
+      <masked>false</masked>
+      <name>timer_sms_msg_size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>定时短信条目id</description>
+      <id>3ff33b3d-2c66-4868-98f2-25adf979022f</id>
+      <masked>false</masked>
+      <name>draft_id</name>
+   </variable>
 </TestCaseEntity>

@@ -23,7 +23,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/hsi/template/${sms_template_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/template/${template_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,10 +31,10 @@
    <soapServiceFunction></soapServiceFunction>
    <variables>
       <defaultValue>''</defaultValue>
-      <description></description>
+      <description>短信模板数据id</description>
       <id>f9954b01-b84a-43c8-afcf-c91473e8a168</id>
       <masked>false</masked>
-      <name>sms_template_id</name>
+      <name>template_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

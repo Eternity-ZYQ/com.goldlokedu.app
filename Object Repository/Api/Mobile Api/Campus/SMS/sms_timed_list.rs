@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://192.168.2.243/hsi/temporary?owner_id=${GlobalVariable.user_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/hsi/temporary?owner_id=${GlobalVariable.user_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

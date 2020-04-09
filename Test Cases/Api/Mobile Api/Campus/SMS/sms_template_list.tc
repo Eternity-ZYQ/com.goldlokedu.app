@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>短信模板列表</description>
+   <name>sms_template_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>975614f1-0212-4120-9209-0e0b9f1ff863</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>模板个数</description>
+      <id>4d723136-f56b-48f3-ba9b-9c79f4be1be8</id>
+      <masked>false</masked>
+      <name>data_size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>模板id</description>
+      <id>327b6134-e3c0-457d-ac49-ffe21d6a59d7</id>
+      <masked>false</masked>
+      <name>template_id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>模板内容</description>
+      <id>7e6b99aa-cd13-45be-b293-7df27731cb23</id>
+      <masked>false</masked>
+      <name>content</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>模板标题</description>
+      <id>3f53895b-9f41-47c5-a339-a98d6d95fdee</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+</TestCaseEntity>

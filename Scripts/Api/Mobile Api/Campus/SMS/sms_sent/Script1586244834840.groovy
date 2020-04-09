@@ -37,7 +37,7 @@ sms_sent_list()
 
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response) {
-	JsonSlurper
+	
 	def jsonSlurper = new JsonSlurper()
 
 	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
@@ -52,7 +52,7 @@ def void sms_sent_list(){
 	ResponseObject sms_sent_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_list", [('size'):10,('from'):0]),FailureHandling.CONTINUE_ON_FAILURE)
 	
 	def jsonResponse=get_jsonResponse(sms_sent_list_response)
-	WS.comment('已发短信列表10条body:'+jsonResponse)	
+	WS.comment('已发短信列表10条body:'+sms_sent_list_response.getResponseText())	
 	
 	'判断请求接口成功'
 	if(WS.verifyResponseStatusCode(sms_sent_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
@@ -92,7 +92,7 @@ def void sms_sent_list_unreceived(String message_id,int size){
 	ResponseObject sms_sent_list_unreceived_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_unreceived', [('message_id'):message_id,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 	
 	def jsonResponse=get_jsonResponse(sms_sent_list_unreceived_response)
-	WS.comment('未收到短信的联系人数据body:'+jsonResponse)
+	WS.comment('未收到短信的联系人数据body:'+sms_sent_list_unreceived_response.getResponseText())
 	
 	'请求接口成功'
 	if(WS.verifyResponseStatusCode(sms_sent_list_unreceived_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){

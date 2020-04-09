@@ -129,7 +129,7 @@ def void save_sms_type() {
 
     def jsonResponse = get_jsonResponse(response)
 
-	WS.comment('sms_type接口数据'+jsonResponse)
+	WS.comment('sms_type接口数据'+response.getResponseText())
 	def num=(int)(Math.random()*100)%jsonResponse.data.size
 	
 	//WS.comment('sms_type:'+jsonResponse.data[num].category_id)
@@ -146,7 +146,7 @@ def void save_sms_signature_and_sms_signature_id(){
 
 	def jsonResponse = get_jsonResponse(response)
 	
-	WS.comment('sms_signature接口数据:'+jsonResponse)
+	WS.comment('sms_signature接口数据:'+response.getResponseText())
 	
 	if(jsonResponse.data.size==0){
 		

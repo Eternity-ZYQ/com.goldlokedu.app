@@ -60,29 +60,26 @@ public class SystemTime {
 		int hours=date.getHours()
 		int minutes=date.getMinutes()
 		int seconds=date.getSeconds()
-		
-		
-	
+
+
+
 		String time = ''+(years+year)+full_time(Month)+full_time(day)+'T'+full_time(hours)+full_time(minutes)+full_time(seconds)+'+0800'
 
 		return time
 	}
-	
-	
+
+
 	public String full_time(int time){
 		String str_time
 		if(time<10){
-			
+
 			str_time='0'+time
 		}else{
-		
+
 			str_time=''+time
 		}
-		
-		
+
+
 		return str_time
 	}
-	
-	
-	
 }

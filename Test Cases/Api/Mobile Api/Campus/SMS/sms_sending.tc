@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>短信用例</description>
+   <description>发送短信用例</description>
    <name>sms_sending</name>
    <tag></tag>
    <comment></comment>

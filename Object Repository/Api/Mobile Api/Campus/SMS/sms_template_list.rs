@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>短信模板</description>
-   <name>sms_template</name>
+   <description>短信模板列表</description>
+   <name>sms_template_list</name>
    <tag></tag>
    <elementGuidId>6039e7ce-63d9-4a6b-88ca-0e50b8e6ce4f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
