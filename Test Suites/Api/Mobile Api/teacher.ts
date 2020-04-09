@@ -97,7 +97,7 @@
    <testCaseLink>
       <guid>78c936b9-7e2a-4cef-b227-1e347283e222</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_template_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -122,6 +122,24 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>3f53895b-9f41-47c5-a339-a98d6d95fdee</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d49b9759-49b7-4f81-a7d2-9ba0282a9dda</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Bell/bell</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4ede2eb0-c6fd-41eb-9c15-753426730df2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8a63829e-cd86-4a73-82d5-9e68f08ea1a3</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

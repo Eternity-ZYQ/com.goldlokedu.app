@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>小铃铛用例</description>
+   <name>bell</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f6da0fdc-b5b7-4a20-8097-4f0e5c326100</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>列表数据长度</description>
+      <id>4ede2eb0-c6fd-41eb-9c15-753426730df2</id>
+      <masked>false</masked>
+      <name>data_size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>消息id</description>
+      <id>8a63829e-cd86-4a73-82d5-9e68f08ea1a3</id>
+      <masked>false</masked>
+      <name>reminder_id</name>
+   </variable>
+</TestCaseEntity>

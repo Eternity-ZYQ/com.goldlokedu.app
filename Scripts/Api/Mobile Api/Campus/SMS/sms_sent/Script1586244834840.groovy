@@ -61,7 +61,7 @@ def void sms_sent_list(){
 		assertThat(sms_sent_list_response.getResponseText()).contains('total')
 		
 		WS.comment('已读短信列表size'+jsonResponse.data.size)
-		for (int index : (0..jsonResponse.data.size)) {
+		for (int index : (0..jsonResponse.data.size-1)) {
 			
 			if(jsonResponse.data[index].sent_static.fail>0){
 				
