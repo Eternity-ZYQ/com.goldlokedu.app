@@ -36,12 +36,12 @@ if(data_size>0&&reminder_id!=''){
 	WS.comment('接口异常')
 }
 
+'一键已读'
+reminder_view_all(GlobalVariable.user_id)
 
 
-
-
-
-
+'全部删除'
+delete_reminder_all()
 
 
 
@@ -109,8 +109,7 @@ def void reminder_view(String reminder_ids){
 	if(WS.verifyResponseStatusCode(reminder_view_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		WS.verifyElementPropertyValue(reminder_view_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
+				
 	}
 	
 	
@@ -118,7 +117,39 @@ def void reminder_view(String reminder_ids){
 }
 
 
+//一键已读
+def void reminder_view_all(String owner_id){
+	'发送一键已读接口'
+	ResponseObject reminder_view_all_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_view_all",[('owner_id'):owner_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	
+	def jsonResponse=get_jsonResponse(reminder_view_all_response)
+	WS.comment('小铃铛一键已读接口返回body:'+reminder_view_all_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(reminder_view_all_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		WS.verifyElementPropertyValue(reminder_view_all_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+	}
+	
+	
+	
+	
+}
 
+//全部删除
+def void delete_reminder_all(){
+	'发送全部删除接口'
+	ResponseObject delete_reminder_all_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_all_erase"), FailureHandling.CONTINUE_ON_FAILURE)
+	
+	def jsonResponse=get_jsonResponse(delete_reminder_all_response)
+	WS.comment('小铃铛一键已读接口返回body:'+delete_reminder_all_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(delete_reminder_all_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		WS.verifyElementPropertyValue(delete_reminder_all_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+	}
+	
+	
+}
 
 
 
