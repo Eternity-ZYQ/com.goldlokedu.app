@@ -127,7 +127,7 @@
    <testCaseLink>
       <guid>d49b9759-49b7-4f81-a7d2-9ba0282a9dda</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Bell/bell</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -141,5 +141,17 @@
          <value></value>
          <variableId>8a63829e-cd86-4a73-82d5-9e68f08ea1a3</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b3ab6b0a-3ed9-41fb-b5d3-8eac1b05e52d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/view_class_training_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c7d5774b-4c9f-4f62-b144-fbd297f1c453</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/edit_class_training</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

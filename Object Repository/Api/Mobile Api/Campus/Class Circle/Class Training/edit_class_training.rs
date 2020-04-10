@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;slogan\&quot;: \&quot;${class_training_content_slogan}\&quot;,\n\t\&quot;klass_id\&quot;: \&quot;${class_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;slogan\&quot;: \&quot;${slogan}\&quot;,\n\t\&quot;klass_id\&quot;: \&quot;${class_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -41,7 +41,7 @@
       <description>编辑的班训内容</description>
       <id>7c41d4b8-598b-4417-ac1f-0933375fa0c3</id>
       <masked>false</masked>
-      <name>class_training_content_slogan</name>
+      <name>slogan</name>
    </variables>
    <variables>
       <defaultValue>''</defaultValue>

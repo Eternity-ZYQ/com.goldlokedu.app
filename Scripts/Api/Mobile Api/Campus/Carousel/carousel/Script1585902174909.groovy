@@ -21,9 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '首页轮播图获取'
-get_carousel()
+ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Carousel/carousel"), FailureHandling.CONTINUE_ON_FAILURE)
 
-
+WS.comment('轮播图数据body:'+response.getResponseText())
 
 
 
@@ -40,10 +40,4 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-//获取轮播图数据
-def void get_carousel(){
-	
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Carousel/carousel"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	
-}
+

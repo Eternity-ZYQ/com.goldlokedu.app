@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>添加/编辑班训</description>
+   <name>edit_class_training</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b48a39e3-99ed-4b14-b283-121d57c48402</testCaseGuid>
+</TestCaseEntity>
