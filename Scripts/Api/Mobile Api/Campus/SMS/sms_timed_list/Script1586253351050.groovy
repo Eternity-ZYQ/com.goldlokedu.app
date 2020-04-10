@@ -34,6 +34,7 @@ if(timer_sms_msg_size>0){
 	WS.comment('定时短信列表数据为空')
 
 }else{
+	WS.verifyEqual('1', '2', FailureHandling.CONTINUE_ON_FAILURE)
 	WS.comment('定时短信接口异常')
 }
 

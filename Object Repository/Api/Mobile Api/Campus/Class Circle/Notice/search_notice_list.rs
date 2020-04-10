@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://192.168.2.243/bulletin/search?from=${from}&amp;klass_id=${class_id}&amp;size=${size}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/bulletin/search?from=${from}&amp;klass_id=${class_id}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

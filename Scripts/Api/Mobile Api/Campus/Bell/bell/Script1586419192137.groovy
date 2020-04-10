@@ -33,6 +33,7 @@ if(data_size>0&&reminder_id!=''){
 	WS.comment('消息列表为空')
 
 }else{
+	WS.verifyEqual('1', '2', FailureHandling.CONTINUE_ON_FAILURE)
 	WS.comment('接口异常')
 }
 

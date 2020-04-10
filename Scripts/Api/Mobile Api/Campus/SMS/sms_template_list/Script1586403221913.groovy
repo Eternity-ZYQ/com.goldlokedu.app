@@ -49,7 +49,7 @@ if(data_size>0){
 
 	WS.comment('没有短信模板,不执行删除')
 }else{
-
+	WS.verifyEqual('1', '2', FailureHandling.CONTINUE_ON_FAILURE)
 	WS.comment('data_size异常:'+data_size)
 }
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>最新的一条公告</description>
-   <name>new_notice</name>
+   <description>最新的公告内容</description>
+   <name>new_one_notice</name>
    <tag></tag>
-   <elementGuidId>74622638-934a-481c-8374-69e06c8442fe</elementGuidId>
+   <elementGuidId>23428ba7-27c5-4945-9905-807b0e4ad834</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -27,8 +27,8 @@
    <soapServiceFunction></soapServiceFunction>
    <variables>
       <defaultValue>''</defaultValue>
-      <description></description>
-      <id>3abd3b18-8316-42c9-9be8-8beeece999a0</id>
+      <description>班级id</description>
+      <id>42a0b944-3fe2-4716-9923-ab8c0500b452</id>
       <masked>false</masked>
       <name>class_id</name>
    </variables>
@@ -45,16 +45,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
-
-	assertThat(response.getResponseText()).contains('bulletin_id')
-}
-
-
-
-
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

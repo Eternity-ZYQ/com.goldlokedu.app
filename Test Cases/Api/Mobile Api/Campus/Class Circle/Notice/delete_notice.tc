@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>查看公告类表</description>
+   <name>delete_notice</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92b7bcc8-36de-4d39-afea-071e2af646b6</testCaseGuid>
+</TestCaseEntity>

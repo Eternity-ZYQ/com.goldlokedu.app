@@ -174,7 +174,7 @@ def void save_sms_signature_and_sms_signature_id(){
 		
 		
 	}else{
-	
+		WS.verifyEqual('1', '2', FailureHandling.CONTINUE_ON_FAILURE)
 		WS.comment('短信署名接口异常')
 	
 	}

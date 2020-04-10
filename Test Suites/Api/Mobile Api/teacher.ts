@@ -151,7 +151,31 @@
    <testCaseLink>
       <guid>c7d5774b-4c9f-4f62-b144-fbd297f1c453</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/edit_class_training</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a748b738-e7aa-46ac-9fec-cb38d6e636a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bb104874-c081-4d68-9ffc-8dc4c3cd7285</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/new_one_notice</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>84f3fa23-b773-4d4c-8b78-7a4cb59fdfcf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/add_notice</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2d3693ab-a08c-4c0a-b839-93a63741e4db</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/delete_notice</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
