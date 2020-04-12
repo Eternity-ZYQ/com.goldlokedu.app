@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>相册上传图片</description>
+   <name>upload_album_picture</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>14afedb3-fc94-4a6b-9726-7b7333f83f06</testCaseGuid>
+</TestCaseEntity>

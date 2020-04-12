@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;album_name\&quot;: \&quot;修改后的相册名称\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${GlobalVariable.class_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;album_name\&quot;: \&quot;${album_name}\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -43,6 +43,20 @@
       <masked>false</masked>
       <name>album_id</name>
    </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7b810de6-e041-4612-b56e-bc942886e627</id>
+      <masked>false</masked>
+      <name>album_name</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>337628d5-a96f-47a6-a87f-7d8698635037</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -63,6 +77,9 @@ if(WS.verifyResponseStatusCode(response, 200)){
 	WS.verifyElementPropertyValue(response, 'result', 'Success')
 
 }
+
+
+
 
 
 

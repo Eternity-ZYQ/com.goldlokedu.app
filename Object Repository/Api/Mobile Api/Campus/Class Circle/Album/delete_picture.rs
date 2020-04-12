@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;class_id\&quot;: \&quot;${class_id\&quot;,\n\t\&quot;pictures\&quot;: [${album_pictures}]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;,\n\t\&quot;pictures\&quot;: ${album_pictures}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

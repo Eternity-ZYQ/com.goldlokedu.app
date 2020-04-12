@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>编辑相册名称</description>
+   <name>detele_album</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0dd18550-1fb5-4c02-9a43-4e22c643fced</testCaseGuid>
+</TestCaseEntity>

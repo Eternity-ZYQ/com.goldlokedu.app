@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>添加相册</description>
+   <name>add_album</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da3a518a-860e-45c7-825f-55be0a64168e</testCaseGuid>
+</TestCaseEntity>

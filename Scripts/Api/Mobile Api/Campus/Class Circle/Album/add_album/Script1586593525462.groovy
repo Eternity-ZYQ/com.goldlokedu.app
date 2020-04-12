@@ -14,48 +14,48 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
 import static org.assertj.core.api.Assertions.*
 import groovy.json.JsonSlurper
-import internal.GlobalVariable as GlobalVariable
-
 
 
 '获取教师关联班级信息'
 def class_information_jsonResponse=get_class_information()
-
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
 	
 	for(int y:(0..class_information_jsonResponse.data[x].klass.size-1)){
 		
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
-		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def jsonResponse=search_notice_list(class_id,0,10)
+		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
+		if(judge_adviser(class_id)){
+			
+			WS.comment('是'+class_name+'的班主任')
+			def album_name=CustomKeywords.'time.SystemTime.get_system_time'()+'添加的相册'
+			add_album(album_name,class_id)
+			
+		}else{
 		
-		if(jsonResponse.data.size>0){
-			
-			if(jsonResponse.data[0].is_deletable){
+			WS.comment('不是'+class_name+'的班主任')
 				
-				detele_notice(jsonResponse.data[0].bulletin_id)
-				
-			}else{
-			
-				WS.comment('不是'+class_name+'的班主任,不能删除该班公告')
-			
-			}
-										
-		}else if(jsonResponse.data.size==0){
-		
-			WS.comment(class_name+'公告列表为空:'+jsonResponse.data.size)
 		}
-		
-		
-		
 	}
-	
-	
+		
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -104,19 +104,20 @@ def Object get_class_information(){
 
 
 
-//获取班级公告列表数据
-def Object search_notice_list(String class_id,int from ,int size){
-	'发送获取班级公告列表接口'
-	ResponseObject search_notice_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list", [('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+
+
+
+//添加相册
+def void add_album(String album_name,String class_id){
+	'发送添加相册接口'
+	ResponseObject add_album_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/add_album",[('album_name'):album_name,('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	def search_notice_list_jsonResponse=get_jsonResponse(search_notice_list_response)
-	WS.comment('班级公告列表信息body:'+search_notice_list_response.getResponseText())
+	def add_album_jsonResponse=get_jsonResponse(add_album_response)
+	WS.comment('添加相册返回数据body：'+add_album_response.getResponseText())
 	
-	if(WS.verifyResponseStatusCode(search_notice_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-			
-		WS.containsString(search_notice_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
+	if(WS.verifyResponseStatusCode(add_album_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		return search_notice_list_jsonResponse
+		WS.containsString(add_album_response, 'album_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 	}
 	
@@ -125,18 +126,26 @@ def Object search_notice_list(String class_id,int from ,int size){
 
 
 
-//删除公告
-def void detele_notice(String bulletin_id){
-	'发送获取班级公告列表接口'
-	ResponseObject detele_notice_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/delete_notice", [('bulletin_id'):bulletin_id]), FailureHandling.CONTINUE_ON_FAILURE)
+
+//判断是否是班主任
+def boolean judge_adviser(String class_id){
+	'发送获取教师是否为班主任接口数据'
+	ResponseObject judge_adviser_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	def detele_notice_jsonResponse=get_jsonResponse(detele_notice_response)
-	WS.comment('删除班级公告body:'+detele_notice_response.getResponseText())
+	def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
+	WS.comment('是否为班主任返回body:'+judge_adviser_response.getResponseText())
 	
-	if(WS.verifyResponseStatusCode(detele_notice_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	if(WS.verifyResponseStatusCode(judge_adviser_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		WS.verifyElementPropertyValue(detele_notice_response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
-			
+		WS.verifyElementPropertyValue(judge_adviser_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.verifyElementPropertyValue(judge_adviser_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
+		
+		return judge_adviser_jsonResponse.data.adviser
+		
 	}
 	
+	return
+	
 }
+
+

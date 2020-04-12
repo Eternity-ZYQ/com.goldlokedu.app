@@ -73,7 +73,7 @@ def void get_sms_timed_list(){
 	if(WS.verifyResponseStatusCode(sms_timed_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		'返回数据中有timer_sms_msg'
-		assertThat(sms_timed_list_response.getResponseText()).contains('timer_sms_msg')
+		WS.containsString(sms_timed_list_response, 'timer_sms_msg', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		'保存定时短信列表数据长度:timer_sms_msg_size'
 		timer_sms_msg_size=jsonResponse.timer_sms_msg.size

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>编辑相册名称</description>
+   <name>edit_album_name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5a6bdcc-386d-48e0-8c54-6edb356b5e20</testCaseGuid>
+</TestCaseEntity>

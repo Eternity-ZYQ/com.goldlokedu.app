@@ -92,9 +92,8 @@ def Object search_notice_list(String class_id,int from ,int size){
 	WS.comment('班级公告列表信息body:'+search_notice_list_response.getResponseText())
 	
 	if(WS.verifyResponseStatusCode(search_notice_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		assertThat(search_notice_list_response.getResponseText()).contains('total')		
-		
+
+		WS.containsString(search_notice_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		return search_notice_list_jsonResponse
 		

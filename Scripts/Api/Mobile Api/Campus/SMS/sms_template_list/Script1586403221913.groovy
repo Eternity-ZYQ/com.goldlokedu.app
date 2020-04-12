@@ -90,7 +90,7 @@ def void get_sms_template_list(){
 		WS.comment('短信模板列表请求成功')
 		
 		'返回body是否包含data'
-		assertThat(sms_template_response.getResponseText()).contains('data')
+		WS.containsString(sms_template_response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		'保存模板个数data_size'
 		data_size=jsonResponse.data.size
@@ -125,7 +125,7 @@ def void add_sms_template(String content,String title){
 		WS.comment('添加短信模板列表请求成功')
 		
 		'返回body是否包含template_id'
-		assertThat(add_sms_template_response.getResponseText()).contains('template_id')
+		WS.containsString(add_sms_template_response, 'template_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 	
 	}else if(WS.verifyResponseStatusCode(add_sms_template_response, 416, FailureHandling.OPTIONAL)){
@@ -189,8 +189,7 @@ def void edit_sms_template(String id,String new_content,String new_title){
 	if(WS.verifyResponseStatusCode(edit_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		'返回body中包含template_id'
-		assertThat(edit_response.getResponseText()).contains('template_id')
-		
+		WS.containsString(edit_response, 'template_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		
 	}

@@ -15,6 +15,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Change City/change_city</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>51b394c5-e762-429a-b60d-34ba6309d84c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d72cc7aa-bafb-4bf8-943b-eac22b32df26</guid>
@@ -175,7 +181,49 @@
    <testCaseLink>
       <guid>2d3693ab-a08c-4c0a-b839-93a63741e4db</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/delete_notice</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>18a5d909-6f66-46a1-a599-71fe11b97406</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/album_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a4c794bd-6c47-49a4-a4b8-679de443fd54</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/album_picture_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9d148113-0c87-4860-8852-1a64c3f3b1ae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/add_album</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d91167a0-734c-4d86-ab3b-56da63f80d2e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/edit_album_name</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81d56bac-94b4-4f9e-ba50-7d71cfdf493d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/detele_album</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>24c894c1-9d94-4923-b435-4a81c14c9a98</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/upload_album_picture</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f4b27ec4-f123-4a1a-8955-5f4c85dfc777</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/delete_album_picture</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

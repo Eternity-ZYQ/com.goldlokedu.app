@@ -85,11 +85,10 @@ def Object new_one_notice(String class_id){
 	
 	if(WS.verifyResponseStatusCode(new_one_notice_response, 200, FailureHandling.OPTIONAL)){
 		
-		assertThat(new_one_notice_response.getResponseText()).contains('bulletin_id')
-		assertThat(new_one_notice_response.getResponseText()).contains('content')
-		assertThat(new_one_notice_response.getResponseText()).contains('created_date')
-		assertThat(new_one_notice_response.getResponseText()).contains('is_deletable')
-		
+		WS.containsString(new_one_notice_response, 'bulletin_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(new_one_notice_response, 'content', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(new_one_notice_response, 'created_date', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(new_one_notice_response, 'is_deletable', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		return new_one_notice_jsonResponse
 		

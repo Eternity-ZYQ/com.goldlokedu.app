@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>新建相册</description>
-   <name>add_album</name>
+   <description>相册图片列表</description>
+   <name>ablum_picture_list</name>
    <tag></tag>
-   <elementGuidId>951ca2cd-ef8b-468b-8fd2-b1248fe7df4b</elementGuidId>
+   <elementGuidId>b5593cb4-69bb-42e8-a209-2ccd84a56686</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;name\&quot;: \&quot;${album_name}\&quot;,\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -29,26 +18,33 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/album/album</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/album/album/pictures?album_id=${album_id}&amp;from=${from}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>findTestData('User Information/Test Data/fix_data').getValue(9, 1)</defaultValue>
-      <description>新建相册的名字</description>
-      <id>b13070d6-c7e7-425b-8537-6cd1d6eb7dc0</id>
+      <defaultValue>''</defaultValue>
+      <description>相册id</description>
+      <id>5a27ac64-0aab-4bed-a462-bb6c9733e9b6</id>
       <masked>false</masked>
-      <name>album_name</name>
+      <name>album_id</name>
    </variables>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>0</defaultValue>
       <description></description>
-      <id>b0254f75-3904-490b-bd6f-f41dfb1c4793</id>
+      <id>8427d9bb-80bd-42e5-a887-b94dc00677e8</id>
       <masked>false</masked>
-      <name>class_id</name>
+      <name>from</name>
+   </variables>
+   <variables>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>510da04e-544a-4b3e-9d92-5e49d08857f3</id>
+      <masked>false</masked>
+      <name>size</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -63,11 +59,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
-
-	assertThat(response.getResponseText()).contains('name')
-}</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

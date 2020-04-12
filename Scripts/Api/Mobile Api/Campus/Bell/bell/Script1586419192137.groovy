@@ -73,7 +73,7 @@ def void get_bell_list(){
 	if(WS.verifyResponseStatusCode(bell_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		'接口返回数据包含total'
-		assertThat(bell_response.getResponseText()).contains('total')
+		WS.containsString(bell_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		'保存列表数据长度'
 		data_size=jsonResponse.data.size

@@ -58,7 +58,7 @@ def void sms_sent_list(){
 	if(WS.verifyResponseStatusCode(sms_sent_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		'返回数据中有total'
-		assertThat(sms_sent_list_response.getResponseText()).contains('total')
+		WS.containsString(sms_sent_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		WS.comment('已读短信列表size'+jsonResponse.data.size)
 		for (int index : (0..jsonResponse.data.size-1)) {
@@ -98,8 +98,7 @@ def void sms_sent_list_unreceived(String message_id,int size){
 	if(WS.verifyResponseStatusCode(sms_sent_list_unreceived_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		'返回数据中有total'
-		assertThat(sms_sent_list_unreceived_response.getResponseText()).contains('total')
-		
+		WS.containsString(sms_sent_list_unreceived_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		
 	}
