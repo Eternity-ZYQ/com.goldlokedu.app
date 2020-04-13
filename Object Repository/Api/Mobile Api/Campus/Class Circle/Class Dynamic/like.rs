@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;moment_id\&quot;: \&quot;${dynamic_moment_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;moment_id\&quot;: \&quot;${moment_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -41,7 +41,7 @@
       <description></description>
       <id>86b853a2-b36c-4a85-b478-ed834b2e913a</id>
       <masked>false</masked>
-      <name>dynamic_moment_id</name>
+      <name>moment_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
