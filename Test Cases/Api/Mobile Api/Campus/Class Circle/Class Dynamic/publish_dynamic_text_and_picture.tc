@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发布带图片动态</description>
+   <name>publish_dynamic_text_and_picture</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff0acd2a-76dc-461a-aa6c-96a409cb7d28</testCaseGuid>
+</TestCaseEntity>

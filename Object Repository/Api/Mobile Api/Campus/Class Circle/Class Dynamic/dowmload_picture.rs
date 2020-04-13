@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>获取动态列表</description>
-   <name>search_dynamic_list</name>
+   <description>加载动态图片</description>
+   <name>dowmload_picture</name>
    <tag></tag>
-   <elementGuidId>5f4f01d6-f238-4b34-824d-4b7327337e17</elementGuidId>
+   <elementGuidId>3af7ff1c-77b0-4799-b686-8d44913a4b51</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,32 +19,18 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/moment/search?from=${from}&amp;klass_id=${class_id}&amp;size=${size}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/moment/attachments/${picture_id}?thumb=true</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>0</defaultValue>
-      <description></description>
-      <id>97af8146-bea4-47d3-b778-009c0cf4e856</id>
-      <masked>false</masked>
-      <name>from</name>
-   </variables>
-   <variables>
       <defaultValue>''</defaultValue>
-      <description></description>
-      <id>d079e26e-d573-46a7-b2c4-30b8f755acb3</id>
+      <description>图片id</description>
+      <id>34e08671-caf6-4299-9eab-cb726e53a2d5</id>
       <masked>false</masked>
-      <name>class_id</name>
-   </variables>
-   <variables>
-      <defaultValue>10</defaultValue>
-      <description></description>
-      <id>d932205c-4827-4cee-8b95-236e2b4ce9b2</id>
-      <masked>false</masked>
-      <name>size</name>
+      <name>picture_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -59,12 +45,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
-
-	assertThat(response.getResponseText()).contains('total')
-}
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

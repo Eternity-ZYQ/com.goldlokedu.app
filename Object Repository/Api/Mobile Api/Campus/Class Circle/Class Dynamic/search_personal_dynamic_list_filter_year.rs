@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>获取动态列表</description>
-   <name>search_dynamic_list</name>
+   <description>获取我的动态列表--学年筛选</description>
+   <name>search_personal_dynamic_list_filter_year</name>
    <tag></tag>
-   <elementGuidId>5f4f01d6-f238-4b34-824d-4b7327337e17</elementGuidId>
+   <elementGuidId>272ec4a8-e59d-4306-aec2-fa7d81aeee59</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/moment/search?from=${from}&amp;klass_id=${class_id}&amp;size=${size}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/moment/personal?from=${from}&amp;size=${size}&amp;school_year=${school_year}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,23 +28,23 @@
    <variables>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>97af8146-bea4-47d3-b778-009c0cf4e856</id>
+      <id>400de11f-5044-49e3-98b8-a07690c6a5e6</id>
       <masked>false</masked>
       <name>from</name>
    </variables>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'10'</defaultValue>
       <description></description>
-      <id>d079e26e-d573-46a7-b2c4-30b8f755acb3</id>
-      <masked>false</masked>
-      <name>class_id</name>
-   </variables>
-   <variables>
-      <defaultValue>10</defaultValue>
-      <description></description>
-      <id>d932205c-4827-4cee-8b95-236e2b4ce9b2</id>
+      <id>60725432-dd0f-427a-ba2d-be6fd8663448</id>
       <masked>false</masked>
       <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9d0ce63e-8aac-491e-a628-95b754e04625</id>
+      <masked>false</masked>
+      <name>school_year</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

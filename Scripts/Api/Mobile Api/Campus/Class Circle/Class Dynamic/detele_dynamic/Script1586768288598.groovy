@@ -35,30 +35,17 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		if(search_dynamic_list_jsonResponse.data.size>0){
 			WS.comment(class_name+"有动态")
 			
-			for(int k:(0..search_dynamic_list_jsonResponse.data.size-1)){
+			if(judge_adviser(class_id)){
+				WS.comment('是'+class_name+'的班主任')
+
+					'删除第一条动态'
+					detele_dynamic(class_id,search_dynamic_list_jsonResponse.data[0].moment_id)
+
 				
-				if(search_dynamic_list_jsonResponse.data[k].pictures!=null&&search_dynamic_list_jsonResponse.data[k].pictures.data.size>0){
-					WS.comment(class_name+'的第'+(k+1)+'条动态有图片,准备加载图片...')
-					
-					for(int i:(0..search_dynamic_list_jsonResponse.data[k].pictures.data.size-1)){
-						
-						WS.comment(class_name+'的第'+(k+1)+'条动态的第'+(i+1)+'张图片加载中...')
-						dowmload_picture(search_dynamic_list_jsonResponse.data[k].pictures.data[i].attachment_id)
-						
-						
-					}
-					
-				}else{
-				
-					WS.comment(class_name+'的第'+(k+1)+'条动态没有图片,不需要加载图')
-				}
-				
-				
-				
+			}else{
+				WS.comment('不是'+class_name+'的班主任')
+			
 			}
-			
-			
-			
 			
 		}else{
 		
@@ -161,12 +148,22 @@ def Object search_dynamic_list(String class_id,int from,int size){
 
 
 
-//加载动态图片
-def void dowmload_picture(String picture_id){
-	'发送下载动态图片接口'
-	ResponseObject dowmload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dowmload_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
+//删除班级动态
+def void detele_dynamic(String class_id,String dynamic_moment_id){
+	'发送删除班级动态接口'
+	ResponseObject detele_dynamic_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/delete_class_dynamic",[('class_id'):class_id,('dynamic_moment_id'):dynamic_moment_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	WS.comment('删除班级动态返回数据body:'+detele_dynamic_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(detele_dynamic_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		
+		WS.verifyElementPropertyValue(detele_dynamic_response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
+		
+		
+		
+	}
 	
 	
 	
@@ -175,5 +172,25 @@ def void dowmload_picture(String picture_id){
 
 
 
+//判断是否是班主任
+def boolean judge_adviser(String class_id){
+	'发送获取教师是否为班主任接口数据'
+	ResponseObject judge_adviser_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	
+	def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
+	WS.comment('是否为班主任返回body:'+judge_adviser_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(judge_adviser_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		WS.verifyElementPropertyValue(judge_adviser_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.verifyElementPropertyValue(judge_adviser_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
+		
+		return judge_adviser_jsonResponse.data.adviser
+		
+	}
+	
+	return
+	
+}
 
 

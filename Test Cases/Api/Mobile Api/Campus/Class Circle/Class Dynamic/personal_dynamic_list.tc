@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>我的动态列表</description>
+   <name>personal_dynamic_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b63c7789-6245-4aef-88d9-b8044586486a</testCaseGuid>
+</TestCaseEntity>

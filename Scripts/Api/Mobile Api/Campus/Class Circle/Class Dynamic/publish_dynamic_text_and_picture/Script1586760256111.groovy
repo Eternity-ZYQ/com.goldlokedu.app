@@ -20,6 +20,8 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
+
+
 '获取教师关联班级信息'
 def class_information_jsonResponse=get_class_information()
 
@@ -28,58 +30,28 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 	for(int y:(0..class_information_jsonResponse.data[x].klass.size-1)){
 		
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
-		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def search_dynamic_list_jsonResponse=search_dynamic_list(class_id,0,10)
+		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		
-		if(search_dynamic_list_jsonResponse.data.size>0){
-			WS.comment(class_name+"有动态")
-			
-			for(int k:(0..search_dynamic_list_jsonResponse.data.size-1)){
-				
-				if(search_dynamic_list_jsonResponse.data[k].pictures!=null&&search_dynamic_list_jsonResponse.data[k].pictures.data.size>0){
-					WS.comment(class_name+'的第'+(k+1)+'条动态有图片,准备加载图片...')
-					
-					for(int i:(0..search_dynamic_list_jsonResponse.data[k].pictures.data.size-1)){
-						
-						WS.comment(class_name+'的第'+(k+1)+'条动态的第'+(i+1)+'张图片加载中...')
-						dowmload_picture(search_dynamic_list_jsonResponse.data[k].pictures.data[i].attachment_id)
-						
-						
-					}
-					
-				}else{
-				
-					WS.comment(class_name+'的第'+(k+1)+'条动态没有图片,不需要加载图')
-				}
-				
-				
-				
-			}
-			
-			
-			
-			
-		}else{
+		WS.comment(class_name+"发布动态中...")
+		List picture_ids_list=new ArrayList<String>()
+		def dynamic_content=CustomKeywords.'time.SystemTime.get_system_time'()+'发布带图片动态'
 		
-			WS.comment(class_name+"没有有动态")
-		
+		def picture_count=0
+		def picture_max_count=2
+		while (picture_count++<picture_max_count) {
+			def upload_picture_jsonResponse=upload_picture()
+			String data=get_data(upload_picture_jsonResponse)
+			WS.comment(data)
+			picture_ids_list.add(data)
 		}
 		
+		WS.comment('data的数据:'+picture_ids_list.toString())
+		publish_dynamic_text(class_id,dynamic_content,picture_ids_list.toString())
+		
 	}
-	
-	
+		
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -136,44 +108,71 @@ def Object get_class_information(){
 }
 
 
-//发送获取动态列表
-def Object search_dynamic_list(String class_id,int from,int size){
-	'获取班级列表数据'
-	ResponseObject search_dynamic_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+
+
+
+//发布纯文本动态
+def void publish_dynamic_text(String class_id,String content,String data){
+	'发送发布动态接口'
+	ResponseObject publish_dynamic_text_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_publish_text_and_picture",[('class_id'):class_id,('content'):content,('data'):data]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
-	WS.comment('动态列表信息body:'+search_dynamic_list_response.getResponseText())
+	WS.comment('发布动态返回数据body:'+publish_dynamic_text_response.getResponseText())
 	
-	if(WS.verifyResponseStatusCode(search_dynamic_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	if(WS.verifyResponseStatusCode(publish_dynamic_text_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		WS.containsString(search_dynamic_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(publish_dynamic_text_response, 'moment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
-		return search_dynamic_list_jsonResponse
+		
+	
+		
+	}
+	
+	
+	
+	
+}
+
+
+
+//上传动态图片
+def Object upload_picture(){
+	'上传动态图片'
+	ResponseObject upload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/upload_dynamic_picture"), FailureHandling.CONTINUE_ON_FAILURE)
+	
+	def upload_picture_jsonResponse=get_jsonResponse(upload_picture_response)
+	WS.comment('班级信息'+upload_picture_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(upload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		WS.containsString(upload_picture_response, 'attachment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(upload_picture_response, 'attachment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(upload_picture_response, 'attachment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(upload_picture_response, 'attachment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		return upload_picture_jsonResponse
 		
 	}
 	
 	return
 	
 	
-	
-	
 }
 
 
+//组成图片字段的data
+def String get_data(Object jsonResponse){
+	
+	String data='{'+
+				'"content_type": "'+jsonResponse.content_type+'",'+
+				'"attachment_id": "'+jsonResponse.attachment_id+'",'+
+				'"size":'+jsonResponse.size+
+				'}'
 
-//加载动态图片
-def void dowmload_picture(String picture_id){
-	'发送下载动态图片接口'
-	ResponseObject dowmload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dowmload_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)
-	
-	
-	
-	
+				
+	return data
+
+
+
 }
-
-
-
 
 

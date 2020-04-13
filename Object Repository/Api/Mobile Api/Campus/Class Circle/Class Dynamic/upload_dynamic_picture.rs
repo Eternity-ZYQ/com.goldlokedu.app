@@ -72,8 +72,8 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 200)
 
-def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;Data Files/Image/Upload Test Image/timg (2).jpeg&quot;)
-
-WS.comment(size+&quot;&quot;)</verificationScript>
+//def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;Data Files/Image/Upload Test Image/timg (2).jpeg&quot;)
+//
+//WS.comment(size+&quot;&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

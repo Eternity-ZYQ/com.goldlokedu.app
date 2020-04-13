@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/moment/personal?from=0&amp;size=10</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/moment/personal?from=${from}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

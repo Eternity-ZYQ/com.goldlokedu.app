@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>发布动态文本和图片</description>
-   <name>dynamic_publish_text_and_picture</name>
+   <description>发布动态文本和图片---不用于自动化</description>
+   <name>dynamic_publish_text_and_picture - Copy</name>
    <tag></tag>
-   <elementGuidId>08b9d774-719e-46ed-a541-922c1b27325d</elementGuidId>
+   <elementGuidId>444d5066-d241-4ed8-b5c9-029a51f4e98d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;,\n  \t\&quot;pictures\&quot;: {\n\t\t\&quot;data\&quot;: ${data}\n\t}\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;class_id\&quot;: \&quot;${class_id}\&quot;,\n  \t\&quot;pictures\&quot;: {\n\t\t\&quot;data\&quot;: [{\n\t\t\t\&quot;attachment_id\&quot;: \&quot;${picture_id}\&quot;,\n\t\t\t\&quot;size\&quot;: ${size},\n\t\t\t\&quot;content_type\&quot;: \&quot;${content_type}\&quot;\n\t\t}]\n\t}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -53,9 +53,23 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>2c94cae5-0fb1-48f1-8bce-e795aba282d5</id>
+      <id>29f20655-7ba9-484c-9923-cb59e1fa581e</id>
       <masked>false</masked>
-      <name>data</name>
+      <name>picture_id</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4d311426-79df-4edf-a5e7-7980e37591a0</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>773d05a5-a2fd-47cb-9d87-dac1506946e3</id>
+      <masked>false</masked>
+      <name>content_type</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
