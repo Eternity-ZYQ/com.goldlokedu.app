@@ -277,7 +277,19 @@
    <testCaseLink>
       <guid>148fc555-253d-447b-996e-cce50b8aba6e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_detele_comment</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5a8014d6-62e7-4a0a-bf40-c437a1a77660</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Mobile Contact/Teacher/teacher_mobile_contact</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b3c58675-232b-460d-817b-4c7e460b1680</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Mobile Contact/Student/student_mobile_contact</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

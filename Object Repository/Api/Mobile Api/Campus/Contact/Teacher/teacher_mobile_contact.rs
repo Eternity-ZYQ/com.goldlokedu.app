@@ -19,12 +19,19 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/teacher/app?module=mobile</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/api/upf/contact/teacher/app?module=${module}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'mobile'</defaultValue>
+      <description></description>
+      <id>6633a5c0-2a7e-4bb5-85b5-ab5df110c650</id>
+      <masked>false</masked>
+      <name>module</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject

@@ -52,9 +52,7 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 						
 							WS.comment('不是本人评论,不能删除...')
 						
-						}
-						
-						
+						}				
 						
 					}
 					

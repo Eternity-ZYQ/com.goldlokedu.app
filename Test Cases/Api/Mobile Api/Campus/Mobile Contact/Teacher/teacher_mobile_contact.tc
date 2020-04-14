@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>部门教师电话联系人列表</description>
+   <name>teacher_mobile_contact</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>01faadba-3ec1-4a89-975c-3adfd160b2ad</testCaseGuid>
+</TestCaseEntity>
