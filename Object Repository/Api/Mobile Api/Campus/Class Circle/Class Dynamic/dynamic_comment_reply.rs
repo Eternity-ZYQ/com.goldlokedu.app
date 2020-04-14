@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;replied_user\&quot;: {\n\t\t\&quot;creator_name\&quot;: \&quot;${creator_name}\&quot;,\n\t\t\&quot;creator\&quot;: \&quot;${creator}\&quot;\n\t},  \n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;moment_id\&quot;: \&quot;${dynamic_moment_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;replied_user\&quot;: {\n\t\t\&quot;creator_name\&quot;: \&quot;${creator_name}\&quot;,\n\t\t\&quot;creator\&quot;: \&quot;${creator}\&quot;\n\t},  \n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;moment_id\&quot;: \&quot;${moment_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -41,7 +41,7 @@
       <description></description>
       <id>c9f65c71-de26-4327-8055-2b90493a2043</id>
       <masked>false</masked>
-      <name>dynamic_moment_id</name>
+      <name>moment_id</name>
    </variables>
    <variables>
       <defaultValue>''</defaultValue>
@@ -83,6 +83,13 @@ if(WS.verifyResponseStatusCode(response, 200)){
 
 	assertThat(response.getResponseText()).contains('comment_id')
 }
+
+
+
+
+
+
+
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

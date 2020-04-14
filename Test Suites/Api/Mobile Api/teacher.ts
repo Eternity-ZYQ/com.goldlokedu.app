@@ -265,7 +265,19 @@
    <testCaseLink>
       <guid>bb9a6dab-c672-4dc7-9eb9-080889f1681c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_like_and_unlike</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2d01fedf-1921-4035-b5ea-cd8a33cee4bb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>148fc555-253d-447b-996e-cce50b8aba6e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_detele_comment</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

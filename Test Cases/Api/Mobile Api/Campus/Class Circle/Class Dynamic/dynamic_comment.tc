@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>动态评论</description>
+   <name>dynamic_comment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5e409be-d5ea-4d80-9a92-f97bc2dd7fed</testCaseGuid>
+</TestCaseEntity>
