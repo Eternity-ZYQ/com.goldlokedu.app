@@ -32,17 +32,12 @@ if(class_mobile_contact_jsonResponse.data.size>0){
 		
 		for(int y:(0..class_student_mobile_contact_jsonResponse.data.size-1)){
 			
-			user_head_image(class_student_mobile_contact_jsonResponse.data[y].user_id)
+			user_head_image(class_student_mobile_contact_jsonResponse.data[y].user_id,class_student_mobile_contact_jsonResponse.data[y].name)
 				
 		}
 		
 		
 	}
-	
-	
-	
-	
-	
 	
 }
 
@@ -122,13 +117,17 @@ def Object class_student_mobile_contact(String class_id){
 
 
 //获取用户头像
-def void user_head_image(String user_id){
+def void user_head_image(String user_id,String name){
 	'发送用户头像接口'
 	ResponseObject user_head_image_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/User/user_head_image",[('user_id'):user_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
+	if(WS.verifyResponseStatusCode(user_head_image_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		WS.comment('加载成功')
+					
+	}else{
+		WS.comment(name+'加载失败')
 	
-	WS.verifyResponseStatusCode(user_head_image_response, 200, FailureHandling.CONTINUE_ON_FAILURE)
-		
+	}
 	
 	
 }

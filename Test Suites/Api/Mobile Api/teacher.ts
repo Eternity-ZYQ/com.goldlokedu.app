@@ -289,7 +289,37 @@
    <testCaseLink>
       <guid>b3c58675-232b-460d-817b-4c7e460b1680</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Mobile Contact/Student/student_mobile_contact</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f1ab7a43-0972-407e-b5ed-94a7f2ef3e40</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Mobile Contact/Search/search_contact_mobile_name_or_phone_number</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>541e7982-232e-4c63-9877-dc962a44dafa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/search_my_join_vote_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0fd5487f-751f-40d2-93b7-7d50a93a79fb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/search_my_start_vote_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2641bdfe-1b8c-4eed-ba26-9c442c0b0724</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/vote_detail</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2d326025-3163-40ec-938c-cdcbbeea4ac3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/voting_detail_and_vote</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/voting/owner/brief_votes?from=${from}&amp;size=${size}&amp;${}=</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/voting/owner/brief_votes?from=${from}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

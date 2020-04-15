@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>打电话模块搜索列表</description>
+   <name>search_contact_mobile_name_or_phone_number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b83a0419-7e29-4296-ab6f-988c95a6098b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>进行中的投票详情,对进行中的投票进行投票</description>
+   <name>voting_detail_and_vote</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>38faf320-0ce6-4bd3-ac7a-8d9d661cc791</testCaseGuid>
+</TestCaseEntity>

@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;voted_options\&quot;: [${voted_options}],\n\t\&quot;vote_id\&quot;: \&quot;${vote_id}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;voted_options\&quot;: ${voted_options},\n\t\&quot;vote_id\&quot;: \&quot;${vote_id}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

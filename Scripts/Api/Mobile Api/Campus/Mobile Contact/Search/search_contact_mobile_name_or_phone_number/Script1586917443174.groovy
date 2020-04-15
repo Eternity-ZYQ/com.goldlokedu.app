@@ -20,32 +20,44 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
+def teacher_name='测试庄'
+def student_name='测试学生庄'
+def mobile='18344264447'
 
-'获取打电话教师数据'
-def teacher_mobile_contact_jsonResponse=teacher_mobile_contact()
+'搜索教师名字'
+for_get_data(search_name_or_number(teacher_name))
 
-if(teacher_mobile_contact_jsonResponse.data.size>0){
+'搜索学生名字'
+for_get_data(search_name_or_number(student_name))
+
+'搜索手机号'
+for_get_data(search_name_or_number(mobile))
+
+
+
+
+
+
+
+
+
+//数据获取循环
+def void for_get_data(Object jsonResponse){
 	
-	for(int x:(0..teacher_mobile_contact_jsonResponse.data.size-1)){
+	if(jsonResponse.data.size>0){
 		
-		for(int y:(0..teacher_mobile_contact_jsonResponse.data[x].children.size-1)){
+		for(int x:(0..jsonResponse.data.size-1)){
 			
-			user_head_image(teacher_mobile_contact_jsonResponse.data[x].children[y].user_id,teacher_mobile_contact_jsonResponse.data[x].children[y].name)
-				
+				user_head_image(jsonResponse.data[x].user_id,jsonResponse.data[x].name)
+							
+					
 		}
-		
 		
 	}
 	
+	
+	
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -65,28 +77,24 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-//获取联系人列表
-def Object teacher_mobile_contact(){
-	'发送打电话教师联系人列表接口'
-	ResponseObject teacher_mobile_contact_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Contact/Teacher/teacher_mobile_contact"), FailureHandling.CONTINUE_ON_FAILURE)
-	def teacher_mobile_contact_jsonResponse=get_jsonResponse(teacher_mobile_contact_response)
-	WS.comment('打电话教师联系人列表数据body:'+teacher_mobile_contact_response.getResponseText())
+//打电话搜索联系人
+def Object search_name_or_number(String name){
+	'发送打电话搜索联系人列表接口'
+	ResponseObject search_name_or_number_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Contact/Search/search_contact_mobile_name_or_phone_number",[('name'):name]), FailureHandling.CONTINUE_ON_FAILURE)
+	def search_name_or_number_jsonResponse=get_jsonResponse(search_name_or_number_response)
+	WS.comment('打电话教师联系人列表数据body:'+search_name_or_number_response.getResponseText())
 	
-	if(WS.verifyResponseStatusCode(teacher_mobile_contact_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	if(WS.verifyResponseStatusCode(search_name_or_number_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		WS.verifyElementPropertyValue(teacher_mobile_contact_response, 'code', 200,FailureHandling.CONTINUE_ON_FAILURE)
+		WS.verifyElementPropertyValue(search_name_or_number_response, 'code', 200,FailureHandling.CONTINUE_ON_FAILURE)
 		
-		return teacher_mobile_contact_jsonResponse
+		return search_name_or_number_jsonResponse
 		
 	}
 	
 		return
-	
-	
+		
 }
-
-
 
 
 //获取用户头像
@@ -102,6 +110,8 @@ def void user_head_image(String user_id,String name){
 		WS.comment(name+'加载失败')
 	
 	}
+	
+	
 	
 	
 }

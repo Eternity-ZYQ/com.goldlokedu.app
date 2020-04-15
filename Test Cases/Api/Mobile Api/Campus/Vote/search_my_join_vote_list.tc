@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>查询我参与的投票列表</description>
+   <name>search_my_join_vote_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3092e462-0a06-411c-afc0-dbf1e4c0112f</testCaseGuid>
+</TestCaseEntity>
