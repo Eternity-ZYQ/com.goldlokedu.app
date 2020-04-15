@@ -125,9 +125,9 @@ def Object voting_detail(String vote_id){
 //进行投票
 def void voting(String vote_id,String voted_options){
 	'发送投票接口'
-	ResponseObject voting_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/voting_details",[('vote_id'):vote_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	//def voting_jsonResponse=get_jsonResponse(voting_response)
-	WS.comment('我参与的投票列表数据body:'+voting_response.getResponseText())
+	ResponseObject voting_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/voting",[('vote_id'):vote_id,('voted_options'):voted_options]), FailureHandling.CONTINUE_ON_FAILURE)
+	def voting_jsonResponse=get_jsonResponse(voting_response)
+	WS.comment('进行投票的数据body:'+voting_response.getResponseText())
 	
 	if(WS.verifyResponseStatusCode(voting_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
