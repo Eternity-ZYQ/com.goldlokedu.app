@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/voting/transport/${vote_picture_id}?thumb=${thumb}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/voting/transport/${picture_id}?thumb=${thumb}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,7 +30,7 @@
       <description></description>
       <id>728f9644-1509-4881-b312-008908068653</id>
       <masked>false</masked>
-      <name>vote_picture_id</name>
+      <name>picture_id</name>
    </variables>
    <variables>
       <defaultValue>true</defaultValue>

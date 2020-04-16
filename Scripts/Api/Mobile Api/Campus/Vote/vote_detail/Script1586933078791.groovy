@@ -32,7 +32,21 @@ if(search_my_join_vote_list_jsonResponse.votes.size>0){
 		if(search_my_join_vote_list_jsonResponse.votes[x].expired|search_my_join_vote_list_jsonResponse.votes[x].voted){
 			
 			'进入投票结果详情页面'	
-			vote_detail(search_my_join_vote_list_jsonResponse.votes[x].vote_id)
+			def vote_detail_jsonResponse=vote_detail(search_my_join_vote_list_jsonResponse.votes[x].vote_id)
+			
+			for(int y:(0..vote_detail_jsonResponse.vote_options.size-1)){
+				if(vote_detail_jsonResponse.vote_options[y].content.picture_id!=null){
+					WS.comment('加载图片中...')
+					dowmload_picture(vote_detail_jsonResponse.vote_options[y].content.picture_id)
+					
+				}else{
+					WS.comment('没有图片,不进行加载...')
+				
+				}
+				
+				
+			}
+			
 		}else{
 			WS.comment('该条投票没有过期,也没有进行投票,不能进入结果也页')
 		
@@ -95,7 +109,7 @@ def Object search_my_join_vote_list(int from,int size){
 
 
 //查询投票结果列表
-def void vote_detail(String vote_id){
+def Object vote_detail(String vote_id){
 	'发送投票结果接口'
 	ResponseObject vote_detail_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/voted_details",[('vote_id'):vote_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	def vote_detail_jsonResponse=get_jsonResponse(vote_detail_response)
@@ -110,6 +124,28 @@ def void vote_detail(String vote_id){
 	
 	return
 }
+
+
+
+
+
+//加载投票图片
+def void dowmload_picture(String picture_id){
+	'发送获取投票图片接口'
+	ResponseObject dowmload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/download_vote_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	//def dowmload_picture_jsonResponse=get_jsonResponse(vote_detail_response)
+	//WS.comment('我参与的投票列表数据body:'+dowmload_picture_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		WS.comment('图片加载成功')
+		
+		
+	}
+	
+
+}
+
 
 
 

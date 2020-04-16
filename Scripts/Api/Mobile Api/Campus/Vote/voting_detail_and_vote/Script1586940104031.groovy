@@ -39,6 +39,18 @@ if(search_my_join_vote_list_jsonResponse.votes.size>0){
 		}else{
 			'进入投票结果详情页面'	
 			def voting_detail_jsonResponse=voting_detail(search_my_join_vote_list_jsonResponse.votes[x].vote_id)
+			
+			for(int y:(0..voting_detail_jsonResponse.vote_options.size-1)){
+				if(voting_detail_jsonResponse.vote_options[y].content.picture_id!=null){
+					WS.comment('加载图片中...')
+					dowmload_picture(voting_detail_jsonResponse.vote_options[y].content.picture_id)
+					
+				}else{
+					WS.comment('没有图片,不进行加载...')
+				
+				}
+			}
+			
 			def voted_options=get_voted_options(voting_detail_jsonResponse)
 			voting(voting_detail_jsonResponse.vote_id,voted_options)
 			
@@ -176,6 +188,26 @@ def String get_voted_options(Object jsonResponse){
 	
 	
 }
+
+
+
+//加载投票图片
+def void dowmload_picture(String picture_id){
+	'发送获取投票图片接口'
+	ResponseObject dowmload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/download_vote_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	//def dowmload_picture_jsonResponse=get_jsonResponse(vote_detail_response)
+	//WS.comment('我参与的投票列表数据body:'+dowmload_picture_response.getResponseText())
+	
+	if(WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		WS.comment('图片加载成功')
+		
+		
+	}
+	
+
+}
+
 
 
 

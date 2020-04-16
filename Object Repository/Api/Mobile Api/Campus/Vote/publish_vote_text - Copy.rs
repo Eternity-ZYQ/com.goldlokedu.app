@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>发布文字投票</description>
-   <name>publish_vote_text</name>
+   <description>发布文字投票-----不作为自动化测试</description>
+   <name>publish_vote_text - Copy</name>
    <tag></tag>
-   <elementGuidId>723ab931-3676-4cee-83f9-4eeb60d2a1aa</elementGuidId>
+   <elementGuidId>fb1b7dcc-9863-4793-abb7-31ef0688e183</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;max_option_amount\&quot;: ${max_option_amount},\n\t\&quot;vote_type\&quot;: ${vote_type},\n\t\&quot;vote_range\&quot;: ${vote_range},\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;expiration\&quot;: \&quot;${expiration}\&quot;,\n\t\&quot;vote_options\&quot;: ${vote_options},\n\t\&quot;vote_participants\&quot;: {${vote_participants}},\n\t\&quot;method\&quot;: ${method}\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;max_option_amount\&quot;: ${max_option_amount},\n\t\&quot;vote_type\&quot;: ${vote_type},\n\t\&quot;vote_range\&quot;: \&quot;${vote_range}\&quot;,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;expiration\&quot;: \&quot;${expiration}\&quot;,\n\t\&quot;vote_options\&quot;: [\n      {\n\t\t\&quot;sequential\&quot;: 0,\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项1\&quot;\n\t\t}\n\t}, {\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项2\&quot;\n\t\t},\n\t\t\&quot;sequential\&quot;: 1\n\t}, {\n\t\t\&quot;content\&quot;: {\n\t\t\t\&quot;content\&quot;: \&quot;测试选项3\&quot;\n\t\t},\n\t\t\&quot;sequential\&quot;: 2\n\t}],\n\t\&quot;vote_participants\&quot;: {\n\t\t\&quot;group_participants\&quot;: {\n\t\t\t\&quot;group_ids\&quot;: [{\n\t\t\t\t\&quot;ids\&quot;: [],\n\t\t\t\t\&quot;id_type\&quot;: \&quot;student\&quot;\n\t\t\t}, {\n\t\t\t\t\&quot;id_type\&quot;: \&quot;dorm\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}]\n\t\t},\n\t\t\&quot;teacher_participants\&quot;: {\n\t\t\t\&quot;department_ids\&quot;: [],\n\t\t\t\&quot;teacher_ids\&quot;: []\n\t\t},\n\t\t\&quot;student_participants\&quot;: {\n\t\t\t\&quot;student_ids\&quot;: [],\n\t\t\t\&quot;class_ids\&quot;: []\n\t\t}\n\t},\n\t\&quot;method\&quot;: 0\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -74,16 +74,23 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>e360f8f7-ae8a-4cae-a5b8-b62e58d57f5e</id>
+      <id>25cb9ded-5e03-4b10-8c17-aae141b7c5e9</id>
       <masked>false</masked>
-      <name>vote_participants</name>
+      <name>class_ids</name>
    </variables>
    <variables>
-      <defaultValue>0</defaultValue>
-      <description>单选还是多选</description>
-      <id>c0c7ef30-82f4-42aa-a580-a7e3b95c5763</id>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6a2ccdae-bf2c-4c08-8bdf-3f8331c34b69</id>
       <masked>false</masked>
-      <name>method</name>
+      <name>teacher_ids</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ac56a02f-e386-4f74-89cc-60e843c20a1a</id>
+      <masked>false</masked>
+      <name>dorm_ids</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
