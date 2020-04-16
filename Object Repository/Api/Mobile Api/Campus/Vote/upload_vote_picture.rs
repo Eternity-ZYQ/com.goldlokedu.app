@@ -69,7 +69,7 @@ if(WS.verifyResponseStatusCode(response, 200)){
 
 	assertThat(response.getResponseText()).contains('picture_id')
 }
-def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;&quot;)
-WS.comment(size+&quot;&quot;)</verificationScript>
+//def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;&quot;)
+//WS.comment(size+&quot;&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

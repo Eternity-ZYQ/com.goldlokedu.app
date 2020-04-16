@@ -325,7 +325,7 @@
    <testCaseLink>
       <guid>536a89fc-d8cf-4d94-a0fe-8744bae2adf4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/publish_vote_text</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -374,6 +374,60 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>531f7d59-ce69-4910-ad5e-47399a94e329</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>35d6898e-3bdc-41c6-ae26-37a14e5d2797</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/publish_vote_picture</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ab48df43-0efb-4ed5-9e2e-eae6b47e2ff9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>88afd680-5e41-453a-9058-c2f4c3c59786</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae1946e0-e08b-4223-abc5-a1c61c5a2047</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aaefe1b9-d6dc-46b8-8cf3-46b431b64977</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7302bf11-7db8-4ea9-ad38-636787ce9c9c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a41370ba-4abb-4734-bbc3-0fb25ce14ac0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ca996108-4fcf-4e2f-ba03-f96ed9bf3344</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b2441e92-9673-4aaf-8d3a-8ab9350890b3</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
