@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>我发的通知列表</description>
+   <name>my_send_notification_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5fae83e0-af32-4481-b7be-ef2f54eee181</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>8810ebe1-bac9-4987-b529-498f15d830b9</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>f8c01073-d848-4d69-bd51-2f6df18036c4</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>我收的通知列表</description>
+   <name>my_received_notification_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e446a47b-32c1-4d7b-8fdd-d16fe5b3993d</testCaseGuid>
+</TestCaseEntity>

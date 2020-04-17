@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>通知详情</description>
+   <name>notification_details</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5333044e-97fb-4696-82d5-b390b7c4178d</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>79061151-09c5-442b-ad18-1dc09ae78a2c</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>50ef4055-e140-41e5-b2a1-5762a8c03bd4</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

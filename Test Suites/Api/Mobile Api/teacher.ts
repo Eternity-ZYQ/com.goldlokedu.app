@@ -379,7 +379,7 @@
    <testCaseLink>
       <guid>35d6898e-3bdc-41c6-ae26-37a14e5d2797</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/publish_vote_picture</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -428,6 +428,66 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>b2441e92-9673-4aaf-8d3a-8ab9350890b3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>80cc74a4-1d43-4ee2-967e-db7ac3a3137f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/my_received_notification_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6202faec-cae4-4056-a228-23ee2f68d60c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/my_send_notification_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8810ebe1-bac9-4987-b529-498f15d830b9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f8c01073-d848-4d69-bd51-2f6df18036c4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>090edff0-02a4-4150-b231-2ff64d7b6208</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/notification_details</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>79061151-09c5-442b-ad18-1dc09ae78a2c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>50ef4055-e140-41e5-b2a1-5762a8c03bd4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9b5a7d03-324b-4586-a885-a59719c0e9f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/notification_unread</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>71497c4f-fec4-4c7e-9612-5b701ece1589</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fabc1a8f-742c-45fe-bd7b-60ebf676a1c0</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

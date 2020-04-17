@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>通知未读</description>
+   <name>notification_unread</name>
+   <tag></tag>
+   <comment>通知详情页面</comment>
+   <testCaseGuid>da7ff401-a5bf-4707-acf3-48b70f3d901c</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>71497c4f-fec4-4c7e-9612-5b701ece1589</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>fabc1a8f-742c-45fe-bd7b-60ebf676a1c0</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
