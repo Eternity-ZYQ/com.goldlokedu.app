@@ -20,7 +20,8 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-def class_information_jsonResponse=get_class_information()
+ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
+def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
@@ -32,7 +33,12 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		def time=CustomKeywords.'time.SystemTime.get_system_time'()
 		def content=time+'发布的测试公告----'+class_name
-		if(judge_adviser(class_id)){
+		
+		'获取教师是否为班主任信息'
+		ResponseObject judge_adviser_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/judge_adviser"), [('class_id'):class_id], FailureHandling.CONTINUE_ON_FAILURE)
+		def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
+		
+		if(judge_adviser_jsonResponse.data.adviser){
 			
 			WS.comment('是'+class_name+'的班主任')
 			
@@ -53,12 +59,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 
 
 
-
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){
 	
@@ -71,26 +71,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-//获取教师关联班级信息
-def Object get_class_information(){
-	'获取教师关联班级信息'
-	ResponseObject class_information_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def class_information_jsonResponse=get_jsonResponse(class_information_response)
-	WS.comment('班级信息'+class_information_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(class_information_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(class_information_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(class_information_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return class_information_jsonResponse
-		
-	}
-	
-	return
-	
-}
 
 
 //发布公告
@@ -110,25 +90,5 @@ def void add_notice(String class_id,String content){
 }
 
 
-//判断是否是班主任
-def boolean judge_adviser(String class_id){
-	'发送获取教师是否为班主任接口数据'
-	ResponseObject judge_adviser_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
-	WS.comment('是否为班主任返回body:'+judge_adviser_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(judge_adviser_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(judge_adviser_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(judge_adviser_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return judge_adviser_jsonResponse.data.adviser
-		
-	}
-	
-	return
-	
-}
 
 
