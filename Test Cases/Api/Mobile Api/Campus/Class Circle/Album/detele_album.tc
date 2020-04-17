@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>编辑相册名称</description>
+   <description>删除相册</description>
    <name>detele_album</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0dd18550-1fb5-4c02-9a43-4e22c643fced</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>ed7a6f87-c790-4d38-ac85-d4b21d624f6f</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>28d14cd6-9c80-4171-b607-83ae5cd2021b</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
 </TestCaseEntity>

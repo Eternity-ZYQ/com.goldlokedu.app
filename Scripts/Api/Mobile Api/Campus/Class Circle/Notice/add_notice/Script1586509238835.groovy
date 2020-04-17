@@ -59,20 +59,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){
 	

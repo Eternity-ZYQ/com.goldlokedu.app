@@ -30,7 +30,7 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		WS.comment('class_id:'+class_id)
-		search_notice_list(class_id,0,10)
+		search_notice_list(class_id,from,size)
 	}
 	
 	

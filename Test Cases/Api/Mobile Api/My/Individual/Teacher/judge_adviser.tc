@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>判断是不是班主任</description>
+   <name>judge_adviser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>66f255fa-fac4-4fcc-a53a-b3a34bf43e36</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7d5aab0f-bdc6-476d-9b9d-6d413c79a951</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variable>
+</TestCaseEntity>

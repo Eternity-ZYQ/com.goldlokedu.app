@@ -21,7 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-def class_information_jsonResponse=get_class_information()
+ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
+def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
 	
@@ -30,7 +31,7 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def search_dynamic_list_jsonResponse=search_dynamic_list(class_id,0,10)
+		def search_dynamic_list_jsonResponse=search_dynamic_list(class_id,from,size)
 		
 		if(search_dynamic_list_jsonResponse.data.size>0){
 			WS.comment(class_name+"有动态")
@@ -69,26 +70,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){
 	
@@ -100,27 +81,6 @@ def Object get_jsonResponse(ResponseObject response){
 }
 
 
-
-//获取教师关联班级信息
-def Object get_class_information(){
-	'获取教师关联班级信息'
-	ResponseObject class_information_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def class_information_jsonResponse=get_jsonResponse(class_information_response)
-	WS.comment('班级信息'+class_information_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(class_information_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(class_information_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(class_information_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return class_information_jsonResponse
-		
-	}
-	
-	return
-	
-}
 
 
 //发送获取动态列表

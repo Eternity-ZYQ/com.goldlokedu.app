@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取个人动态列表'
-def search_personal_dynamic_list_jsonResponse=search_personal_dynamic_list(0,10)
+def search_personal_dynamic_list_jsonResponse=search_personal_dynamic_list(from,size)
 
 if(search_personal_dynamic_list_jsonResponse.data.size>0){
 	WS.comment('我的动态有数据')

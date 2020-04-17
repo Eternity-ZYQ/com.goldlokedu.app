@@ -19,7 +19,8 @@ import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 '获取教师关联班级信息'
-def class_information_jsonResponse=get_class_information()
+ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
+def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
@@ -29,10 +30,14 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def get_album_list_jsonResponse=get_album_list(class_id,0,10)	
+		def get_album_list_jsonResponse=get_album_list(class_id,from,size)	
+		
+		'获取教师是否为班主任信息'
+		ResponseObject judge_adviser_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/judge_adviser"), [('class_id'):class_id], FailureHandling.CONTINUE_ON_FAILURE)
+		def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
 		
 		'班主任上传图片'	
-		if(judge_adviser(class_id)){
+		if(judge_adviser_jsonResponse.data.adviser){
 			'有相册'
 			if(get_album_list_jsonResponse.albums.size>0){
 				'上传照片'
@@ -86,28 +91,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-//获取教师关联班级信息
-def Object get_class_information(){
-	'获取教师关联班级信息'
-	ResponseObject class_information_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def class_information_jsonResponse=get_jsonResponse(class_information_response)
-	WS.comment('班级信息'+class_information_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(class_information_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(class_information_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(class_information_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return class_information_jsonResponse
-		
-	}
-	
-	return
-	
-}
-
-
 
 //获取相册列表
 def Object get_album_list(String class_id,int from,int size){
@@ -157,7 +140,7 @@ def Object upload_album_picture(String class_id){
 
 
 
-//上次的图片关联到班级
+//上传的图片关联到班级
 def void album_picture_retaled_class(String class_id,String picture_id,String name,String album_id){
 	'获取教师关联班级信息'
 	ResponseObject album_picture_retaled_class_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/album_picture_retaled_class",[('class_id'):class_id,('picture_id'):picture_id,('name'):name,('album_id'):album_id]), FailureHandling.CONTINUE_ON_FAILURE)
@@ -177,39 +160,6 @@ def void album_picture_retaled_class(String class_id,String picture_id,String na
 	
 	
 }
-
-
-
-//判断是否是班主任
-def boolean judge_adviser(String class_id){
-	'发送获取教师是否为班主任接口数据'
-	ResponseObject judge_adviser_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
-	WS.comment('是否为班主任返回body:'+judge_adviser_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(judge_adviser_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(judge_adviser_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(judge_adviser_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return judge_adviser_jsonResponse.data.adviser
-		
-	}
-	
-	return
-	
-}
-
-
-
-
-
-
-
-
-
-
 
 
 

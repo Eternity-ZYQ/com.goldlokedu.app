@@ -31,7 +31,7 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def jsonResponse=search_notice_list(class_id,0,10)
+		def jsonResponse=search_notice_list(class_id,from,size)
 		
 		if(jsonResponse.data.size>0){
 			

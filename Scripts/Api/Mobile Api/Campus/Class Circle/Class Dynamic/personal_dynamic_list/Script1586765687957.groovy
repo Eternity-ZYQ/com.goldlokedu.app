@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取默认当前个人动态列表'
-def search_personal_dynamic_list_jsonResponse=search_personal_dynamic_list(0,10)
+def search_personal_dynamic_list_jsonResponse=search_personal_dynamic_list(from,size)
 
 if(search_personal_dynamic_list_jsonResponse.data.size>0){
 	WS.comment('我的动态有数据')
@@ -56,7 +56,7 @@ if(size>0){
 	
 	for(int x:(0..size-1)){
 		'筛选学年后的个人动态列表'
-		def search_personal_dynamic_list_filter_yearjsonResponse=search_personal_dynamic_list_filter_year(0,10,get_yearsjsonResponse.data[x].code)
+		def search_personal_dynamic_list_filter_yearjsonResponse=search_personal_dynamic_list_filter_year(from,size,get_yearsjsonResponse.data[x].code)
 		if(search_personal_dynamic_list_filter_yearjsonResponse.data.size>0){
 			WS.comment('我的动态有数据')
 			
@@ -85,15 +85,6 @@ if(size>0){
 	WS.comment('没有学年数据')
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -132,9 +123,6 @@ def Object search_personal_dynamic_list(int from,int size){
 	
 	return
 	
-	
-	
-	
 }
 
 
@@ -156,10 +144,6 @@ def Object search_personal_dynamic_list_filter_year(int from,int size,String sch
 	}
 	
 	return
-	
-	
-	
-	
 }
 
 
@@ -172,9 +156,7 @@ def void dowmload_picture(String picture_id){
 	
 	WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)
 	
-	
-	
-	
+
 }
 
 
@@ -195,8 +177,6 @@ def Object get_years(){
 	}
 	
 	return
-	
-	
 	
 }
 

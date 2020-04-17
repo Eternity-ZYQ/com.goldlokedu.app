@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.*
 
 
 '获取小铃铛列表数据'
-get_bell_list()
+set_bell_list()
 
 
 if(data_size>0&&reminder_id!=''){
@@ -62,7 +62,7 @@ def Object get_jsonResponse(ResponseObject response) {
 
 
 //获取小铃铛列表
-def void get_bell_list(){
+def void set_bell_list(){
 	'发送获取小铃铛列表接口'
 	ResponseObject bell_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_search"), FailureHandling.CONTINUE_ON_FAILURE)
 	
