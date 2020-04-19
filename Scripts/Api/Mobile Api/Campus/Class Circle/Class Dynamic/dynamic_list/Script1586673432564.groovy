@@ -18,53 +18,37 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-
-
-'获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
-def class_information_jsonResponse=get_jsonResponse(class_information_response)
-
-for(int x:(0..class_information_jsonResponse.data.size-1)){
-	
-	for(int y:(0..class_information_jsonResponse.data[x].klass.size-1)){
-		
-		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
-		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
-		WS.comment('class_id:'+class_id)
-		def search_dynamic_list_jsonResponse=search_dynamic_list(class_id,from,size)
-		
-		if(search_dynamic_list_jsonResponse.data.size>0){
-			WS.comment(class_name+"有动态")
+ResponseObject search_dynamic_list_response=search_dynamic_list(class_id,from,size,class_name)
+def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
+if(search_dynamic_list_jsonResponse.data.size>0){
+	WS.comment(class_name+"有动态")
 			
-			for(int k:(0..search_dynamic_list_jsonResponse.data.size-1)){
+	for(int k:(0..search_dynamic_list_jsonResponse.data.size-1)){
 				
-				if(search_dynamic_list_jsonResponse.data[k].pictures!=null&&search_dynamic_list_jsonResponse.data[k].pictures.data.size>0){
-					WS.comment(class_name+'的第'+(k+1)+'条动态有图片,准备加载图片...')
+		if(search_dynamic_list_jsonResponse.data[k].pictures!=null&&search_dynamic_list_jsonResponse.data[k].pictures.data.size>0){
+			WS.comment(class_name+'的第'+(k+1)+'条动态有图片,准备加载图片...')
 					
-					for(int i:(0..search_dynamic_list_jsonResponse.data[k].pictures.data.size-1)){
+			for(int i:(0..search_dynamic_list_jsonResponse.data[k].pictures.data.size-1)){
 						
-						WS.comment(class_name+'的第'+(k+1)+'条动态的第'+(i+1)+'张图片加载中...')
-						dowmload_picture(search_dynamic_list_jsonResponse.data[k].pictures.data[i].attachment_id)
+				WS.comment(class_name+'的第'+(k+1)+'条动态的第'+(i+1)+'张图片加载中...')
+				dowmload_picture(search_dynamic_list_jsonResponse.data[k].pictures.data[i].attachment_id)
 											
-					}
-					
-				}else{
-				
-					WS.comment(class_name+'的第'+(k+1)+'条动态没有图片,不需要加载图')
-				}				
 			}
-						
+					
 		}else{
-		
-			WS.comment(class_name+"没有有动态")
-		
-		}
-		
+				
+			WS.comment(class_name+'的第'+(k+1)+'条动态没有图片,不需要加载图')
+		}				
 	}
+						
+}else{
+		
+	WS.comment(class_name+"没有有动态")
 		
 }
+		
 
-
+return 
 
 
 
@@ -87,14 +71,14 @@ def Object search_dynamic_list(String class_id,int from,int size){
 	'获取班级列表数据'
 	ResponseObject search_dynamic_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
+	//def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
 	WS.comment('动态列表信息body:'+search_dynamic_list_response.getResponseText())
 	
 	if(WS.verifyResponseStatusCode(search_dynamic_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		WS.containsString(search_dynamic_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
-		return search_dynamic_list_jsonResponse
+		return search_dynamic_list_response
 		
 	}
 	

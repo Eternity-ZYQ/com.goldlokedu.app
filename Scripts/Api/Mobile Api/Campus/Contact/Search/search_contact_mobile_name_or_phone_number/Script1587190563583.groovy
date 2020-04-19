@@ -20,21 +20,14 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-def teacher_name='测试庄'
-def student_name='测试学生庄'
-def mobile='18344264447'
+'搜索名字'
+def search_name_or_number_jsonResponse=search_name_or_number(name)
 
-'搜索教师名字'
-for_get_data(search_name_or_number(teacher_name))
-
-'搜索学生名字'
-for_get_data(search_name_or_number(student_name))
-
-'搜索手机号'
-for_get_data(search_name_or_number(mobile))
+'家长搜索到的头像'
+for_get_data(search_name_or_number_jsonResponse)
 
 
-
+return search_name_or_number_jsonResponse
 
 
 

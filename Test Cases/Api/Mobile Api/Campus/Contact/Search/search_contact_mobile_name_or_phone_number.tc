@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b83a0419-7e29-4296-ab6f-988c95a6098b</testCaseGuid>
+   <variable>
+      <defaultValue>'测试庄'</defaultValue>
+      <description>搜索的内容</description>
+      <id>59f3c445-4afe-4616-baf8-4026d76e3575</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
 </TestCaseEntity>

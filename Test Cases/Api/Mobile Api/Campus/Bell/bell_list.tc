@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>小铃铛列表</description>
+   <name>bell_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90edc399-c4a3-4b2a-8739-309f6913169e</testCaseGuid>
+</TestCaseEntity>

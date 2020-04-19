@@ -14,39 +14,42 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static org.assertj.core.api.Assertions.*
+
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 
-ResponseObject get_album_list_response=get_album_list(class_id,from,size)	
-
-return get_album_list_response
 
 
 
+ResponseObject bell_response=bell_list()
+return bell_response
 
 
-//获取相册列表
-def Object get_album_list(String class_id,int from,int size){
-	'获取教师关联班级信息'
-	ResponseObject get_album_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/album_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+
+
+
+
+
+
+
+
+
+//获取小铃铛列表
+def Object bell_list(){
+	'发送获取小铃铛列表接口'
+	ResponseObject bell_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_search"), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	//def get_album_list_jsonResponse=get_jsonResponse(get_album_list_response)
-	WS.comment('相册列表数据body：'+get_album_list_response.getResponseText())
+	WS.comment('小铃铛列表数据body:'+bell_response.getResponseText())
 	
-	if(WS.verifyResponseStatusCode(get_album_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	'判断接口请求是否成功'
+	if(WS.verifyResponseStatusCode(bell_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
+		'接口返回数据包含total'
+		WS.containsString(bell_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
-		WS.containsString(get_album_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return get_album_list_response
-		
+		return bell_response
 	}
 	
-	return
-	
-	
+	return 
 }
-
-

@@ -14,39 +14,56 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static org.assertj.core.api.Assertions.*
+
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 
-ResponseObject get_album_list_response=get_album_list(class_id,from,size)	
-
-return get_album_list_response
 
 
 
 
+'全部删除'
+delete_reminder_all()
 
-//获取相册列表
-def Object get_album_list(String class_id,int from,int size){
-	'获取教师关联班级信息'
-	ResponseObject get_album_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/album_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//全部删除
+def void delete_reminder_all(){
+	'发送全部删除接口'
+	ResponseObject delete_reminder_all_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_all_erase"), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	//def get_album_list_jsonResponse=get_jsonResponse(get_album_list_response)
-	WS.comment('相册列表数据body：'+get_album_list_response.getResponseText())
+	def jsonResponse=get_jsonResponse(delete_reminder_all_response)
+	WS.comment('小铃铛一键已读接口返回body:'+delete_reminder_all_response.getResponseText())
 	
-	if(WS.verifyResponseStatusCode(get_album_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	if(WS.verifyResponseStatusCode(delete_reminder_all_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
-		
-		WS.containsString(get_album_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return get_album_list_response
-		
+		WS.verifyElementPropertyValue(delete_reminder_all_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
 	}
-	
-	return
 	
 	
 }
+
+//获取返回体json解析
+def Object get_jsonResponse(ResponseObject response) {
+	
+	def jsonSlurper = new JsonSlurper()
+
+	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+	
+	return jsonResponse
+}
+
 
 

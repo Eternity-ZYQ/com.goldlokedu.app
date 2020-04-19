@@ -32,7 +32,8 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		
 		'获取班级相册列表'
-		def get_album_list_jsonResponse=get_album_list(class_id,from,size)
+		ResponseObject get_album_list_response=WS.callTestCase(findTestCase('Test Cases/Api/Mobile Api/Campus/Class Circle/Album/album_list'), [('class_id'):class_id,('from'):from,('size'):size], FailureHandling.CONTINUE_ON_FAILURE)
+		def get_album_list_jsonResponse=get_jsonResponse(get_album_list_response)
 		
 		if(get_album_list_jsonResponse.albums.size>0){
 			
@@ -102,30 +103,6 @@ def void delete_album(String class_id,String album_id){
 	
 }
 
-
-
-
-
-//获取相册列表
-def Object get_album_list(String class_id,int from,int size){
-	'获取教师关联班级信息'
-	ResponseObject get_album_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/album_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def get_album_list_jsonResponse=get_jsonResponse(get_album_list_response)
-	WS.comment('相册列表数据body：'+get_album_list_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(get_album_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(get_album_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return get_album_list_jsonResponse
-		
-	}
-	
-	return
-	
-	
-}
 
 
 

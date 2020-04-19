@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>一键已读</description>
+   <name>reminder_view_all</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9ea288bb-dab8-4a2b-b4e6-08e3e33050ee</testCaseGuid>
+</TestCaseEntity>

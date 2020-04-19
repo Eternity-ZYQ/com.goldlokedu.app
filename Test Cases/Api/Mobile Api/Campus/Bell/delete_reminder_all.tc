@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>全部删除</description>
+   <name>delete_reminder_all</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f64afdb2-ca1a-43d8-bca1-024b31fe06f6</testCaseGuid>
+</TestCaseEntity>
