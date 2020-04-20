@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>登录用例</description>
-   <name>login</name>
+   <description>教师登录用例</description>
+   <name>teacher_login_success</name>
    <tag></tag>
    <comment>登录用例:</comment>
    <testCaseGuid>a5c0ef87-8cc1-4540-8bad-66e0d854300c</testCaseGuid>

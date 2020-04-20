@@ -16,19 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-'发送获取教师是否为班主任接口数据'
-ResponseObject judge_adviser_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+TestData data=findTestData("Data Files/User Information/Account/teacher");
 
-//def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
-WS.comment('是否为班主任返回body:'+judge_adviser_response.getResponseText())
+'账号为空'
+ResponseObject response=WS.sendRequest(findTestObject('Api/Mobile Api/Login And Logout/login',[('account'):'18344261111',('password'):'123456a']), FailureHandling.CONTINUE_ON_FAILURE)
 
-if(WS.verifyResponseStatusCode(judge_adviser_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-	
-	WS.verifyElementPropertyValue(judge_adviser_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-	WS.verifyElementPropertyValue(judge_adviser_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-	
-	return judge_adviser_response
-	
+
+if(WS.verifyResponseStatusCode(response, 400, FailureHandling.CONTINUE_ON_FAILURE)){
+
+WS.verifyElementPropertyValue(response, 'code', 102)
+WS.verifyElementPropertyValue(response, 'message', '账号或密码错误')
+
 }
-
-return '接口返回非200,具体信息:'+judge_adviser_response.getResponseText()

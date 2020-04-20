@@ -52,6 +52,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -64,33 +65,19 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+WS.comment('小铃铛列表数据body:'+response.getResponseText())
 
-if(WS.verifyResponseStatusCode(response, 200)){
+'判断接口请求是否成功'
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	
-	&quot;返回体包含:total&quot;
-	assertThat(response.getResponseText()).contains('total')
+	'接口返回数据包含total'
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
-	
-	save_message(response)
 	
 }
 
 
 
-//保存第一条,为点击后改变成已读状态做数据准备
-private void save_message(ResponseObject response){
-	def jsonSlurper = new JsonSlurper()
-	
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	def reminder_id=jsonResponse.data[0].reminder_id
-	
-	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;reminder_id&quot;, reminder_id)
-	
-	//println(reminder_id)
-	
-	
-}
 
 
 

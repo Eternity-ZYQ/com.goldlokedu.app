@@ -21,22 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '首页轮播图获取'
-ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Carousel/carousel"), FailureHandling.CONTINUE_ON_FAILURE)
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Carousel/carousel"), FailureHandling.CONTINUE_ON_FAILURE)
 
-WS.comment('轮播图数据body:'+response.getResponseText())
-
-
-
-
-//获取返回体json解析
-def Object get_jsonResponse(ResponseObject response){
-	
-	def jsonSlurper = new JsonSlurper()
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	return jsonResponse
-	
-}
 
 
 

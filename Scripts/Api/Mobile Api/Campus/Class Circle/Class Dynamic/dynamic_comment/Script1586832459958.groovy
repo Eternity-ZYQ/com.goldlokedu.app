@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 
@@ -32,15 +32,18 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def search_dynamic_list_jsonResponse=search_dynamic_list(class_id,from,size)
-		
+		'获取班级动态列表数据'
+		ResponseObject search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+		def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
 		if(search_dynamic_list_jsonResponse.data.size>0){
 			WS.comment(class_name+"有动态")
 			
 			'评论的内容'
 			def comment_content=CustomKeywords.'time.SystemTime.get_system_time'()+'发起评论'
-			'评论第一条动态'
-			dynamic_comment(search_dynamic_list_jsonResponse.data[0].moment_id,comment_content)
+			
+			'发送动态接口评论:评论第一条动态'
+			WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment",[('moment_id'):search_dynamic_list_jsonResponse.data[0].moment_id,('content'):comment_content]), FailureHandling.CONTINUE_ON_FAILURE)
+			
 			
 			for(int k:(0..search_dynamic_list_jsonResponse.data.size-1)){
 						
@@ -55,7 +58,9 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 							WS.comment('不是本人评论,即将进行回复...')
 							'回复评论内容'
 							def comment_reply_content=CustomKeywords.'time.SystemTime.get_system_time'()+'发起回复'
-							dynamic_comment_reply(search_dynamic_list_jsonResponse.data[k].moment_id,comment_reply_content,search_dynamic_list_jsonResponse.data[k].replies[i].commentator,search_dynamic_list_jsonResponse.data[k].replies[i].commentator_name)
+							'发送动态接口评论回复'
+							WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment_reply",[('moment_id'):search_dynamic_list_jsonResponse.data[k].moment_id,('content'):comment_reply_content,('creator'):search_dynamic_list_jsonResponse.data[k].replies[i].commentator,('creator_name'):search_dynamic_list_jsonResponse.data[k].replies[i].commentator_name]), FailureHandling.CONTINUE_ON_FAILURE)
+							
 							break
 						}else{
 						
@@ -86,33 +91,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){
 	
@@ -124,64 +102,6 @@ def Object get_jsonResponse(ResponseObject response){
 }
 
 
-
-//发送获取动态列表
-def Object search_dynamic_list(String class_id,int from,int size){
-	'获取班级列表数据'
-	ResponseObject search_dynamic_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
-	WS.comment('动态列表信息body:'+search_dynamic_list_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(search_dynamic_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(search_dynamic_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_dynamic_list_jsonResponse
-		
-	}
-	
-	return
-	
-	
-	
-	
-}
-
-
-//评论动态
-def void dynamic_comment(String moment_id,String content){
-	'发送动态接口评论'
-	ResponseObject dynamic_comment_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment",[('moment_id'):moment_id,('content'):content]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WS.comment('动态列表信息body:'+dynamic_comment_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(dynamic_comment_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(dynamic_comment_response, 'comment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-			
-		
-	}
-	
-}
-
-
-
-//回复其他人动态
-def void dynamic_comment_reply(String moment_id,String content,String creator,String creator_name){
-	'发送动态接口评论'
-	ResponseObject dynamic_comment_reply_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment_reply",[('moment_id'):moment_id,('content'):content,('creator'):creator,('creator_name'):creator_name]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WS.comment('动态列表信息body:'+dynamic_comment_reply_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(dynamic_comment_reply_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(dynamic_comment_reply_response, 'comment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-			
-		
-	}
-	
-}
 
 
 

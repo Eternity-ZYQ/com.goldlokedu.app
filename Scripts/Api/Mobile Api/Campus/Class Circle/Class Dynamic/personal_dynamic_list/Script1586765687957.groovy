@@ -21,8 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-'获取默认当前个人动态列表'
-def search_personal_dynamic_list_jsonResponse=search_personal_dynamic_list(from,size)
+
+'获取个人动态列表数据'
+ResponseObject search_personal_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_personal_dynamic_list",[('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+def search_personal_dynamic_list_jsonResponse=get_jsonResponse(search_personal_dynamic_list_response)
+
 
 if(search_personal_dynamic_list_jsonResponse.data.size>0){
 	WS.comment('我的动态有数据')
@@ -68,7 +71,10 @@ if(size>0){
 					for(int i:(0..search_personal_dynamic_list_filter_yearjsonResponse.data[k].pictures.data.size-1)){
 						
 						WS.comment('第'+(k+1)+'条动态的第'+(i+1)+'张图片加载中...')
-						dowmload_picture(search_personal_dynamic_list_filter_yearjsonResponse.data[k].pictures.data[i].attachment_id)
+						
+						'发送下载动态图片接口'
+						WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dowmload_picture",[('picture_id'):search_personal_dynamic_list_filter_yearjsonResponse.data[k].pictures.data[i].attachment_id]), FailureHandling.CONTINUE_ON_FAILURE)
+						
 						
 					}
 				}else{
@@ -105,25 +111,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-//发送获取动态列表
-def Object search_personal_dynamic_list(int from,int size){
-	'获取班级列表数据'
-	ResponseObject search_personal_dynamic_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_personal_dynamic_list",[('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def search_personal_dynamic_list_jsonResponse=get_jsonResponse(search_personal_dynamic_list_response)
-	WS.comment('动态列表信息body:'+search_personal_dynamic_list_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(search_personal_dynamic_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(search_personal_dynamic_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_personal_dynamic_list_jsonResponse
-		
-	}
-	
-	return
-	
-}
 
 
 

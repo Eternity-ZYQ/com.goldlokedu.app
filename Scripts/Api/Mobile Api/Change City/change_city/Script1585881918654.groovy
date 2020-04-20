@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 //选择城市接口请求
-change_city()
+WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Change City/change_city'), FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
@@ -39,11 +39,3 @@ change_city()
 
 
 
-//正常获取选择城市
-def void change_city(){
-	
-	'选择地区'
-	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Change City/change_city'), FailureHandling.CONTINUE_ON_FAILURE)
-
-	
-}

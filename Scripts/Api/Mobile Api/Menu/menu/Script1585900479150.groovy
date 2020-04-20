@@ -20,65 +20,24 @@ import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 
 "获取ios菜单"
-ios_app_menu()
+ResponseObject ios_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Menu/ios_app_menu"), FailureHandling.CONTINUE_ON_FAILURE)
+	
 
 '获取Android菜单'
-android_app_menu()
-
-
-
-
-
-
-
-
-
-
-//ios菜单获取
-def void ios_app_menu(){
+ResponseObject android_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Menu/android_app_menu"), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	ResponseObject response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Menu/ios_app_menu"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse =get_jsonResponse(response)
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功')
-		WS.comment(''+jsonResponse)
-	}
-	
-	
-}
-
-
-//ios菜单获取
-def void android_app_menu(){
-	
-	ResponseObject response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Menu/android_app_menu"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse =get_jsonResponse(response)
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功')
-		WS.comment(''+jsonResponse)
-	}
-	
-	
-}
 
 
 
 
-//获取返回体json解析
-def Object get_jsonResponse(ResponseObject response){
-	
-	def jsonSlurper = new JsonSlurper()
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	return jsonResponse
-	
-}
+
+
+
+
+
+
+
+
 
 
 

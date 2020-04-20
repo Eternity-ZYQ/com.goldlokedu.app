@@ -16,29 +16,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+TestData data=findTestData("Data Files/User Information/Account/teacher");
 
-'获取教师关联班级信息'
-ResponseObject class_information_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
+'账号为空'
+ResponseObject response=WS.sendRequest(findTestObject('Api/Mobile Api/Login And Logout/login',[('account'):'',('password'):data.getValue("password", 1)]), FailureHandling.CONTINUE_ON_FAILURE)
+	
 
-//def class_information_jsonResponse=get_jsonResponse(class_information_response)
-WS.comment('班级信息'+class_information_response.getResponseText())
+if(WS.verifyResponseStatusCode(response, 500, FailureHandling.CONTINUE_ON_FAILURE)){
 
-if(WS.verifyResponseStatusCode(class_information_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-	
-	WS.verifyElementPropertyValue(class_information_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-	WS.verifyElementPropertyValue(class_information_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-	
-	
-	return class_information_response
+	WS.verifyElementPropertyValue(response, 'code', 100)
+	WS.verifyElementPropertyValue(response, 'message', '系统内部错误')
+
+
 }
-	return '接口返回非200,具体信息:'+class_information_response.getResponseText()
-
-
-
-
-
-
-
-
-
-

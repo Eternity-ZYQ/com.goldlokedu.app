@@ -8,22 +8,15 @@
    <variable>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>a058a0af-5ab3-464c-a799-d09f664d105b</id>
+      <id>3cf3a9d1-9fde-4551-a5ca-7021396072ec</id>
       <masked>false</masked>
       <name>from</name>
    </variable>
    <variable>
       <defaultValue>3</defaultValue>
       <description></description>
-      <id>5da37672-9ab0-4749-8875-24379375c526</id>
+      <id>4528ec54-4095-4369-9787-a21f52506d15</id>
       <masked>false</masked>
       <name>size</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>08903e60-803f-4df5-9017-ca34526ec6ea</id>
-      <masked>false</masked>
-      <name>class_id</name>
    </variable>
 </TestCaseEntity>

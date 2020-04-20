@@ -21,52 +21,18 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-
-
-'一键已读'
-reminder_view_all(GlobalVariable.user_id)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//一键已读
-def void reminder_view_all(String owner_id){
-	'发送一键已读接口'
-	ResponseObject reminder_view_all_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_view_all",[('owner_id'):owner_id]), FailureHandling.CONTINUE_ON_FAILURE)
+'发送一键已读接口'
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_view_all",[('owner_id'):GlobalVariable.user_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	def jsonResponse=get_jsonResponse(reminder_view_all_response)
-	WS.comment('小铃铛一键已读接口返回body:'+reminder_view_all_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(reminder_view_all_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(reminder_view_all_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-	}
-	
-	
-	
-	
-}
 
 
-//获取返回体json解析
-def Object get_jsonResponse(ResponseObject response) {
-	 
-	def jsonSlurper = new JsonSlurper()
 
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	return jsonResponse
-}
+
+
+
+
+
+
 
 
 

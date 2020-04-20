@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
@@ -31,8 +31,11 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		WS.comment('class_id:'+class_id)
-		def search_dynamic_list_jsonResponse=search_dynamic_list(class_id,from,size)
 		
+		'获取班级动态列表数据'
+		ResponseObject search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+		def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
+
 		if(search_dynamic_list_jsonResponse.data.size>0){
 			WS.comment(class_name+"有动态")
 			
@@ -47,7 +50,10 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 						'如果是自己发的可以删除'
 						if(WS.verifyEqual(commentator, GlobalVariable.user_id, FailureHandling.OPTIONAL)){
 							WS.comment('是本人评论,即将进行删除...')
-							detele_comment(search_dynamic_list_jsonResponse.data[k].replies[i].comment_id)
+							
+							'删除动态评论'
+							WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/delete_comment',[('comment_id'):search_dynamic_list_jsonResponse.data[k].replies[i].comment_id]), FailureHandling.CONTINUE_ON_FAILURE)
+							
 							break
 						}else{
 						
@@ -56,18 +62,14 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 						}				
 						
 					}
-					
-					
+								
 				}else{
 				
 					WS.comment(class_name+'的第'+(k+1)+'条动态没有评论')
 				}
-				
-				
-				
+							
 			}
-			
-					
+								
 		}else{
 		
 			WS.comment(class_name+"没有有动态")
@@ -78,12 +80,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 	
 	
 }
-
-
-
-
-
-
 
 
 
@@ -101,50 +97,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-//发送获取动态列表
-def Object search_dynamic_list(String class_id,int from,int size){
-	'获取班级列表数据'
-	ResponseObject search_dynamic_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
-	WS.comment('动态列表信息body:'+search_dynamic_list_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(search_dynamic_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(search_dynamic_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_dynamic_list_jsonResponse
-		
-	}
-	
-	return
-	
-	
-	
-	
-}
-
-
-//删除动态评论
-def void detele_comment(String comment_id){
-	'获取班级列表数据'
-	ResponseObject detele_comment_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/delete_comment',[('comment_id'):comment_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WS.comment('动态列表信息body:'+detele_comment_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(detele_comment_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(detele_comment_response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
-		
-	}
-	
-	
-	
-	
-}
 
 
 

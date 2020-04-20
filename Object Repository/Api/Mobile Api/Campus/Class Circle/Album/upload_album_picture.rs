@@ -65,6 +65,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -80,10 +81,14 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 //def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;Data Files/Image/Upload Test Image/timg (1).jpeg&quot;)
 //WS.comment(size+&quot;&quot;)
 
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+WS.comment('上传相册图片返回body：'+response.getResponseText())
+	
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+		
+	WS.containsString(response, 'picture_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		
 
-	assertThat(response.getResponseText()).contains('picture_id')
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

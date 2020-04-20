@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-ResponseObject bell_list_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/Campus/Bell/bell_list"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject bell_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_search"), FailureHandling.CONTINUE_ON_FAILURE)
 def bell_list_jsonResponse=get_jsonResponse(bell_list_response)
 
 '保存列表数据长度'
@@ -43,7 +43,9 @@ if(data_size>0){
 
 if(reminder_id!=''){
 	
-reminder_view(reminder_id)
+'发送查看小铃铛信息接口'
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_view",[('reminder_ids'):reminder_id]), FailureHandling.CONTINUE_ON_FAILURE)
+
 
 }else{
 
@@ -53,30 +55,6 @@ WS.comment('没有未读的信息')
 
 
 
-
-
-
-
-
-
-
-//查看小铃铛,使其变已读状态
-def void reminder_view(String reminder_ids){
-	'发送查看小铃铛信息接口'
-	ResponseObject reminder_view_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_view",[('reminder_ids'):reminder_ids]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	//def rsonResponse=get_jsonResponse(reminder_view_response)
-	WS.comment('小铃铛查看接口返回body:'+reminder_view_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(reminder_view_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(reminder_view_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-				
-	}
-	
-	
-	
-}
 
 
 //获取返回体json解析

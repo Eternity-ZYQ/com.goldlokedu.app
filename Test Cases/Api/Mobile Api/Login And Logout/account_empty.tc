@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>账号置空登录</description>
+   <name>account_empty</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5058f82-4f05-4fd0-b897-048e8296a7fa</testCaseGuid>
+</TestCaseEntity>

@@ -20,7 +20,7 @@ import groovy.json.JsonSlurper
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
@@ -32,14 +32,17 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		
 		'获取教师是否为班主任信息'
-		ResponseObject judge_adviser_response=WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/My/Individual/Teacher/judge_adviser"), [('class_id'):class_id], FailureHandling.CONTINUE_ON_FAILURE)
+		ResponseObject judge_adviser_response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser', [('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 		def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
 		
 		if(judge_adviser_jsonResponse.data.adviser){
 			
 			WS.comment('是'+class_name+'的班主任')
 			def album_name=CustomKeywords.'time.SystemTime.get_system_time'()+'添加的相册'
-			add_album(album_name,class_id)
+			
+			'发送添加相册接口'
+			WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/add_album",[('album_name'):album_name,('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+			
 			
 		}else{
 		
@@ -53,28 +56,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){
 	
@@ -84,33 +65,6 @@ def Object get_jsonResponse(ResponseObject response){
 	return jsonResponse
 	
 }
-
-
-
-
-
-
-
-
-
-//添加相册
-def void add_album(String album_name,String class_id){
-	'发送添加相册接口'
-	ResponseObject add_album_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/add_album",[('album_name'):album_name,('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def add_album_jsonResponse=get_jsonResponse(add_album_response)
-	WS.comment('添加相册返回数据body：'+add_album_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(add_album_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(add_album_response, 'album_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-	}
-	
-	
-}
-
-
 
 
 

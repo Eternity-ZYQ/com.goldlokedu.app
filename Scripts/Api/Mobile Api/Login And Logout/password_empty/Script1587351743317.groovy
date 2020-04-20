@@ -14,23 +14,17 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
-import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
+TestData data=findTestData("Data Files/User Information/Account/teacher");
 
-'发送获取小铃铛列表接口'
-WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_search"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-
-
+'密码为空'
+ResponseObject response=WS.sendRequest(findTestObject('Api/Mobile Api/Login And Logout/login',[('account'):data.getValue("account", 1),('password'):'']), FailureHandling.CONTINUE_ON_FAILURE)
 
 
+if(WS.verifyResponseStatusCode(response, 400, FailureHandling.CONTINUE_ON_FAILURE)){
 
+WS.verifyElementPropertyValue(response, 'code', 102)
+WS.verifyElementPropertyValue(response, 'message', '账号或密码错误')
 
-
-
-
-
-
-
+}
