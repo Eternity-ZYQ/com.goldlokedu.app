@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("null"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
@@ -33,7 +33,10 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		
 		WS.comment(class_name+"发布动态中...")
 		def dynamic_content=CustomKeywords.'time.SystemTime.get_system_time'()+'发布纯文本动态'
-		publish_dynamic_text(class_id,dynamic_content)
+		
+		'发送发布动态接口'
+		WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_publish_text",[('class_id'):class_id,('content'):dynamic_content]), FailureHandling.CONTINUE_ON_FAILURE)
+		
 		
 	}
 		
@@ -57,21 +60,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-//发布纯文本动态
-def void publish_dynamic_text(String class_id,String content){
-	'发送发布动态接口'
-	ResponseObject publish_dynamic_text_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_publish_text",[('class_id'):class_id,('content'):content]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WS.comment('发布动态返回数据body:'+publish_dynamic_text_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(publish_dynamic_text_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(publish_dynamic_text_response, 'moment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-			
-	}
-	
-	
-}
 
 
 

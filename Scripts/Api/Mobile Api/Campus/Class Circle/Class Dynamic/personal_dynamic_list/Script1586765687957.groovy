@@ -38,7 +38,10 @@ if(search_personal_dynamic_list_jsonResponse.data.size>0){
 			for(int i:(0..search_personal_dynamic_list_jsonResponse.data[k].pictures.data.size-1)){
 				
 				WS.comment('第'+(k+1)+'条动态的第'+(i+1)+'张图片加载中...')
-				dowmload_picture(search_personal_dynamic_list_jsonResponse.data[k].pictures.data[i].attachment_id)				
+				
+				'发送下载动态图片接口'
+				WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dowmload_picture",[('picture_id'):search_personal_dynamic_list_jsonResponse.data[k].pictures.data[i].attachment_id]), FailureHandling.CONTINUE_ON_FAILURE)
+				
 				
 			}		
 		}else{
@@ -50,16 +53,22 @@ if(search_personal_dynamic_list_jsonResponse.data.size>0){
 }
 
 
+
+'获取学年接口数据'
+ResponseObject get_years_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/year"), FailureHandling.CONTINUE_ON_FAILURE)
 '获取学年'
-def get_yearsjsonResponse=get_years()
+def get_yearsjsonResponse=get_jsonResponse(get_years_response)
 
 def size=get_yearsjsonResponse.data.size
 if(size>0){
 	WS.comment('存在'+size+'个学年')
 	
 	for(int x:(0..size-1)){
-		'筛选学年后的个人动态列表'
-		def search_personal_dynamic_list_filter_yearjsonResponse=search_personal_dynamic_list_filter_year(from,size,get_yearsjsonResponse.data[x].code)
+		
+		'获取动态个人列表数据--筛选学年'
+		ResponseObject search_personal_dynamic_list_filter_year_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_personal_dynamic_list_filter_year",[('from'):from,('size'):size,('school_year'):get_yearsjsonResponse.data[x].code]), FailureHandling.CONTINUE_ON_FAILURE)
+		def search_personal_dynamic_list_filter_yearjsonResponse=get_jsonResponse(search_personal_dynamic_list_filter_year_response)
+		
 		if(search_personal_dynamic_list_filter_yearjsonResponse.data.size>0){
 			WS.comment('我的动态有数据')
 			
@@ -111,61 +120,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-
-
-//发送获取动态列表--学年筛选
-def Object search_personal_dynamic_list_filter_year(int from,int size,String school_year){
-	'获取班级列表数据'
-	ResponseObject search_personal_dynamic_list_filter_year_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_personal_dynamic_list_filter_year",[('from'):from,('size'):size,('school_year'):school_year]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def search_personal_dynamic_list_filter_yearjsonResponse=get_jsonResponse(search_personal_dynamic_list_filter_year_response)
-	WS.comment('动态列表信息body:'+search_personal_dynamic_list_filter_year_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(search_personal_dynamic_list_filter_year_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(search_personal_dynamic_list_filter_year_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_personal_dynamic_list_filter_yearjsonResponse
-		
-	}
-	
-	return
-}
-
-
-
-
-//加载动态图片
-def void dowmload_picture(String picture_id){
-	'发送下载动态图片接口'
-	ResponseObject dowmload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dowmload_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)
-	
-
-}
-
-
-//获取学年接口数据
-def Object get_years(){
-	'获取学年接口数据'
-	ResponseObject get_years_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/year"), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def get_yearsjsonResponse=get_jsonResponse(get_years_response)
-	WS.comment('动态列表信息body:'+get_years_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(get_years_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(get_years_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return get_yearsjsonResponse
-		
-	}
-	
-	return
-	
-}
 
 
 

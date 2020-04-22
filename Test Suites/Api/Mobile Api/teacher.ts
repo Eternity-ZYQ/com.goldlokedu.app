@@ -121,7 +121,7 @@
    <testCaseLink>
       <guid>1373e3c1-255d-41b5-9645-5f758c13ea2e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/album_picture_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -193,7 +193,7 @@
    <testCaseLink>
       <guid>f55afec4-c037-43d2-8a52-1641a36fa8e7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/delete_album_picture</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -206,6 +206,156 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>8f00effd-4e99-40ad-ad6f-2d62f65a4f56</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>41307edd-ec7c-4616-b583-681caa518da7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f313277a-922b-4eaa-985e-d8e17510054a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>14117e43-3ad9-4049-ab6a-f3060d481c54</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>93256a5b-1fa7-4e3f-847a-e9401f0347b0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b882a268-8e30-49ff-9b98-78dc8d290871</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6ce3a89e-d42b-4c3c-82c2-3fb697faa3ad</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/personal_dynamic_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0fcc93fe-afac-4a60-b994-1fdb594085b4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c6ecec67-84ea-473d-89b5-fb7c6fecf7f3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a7233a9c-9c57-4944-b5f8-0ab278d324d3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/publish_dynamic_text</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>820d7189-e2c9-469a-8da4-29101e731676</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/publish_dynamic_text_and_picture</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1f2fa7ed-cfa9-4aff-87d2-1d6f768f09e1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_like_and_unlike</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b114645c-f333-4335-9ccb-4b80dac85991</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7985ddc4-fd08-4551-b0ed-134eae1ca757</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fee47cd6-cc48-4580-afd2-765aa803817d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2301c93a-c3d8-4156-a83b-ca45cea74a45</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b60210b7-aad3-4208-8159-38bf8e1f5cf6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9c3e85a-8411-4cd0-87ba-78b4ee7ab196</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_detele_comment</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>14e00238-1ac3-4548-b245-4b6d2e516e39</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>06c5d0a8-fd9c-45fa-b738-b3c88b56ecf4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f1beed6d-1f63-4ac8-988e-81433bdd3c52</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/detele_personal_dynamic</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5d90acee-b124-498c-93c3-98f8e3b65c73</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3065ae16-5390-47b4-81f5-2a995c1cf9a9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e82b496d-d2dd-4ade-a230-07c8f08059b1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/detele_dynamic</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cd4e8a6d-0e3d-4478-be45-d35db525c4f1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0c3aed22-1a0f-4eb4-8c9a-0fa449eb8dd4</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

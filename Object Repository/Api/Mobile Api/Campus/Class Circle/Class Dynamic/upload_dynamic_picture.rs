@@ -58,6 +58,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -70,7 +71,17 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-WS.verifyResponseStatusCode(response, 200)
+WS.comment('上传动态图片返回信息:'+response.getResponseText())
+	
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+		
+	WS.containsString(response, 'attachment_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'content_type', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'size', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'uri', false, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		
+	}
 
 //def size=CustomKeywords.'public_method.FileSize.getFileSize'(&quot;Data Files/Image/Upload Test Image/timg (2).jpeg&quot;)
 //
