@@ -3,7 +3,7 @@
    <description>通知未读</description>
    <name>notification_unread</name>
    <tag></tag>
-   <comment>通知详情页面</comment>
+   <comment></comment>
    <testCaseGuid>da7ff401-a5bf-4707-acf3-48b70f3d901c</testCaseGuid>
    <variable>
       <defaultValue>0</defaultValue>

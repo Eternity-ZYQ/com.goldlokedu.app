@@ -46,10 +46,11 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+WS.comment('未读通知列表页面body'+response.getResponseText())
+
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	
-	assertThat(response.getResponseText()).contains('data')
+	WS.containsString(response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

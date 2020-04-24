@@ -22,54 +22,10 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取我收的通知列表'
-my_received_notificatiom_list(0,10)
+WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_received_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//获取返回体json解析
-def Object get_jsonResponse(ResponseObject response){
-	
-	def jsonSlurper = new JsonSlurper()
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	return jsonResponse
-	
-}
-
-
-
-
-//我收的通知列表
-def Object my_received_notificatiom_list(int from,int size){
-	ResponseObject my_received_notificatiom_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_received_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def my_received_notificatiom_list_jsonResponse=get_jsonResponse(my_received_notificatiom_list_response)
-	WS.comment('我收的通知列表body:'+my_received_notificatiom_list_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(my_received_notificatiom_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(my_received_notificatiom_list_response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.containsString(my_received_notificatiom_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return my_received_notificatiom_list_jsonResponse
-	}
-	
-	return
-}
