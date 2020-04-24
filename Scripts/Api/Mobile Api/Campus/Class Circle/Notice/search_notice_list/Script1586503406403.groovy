@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("null"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 
@@ -31,7 +31,10 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		WS.comment('class_id:'+class_id)
-		search_notice_list(class_id,from,size)
+		
+		'发送获取班级公告列表接口'
+		WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list", [('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+		
 	}
 	
 	
@@ -54,23 +57,3 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-
-//获取班级公告列表数据
-def Object search_notice_list(String class_id,int from ,int size){
-	'发送获取班级公告列表接口'
-	ResponseObject search_notice_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list", [('class_id'):class_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def search_notice_list_jsonResponse=get_jsonResponse(search_notice_list_response)
-	WS.comment('班级公告列表信息body:'+search_notice_list_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(search_notice_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-
-		WS.containsString(search_notice_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_notice_list_jsonResponse
-		
-	}
-	
-	
-}

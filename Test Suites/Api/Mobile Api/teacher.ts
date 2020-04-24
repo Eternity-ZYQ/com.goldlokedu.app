@@ -241,7 +241,7 @@
    <testCaseLink>
       <guid>6ce3a89e-d42b-4c3c-82c2-3fb697faa3ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/personal_dynamic_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -357,5 +357,89 @@
          <value></value>
          <variableId>0c3aed22-1a0f-4eb4-8c9a-0fa449eb8dd4</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5ee8c5d6-d1a1-4460-aa0a-56be875b624e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/view_class_training_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ff6a3bd9-524c-4a53-84ca-5d5bb365d670</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/edit_class_training</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>43112f48-5661-4f59-87bc-bbb4d0682ea2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/new_one_notice</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e53c00ca-8fab-44e5-9cc9-084c85d5615e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>151c1e95-a4d7-48c5-8a08-35b90ce3ef3c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5bb2196f-a7e2-4d09-a22a-d077cdaac1e9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e4358f95-5f39-46e0-bdde-5fd9d3bb5a89</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/add_notice</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ad3b64b0-1764-4b78-b3f0-57d81f5770df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/delete_notice</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5a3b0963-27dc-47ae-8ea8-5bbd8dfa8749</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>535c4e8f-8f09-4a4a-a909-33528d5d0849</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f33778e-3330-4932-91bb-3e75a5cc28b1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Search/search_contact_mobile_name_or_phone_number</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>59f3c445-4afe-4616-baf8-4026d76e3575</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>882c4b26-bbf4-4763-a72c-0c6ab70aa1d5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Student/student_mobile_contact</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9a3e4352-a948-46f4-83af-dde1f229e132</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Teacher/teacher_mobile_contact</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

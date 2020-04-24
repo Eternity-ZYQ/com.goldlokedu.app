@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("null"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 
@@ -31,7 +31,10 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		WS.comment('class_id:'+class_id)
-		new_one_notice(class_id)
+		
+		'发送获取最新班级公告列表接口'
+		WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/new_one_notice", [('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	
 	}
 	
 	
@@ -53,35 +56,3 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-//获取班级公告列表数据
-def Object new_one_notice(String class_id){
-	'发送获取最新班级公告列表接口'
-	ResponseObject new_one_notice_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/new_one_notice", [('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def new_one_notice_jsonResponse=get_jsonResponse(new_one_notice_response)
-	WS.comment('班级公告列表信息body:'+new_one_notice_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(new_one_notice_response, 200, FailureHandling.OPTIONAL)){
-		
-		WS.containsString(new_one_notice_response, 'bulletin_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.containsString(new_one_notice_response, 'content', false, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.containsString(new_one_notice_response, 'created_date', false, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.containsString(new_one_notice_response, 'is_deletable', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return new_one_notice_jsonResponse
-		
-	}else if(WS.verifyResponseStatusCode(new_one_notice_response, 404, FailureHandling.OPTIONAL)){
-	
-		WS.verifyElementPropertyValue(new_one_notice_response, 'code', 404, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(new_one_notice_response, 'message', '本班级没有公告', FailureHandling.CONTINUE_ON_FAILURE)
-		
-	
-	}else{
-		
-		WS.verifyResponseStatusCode(new_one_notice_response, 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.comment('接口异常')
-	}
-	
-	
-}

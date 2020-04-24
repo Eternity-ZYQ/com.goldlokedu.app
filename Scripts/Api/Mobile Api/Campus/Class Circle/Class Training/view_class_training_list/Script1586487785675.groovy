@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("null"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 for(int x:(0..class_information_jsonResponse.data.size-1)){
@@ -29,7 +29,10 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		
 		def class_id=class_information_jsonResponse.data[x].klass[y].klass_id
 		WS.comment('class_id:'+class_id)
-		class_training(class_id)	
+			
+		'发送获取教师是否为班主任接口数据'
+		WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Training/class_training_content",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+		
 	}
 	
 	
@@ -49,30 +52,6 @@ def Object get_jsonResponse(ResponseObject response){
 	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
 	
 	return jsonResponse
-	
-}
-
-
-
-
-//获取班级班训
-def void class_training(String class_id){
-	'发送获取教师是否为班主任接口数据'
-	ResponseObject class_training_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Training/class_training_content",[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def class_training_jsonResponse=get_jsonResponse(class_training_response)
-	WS.comment('班训接口返回body:'+class_training_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(class_training_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(class_training_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(class_training_response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
-		
-	}
-	
-	
 	
 }
 

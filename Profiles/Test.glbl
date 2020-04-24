@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>移动端普宁环境host</description>
-      <initValue>'http://192.168.2.243'</initValue>
+      <initValue>'http://192.168.2.229'</initValue>
       <name>MobileHost</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

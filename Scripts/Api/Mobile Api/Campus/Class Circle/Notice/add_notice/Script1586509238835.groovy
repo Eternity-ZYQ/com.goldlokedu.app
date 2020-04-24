@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取教师关联班级信息'
-ResponseObject class_information_response=WS.callTestCase(findTestCase("null"), null, FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject class_information_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/teacher_related_class"), FailureHandling.CONTINUE_ON_FAILURE)
 def class_information_jsonResponse=get_jsonResponse(class_information_response)
 
 
@@ -33,16 +33,19 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 		def class_name=class_information_jsonResponse.data[x].klass[y].klass_full_name
 		def time=CustomKeywords.'time.SystemTime.get_system_time'()
 		def content=time+'发布的测试公告----'+class_name
+
 		
 		'获取教师是否为班主任信息'
-		ResponseObject judge_adviser_response=WS.callTestCase(findTestCase("null"), [('class_id'):class_id], FailureHandling.CONTINUE_ON_FAILURE)
+		ResponseObject judge_adviser_response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/My/Individual/Teacher/judge_adviser', [('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 		def judge_adviser_jsonResponse=get_jsonResponse(judge_adviser_response)
 		
 		if(judge_adviser_jsonResponse.data.adviser){
 			
 			WS.comment('是'+class_name+'的班主任')
-			
-			add_notice(class_id,content)
+
+			'发送发布公告接口'
+			WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/add_notice",[('class_id'):class_id,('content'):content]), FailureHandling.CONTINUE_ON_FAILURE)
+		
 			
 		}else{
 		
@@ -69,25 +72,6 @@ def Object get_jsonResponse(ResponseObject response){
 	
 }
 
-
-
-
-
-//发布公告
-def void add_notice(String class_id,String content){
-	'发送发布公告接口'
-	ResponseObject add_notice_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/add_notice",[('class_id'):class_id,('content'):content]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def class_information_jsonResponse=get_jsonResponse(add_notice_response)
-	WS.comment('发布公告返回信息body'+add_notice_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(add_notice_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-				
-		WS.verifyElementPropertyValue(add_notice_response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
-		
-	}
-	
-}
 
 
 

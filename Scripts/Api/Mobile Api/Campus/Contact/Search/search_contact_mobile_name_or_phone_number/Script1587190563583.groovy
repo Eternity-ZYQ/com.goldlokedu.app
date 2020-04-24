@@ -20,14 +20,13 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-'搜索名字'
-def search_name_or_number_jsonResponse=search_name_or_number(name)
+
+'发送打电话搜索联系人列表接口:搜索名字'
+ResponseObject search_name_or_number_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Contact/Search/search_contact_mobile_name_or_phone_number",[('name'):name]), FailureHandling.CONTINUE_ON_FAILURE)
+def search_name_or_number_jsonResponse=get_jsonResponse(search_name_or_number_response)
 
 '家长搜索到的头像'
 for_get_data(search_name_or_number_jsonResponse)
-
-
-return search_name_or_number_jsonResponse
 
 
 
@@ -40,16 +39,14 @@ def void for_get_data(Object jsonResponse){
 	if(jsonResponse.data.size>0){
 		
 		for(int x:(0..jsonResponse.data.size-1)){
-			
-				user_head_image(jsonResponse.data[x].user_id,jsonResponse.data[x].name)
-							
-					
+						
+				'发送用户头像接口'
+				WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/User/user_head_image",[('user_id'):jsonResponse.data[x].user_id]), FailureHandling.CONTINUE_ON_FAILURE)
+													
 		}
 		
 	}
-	
-	
-	
+
 }
 
 
@@ -68,43 +65,3 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-
-//打电话搜索联系人
-def Object search_name_or_number(String name){
-	'发送打电话搜索联系人列表接口'
-	ResponseObject search_name_or_number_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Contact/Search/search_contact_mobile_name_or_phone_number",[('name'):name]), FailureHandling.CONTINUE_ON_FAILURE)
-	def search_name_or_number_jsonResponse=get_jsonResponse(search_name_or_number_response)
-	WS.comment('打电话教师联系人列表数据body:'+search_name_or_number_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(search_name_or_number_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(search_name_or_number_response, 'code', 200,FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_name_or_number_jsonResponse
-		
-	}
-	
-		return
-		
-}
-
-
-//获取用户头像
-def void user_head_image(String user_id,String name){
-	'发送用户头像接口'
-	ResponseObject user_head_image_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/My/Individual/User/user_head_image",[('user_id'):user_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	
-	if(WS.verifyResponseStatusCode(user_head_image_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		WS.comment('加载成功')
-					
-	}else{
-		WS.comment(name+'加载失败')
-	
-	}
-	
-	
-	
-	
-}
