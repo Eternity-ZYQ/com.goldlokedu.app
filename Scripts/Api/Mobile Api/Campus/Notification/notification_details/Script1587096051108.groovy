@@ -19,7 +19,6 @@ import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 
-
 '调用我发的通知详情'
 ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_send_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 def my_send_jsonResponse=get_jsonResponse(response)
@@ -48,6 +47,23 @@ def Object get_jsonResponse(ResponseObject response){
 	return jsonResponse
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

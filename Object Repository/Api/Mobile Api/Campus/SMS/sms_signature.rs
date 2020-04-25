@@ -27,6 +27,7 @@
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -40,13 +41,24 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	&quot;返回体包含:data&quot;
+	WS.containsString(response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
-	&quot;验证返回体包含:data&quot;
-	assertThat(response.getResponseText()).contains('data')
+	def jsonSlurper = new JsonSlurper()
+	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
 	
-}
+	if(jsonResponse.data.size>0){
+	WS.containsString(response, 'signature_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'selected', false, FailureHandling.CONTINUE_ON_FAILURE)
 
+		
+	}
+	
+	
+
+}
 
 
 

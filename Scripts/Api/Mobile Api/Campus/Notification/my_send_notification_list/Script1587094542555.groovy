@@ -35,4 +35,9 @@ WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/
 
 
 
-}
+
+
+
+
+
+

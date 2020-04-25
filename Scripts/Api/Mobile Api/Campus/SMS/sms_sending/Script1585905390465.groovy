@@ -18,7 +18,7 @@ import groovy.json.JsonSlurper as JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 '判断该学校是否开通了短信业务'
-ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/can_send'),FailureHandling.CONTINUE_ON_FAILURE)
+ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/can_send'),FailureHandling.CONTINUE_ON_FAILURE)
 
 def jsonResponse = get_jsonResponse(response)
 
@@ -69,18 +69,11 @@ def void success_now_sms() {
 	def address=address_factory()
 	
 	'请求发送短信接口'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]),FailureHandling.CONTINUE_ON_FAILURE)
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]),FailureHandling.CONTINUE_ON_FAILURE)
 	
 	//WS.comment(response.responseText)
 	
-	//请求接口成功
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		"文本result值:Success"
-		WS.verifyElementPropertyValue(response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
-		
-	}
-		
+	
 }
 
 
@@ -107,17 +100,9 @@ def void success_timed_sms() {
 	
 	
 	'请求发送定时短信接口'
-	ResponseObject response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	WS.comment('发送定时短信接'+response.responseText)
-	
-	//请求接口成功
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		"文本result值:Success"
-		WS.verifyElementPropertyValue(response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
-	
-	}
+
 		
 }
 
@@ -125,7 +110,7 @@ def void success_timed_sms() {
 def void save_sms_type() {
 	
     '发送获取sms_type接口'
-    ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_type'), FailureHandling.CONTINUE_ON_FAILURE)
+    ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_type'), FailureHandling.CONTINUE_ON_FAILURE)
 
     def jsonResponse = get_jsonResponse(response)
 
@@ -142,7 +127,7 @@ def void save_sms_type() {
 def void save_sms_signature_and_sms_signature_id(){
 	
 	'发送获取sms_signature，sms_signature_id接口'
-	ResponseObject response = WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_signature'), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_signature'), FailureHandling.CONTINUE_ON_FAILURE)
 
 	def jsonResponse = get_jsonResponse(response)
 	

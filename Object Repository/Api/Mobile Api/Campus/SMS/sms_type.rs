@@ -27,6 +27,7 @@
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -39,37 +40,30 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	&quot;返回体包含:data&quot;
-	assertThat(response.getResponseText()).contains('data')
-	
-	
-	
-	
-	
-	&quot;保存信息&quot;
-	save_message(response)
-	
-}
-
-
-
-
-//保存信息
-private void save_message(ResponseObject response){
+	WS.containsString(response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	def jsonSlurper = new JsonSlurper()
-	
 	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
 	
-	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;sms_type&quot;, jsonResponse.data[0].category_id)
-	//WS.comment(jsonResponse.data.size+&quot;&quot;)
+	if(jsonResponse.data.size>0){
+	WS.containsString(response, 'used', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'is_default', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'created_date', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'school_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'category_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		
+	}
 	
 	
-	
-	
-	
+
 }
+
+
+
+
 
 
 

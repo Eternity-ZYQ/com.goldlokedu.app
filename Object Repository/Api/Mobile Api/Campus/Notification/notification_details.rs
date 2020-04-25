@@ -54,6 +54,8 @@ if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILUR
 	WS.containsString(response, 'address_str', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
 
-}</verificationScript>
+}
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
