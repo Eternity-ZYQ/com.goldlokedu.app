@@ -59,6 +59,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -71,14 +72,16 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+WS.comment('编辑短信模板列表返回数据body:'+response.getResponseText())
 
+'判断接口请求是否成功'
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	'返回body中包含template_id'
+	WS.containsString(response, 'template_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
-assertThat(response.getResponseText()).contains('owner_id')
-
-
-}</verificationScript>
+}
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

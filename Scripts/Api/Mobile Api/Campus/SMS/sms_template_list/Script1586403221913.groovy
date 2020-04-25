@@ -78,7 +78,7 @@ def Object get_jsonResponse(ResponseObject response) {
 //获取短信模板列表数据
 def void get_sms_template_list(){
 	'发送短信列表接口获取数据'
-	ResponseObject sms_template_response= WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_template_list"), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject sms_template_response= WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_template_list"), FailureHandling.CONTINUE_ON_FAILURE)
 	
 	def jsonResponse =get_jsonResponse(sms_template_response)
 	WS.comment('短信模板列表返回数据body:'+sms_template_response.getResponseText())
@@ -88,9 +88,6 @@ def void get_sms_template_list(){
 	if(WS.verifyResponseStatusCode(sms_template_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 		
 		WS.comment('短信模板列表请求成功')
-		
-		'返回body是否包含data'
-		WS.containsString(sms_template_response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		'保存模板个数data_size'
 		data_size=jsonResponse.data.size
@@ -114,33 +111,9 @@ def void get_sms_template_list(){
 //添加短信模板
 def void add_sms_template(String content,String title){
 	
-	ResponseObject add_sms_template_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/add_sms_template', [('content'):content,('title'):title]), FailureHandling.CONTINUE_ON_FAILURE)
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/add_sms_template', [('content'):content,('title'):title]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-	def jsonResponse =get_jsonResponse(add_sms_template_response)
-	WS.comment('添加短信模板列表返回数据body:'+add_sms_template_response.getResponseText())
-	
-	'添加短信接口请求是否成功'
-	if(WS.verifyResponseStatusCode(add_sms_template_response, 200, FailureHandling.OPTIONAL)){
-		
-		WS.comment('添加短信模板列表请求成功')
-		
-		'返回body是否包含template_id'
-		WS.containsString(add_sms_template_response, 'template_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-	
-	}else if(WS.verifyResponseStatusCode(add_sms_template_response, 416, FailureHandling.OPTIONAL)){
-		
-		WS.comment('添加短信模板列表请求成功:模板格式到达6个,不能再添加')
-	
-		WS.verifyElementPropertyValue(add_sms_template_response, 'code', 416, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(add_sms_template_response, 'message', '模板最多创建6个哦！', FailureHandling.CONTINUE_ON_FAILURE)
-		
-	
-	}
-	
-	
-	
-	
+
 	
 }
 
@@ -150,26 +123,8 @@ def void add_sms_template(String content,String title){
 //删除短信模板
 def void delete_sms_template(String id){
 	'发送删除短信模板接口'
-	ResponseObject delete_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/delete_template', [('template_id'):id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse =get_jsonResponse(delete_response)
-	WS.comment('删除短信模板列表返回数据body:'+delete_response.getResponseText())
-	
-	'判断接口请求是否成功'
-	if(WS.verifyResponseStatusCode(delete_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.comment('删除短信模板列表请求成功')
-		
-		WS.verifyElementPropertyValue(delete_response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
-	}
-	
-	
-	
-	
-	
-	
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/delete_template', [('template_id'):id]), FailureHandling.CONTINUE_ON_FAILURE)
+
 }
 
 
@@ -180,20 +135,7 @@ def void edit_sms_template(String id,String new_content,String new_title){
 	get_sms_template_list()
 	
 	'发送编辑短信模板'
-	ResponseObject edit_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/edit_sms_template', [('template_id'):id,('content'):new_content,('title'):new_title]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse =get_jsonResponse(edit_response)
-	WS.comment('编辑短信模板列表返回数据body:'+edit_response.getResponseText())
-	
-	'判断接口请求是否成功'
-	if(WS.verifyResponseStatusCode(edit_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		'返回body中包含template_id'
-		WS.containsString(edit_response, 'template_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
-	}
-	
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/edit_sms_template', [('template_id'):id,('content'):new_content,('title'):new_title]), FailureHandling.CONTINUE_ON_FAILURE)
 	
 	
 }

@@ -19,17 +19,30 @@ import internal.GlobalVariable as GlobalVariable
 import static org.assertj.core.api.Assertions.*
 
 
+'发送获取已收短信列表:10条'
+ResponseObject sms_sent_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_list", [('size'):10,('from'):0]),FailureHandling.CONTINUE_ON_FAILURE)
 
-'已收短信'
-sms_sent_list()
+def jsonResponse=get_jsonResponse(sms_sent_list_response)
+WS.comment('已发短信列表10条body:'+sms_sent_list_response.getResponseText())
 
+'判断请求接口成功'
+if(WS.verifyResponseStatusCode(sms_sent_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	
+	WS.comment('已读短信列表size'+jsonResponse.data.size)
+	for (int index : (0..jsonResponse.data.size-1)) {
+		
+		if(jsonResponse.data[index].sent_static.fail>0){
+			
+			'发送获取未收到短信的联系人数据'
+			WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_unreceived', [('message_id'):jsonResponse.data[index].message_id,('size'):jsonResponse.data[index].sent_static.fail]), FailureHandling.CONTINUE_ON_FAILURE)
+		
+			return
+		}
+						
+	}
 
-
-
-
-
-
-
+}
 
 
 
@@ -44,68 +57,6 @@ def Object get_jsonResponse(ResponseObject response) {
 
 	return jsonResponse
 }
-
-
-//已收短信列表
-def void sms_sent_list(){
-	'发送获取已发短信列表:10条'
-	ResponseObject sms_sent_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_list", [('size'):10,('from'):0]),FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse=get_jsonResponse(sms_sent_list_response)
-	WS.comment('已发短信列表10条body:'+sms_sent_list_response.getResponseText())	
-	
-	'判断请求接口成功'
-	if(WS.verifyResponseStatusCode(sms_sent_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		'返回数据中有total'
-		WS.containsString(sms_sent_list_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		WS.comment('已读短信列表size'+jsonResponse.data.size)
-		for (int index : (0..jsonResponse.data.size-1)) {
-			
-			if(jsonResponse.data[index].sent_static.fail>0){
-				
-				sms_sent_list_unreceived(jsonResponse.data[index].message_id,jsonResponse.data[index].sent_static.fail)
-				
-				return
-			}
-			
-			
-			
-			
-		}
-		
-		
-		
-		
-	}
-	
-	
-}
-
-
-
-//未收到消息
-def void sms_sent_list_unreceived(String message_id,int size){
-	
-	'发送获取未收到短信的联系人数据'
-	ResponseObject sms_sent_list_unreceived_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_unreceived', [('message_id'):message_id,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse=get_jsonResponse(sms_sent_list_unreceived_response)
-	WS.comment('未收到短信的联系人数据body:'+sms_sent_list_unreceived_response.getResponseText())
-	
-	'请求接口成功'
-	if(WS.verifyResponseStatusCode(sms_sent_list_unreceived_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		'返回数据中有total'
-		WS.containsString(sms_sent_list_unreceived_response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
-		
-	}
-	
-}
-
 
 
 

@@ -64,28 +64,25 @@ def Object get_jsonResponse(ResponseObject response) {
 //获取定时短信列表
 def void get_sms_timed_list(){
 	'发送获取定时短信数'
-	ResponseObject sms_timed_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_timed_list"), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject sms_timed_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_timed_list"), FailureHandling.CONTINUE_ON_FAILURE)
 	
 	def jsonResponse=get_jsonResponse(sms_timed_list_response)
 	WS.comment('定时短信列表数据body:'+sms_timed_list_response.getResponseText())
 	
 	'请求接口成功'
 	if(WS.verifyResponseStatusCode(sms_timed_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		'返回数据中有timer_sms_msg'
-		WS.containsString(sms_timed_list_response, 'timer_sms_msg', false, FailureHandling.CONTINUE_ON_FAILURE)
-		
+			
 		'保存定时短信列表数据长度:timer_sms_msg_size'
 		timer_sms_msg_size=jsonResponse.timer_sms_msg.size
 	
-	'判断是否有数据'
-	if(timer_sms_msg_size>0){
-			
-		'保存定时短信第一条条目id:draft_id'
-		draft_id=jsonResponse.timer_sms_msg[0].draft_id
-	
-	}
-	
+		'判断是否有数据'
+		if(timer_sms_msg_size>0){
+				
+			'保存定时短信第一条条目id:draft_id'
+			draft_id=jsonResponse.timer_sms_msg[0].draft_id
+		
+		}
+		
 	}
 	
 }
@@ -97,22 +94,8 @@ def void get_sms_timed_list(){
 //删除定时短信数据
 def void delete_sms_timed_list_item(String id){
 	'删除指定定时短信数据'
-	ResponseObject delete_response=WS.sendRequest(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/delete_sms_timed_item', [('draft_id'):id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	def jsonResponse=get_jsonResponse(delete_response)
-	WS.comment('删除定时短信数据返回body:'+delete_response.getResponseText())
-	
-	'接口请求成功'
-	if(WS.verifyResponseStatusCode(delete_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		'是否删除成功'
-		WS.verifyElementPropertyValue(delete_response, 'result', 'Success', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		
-	}
-	
-	
-	
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/delete_sms_timed_item', [('draft_id'):id]), FailureHandling.CONTINUE_ON_FAILURE)
+
 }
 
 

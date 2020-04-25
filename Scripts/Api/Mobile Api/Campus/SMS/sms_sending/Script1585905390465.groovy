@@ -194,53 +194,29 @@ def String get_time_sms_contnt(){
 //获取一级加载级联系人列表：班级
 def Object get_first_order_contact(String object_path){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return get_jsonResponse(response)
-	}
-	return 
-	
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path), FailureHandling.CONTINUE_ON_FAILURE)
+	WS.comment('一级加载级联系人列表：班级:'+response.getResponseText())
+
+	return get_jsonResponse(response)	
 }
 
 //获取二级加载学生联系人列表
 def Object get_second_order_contact(String object_path,String class_id){
 	'发送获取学生联系人接口请求'
 	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-			
-		
-		return get_jsonResponse(response)
-	}
-	
-	return
+	WS.comment('二级加载学生联系人列表:'+response.getResponseText())
+
+	return get_jsonResponse(response)
 	
 }
 
 //获取二级加载分组联系人列表
 def Object get_group_second_order_contact(String object_path,String group_id){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path,[('group_id'):group_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('group_id'):group_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	WS.comment('二级加载分组联系人列表:'+response.getResponseText())
 		
-		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-			
-		
-		return get_jsonResponse(response)
-	}
-	
-	return
-	
+	return get_jsonResponse(response)	
 }
 
 

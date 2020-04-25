@@ -34,6 +34,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -48,15 +49,12 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.comment(&quot;获取班级内学生请求体body:&quot;+request.httpBody)
 
-WS.comment(&quot;获取班级内学生请求体url:&quot;+request.getRestUrl())
-//&quot;请求服务器成功:200&quot;
-//if(WS.verifyResponseStatusCode(response, 200)){
-//
-//&quot;文本code值:200&quot;
-//WS.verifyElementPropertyValue(response, 'code', 200)
-//
-//
-//
-//}</verificationScript>
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
+		
+
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

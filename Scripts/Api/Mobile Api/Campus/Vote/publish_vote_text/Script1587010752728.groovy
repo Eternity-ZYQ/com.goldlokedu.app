@@ -65,16 +65,8 @@ def Object get_jsonResponse(ResponseObject response){
 //发布动态
 def void publish_vote_text(int max_option_amount,String title,String expiration,String vote_options,String vote_range,String vote_participants,int method){
 	'发送文本投票接口'
-	ResponseObject publish_vote_text_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/publish_vote_text",[('max_option_amount'):max_option_amount,('title'):title,('expiration'):expiration,('vote_options'):vote_options,('vote_range'):vote_range,('vote_participants'):vote_participants,('method'):method]), FailureHandling.CONTINUE_ON_FAILURE)
-	//def publish_vote_text_jsonResponse=get_jsonResponse(publish_vote_text_response)
-	WS.comment('发送文本投票body:'+publish_vote_text_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(publish_vote_text_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(publish_vote_text_response, 'result', 'Success',FailureHandling.CONTINUE_ON_FAILURE)
-		
-	}
-	
+	WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/publish_vote_text",[('max_option_amount'):max_option_amount,('title'):title,('expiration'):expiration,('vote_options'):vote_options,('vote_range'):vote_range,('vote_participants'):vote_participants,('method'):method]), FailureHandling.CONTINUE_ON_FAILURE)
+
 }
 
 
@@ -83,16 +75,11 @@ def void publish_vote_text(int max_option_amount,String title,String expiration,
 //获取一级加载级联系人列表：班级
 def Object get_first_order_contact(String object_path){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path), FailureHandling.CONTINUE_ON_FAILURE)
 	WS.comment('一级加载级联系人列表：班级:'+response.getResponseText())
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return get_jsonResponse(response)
-	}
-	return
+
+	return get_jsonResponse(response)
+
 	
 }
 
@@ -101,35 +88,18 @@ def Object get_second_order_contact(String object_path,String class_id){
 	'发送获取学生联系人接口请求'
 	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	WS.comment('二级加载学生联系人列表:'+response.getResponseText())
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-			
-		
-		return get_jsonResponse(response)
-	}
-	
-	return
+
+	return get_jsonResponse(response)
 	
 }
 
 //获取二级加载分组联系人列表
 def Object get_group_second_order_contact(String object_path,String group_id){
 	'发送获取学生联系人接口请求'
-	ResponseObject response=WS.sendRequest(findTestObject(object_path,[('group_id'):group_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject response=WS.sendRequestAndVerify(findTestObject(object_path,[('group_id'):group_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	WS.comment('二级加载分组联系人列表:'+response.getResponseText())
-	if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-		WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-			
-		
-		return get_jsonResponse(response)
-	}
-	
-	return
-	
+
+	return get_jsonResponse(response)
 }
 
 
