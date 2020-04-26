@@ -20,7 +20,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 '获取我参与的投票列表'
-def search_my_join_vote_list_jsonResponse=search_my_join_vote_list(0,10)
+def search_my_join_vote_list_jsonResponse=search_my_join_vote_list(from,size)
 
 '有数据'
 if(search_my_join_vote_list_jsonResponse.votes.size>0){
@@ -88,16 +88,12 @@ def Object get_jsonResponse(ResponseObject response){
 //查询我参与的投票列表
 def Object search_my_join_vote_list(int from,int size){
 	'发送我参与的投票列表接口'
-	ResponseObject search_my_join_vote_list_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/search_my_join_vote_list",[('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject search_my_join_vote_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/search_my_join_vote_list",[('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 	def search_my_join_vote_list_jsonResponse=get_jsonResponse(search_my_join_vote_list_response)
-	WS.comment('我参与的投票列表数据body:'+search_my_join_vote_list_response.getResponseText())
 	
 	if(WS.verifyResponseStatusCode(search_my_join_vote_list_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(search_my_join_vote_list_response, 'total', false,FailureHandling.CONTINUE_ON_FAILURE)
-		
-		return search_my_join_vote_list_jsonResponse
-		
+			
+		return search_my_join_vote_list_jsonResponse	
 	}
 	
 		return
@@ -111,14 +107,11 @@ def Object search_my_join_vote_list(int from,int size){
 //查询投票结果列表
 def Object vote_detail(String vote_id){
 	'发送投票结果接口'
-	ResponseObject vote_detail_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/voted_details",[('vote_id'):vote_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject vote_detail_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/voted_details",[('vote_id'):vote_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	def vote_detail_jsonResponse=get_jsonResponse(vote_detail_response)
-	WS.comment('我参与的投票列表数据body:'+vote_detail_response.getResponseText())
 	
 	if(WS.verifyResponseStatusCode(vote_detail_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.containsString(vote_detail_response, 'created', false,FailureHandling.CONTINUE_ON_FAILURE)
-		
+			
 		return vote_detail_jsonResponse
 	}
 	
@@ -132,17 +125,8 @@ def Object vote_detail(String vote_id){
 //加载投票图片
 def void dowmload_picture(String picture_id){
 	'发送获取投票图片接口'
-	ResponseObject dowmload_picture_response=WS.sendRequest(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/download_vote_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	//def dowmload_picture_jsonResponse=get_jsonResponse(vote_detail_response)
-	//WS.comment('我参与的投票列表数据body:'+dowmload_picture_response.getResponseText())
-	
-	if(WS.verifyResponseStatusCode(dowmload_picture_response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-		
-		WS.comment('图片加载成功')
-		
-		
-	}
-	
+	WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Vote/download_vote_picture",[('picture_id'):picture_id]), FailureHandling.CONTINUE_ON_FAILURE)
+
 
 }
 
