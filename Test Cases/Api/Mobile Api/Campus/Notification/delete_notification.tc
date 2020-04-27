@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>删除通知---自己发的</description>
+   <name>delete_notification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6c19c79f-d9d0-43ea-b0c1-6c63566d1495</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>ecc0c540-5c96-471c-b427-2028d355dc87</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>6c025e50-66ec-4d43-9bf4-603425b172d9</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;need_sms_remind\&quot;: false,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;payload\&quot;: {\n\t\t\&quot;message_type\&quot;: \&quot;Html\&quot;,\n\t\t\&quot;content\&quot;: \&quot;${content}\&quot;\n\t},\n\t\&quot;address\&quot;: {\n\t\t\&quot;student_address\&quot;: {\n\t\t\t\&quot;klass_ids\&quot;: [\&quot;${GlobalVariable.class_id}\&quot;]\n\t\t},\n\t\t\&quot;teacher_address\&quot;: {\n\t\t\t\&quot;teacher_ids\&quot;: [\&quot;${GlobalVariable.user_id}\&quot;],\n\t\t\t\&quot;department_ids\&quot;: []\n\t\t},\n\t\t\&quot;groups_address\&quot;: {\n\t\t\t\&quot;group_ids\&quot;: [{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;student\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t},{\n\t\t\t\t\&quot;id_type\&quot;: \&quot;dorm\&quot;,\n\t\t\t\t\&quot;ids\&quot;: []\n\t\t\t}]\n\t\t}\n\t}\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;address_str\&quot;: [${address_str}],\n\t\&quot;school_id\&quot;: \&quot;${GlobalVariable.user_school_id}\&quot;,\n\t\&quot;sender_id\&quot;: \&quot;${GlobalVariable.user_id}\&quot;,\n\t\&quot;need_sms_remind\&quot;: false,\n\t\&quot;title\&quot;: \&quot;${title}\&quot;,\n\t\&quot;payload\&quot;: {\n\t\t\&quot;message_type\&quot;: \&quot;Html\&quot;,\n\t\t\&quot;content\&quot;: \&quot;${content}\&quot;\n\t},\n\t\&quot;address\&quot;: {\n      \t\t\t${address}\n\t\t\t\t}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -89,6 +89,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -102,9 +103,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	
-	assertThat(response.getResponseText()).contains('notification_id')
+	WS.containsString(response, 'notification_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

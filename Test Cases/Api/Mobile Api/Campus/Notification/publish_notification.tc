@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发布通知</description>
+   <name>publish_notification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05b22124-1ddb-40de-86bd-e9cf1dabafa6</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7a6dbc3d-73a1-490a-a096-7e3c70c7183a</id>
+      <masked>false</masked>
+      <name>address_str</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>20f2863a-1a12-42aa-9a55-dad89bae5610</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>78a6e8b8-fa3b-4912-8a68-f96494217890</id>
+      <masked>false</masked>
+      <name>content</name>
+   </variable>
+</TestCaseEntity>

@@ -19,8 +19,6 @@ import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 
-
-
 '获取我发的通知列表'
 WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_send_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 

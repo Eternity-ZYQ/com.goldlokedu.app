@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>删除通知</description>
-   <name>delete_notification</name>
+   <description>加载通知图片或附件</description>
+   <name>dowmload_notification_file_or_picture</name>
    <tag></tag>
-   <elementGuidId>629c56d8-cbe6-446a-9259-6e9946933943</elementGuidId>
+   <elementGuidId>d71f0d31-1454-41be-b69d-1b3c3881a04e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -22,8 +18,8 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/notification/notification/${notification_id}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/notification/notification/attachments/${file_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -32,9 +28,9 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>fea894b4-d4f3-4346-a0f7-957ad940fadf</id>
+      <id>d7b130ba-7473-4664-932a-7a89ab0bb046</id>
       <masked>false</masked>
-      <name>notification_id</name>
+      <name>file_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -51,11 +47,6 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-	
-	WS.containsString(response, 'notification_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-	
-}</verificationScript>
+WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

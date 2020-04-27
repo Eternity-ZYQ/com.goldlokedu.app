@@ -18,33 +18,39 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-
-'调用我发的通知列表'
+'获取我发的通知列表'
 ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_send_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-def my_send_jsonResponse=get_jsonResponse(response)
+def get_jsonResponse=get_jsonResponse(response)
 
-for(int x:(0..my_send_jsonResponse.data.size-1)){
-	'通知未读页面'
-	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Notification/unread_notification_list', [('notification_id'):my_send_jsonResponse.data[x].notification_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
+
+if(get_jsonResponse.data.size>0){
+	for(int x:(0..get_jsonResponse.data.size-1)){
 		
+		'是否是自己发的'
+		if(WS.verifyEqual(get_jsonResponse.data[x].sender_id,GlobalVariable.user_id, FailureHandling.CONTINUE_ON_FAILURE)){
+			
+			WS.comment('是本教师发的通知,删除中...')
+			WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/delete_notification", [('notification_id'):get_jsonResponse.data[x].notification_id]), FailureHandling.CONTINUE_ON_FAILURE)
+			return
+		
+		}else{
+			WS.comment('不是本教师发的通知,不能删除')
+		}
+	
+	}
 }
+
 
 
 
 
 
 //获取返回体json解析
-def Object get_jsonResponse(ResponseObject response){
-	
+def Object get_jsonResponse(ResponseObject response) {
 	def jsonSlurper = new JsonSlurper()
+	
 	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
+
 	return jsonResponse
-	
 }
-
-
-
-
 

@@ -19,18 +19,20 @@ import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 
-'调用我发的通知详情'
+'调用我发的通知列表'
 ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_send_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 def my_send_jsonResponse=get_jsonResponse(response)
 
 for(int x:(0..my_send_jsonResponse.data.size-1)){
 	'通知详情页面'
-	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Notification/notification_details', [('notification_id'):my_send_jsonResponse.data[x].notification_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	ResponseObject detail_response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Notification/notification_details', [('notification_id'):my_send_jsonResponse.data[x].notification_id]), FailureHandling.CONTINUE_ON_FAILURE)
 	
-		
+	'附件处理'
+	handle_file(detail_response)
+	
+	'图片处理'
+	handle_picture(detail_response)
 }
-
-
 
 
 
@@ -51,14 +53,55 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
+//处理附件
+def void handle_file(ResponseObject response){
+	
+	def detail_jsonResponse=get_jsonResponse(response)
+	
+	'是否有附件'
+	if(detail_jsonResponse.attachments!=null&&detail_jsonResponse.attachments.data.size>0){
+		WS.comment('有附件')
+		
+		for(int x:(0..detail_jsonResponse.attachments.data.size-1)){
+			
+			WS.comment('加载第'+(x+1)+'个附件')
+			WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/dowmload_notification_file_or_picture", [('file_id'):detail_jsonResponse.attachments.data[x].file_id]), FailureHandling.CONTINUE_ON_FAILURE)
+				
+		}
+		
+	}else{
+		WS.comment('没有附件')
+	
+	}
+	
+	
+}
 
 
 
 
-
-
-
-
+//处理图片
+def void handle_picture(ResponseObject response){
+	def detail_jsonResponse=get_jsonResponse(response)
+	
+	'是否有图片'
+	if(detail_jsonResponse.pictures!=null&&detail_jsonResponse.pictures.data.size>0){
+		WS.comment('有图片')
+		
+		for(int x:(0..detail_jsonResponse.pictures.data.size-1)){
+			
+			WS.comment('加载第'+(x+1)+'个图片')
+			WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/dowmload_notification_file_or_picture", [('file_id'):detail_jsonResponse.pictures.data[x].file_id]), FailureHandling.CONTINUE_ON_FAILURE)
+				
+		}
+		
+	}else{
+		WS.comment('没有图片')
+	
+	}
+	
+	
+}
 
 
 
