@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>聊天列表</description>
-   <name>chat _record</name>
+   <description>加载文件</description>
+   <name>dowmload_file</name>
    <tag></tag>
-   <elementGuidId>d20604c0-0033-4d3c-b15a-c25f0781a05b</elementGuidId>
+   <elementGuidId>530b4373-3547-4086-896e-775ac1142d9d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=${size}&amp;target_id=${student_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/file/${file_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,16 +28,9 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>d91d0392-669c-4c3e-a261-9599b3d9a30f</id>
+      <id>ae96bba5-0dac-4b7b-a16f-e021f6e40074</id>
       <masked>false</masked>
-      <name>student_id</name>
-   </variables>
-   <variables>
-      <defaultValue>15</defaultValue>
-      <description></description>
-      <id>2a774221-9dd7-4450-b250-6137dc6c7583</id>
-      <masked>false</masked>
-      <name>size</name>
+      <name>file_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -54,12 +47,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-	WS.containsString(response, 'next_poll_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
-	WS.containsString(response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
-}
+	
+	WS.comment('文件加载成功')
+	
+}else{
 
-</verificationScript>
+	WS.comment('文件加载失败')
+
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

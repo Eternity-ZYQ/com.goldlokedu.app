@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发送聊天消息</description>
+   <name>send_chat_message</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35a2b5b9-d18a-4e2a-ad30-05b972887012</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>聊天列表</description>
-   <name>chat _record</name>
+   <description>加载更多数据</description>
+   <name>search_more_chat</name>
    <tag></tag>
-   <elementGuidId>d20604c0-0033-4d3c-b15a-c25f0781a05b</elementGuidId>
+   <elementGuidId>243dca12-5c6a-4c86-9e58-b5569237ecdb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,25 +19,32 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=${size}&amp;target_id=${student_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/search?from_counter=${from_counter}&amp;target_id=${student_id}&amp;to_counter=${to_counter}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>0cc31686-7947-4f68-9ae6-173f1cdc33e3</id>
+      <masked>false</masked>
+      <name>from_counter</name>
+   </variables>
+   <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>d91d0392-669c-4c3e-a261-9599b3d9a30f</id>
+      <id>4a0754a2-0bbc-46bc-b16e-e6e12c2b5133</id>
       <masked>false</masked>
       <name>student_id</name>
    </variables>
    <variables>
-      <defaultValue>15</defaultValue>
+      <defaultValue>0</defaultValue>
       <description></description>
-      <id>2a774221-9dd7-4450-b250-6137dc6c7583</id>
+      <id>404af10a-e215-48bf-b528-1a3db946e2d9</id>
       <masked>false</masked>
-      <name>size</name>
+      <name>to_counter</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -54,12 +61,27 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-	WS.containsString(response, 'next_poll_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
-	WS.containsString(response, 'data', false, FailureHandling.CONTINUE_ON_FAILURE)
-}
-
-</verificationScript>
+	
+	def jsonSlurper = new JsonSlurper()
+	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+	
+	if(jsonResponse.size>0){
+		
+		WS.containsString(response, 'id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'teacher_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'student_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'message_type', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'origin', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'message', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'counter', false, FailureHandling.CONTINUE_ON_FAILURE)
+		WS.containsString(response, 'create_time', false, FailureHandling.CONTINUE_ON_FAILURE)
+		
+		
+	}
+	
+	
+	
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

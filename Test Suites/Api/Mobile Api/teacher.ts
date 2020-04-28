@@ -862,4 +862,52 @@
          <variableId>6c025e50-66ec-4d43-9bf4-603425b172d9</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4ebc96c1-57a0-469f-9bd0-05fd7458eb0f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/history</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>60ce70a1-f3cb-4011-9a2c-3c2a4467867e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/student_contact</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9487a465-3de6-4855-8787-55845b13e2de</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/delete_history_item</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3ad88663-e3d6-4eb9-90b5-5b32d004232c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/search_student_by_name</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>850ba6ad-15b0-4214-a7bc-9d727e866e6a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>28190dfd-6c38-4ac6-b665-77dbc58ff68d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/chat _record</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>306b65f2-1785-4d60-8aea-6bf97f00839a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>71f7f649-0048-4b81-b98c-c8219384564c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/send_chat_message</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

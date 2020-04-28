@@ -52,6 +52,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -64,13 +65,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+WS.comment('发送后返回的信息:'+response.getResponseText())
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-
-	assertThat(response.getResponseText()).contains('next_poll_counter')
-
-
+	WS.containsString(response, 'next_poll_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'message_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'message_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	
 }
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>New Test Case</name>
+   <description>联系家长历史列表</description>
+   <name>history</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8b554f73-9510-4ef7-919b-c951c15a4b5f</testCaseGuid>

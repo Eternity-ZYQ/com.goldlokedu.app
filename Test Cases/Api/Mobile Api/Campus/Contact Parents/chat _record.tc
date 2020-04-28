@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>聊天列表</description>
+   <name>chat _record</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1e06cfe-3ef4-4674-aacd-07c4e2a1c240</testCaseGuid>
+   <variable>
+      <defaultValue>15</defaultValue>
+      <description></description>
+      <id>306b65f2-1785-4d60-8aea-6bf97f00839a</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

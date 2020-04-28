@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>搜索学生名字</description>
+   <name>search_student_by_name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b071449-6a7d-4498-94cb-3a894ec469dc</testCaseGuid>
+   <variable>
+      <defaultValue>'测试学生庄'</defaultValue>
+      <description>搜索的学生名字</description>
+      <id>850ba6ad-15b0-4214-a7bc-9d727e866e6a</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+</TestCaseEntity>
