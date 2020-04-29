@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发送文件--图片</description>
+   <name>send_chat_file</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>27efd825-9a54-4341-9324-96549e2c73fe</testCaseGuid>
+</TestCaseEntity>

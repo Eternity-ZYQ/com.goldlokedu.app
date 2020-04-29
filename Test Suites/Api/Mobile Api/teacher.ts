@@ -907,7 +907,13 @@
    <testCaseLink>
       <guid>71f7f649-0048-4b81-b98c-c8219384564c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/send_chat_message</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4d47790a-8356-4475-8f01-53bd4bd08c6c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/send_chat_file</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
