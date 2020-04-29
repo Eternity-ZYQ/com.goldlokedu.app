@@ -41,12 +41,14 @@ public class SystemTime {
 	public String get_day_time(){
 		Date date = new Date()
 
-		SimpleDateFormat df = new SimpleDateFormat('yy-MM-dd')
+		SimpleDateFormat df = new SimpleDateFormat('yyyy-MM-dd')
 
 		String time = df.format(date)
 
 		return time
 	}
+
+
 
 
 	@Keyword

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>根据班级筛选出考勤列表</description>
+   <name>attendance_record_class_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a327fcd7-d18c-4c01-b14f-92c81e55f515</testCaseGuid>
+</TestCaseEntity>

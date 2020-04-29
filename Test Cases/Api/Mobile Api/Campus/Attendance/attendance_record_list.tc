@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>考勤列表</description>
+   <name>attendance_record_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6da44ab-5116-4996-9278-14880578ffb7</testCaseGuid>
+</TestCaseEntity>
