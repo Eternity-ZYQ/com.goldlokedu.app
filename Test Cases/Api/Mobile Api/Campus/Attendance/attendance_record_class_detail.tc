@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>班级考勤详情数据</description>
+   <name>attendance_record_class_detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d70501f4-e44d-49c1-9db3-ecabb7b5557e</testCaseGuid>
+</TestCaseEntity>

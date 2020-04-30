@@ -33,8 +33,42 @@ if(t_m_jsonResponse.data.size>0){
 		
 		def time=CustomKeywords.'time.SystemTime.get_day_time'()
 		def class_id=t_m_jsonResponse.data[x].klass_id
-		WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Attendance/attendance_record_class_detail', [('check_date'):time,('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+		ResponseObject class_detail_response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Attendance/attendance_record_class_detail', [('check_date'):time,('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
+		def class_detail_jsonResponse =get_jsonResponse(class_detail_response)
+		
+		'是否班级内有学生'
+		if(class_detail_jsonResponse.data.detail.size>0){
 			
+			WS.comment(class_name+'有学生,即将查看是否有考勤图片...')
+			
+			for(int y:(0..class_detail_jsonResponse.data.detail.size-1)){
+				def student_name=class_detail_jsonResponse.data.detail[y].student_name
+				WS.comment('查看'+student_name+',是否有考勤图片...')
+				
+				'是否有设置考勤规则'
+				if(class_detail_jsonResponse.data.detail[y].detail.size>0){
+					'查看每个考勤打卡点是否有照片'
+					for(int i:(0..class_detail_jsonResponse.data.detail[y].detail.size-1)){
+						
+						if(class_detail_jsonResponse.data.detail[y].detail[i].pic!=''){
+							WS.comment('有照片,即将获取')
+							WS.verifyEqual(1, 2)
+							WS.comment('获取照片接口待补充...')
+						}else{
+						
+							WS.comment('没有照片')
+						}					
+					}
+				}else{
+				
+					WS.comment('没有考勤打卡点')
+				}
+			}		
+		}else{
+		
+			WS.comment(class_name+'没有学生')
+		}
+		
 	}
 	
 }else{

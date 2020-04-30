@@ -931,7 +931,7 @@
    <testCaseLink>
       <guid>6fdfffa5-92dc-43cd-a838-2759e91c8db1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_class_detail</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -943,7 +943,7 @@
    <testCaseLink>
       <guid>4cb358aa-2367-4f3f-affa-863540a378ef</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_class</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
