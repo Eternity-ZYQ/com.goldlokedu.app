@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>同意请假</description>
+   <name>agree_leave</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3e667d71-bd87-4fab-b2fb-5d0e92ba090e</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>cc7b0529-8989-4e12-a674-6cf74fe48a1b</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>9525b271-b840-432c-81d5-9fa53fa1ee22</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>'NotAudit'</defaultValue>
+      <description></description>
+      <id>7f22a9c2-0c70-4680-80f1-a0659eeba885</id>
+      <masked>false</masked>
+      <name>audit_states</name>
+   </variable>
+   <variable>
+      <defaultValue>'CreateTime'</defaultValue>
+      <description></description>
+      <id>2af20300-4032-4e23-9080-2d3502eef483</id>
+      <masked>false</masked>
+      <name>order_by</name>
+   </variable>
+</TestCaseEntity>

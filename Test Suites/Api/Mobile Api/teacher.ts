@@ -1006,4 +1006,64 @@
          <variableId>26e6df48-bdc0-4f7f-bef1-372ac816c776</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>aa1638e1-91f5-4921-bdf9-d0270753df24</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/agree_leave</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cc7b0529-8989-4e12-a674-6cf74fe48a1b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9525b271-b840-432c-81d5-9fa53fa1ee22</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7f22a9c2-0c70-4680-80f1-a0659eeba885</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2af20300-4032-4e23-9080-2d3502eef483</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f471cc42-a0ee-4600-84a5-f6fe39b630bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/refuse_leave</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c58a9598-a9e3-4f1a-bed8-82226e7d2080</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c6aac510-0968-4cca-a773-e57638fced46</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>264b0eac-51f2-4a35-a199-bca028d23ca3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>51d3e01a-9279-4eb6-ba7a-52a9fe324319</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

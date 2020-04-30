@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驳回请假</description>
+   <name>refuse_leave</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>263d92b9-8785-4d73-ad1f-5eb601649d98</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>c58a9598-a9e3-4f1a-bed8-82226e7d2080</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>c6aac510-0968-4cca-a773-e57638fced46</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>'NotAudit'</defaultValue>
+      <description></description>
+      <id>264b0eac-51f2-4a35-a199-bca028d23ca3</id>
+      <masked>false</masked>
+      <name>audit_states</name>
+   </variable>
+   <variable>
+      <defaultValue>'CreateTime'</defaultValue>
+      <description></description>
+      <id>51d3e01a-9279-4eb6-ba7a-52a9fe324319</id>
+      <masked>false</masked>
+      <name>order_by</name>
+   </variable>
+</TestCaseEntity>
