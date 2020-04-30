@@ -41,14 +41,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.comment('response内容:'+response.getResponseText())
-&quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE){
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-
-
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
+	
+	
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

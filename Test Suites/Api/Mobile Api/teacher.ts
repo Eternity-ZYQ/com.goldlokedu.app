@@ -919,7 +919,31 @@
    <testCaseLink>
       <guid>6b98617d-51a8-494c-ad3f-c5ebf3baccc0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b22e4c9a-a95f-4155-bf5d-09adebecb159</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_class_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6fdfffa5-92dc-43cd-a838-2759e91c8db1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_class_detail</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3728f00e-dfec-4af6-a967-aba4cff7e692</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/view_statictics_by_klass_one_day</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4cb358aa-2367-4f3f-affa-863540a378ef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_class</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

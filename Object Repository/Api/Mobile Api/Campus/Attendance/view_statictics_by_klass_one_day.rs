@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>班级考勤详情数据</description>
-   <name>attendance_record_class_detail</name>
+   <description>查看班级一天的考勤数据汇总</description>
+   <name>view_statictics_by_klass_one_day</name>
    <tag></tag>
-   <elementGuidId>4f0e494a-631b-482b-8b2b-32cd9799d84a</elementGuidId>
+   <elementGuidId>b2fbfc5b-3fe5-42ba-8324-44b46401a9e9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,23 +19,23 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/klass_detail?check_date=${check_date}&amp;check_klass_id=${class_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/view_statictics_by_klass_one_day?check_date=${check_date}&amp;check_klass_id=${class_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>'2020-03-26'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>c7f9298a-569c-47e3-b31a-de595c8d149e</id>
+      <id>7e3be073-060d-48b7-a6b3-293c82643e84</id>
       <masked>false</masked>
       <name>check_date</name>
    </variables>
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>97a7457c-1417-479b-b272-f4dc9947bf86</id>
+      <id>e3197d7a-7a81-4b35-b366-472010dd3eea</id>
       <masked>false</masked>
       <name>class_id</name>
    </variables>
@@ -53,17 +53,14 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.comment('班级考勤详情response:'+response.getResponseText())
 
-&quot;请求服务器成功:200&quot;
+WS.comment('response数据:'+response.getResponseText())
+
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
-
-
-
+	
+	WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.verifyElementPropertyValue(response, 'message', '操作成功', FailureHandling.CONTINUE_ON_FAILURE)
+	
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

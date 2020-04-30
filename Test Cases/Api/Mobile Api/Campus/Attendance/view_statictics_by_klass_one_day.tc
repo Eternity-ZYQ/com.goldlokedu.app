@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>查看某天班级考勤数据汇总</description>
+   <name>view_statictics_by_klass_one_day</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67d40a27-8478-4b61-92fd-8f0781a1760d</testCaseGuid>
+</TestCaseEntity>

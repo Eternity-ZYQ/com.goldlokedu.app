@@ -26,15 +26,14 @@ if(t_m_jsonResponse.data.size>0){
 	
 	WS.comment('有管理和教授的班级')
 	
-	'获取每个班的考勤数据'
+	'获取每个班的月日历表'
 	for(int x:(0..t_m_jsonResponse.data.size-1)){
 		def class_name=t_m_jsonResponse.data[x].klass_remark
 		WS.comment('获取'+class_name+'考勤数据中...')
 		
 		def time=CustomKeywords.'time.SystemTime.get_day_time'()
 		def class_id=t_m_jsonResponse.data[x].klass_id
-		def page=1
-		WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Attendance/attendance_record_class_list', [('check_date'):time,('class_id'):class_id,('page'):page]), FailureHandling.CONTINUE_ON_FAILURE)
+		WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_class', [('check_month'):time,('class_id'):class_id]), FailureHandling.CONTINUE_ON_FAILURE)
 			
 	}
 	
@@ -42,6 +41,10 @@ if(t_m_jsonResponse.data.size>0){
 
 	WS.comment('没有管理和教授的班级')
 }
+
+
+
+
 
 
 
