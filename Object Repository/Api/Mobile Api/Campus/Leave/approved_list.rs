@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: ${size},\n\t\&quot;audit_states\&quot;: [\&quot;Refuse\&quot;, \&quot;Pass\&quot;],\n\t\&quot;from\&quot;: ${from},\n\t\&quot;order_by\&quot;: \&quot;${order_by}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: ${size},\n\t\&quot;audit_states\&quot;: ${audit_states},\n\t\&quot;from\&quot;: ${from},\n\t\&quot;order_by\&quot;: \&quot;${order_by}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -57,8 +57,16 @@
       <masked>false</masked>
       <name>order_by</name>
    </variables>
+   <variables>
+      <defaultValue>'&quot;Refuse&quot;, &quot;Pass&quot;'</defaultValue>
+      <description></description>
+      <id>463056d1-4172-4284-b196-8a61d4b93c0b</id>
+      <masked>false</masked>
+      <name>audit_states</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -72,10 +80,10 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	
-	assertThat(response.getResponseText()).contains('total')
-
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
+	
 }
 
 

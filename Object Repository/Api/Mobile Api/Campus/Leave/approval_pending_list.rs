@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>待审批列表</description>
-   <name>approval _pending_list</name>
+   <name>approval_pending_list</name>
    <tag></tag>
    <elementGuidId>87cf8383-ad05-4a2f-b9a9-cbebfe184c1f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -66,6 +66,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -78,13 +79,25 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
+
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-	assertThat(response.getResponseText()).contains('total')
-
-
-
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	def jsonSlurper = new JsonSlurper()
+	
+	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+	
+	if(jsonResponse.data.size>0){
+		
+		for(int x:(0..jsonResponse.data.size-1)){
+	
+			WS.verifyEqual(jsonResponse.data[x].audit_state, 'NotAudit', FailureHandling.CONTINUE_ON_FAILURE)
+		}
+		
+	}
+	
 }
 
 

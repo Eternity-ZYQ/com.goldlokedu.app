@@ -931,7 +931,7 @@
    <testCaseLink>
       <guid>6fdfffa5-92dc-43cd-a838-2759e91c8db1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_class_detail</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -945,5 +945,65 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_class</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d31c41cf-db22-4e48-9c87-6c3576c78c5b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/approval_pending_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>40cee654-3bf3-4c83-bc52-1b1fdea08617</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b0d824a0-a89a-4290-8197-8c9d53fa408f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>17ece52e-98ed-4ace-8b8a-8c075f308402</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95fb0bf1-882e-4ebb-8ea0-2c9edcd33081</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ced64aa3-c373-4029-9293-3fad9d822772</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/approved_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8e6c6463-064c-42aa-a248-205eefac1ce8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2329c3e1-4543-40f2-906e-e0bb63841a4a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>427ecea6-20c8-4420-beb6-2e116b97aa7a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>26e6df48-bdc0-4f7f-bef1-372ac816c776</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

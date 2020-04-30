@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>请假记录详情</description>
-   <name>leave_record_detail</name>
+   <description>加载图片</description>
+   <name>dowmload_picture</name>
    <tag></tag>
-   <elementGuidId>6037a064-6f78-47bf-a2d0-70d52b6f86f7</elementGuidId>
+   <elementGuidId>28b8f72c-72a2-4db6-b1e3-4abbd6001bb5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,19 +19,12 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/leave/leave/${leave_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/leave/attachments/${file_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>2346159a-df67-4e53-8fb2-ce67c002cc2c</id>
-      <masked>false</masked>
-      <name>leave_id</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.model.FailureHandling
@@ -47,14 +40,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	WS.comment('图片加载成功')
+	
+}else{
 
-WS.containsString(null, 'student_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-
-}
-
-
-</verificationScript>
+	WS.comment('图片加载失败')
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

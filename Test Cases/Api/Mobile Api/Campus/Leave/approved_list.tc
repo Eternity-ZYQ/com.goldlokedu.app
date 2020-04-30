@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>已审批列表</description>
+   <name>approved_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0fc566f3-2022-46b0-aac0-62b4e5c48361</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>8e6c6463-064c-42aa-a248-205eefac1ce8</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>2329c3e1-4543-40f2-906e-e0bb63841a4a</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>'AuditTimeDesc'</defaultValue>
+      <description></description>
+      <id>427ecea6-20c8-4420-beb6-2e116b97aa7a</id>
+      <masked>false</masked>
+      <name>order_by</name>
+   </variable>
+   <variable>
+      <defaultValue>['&quot;Refuse&quot;', '&quot;Pass&quot;']</defaultValue>
+      <description></description>
+      <id>26e6df48-bdc0-4f7f-bef1-372ac816c776</id>
+      <masked>false</masked>
+      <name>audit_states</name>
+   </variable>
+</TestCaseEntity>

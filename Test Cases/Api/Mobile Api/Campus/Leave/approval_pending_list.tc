@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>待审批列表</description>
+   <name>approval_pending_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>32a7acd2-85fc-4231-9f1d-0121444108c2</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>40cee654-3bf3-4c83-bc52-1b1fdea08617</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>b0d824a0-a89a-4290-8197-8c9d53fa408f</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>'NotAudit'</defaultValue>
+      <description>待审批参数</description>
+      <id>17ece52e-98ed-4ace-8b8a-8c075f308402</id>
+      <masked>false</masked>
+      <name>audit_states</name>
+   </variable>
+   <variable>
+      <defaultValue>'CreateTime'</defaultValue>
+      <description>排序参数</description>
+      <id>95fb0bf1-882e-4ebb-8ea0-2c9edcd33081</id>
+      <masked>false</masked>
+      <name>order_by</name>
+   </variable>
+</TestCaseEntity>
