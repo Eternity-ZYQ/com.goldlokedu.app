@@ -1087,7 +1087,7 @@
    <testCaseLink>
       <guid>4f8bf4a4-6eaa-40f8-94a3-4480fb923eab</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/leave_records_class</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1100,6 +1100,54 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>1d510b67-ad2a-4652-a5bc-2c4a5a6e6eba</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd9a8c60-d7cf-4dbc-be1d-902439f2f52a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/binging_brand</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3b7ad9c8-1fa8-4c4f-9b09-49961ff400e5</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cf62f890-609e-4d06-9f90-7d18d30e8a72</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/is_bound_brand_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f34c00dd-78c2-45d9-be9a-e6f9c2cfcc61</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8130aeff-6cc2-4444-8be3-ab58c5830f63</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>843f21c2-d058-46f0-9d98-250aa419738d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/not_bound_brand_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>62eddfad-69dc-41fe-8562-0ae99dc736ea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0d75f989-9502-47b1-abc5-8f233a7c2ec8</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

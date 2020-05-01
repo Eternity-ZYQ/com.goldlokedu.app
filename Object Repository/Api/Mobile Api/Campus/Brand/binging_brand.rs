@@ -37,7 +37,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'1C:CA:E3:41:67:33'</defaultValue>
       <description></description>
       <id>a8de6d0c-779a-4b93-b645-048965536d09</id>
       <masked>false</masked>
@@ -59,6 +59,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -72,10 +73,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	
-	assertThat(response.getResponseText()).contains('device_token')
-
+	WS.containsString(response, 'device_token', false, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
 

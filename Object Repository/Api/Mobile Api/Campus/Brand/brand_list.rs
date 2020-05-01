@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>未绑定班牌列表</description>
-   <name>not_bound_brand_list</name>
+   <description>班牌列表---绑定/未绑定</description>
+   <name>brand_list</name>
    <tag></tag>
-   <elementGuidId>fac1a55d-6f00-481b-91b8-4bf0437dc886</elementGuidId>
+   <elementGuidId>d3e09560-a1dd-4605-9fda-9d1f6336279e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: 10,\n\t\&quot;from\&quot;: 0,\n\t\&quot;is_bound\&quot;: ${is_bound}\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;size\&quot;: ${size},\n  \t\&quot;from\&quot;: ${from},\n\t\&quot;is_bound\&quot;: ${is_bound}\t\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -39,26 +39,27 @@
    <variables>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>21fd25d4-9d3e-4eb4-aeef-a30fd88a644f</id>
+      <id>5a205d5e-3321-4def-bbcc-b7b3f2d962a9</id>
       <masked>false</masked>
       <name>size</name>
    </variables>
    <variables>
-      <defaultValue>0</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
-      <id>f58fbcec-139a-486a-aa46-0e413bd141d2</id>
-      <masked>false</masked>
-      <name>from</name>
-   </variables>
-   <variables>
-      <defaultValue>false</defaultValue>
-      <description></description>
-      <id>4d8bb39d-e175-4fa2-8eff-4984005a4494</id>
+      <id>b1214fbf-7eb6-448e-bfe2-cb9becff6d2f</id>
       <masked>false</masked>
       <name>is_bound</name>
    </variables>
+   <variables>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>09b9256e-5970-4981-9a40-b1e4f1b1749b</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -72,11 +73,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-	assertThat(response.getResponseText()).contains('total')
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 }
+
+
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

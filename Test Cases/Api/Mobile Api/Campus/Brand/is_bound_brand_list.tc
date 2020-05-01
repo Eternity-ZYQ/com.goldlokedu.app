@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>已绑定列表</description>
+   <name>is_bound_brand_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b557116-d325-471c-a64b-463b3d1c3a3d</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>f34c00dd-78c2-45d9-be9a-e6f9c2cfcc61</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>8130aeff-6cc2-4444-8be3-ab58c5830f63</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
