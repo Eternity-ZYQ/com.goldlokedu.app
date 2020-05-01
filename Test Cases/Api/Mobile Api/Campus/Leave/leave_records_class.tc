@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>筛选班级后的请假记录</description>
+   <name>leave_records_class</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a556a80-f910-4606-9e3f-2472a306fc78</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>993c075d-556e-4442-93a1-92ba2a746279</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>1d510b67-ad2a-4652-a5bc-2c4a5a6e6eba</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

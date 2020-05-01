@@ -1066,4 +1066,40 @@
          <variableId>51d3e01a-9279-4eb6-ba7a-52a9fe324319</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>27ca77e6-2368-4d06-abb9-7cd6953e5473</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/leave_records</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9db147cb-ea66-4007-806f-b0bee17ba85e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8e33f7ee-d86e-4c1a-9721-5acdcd2c5663</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f8bf4a4-6eaa-40f8-94a3-4480fb923eab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/leave_records_class</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>993c075d-556e-4442-93a1-92ba2a746279</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1d510b67-ad2a-4652-a5bc-2c4a5a6e6eba</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

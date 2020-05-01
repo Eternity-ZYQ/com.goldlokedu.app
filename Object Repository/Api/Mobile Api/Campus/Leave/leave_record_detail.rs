@@ -50,7 +50,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 &quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-WS.containsString(null, 'student_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+WS.containsString(response, 'student_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 }
 

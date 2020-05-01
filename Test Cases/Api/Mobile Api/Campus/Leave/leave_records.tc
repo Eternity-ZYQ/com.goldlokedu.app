@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>请假记录默认列表</description>
+   <name>leave_records</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>84fdf3a5-2de0-4bf5-bcf4-3b7eaf6f460c</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>9db147cb-ea66-4007-806f-b0bee17ba85e</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>8e33f7ee-d86e-4c1a-9721-5acdcd2c5663</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
