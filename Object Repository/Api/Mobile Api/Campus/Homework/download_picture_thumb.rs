@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homework/pictures/${homework_picture_id}?thumb=${thumb}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homework/pictures/${picture_id}?thumb=${thumb}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,17 +30,18 @@
       <description></description>
       <id>384ad622-ae63-41d2-a187-7297f4210ba2</id>
       <masked>false</masked>
-      <name>homework_picture_id</name>
+      <name>picture_id</name>
    </variables>
    <variables>
       <defaultValue>true</defaultValue>
       <description></description>
-      <id>96c3104b-6364-4e0d-affe-6d125ac65096</id>
+      <id>4d29c90d-a77d-452d-b38a-18f4e9d6f7d7</id>
       <masked>false</masked>
-      <name>homework_picture_id</name>
+      <name>thumb</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -54,7 +55,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
-WS.verifyResponseStatusCode(response, 200)
+if(WS.verifyResponseStatusCode(response, 200,FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	WS.comment('缩略图加载成功')
+}else{
+
+	WS.comment('缩略图加载失败')
+}
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

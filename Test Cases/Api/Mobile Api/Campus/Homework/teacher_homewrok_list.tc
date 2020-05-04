@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>教师默认列表</description>
+   <name>teacher_homewrok_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc156c7d-edf1-40fa-a245-3320bf318443</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>c605628a-5191-46d6-952e-76fb5ee0e824</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>4d3c3079-8a08-4bf0-8ae3-6fd06301b8c2</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

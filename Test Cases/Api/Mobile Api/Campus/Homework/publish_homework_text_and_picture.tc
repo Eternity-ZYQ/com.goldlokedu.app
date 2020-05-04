@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发布作业——带图片</description>
+   <name>publish_homework_text_and_picture</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>84073f51-a1a7-465a-bd20-327378415a33</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0f309f70-b1e9-45c6-8b5c-396c6275873a</id>
+      <masked>false</masked>
+      <name>course_name</name>
+   </variable>
+</TestCaseEntity>

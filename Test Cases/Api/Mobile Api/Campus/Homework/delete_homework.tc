@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>删除作业</description>
+   <name>delete_homework</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d886abfd-e204-4800-be70-96f1514ff52e</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>196b236c-ebc1-4c96-aa33-01455541df59</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>51046560-e5f7-4dde-9d50-bf015ab745a3</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

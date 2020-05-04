@@ -1117,7 +1117,7 @@
    <testCaseLink>
       <guid>cf62f890-609e-4d06-9f90-7d18d30e8a72</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/is_bound_brand_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1135,7 +1135,7 @@
    <testCaseLink>
       <guid>843f21c2-d058-46f0-9d98-250aa419738d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/not_bound_brand_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1148,6 +1148,84 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>0d75f989-9502-47b1-abc5-8f233a7c2ec8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6bb62d03-3603-4102-be41-57c728545789</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/teacher_homewrok_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c605628a-5191-46d6-952e-76fb5ee0e824</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4d3c3079-8a08-4bf0-8ae3-6fd06301b8c2</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fc25411d-bd59-4119-a74e-1432823516b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/teacher_homework_time_filter_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4dc588aa-0bf7-4448-8df6-0be131aef813</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>27a589a4-0bf2-4e8b-8ff3-c32eeca8630d</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>efb8e84f-303b-4ea2-b2fd-1ddeab915c8f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/publish_homework_text</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a164ea51-1b19-401f-a394-34837ca3da5a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>969404b2-1b2d-4d68-aca3-703cb43ec4df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/publish_homework_text_and_picture</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0f309f70-b1e9-45c6-8b5c-396c6275873a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c7defb10-34ad-4614-bebd-eeef594d5054</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/delete_homework</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>196b236c-ebc1-4c96-aa33-01455541df59</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>51046560-e5f7-4dde-9d50-bf015ab745a3</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

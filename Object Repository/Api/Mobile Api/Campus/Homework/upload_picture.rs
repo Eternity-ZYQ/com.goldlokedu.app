@@ -51,6 +51,7 @@
    <soapServiceFunction></soapServiceFunction>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -68,9 +69,15 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 //WS.comment(size+&quot;&quot;)
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-	assertThat(response.getResponseText()).contains('file_id')
+	WS.containsString(response, 'file_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'bucket_name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'content_type', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'file_name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'file_size', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'object_name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'url', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 }
 

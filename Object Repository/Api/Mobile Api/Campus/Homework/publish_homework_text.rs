@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;course_id\&quot;: \&quot;${course_id}\&quot;,\n\t\&quot;picture_ids\&quot;: [],\n\t\&quot;class_ids\&quot;: [\&quot;${class_id}\&quot;]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;content\&quot;: \&quot;${content}\&quot;,\n\t\&quot;course_id\&quot;: \&quot;${course_id}\&quot;,\n\t\&quot;picture_ids\&quot;: [],\n\t\&quot;class_ids\&quot;: ${class_ids}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -55,10 +55,11 @@
       <description></description>
       <id>090013c8-adaa-4b7d-9fcc-ac88d69f8a56</id>
       <masked>false</masked>
-      <name>class_id</name>
+      <name>class_ids</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -72,10 +73,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200,FailureHandling.CONTINUE_ON_FAILURE)){
 
-&quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;)
+	WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;,FailureHandling.CONTINUE_ON_FAILURE)
 
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发布作业，纯文本</description>
+   <name>publish_homework_text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>48756880-c9bd-4351-905e-b0ce6151a42b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>科目名称</description>
+      <id>a164ea51-1b19-401f-a394-34837ca3da5a</id>
+      <masked>false</masked>
+      <name>course_name</name>
+   </variable>
+</TestCaseEntity>
