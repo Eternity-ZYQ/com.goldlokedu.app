@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>成绩列表及班级成绩列表</description>
+   <name>achievement_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28ef27ec-bc70-4f34-aee2-a5b48b085dca</testCaseGuid>
+</TestCaseEntity>

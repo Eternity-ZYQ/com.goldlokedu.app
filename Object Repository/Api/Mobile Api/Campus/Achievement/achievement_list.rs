@@ -26,7 +26,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>1</defaultValue>
       <description></description>
       <id>04b20550-a332-4c68-88d5-b36bf55ea27d</id>
       <masked>false</masked>
@@ -34,6 +34,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -47,10 +48,10 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
 &quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'code', 200)
+WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
 
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

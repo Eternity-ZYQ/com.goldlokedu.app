@@ -1237,7 +1237,25 @@
    <testCaseLink>
       <guid>d213618f-640f-4de8-a741-8299fbe3a4a5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Schedule/teacher_teach_course_schedule</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ad587733-54e2-4772-acbd-afcd2f15e750</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/achievement_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1bfe450d-6008-47f1-aba9-486de28a5713</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/look_student_achievement_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4cffe64c-9cb8-4e10-bac2-d11de1027753</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/look_student_achievement_detail</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
