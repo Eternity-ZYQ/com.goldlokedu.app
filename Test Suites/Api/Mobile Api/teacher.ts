@@ -1213,7 +1213,7 @@
    <testCaseLink>
       <guid>c7defb10-34ad-4614-bebd-eeef594d5054</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/delete_homework</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1227,5 +1227,17 @@
          <value></value>
          <variableId>51046560-e5f7-4dde-9d50-bf015ab745a3</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4dd459e9-6e1b-4490-9e63-75fb1c530e99</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Schedule/class_course_schedule</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d213618f-640f-4de8-a741-8299fbe3a4a5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Schedule/teacher_teach_course_schedule</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>班级课程表</description>
+   <name>class_course_schedule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f1ad6bc-e251-41af-9463-e5d710d58483</testCaseGuid>
+</TestCaseEntity>
