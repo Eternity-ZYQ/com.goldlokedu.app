@@ -1255,7 +1255,19 @@
    <testCaseLink>
       <guid>4cffe64c-9cb8-4e10-bac2-d11de1027753</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/look_student_achievement_detail</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd86e7e2-7b76-48b9-ae31-fae32e5d8239</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Interactive Course/Interactive_course_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7588a23a-efee-4ac4-a7f0-e0c2bb0dbf2f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Live/live</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
