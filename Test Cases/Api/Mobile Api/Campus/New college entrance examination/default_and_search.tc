@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>新高考默认列表和搜索</description>
+   <name>default_and_search</name>
+   <tag></tag>
+   <comment>获取新高考默认列表</comment>
+   <testCaseGuid>ab664218-0dac-417b-87e9-cfa7121c4d9c</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>f336c841-d474-4882-8f11-9d658eea076c</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>3848c44b-3763-41c6-89ea-6774018ca69c</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

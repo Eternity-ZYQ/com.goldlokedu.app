@@ -1267,7 +1267,25 @@
    <testCaseLink>
       <guid>7588a23a-efee-4ac4-a7f0-e0c2bb0dbf2f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Live/live</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8dfc8ae6-3cb0-462f-aeb4-1ffba7fe287c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/default_and_search</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f336c841-d474-4882-8f11-9d658eea076c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3848c44b-3763-41c6-89ea-6774018ca69c</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

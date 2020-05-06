@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>高考资讯列表搜索</description>
-   <name>college_entrance_exam_information_list_search</name>
+   <description>学校查询列表---默认或搜索</description>
+   <name>school_query_list</name>
    <tag></tag>
-   <elementGuidId>cd50d709-1608-4c40-b8f1-2f50e5b211a6</elementGuidId>
+   <elementGuidId>8ebe4c2b-2376-4458-b17a-86aa2227e12b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/news/query?from=${from}&amp;keyword=${keyword}&amp;size=${size}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySchool?from=${from}&amp;school_code_or_name=${school_code_or_name}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,27 +28,26 @@
    <variables>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>86a911f0-310e-45cd-8759-35c69d672d45</id>
+      <id>2ef545c4-9959-4b03-a1c7-ae05c925a86e</id>
       <masked>false</masked>
       <name>from</name>
    </variables>
    <variables>
-      <defaultValue>'高考'</defaultValue>
+      <defaultValue>10</defaultValue>
       <description></description>
-      <id>3bbf66ac-f1b9-4c73-9690-47758cc0c7ab</id>
-      <masked>false</masked>
-      <name>keyword</name>
-   </variables>
-   <variables>
-      <defaultValue>20</defaultValue>
-      <description></description>
-      <id>f4cc3ec2-a0f1-4435-90e1-3ad2c13d8ecf</id>
+      <id>bf279108-7656-40e2-9410-7fe8c9b5b723</id>
       <masked>false</masked>
       <name>size</name>
    </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>02971083-e6f2-4e4f-8f7d-36ebb254764c</id>
+      <masked>false</masked>
+      <name>school_code_or_name</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
-import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
