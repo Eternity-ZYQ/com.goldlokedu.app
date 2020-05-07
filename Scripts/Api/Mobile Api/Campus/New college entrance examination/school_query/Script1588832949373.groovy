@@ -77,7 +77,7 @@ def void school_query_filter_main_subject(int from,int size,int school_code,Stri
 			WS.comment('真实值:'+actual_school_code+',期望值:'+school_code)
 			WS.comment('真实值:'+actual_main_subject+',期望值:'+main_subject)
 			WS.verifyEqual(actual_school_code, school_code, FailureHandling.CONTINUE_ON_FAILURE)
-			WS.verifyMatch(actual_main_subject, '.*'+main_subject+'.*', false, FailureHandling.CONTINUE_ON_FAILURE)
+			WS.verifyMatch(actual_main_subject, '.*'+main_subject+'.*',true, FailureHandling.CONTINUE_ON_FAILURE)
 			
 		}
 	}else{
@@ -125,8 +125,17 @@ def String get_minor_subject(){
 		def str1=''
 		for(int x:(0..num3-1)){
 			def num4=(int)(Math.random()*1000)%array_yes_next.size()
-			while(WS.verifyNotMatch(str, '.*'+array_yes_next[num4]+'.*', true, FailureHandling.OPTIONAL)){
+			WS.comment('str1进入while之前:'+str1)
+			while(WS.verifyNotMatch(str1, '.*'+array_yes_next[num4]+'.*', true, FailureHandling.OPTIONAL)){
+				if(str1==''){
+					
 				str1=str1+array_yes_next[num4]
+				}else{
+				
+				str1=str1+','+array_yes_next[num4]
+				}
+				
+				WS.comment('str1:'+str1)
 			}
 		}
 		minor=str1	
