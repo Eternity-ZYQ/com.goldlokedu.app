@@ -48,6 +48,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -61,10 +62,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-	assertThat(response.getResponseText()).contains('total')
-
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 }
 </verificationScript>
    <wsdlAddress></wsdlAddress>

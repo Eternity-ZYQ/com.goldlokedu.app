@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>选科要求默认列表---全国,不限层次</description>
+   <description>学校查询列表---默认或搜索</description>
    <name>select_require_list</name>
    <tag></tag>
-   <elementGuidId>e8a30436-1cdb-419e-892b-4347ed2b1391</elementGuidId>
+   <elementGuidId>8ebe4c2b-2376-4458-b17a-86aa2227e12b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySchool?from=${from}&amp;size=${size}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySchool?from=${from}&amp;school_code_or_name=${school_code_or_name}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,19 +28,27 @@
    <variables>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>ade5a8c1-bac0-4245-828a-d5873ab532d4</id>
+      <id>2ef545c4-9959-4b03-a1c7-ae05c925a86e</id>
       <masked>false</masked>
       <name>from</name>
    </variables>
    <variables>
-      <defaultValue>20</defaultValue>
+      <defaultValue>10</defaultValue>
       <description></description>
-      <id>99352499-eda9-48da-b341-9467613799d5</id>
+      <id>bf279108-7656-40e2-9410-7fe8c9b5b723</id>
       <masked>false</masked>
       <name>size</name>
    </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>02971083-e6f2-4e4f-8f7d-36ebb254764c</id>
+      <masked>false</masked>
+      <name>school_code_or_name</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -54,10 +62,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-	assertThat(response.getResponseText()).contains('total')
-
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 }
 </verificationScript>
    <wsdlAddress></wsdlAddress>

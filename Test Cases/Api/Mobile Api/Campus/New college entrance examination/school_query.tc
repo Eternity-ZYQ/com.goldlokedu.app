@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>新高考默认列表和搜索</description>
-   <name>default_and_search</name>
+   <description>学校查询---默认及筛选</description>
+   <name>school_query</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ab664218-0dac-417b-87e9-cfa7121c4d9c</testCaseGuid>
+   <testCaseGuid>556dd0d5-d20f-41f6-8ec9-847a52964a45</testCaseGuid>
    <variable>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>f336c841-d474-4882-8f11-9d658eea076c</id>
+      <id>cd0aba66-fcca-4fc4-bd6b-610ad236474f</id>
       <masked>false</masked>
       <name>from</name>
    </variable>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>3848c44b-3763-41c6-89ea-6774018ca69c</id>
+      <id>c10befa8-61aa-4f05-8f15-ec3c14af7edc</id>
       <masked>false</masked>
       <name>size</name>
    </variable>

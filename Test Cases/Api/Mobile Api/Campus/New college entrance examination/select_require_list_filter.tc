@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>新高考默认列表和搜索</description>
-   <name>default_and_search</name>
+   <description>选科要求筛选</description>
+   <name>select_require_list_filter</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ab664218-0dac-417b-87e9-cfa7121c4d9c</testCaseGuid>
+   <testCaseGuid>fc7dbe4b-99a6-486c-b760-85ba0f85b0a2</testCaseGuid>
    <variable>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>f336c841-d474-4882-8f11-9d658eea076c</id>
+      <id>b3b4c374-3075-4370-aea1-72e49a5e67c0</id>
       <masked>false</masked>
       <name>from</name>
    </variable>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>3848c44b-3763-41c6-89ea-6774018ca69c</id>
+      <id>51fd8d90-661a-4692-a6a8-32fcb5a585be</id>
       <masked>false</masked>
       <name>size</name>
    </variable>
