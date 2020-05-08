@@ -1405,7 +1405,7 @@
    <testCaseLink>
       <guid>6de978e1-e746-483a-9da0-432208464410</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1424,6 +1424,24 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>6cdebe51-38d4-468b-a909-7cfdf16d9b42</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4e0f85a5-792a-4a7d-82c1-cf4748095b36</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Read Aloud/read_aloud_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0d7260a8-6f65-4fed-910d-5677418cedef</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f25ca1c3-3a4a-43dd-b65e-e3e0233d648c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

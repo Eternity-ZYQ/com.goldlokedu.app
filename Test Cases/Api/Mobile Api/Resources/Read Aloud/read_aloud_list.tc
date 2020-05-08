@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>诵读列表</description>
+   <name>read_aloud_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba608d7a-12d4-4450-a4e9-a6d83c49ce9a</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>0d7260a8-6f65-4fed-910d-5677418cedef</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>f25ca1c3-3a4a-43dd-b65e-e3e0233d648c</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
