@@ -18,8 +18,6 @@ import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 import groovy.json.JsonSlurper as JsonSlurper
 
 
-
-
 TestData data=findTestData("Data Files/User Information/Account/teacher");
 	
 	'输入正确的账号密码'

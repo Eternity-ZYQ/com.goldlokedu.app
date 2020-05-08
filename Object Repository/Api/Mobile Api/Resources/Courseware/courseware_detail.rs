@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares/${courseware_course_ware_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/classroom/front/course_wares/${course_ware_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,10 +30,11 @@
       <description></description>
       <id>45c6ab15-0d69-4853-952f-fb3f2da87f26</id>
       <masked>false</masked>
-      <name>courseware_course_ware_id</name>
+      <name>course_ware_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -47,9 +48,9 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
-assertThat(response.getResponseText()).contains('total')
+WS.containsString(response, 'course_ware_id', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 }
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>课件搜索</description>
+   <name>courseware_list_search</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff5832da-44cc-4fb8-8848-4eaa5cdbe907</testCaseGuid>
+   <variable>
+      <defaultValue>'语文'</defaultValue>
+      <description></description>
+      <id>9b22adc9-bdc3-4526-a0c7-b54d881c2feb</id>
+      <masked>false</masked>
+      <name>search_content</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>71e287de-c1ca-45c0-b550-042ab98c4da3</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>73fdf837-718f-439e-a891-9afa4b82d4cd</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+</TestCaseEntity>

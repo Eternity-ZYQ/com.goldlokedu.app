@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;courses\&quot;: [{\n\t\t\&quot;id\&quot;: \&quot;13\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;语文\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;14\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;数学\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;英语\&quot;,\n\t\t\&quot;id\&quot;: \&quot;41\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;16\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;物理\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;17\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;化学\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;18\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;生物\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;思想政治\&quot;,\n\t\t\&quot;id\&quot;: \&quot;26\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;11\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;品德与社会\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;信息技术\&quot;,\n\t\t\&quot;id\&quot;: \&quot;61\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;15\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;科学\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;25\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;美术\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;书法\&quot;,\n\t\t\&quot;id\&quot;: \&quot;120\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;综合实践活动\&quot;,\n\t\t\&quot;id\&quot;: \&quot;130\&quot;\n\t}],\n\t\&quot;grades\&quot;: [{\n\t\t\&quot;id\&quot;: \&quot;2\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;二年级\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;4\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;四年级\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;五年级\&quot;,\n\t\t\&quot;id\&quot;: \&quot;5\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;6\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;六年级\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;八年级\&quot;,\n\t\t\&quot;id\&quot;: \&quot;8\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;必修2\&quot;,\n\t\t\&quot;id\&quot;: \&quot;102\&quot;\n\t}, {\n\t\t\&quot;chinese_name\&quot;: \&quot;必修3\&quot;,\n\t\t\&quot;id\&quot;: \&quot;103\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;104\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;必修4\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;204\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;选修2\&quot;\n\t}, {\n\t\t\&quot;id\&quot;: \&quot;205\&quot;,\n\t\t\&quot;chinese_name\&quot;: \&quot;选修3\&quot;\n\t}]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;courses\&quot;: ${courses},\n\t\&quot;grades\&quot;: ${grades}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -36,8 +36,23 @@
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5895dc55-dc18-48c7-aa76-5f0864309155</id>
+      <masked>false</masked>
+      <name>grades</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d635571d-b0bf-4fe0-9af7-f6b7735b0b42</id>
+      <masked>false</masked>
+      <name>courses</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -51,10 +66,10 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 
 &quot;文本code值:200&quot;
-WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;)
+WS.verifyElementPropertyValue(response, 'result', &quot;Success&quot;, FailureHandling.CONTINUE_ON_FAILURE)
 
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

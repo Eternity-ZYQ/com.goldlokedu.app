@@ -1327,7 +1327,7 @@
    <testCaseLink>
       <guid>d1b7432c-0f35-4457-a6bb-344be758e5de</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/college_entrance_exam_information_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1346,6 +1346,42 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>9e0a280a-5a97-46fe-ab49-9dd6cf7b7b95</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>61720764-dbd0-4979-ab3b-6bd9f1d4eac6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/course_and_grade_and_setting</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f5bb931f-ab36-40f7-b24f-f366490f3116</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>674effb4-670b-41a4-8e22-bea3fefe67aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list_search</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9b22adc9-bdc3-4526-a0c7-b54d881c2feb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>71e287de-c1ca-45c0-b550-042ab98c4da3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>73fdf837-718f-439e-a891-9afa4b82d4cd</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
