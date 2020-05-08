@@ -18,7 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-def path='Object Repository/Api/Mobile Api/Resources/Courseware/courseware_list_search'
+def path='Object Repository/Api/Mobile Api/Resources/Item Bank/item_bank_list_search'
 '先检查年级和学科是否设置'
 WS.callTestCase(findTestCase('Test Cases/Api/Mobile Api/Resources/Courseware/course_and_grade_and_setting'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 ResponseObject response=WS.sendRequestAndVerify(findTestObject(path, [('from'):from,('size'):size,('content'):search_content]), FailureHandling.CONTINUE_ON_FAILURE)
@@ -37,6 +37,8 @@ if(jsonResponse.result.size>0){
 
 	WS.comment('搜索不到数据:'+search_content)
 }
+
+
 
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){

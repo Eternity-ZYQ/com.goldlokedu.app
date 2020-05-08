@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>题库默认列表</description>
+   <name>item_bank_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a82f30e-7d9f-4fd8-a04d-abf2b5b350df</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>35876df7-19e1-4087-9bd4-aceb253b84bb</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>49c3fb66-fa94-4142-8966-1ac8a2576638</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

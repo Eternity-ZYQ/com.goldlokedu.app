@@ -1363,7 +1363,7 @@
    <testCaseLink>
       <guid>674effb4-670b-41a4-8e22-bea3fefe67aa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1382,6 +1382,48 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>73fdf837-718f-439e-a891-9afa4b82d4cd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>82b14546-69ea-40f8-b823-e0a010e48ea9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35876df7-19e1-4087-9bd4-aceb253b84bb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>49c3fb66-fa94-4142-8966-1ac8a2576638</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6de978e1-e746-483a-9da0-432208464410</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list_search</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef481ceb-0b96-450a-94af-97be1c45a278</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8d8978f4-19e8-4dd1-8ea0-ba1a7356eb34</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6cdebe51-38d4-468b-a909-7cfdf16d9b42</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

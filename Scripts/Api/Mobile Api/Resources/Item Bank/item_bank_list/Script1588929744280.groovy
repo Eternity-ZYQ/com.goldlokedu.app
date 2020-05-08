@@ -18,25 +18,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-def path='Object Repository/Api/Mobile Api/Resources/Courseware/courseware_list_search'
 '先检查年级和学科是否设置'
 WS.callTestCase(findTestCase('Test Cases/Api/Mobile Api/Resources/Courseware/course_and_grade_and_setting'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-ResponseObject response=WS.sendRequestAndVerify(findTestObject(path, [('from'):from,('size'):size,('content'):search_content]), FailureHandling.CONTINUE_ON_FAILURE)
-def jsonResponse =get_jsonResponse(response)
 
+'题库列表接口路径'
+def path='Object Repository/Api/Mobile Api/Resources/Item Bank/item_bank_list'
+'课件详情接口路径'
+def path1='Object Repository/Api/Mobile Api/Resources/Item Bank/item_bank_detail'
+'课件已读接口路径'
+def path2='Object Repository/Api/Mobile Api/Resources/Item Bank/views_item_bank'
+'获取题库默认列表'
+ResponseObject response=WS.sendRequestAndVerify(findTestObject(path,[('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+def jsonResponse =get_jsonResponse(response)
 if(jsonResponse.result.size>0){
 	
-	WS.comment('搜索到数据:'+search_content)
-	for(int x:(0..jsonResponse.result.size-1)){
-		
-		def name=jsonResponse.result[x].name
-		WS.comment('真实值:'+name+',期望值:'+search_content)
-		WS.verifyMatch(name, '.*'+search_content+'.*', true, FailureHandling.CONTINUE_ON_FAILURE)
-	}
+	WS.comment('题库列表有数据')
+	'第一条数据的id'
+	def examination_paper_id=jsonResponse.result[0].examination_paper_id
+	'查看课件详情'
+	WS.sendRequestAndVerify(findTestObject(path1, [('examination_paper_id'):examination_paper_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	'课件已读'
+	WS.sendRequestAndVerify(findTestObject(path2, [('examination_paper_id'):examination_paper_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	
 }else{
-
-	WS.comment('搜索不到数据:'+search_content)
+	WS.comment('题库列表没有数据')
 }
+
 
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){

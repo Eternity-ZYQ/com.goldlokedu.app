@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>题库搜索</description>
+   <name>item_bank_list_search</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f5f400c-db35-4ad0-8a4f-02f6ed685074</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>ef481ceb-0b96-450a-94af-97be1c45a278</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>8d8978f4-19e8-4dd1-8ea0-ba1a7356eb34</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>'语文'</defaultValue>
+      <description></description>
+      <id>6cdebe51-38d4-468b-a909-7cfdf16d9b42</id>
+      <masked>false</masked>
+      <name>search_content</name>
+   </variable>
+</TestCaseEntity>
