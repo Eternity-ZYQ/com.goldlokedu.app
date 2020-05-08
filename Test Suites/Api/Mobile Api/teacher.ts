@@ -1309,7 +1309,7 @@
    <testCaseLink>
       <guid>9e7e4c50-5410-4694-b7c1-dd1a28cf8c87</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/school_query</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1322,6 +1322,30 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>c10befa8-61aa-4f05-8f15-ec3c14af7edc</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d1b7432c-0f35-4457-a6bb-344be758e5de</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/college_entrance_exam_information_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d24ea5be-9351-43ae-92ac-055e022c98d3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f9e3c9af-c634-4352-852a-80b98500c164</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9e0a280a-5a97-46fe-ab49-9dd6cf7b7b95</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
