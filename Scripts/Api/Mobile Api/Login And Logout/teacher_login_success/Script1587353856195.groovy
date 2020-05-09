@@ -46,11 +46,6 @@ def Object get_jsonResponse(ResponseObject response){
 
 
 
-
-
-
-
-
 //成功后保存信息
 def void save_message(ResponseObject response){
 	

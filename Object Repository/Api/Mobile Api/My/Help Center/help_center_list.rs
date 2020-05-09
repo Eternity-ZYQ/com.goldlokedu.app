@@ -66,6 +66,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -78,34 +79,14 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 &quot;请求服务器成功:200&quot;
-if(WS.verifyResponseStatusCode(response, 200)){
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	&quot;返回体包含total&quot;
-	assertThat(response.getResponseText()).contains('total')
-	
-	&quot;保存数据&quot;
-	save_message(response)
+	WS.containsString(response, 'total', false, FailureHandling.CONTINUE_ON_FAILURE)
 
 }
 
 
 
-
-//保存数据
-private void save_message(ResponseObject response){
-	def jsonSlurper = new JsonSlurper()
-	
-	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-	
-	if(jsonResponse.total>0){
-	&quot;保存question_id&quot;
-	CustomKeywords.'public_method.Helper.addGlobalVariable'(&quot;question_id&quot;, jsonResponse.data[0].question_id)
-	//WS.comment('Your text here')
-	
-	
-	}
-	
-	
-}
 
 
 

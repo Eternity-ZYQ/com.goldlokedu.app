@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>帮助中心列表及详情</description>
+   <name>help_center_list_and_details</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>001a5dc0-743a-46c6-896c-7d9551bb9f78</testCaseGuid>
+</TestCaseEntity>

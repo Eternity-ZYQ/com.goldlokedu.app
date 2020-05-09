@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>个人资料</description>
+   <name>personal_data</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d08ade69-8f52-4256-a058-2494992a4ed5</testCaseGuid>
+</TestCaseEntity>

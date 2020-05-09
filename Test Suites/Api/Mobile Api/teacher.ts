@@ -1465,7 +1465,7 @@
    <testCaseLink>
       <guid>27d04da0-bd84-48a2-862e-66cbb0a836fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Micro Lesson/micro_lesson_list_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1485,5 +1485,17 @@
          <value></value>
          <variableId>b3bee207-25d5-42c5-9275-173173d985e9</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5d861e02-e103-4206-95d2-f4b8e5c50058</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/My/Individual/Teacher/personal_data</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d277e7ae-e885-4124-b8b8-bf59fd966f1a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/My/Help Center/help_center_list_and_details</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
