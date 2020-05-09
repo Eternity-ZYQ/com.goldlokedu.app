@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>微课默认列表</description>
+   <name>micro_lesson_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5e8dfc08-53d8-4fb9-b1e1-fc9468b58d48</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>eed148ca-3f42-4ebf-b688-61cbf0e834e0</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>b044aa41-91ec-46f0-9513-8ad7f8116299</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

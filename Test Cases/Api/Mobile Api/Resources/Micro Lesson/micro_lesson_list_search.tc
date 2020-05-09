@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>微课搜索</description>
+   <name>micro_lesson_list_search</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>419ed52a-76f1-4719-8a64-78dfcaf8f750</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>0f6f36f0-cafa-4625-a6bd-a9c917f97728</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>897315ec-598c-4d0e-b1c7-09e66a6dbcd9</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>'龙珠'</defaultValue>
+      <description></description>
+      <id>b3bee207-25d5-42c5-9275-173173d985e9</id>
+      <masked>false</masked>
+      <name>search_content</name>
+   </variable>
+</TestCaseEntity>
