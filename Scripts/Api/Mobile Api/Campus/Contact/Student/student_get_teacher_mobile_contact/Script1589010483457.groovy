@@ -18,34 +18,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-'获取打电话班级列表数据,发送打电话班级联系人列表接口'
-ResponseObject class_mobile_contact_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Contact/Student/student_mobile_class_contact"), FailureHandling.CONTINUE_ON_FAILURE)
-def class_mobile_contact_jsonResponse=get_jsonResponse(class_mobile_contact_response)
+'学生获取打电话的教师列表的接口路径'
+def path='Object Repository/Api/Mobile Api/Campus/Contact/Student/student_get_teacher_mobile_contact'
+'用户头像接口路径'
+def path1='Object Repository/Api/Mobile Api/My/Individual/User/user_head_image'
+'发送接口获取教师通讯录类表'
+ResponseObject teacher_list_response=WS.sendRequestAndVerify(findTestObject(path), FailureHandling.CONTINUE_ON_FAILURE)
+def list_jsonResponse=get_jsonResponse(teacher_list_response)
 
-if(class_mobile_contact_jsonResponse.data.size>0){
+if(list_jsonResponse.data.size>0){
 	
-	for(int x:(0..class_mobile_contact_jsonResponse.data.size-1)){
+	WS.comment('通讯录列表有数据')
 	
-		'发送打电话班级内学生联系人列表接口'
-		ResponseObject class_student_mobile_contact_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Contact/Student/student_mobile_contact",[('class_id'):class_mobile_contact_jsonResponse.data[x].id]), FailureHandling.CONTINUE_ON_FAILURE)
-		def class_student_mobile_contact_jsonResponse=get_jsonResponse(class_student_mobile_contact_response)
+	for(int x:(0..list_jsonResponse.data.size-1)){
+		def teacher=list_jsonResponse.data[x].teacher
+		def user_id=list_jsonResponse.data[x].user_id
+		def mobile=list_jsonResponse.data[x].mobile
+		WS.comment('教师:'+teacher)
+		'手机号不能为空'
+		WS.verifyNotEqual(mobile, '', FailureHandling.CONTINUE_ON_FAILURE)
+		'获取教师头像'
+		WS.sendRequestAndVerify(findTestObject(path1, [('user_id'):user_id]), FailureHandling.CONTINUE_ON_FAILURE)
 		
-		if(class_student_mobile_contact_jsonResponse.data.size>0){
-			for(int y:(0..class_student_mobile_contact_jsonResponse.data.size-1)){
-				
-				'发送用户头像接口'
-				WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/User/user_head_image",[('user_id'):class_student_mobile_contact_jsonResponse.data[y].user_id]), FailureHandling.CONTINUE_ON_FAILURE)
-						
-			}
-		}else{
-			WS.comment('该班级没有学生')
-		
-		}		
-	}	
+	}
+}else{
+	WS.comment('通讯录列表没有数据')	
+
 }
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){
 	
@@ -53,8 +52,4 @@ def Object get_jsonResponse(ResponseObject response){
 	def jsonResponse = jsonSlurper.parseText(response.getResponseText())
 	
 	return jsonResponse
-	
 }
-
-
-
