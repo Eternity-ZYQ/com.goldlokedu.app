@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生查看班级课程表</description>
+   <name>student_class_course_schedule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c103e7f7-0b59-4419-9e6a-8344f5a0969f</testCaseGuid>
+</TestCaseEntity>

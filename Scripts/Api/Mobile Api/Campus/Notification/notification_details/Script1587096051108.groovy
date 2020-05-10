@@ -19,23 +19,22 @@ import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
 
-'调用我发的通知列表'
-ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_send_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+'调用我收的通知列表'
+ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Notification/my_received_notification_list", [('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 def my_send_jsonResponse=get_jsonResponse(response)
 
-for(int x:(0..my_send_jsonResponse.data.size-1)){
-	'通知详情页面'
-	ResponseObject detail_response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Notification/notification_details', [('notification_id'):my_send_jsonResponse.data[x].notification_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'附件处理'
-	handle_file(detail_response)
-	
-	'图片处理'
-	handle_picture(detail_response)
+if(my_send_jsonResponse.data.size>0){
+	for(int x:(0..my_send_jsonResponse.data.size-1)){
+		'通知详情页面'
+		ResponseObject detail_response=WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/Notification/notification_details', [('notification_id'):my_send_jsonResponse.data[x].notification_id]), FailureHandling.CONTINUE_ON_FAILURE)
+		
+		'附件处理'
+		handle_file(detail_response)
+		
+		'图片处理'
+		handle_picture(detail_response)
+	}
 }
-
-
-
 
 
 
@@ -73,8 +72,6 @@ def void handle_file(ResponseObject response){
 		WS.comment('没有附件')
 	
 	}
-	
-	
 }
 
 
@@ -99,8 +96,6 @@ def void handle_picture(ResponseObject response){
 		WS.comment('没有图片')
 	
 	}
-	
-	
 }
 
 

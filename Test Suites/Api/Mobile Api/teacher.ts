@@ -362,7 +362,7 @@
       <guid>5ee8c5d6-d1a1-4460-aa0a-56be875b624e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/view_class_training_list</testCaseId>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/teacher_view_class_training_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ff6a3bd9-524c-4a53-84ca-5d5bb365d670</guid>
@@ -374,13 +374,13 @@
       <guid>43112f48-5661-4f59-87bc-bbb4d0682ea2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/new_one_notice</testCaseId>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/teacher_new_one_notice</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e53c00ca-8fab-44e5-9cc9-084c85d5615e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list</testCaseId>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/teacher_search_notice_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -1495,7 +1495,7 @@
    <testCaseLink>
       <guid>d277e7ae-e885-4124-b8b8-bf59fd966f1a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/My/Help Center/help_center_list_and_details</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

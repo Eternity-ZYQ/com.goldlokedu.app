@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生查询动态列表</description>
+   <name>student_dynamic_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>88c9ebd9-653b-41ba-ba36-581f6964ef79</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>05941357-5fb1-4def-a08b-a3fe0ffae73e</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>6110e683-9616-4056-a15b-4a53b0452689</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0706cf29-b57a-4d99-84f4-03cef75c214d</id>
+      <masked>false</masked>
+      <name>class_id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>058b8397-5d27-4d1e-bb62-2b3b6435650f</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+</TestCaseEntity>

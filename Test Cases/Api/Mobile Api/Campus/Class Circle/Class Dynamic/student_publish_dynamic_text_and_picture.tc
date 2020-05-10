@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生发布带图片动态</description>
+   <name>student_publish_dynamic_text_and_picture</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b600b2f4-7f3a-43f6-8974-a196c7bae978</testCaseGuid>
+</TestCaseEntity>

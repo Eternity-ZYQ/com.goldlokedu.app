@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生删除动态评论动态</description>
+   <name>student_dynamic_detele_comment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1cb38436-fa3a-49ca-b22b-2c2460f105e6</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>41591dff-20d9-492a-8c2d-a90a87f7391d</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>7e172dc0-51df-4a28-bc9b-a25b0ca66a6c</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

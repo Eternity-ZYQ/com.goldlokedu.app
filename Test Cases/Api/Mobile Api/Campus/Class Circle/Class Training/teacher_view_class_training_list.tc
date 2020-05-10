@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>查看班训列表</description>
-   <name>view_class_training_list</name>
+   <name>teacher_view_class_training_list</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d9ecc26e-7f26-4256-9916-42b926dee794</testCaseGuid>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生查看相册图片列表</description>
+   <name>student_album_picture_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eee35ba5-ddeb-4cc4-b5cc-1b62ad499650</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>903d47f1-8712-4ba8-835d-aa62855064dc</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>23c4dfab-18e0-49ce-ae20-f073bf1f4e96</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

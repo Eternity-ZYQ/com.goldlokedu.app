@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>查看公告类表</description>
+   <name>student_search_notice_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9fbe8ea-57f3-4079-a1c1-42eefba65e48</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>fc2f7f66-e6c6-42b4-b262-e8ff441c428c</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>409e8a78-5720-4054-9f37-c4c4f49bf986</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
