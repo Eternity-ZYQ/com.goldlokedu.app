@@ -359,84 +359,6 @@
       <testCaseId>Test Cases/Api/Mobile Api/Menu/menu</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ecf89bc5-ff9e-41d1-9018-5671eff79eff</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>28bc33ff-5842-4d08-ae52-b57cc459a71e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list_search</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9b22adc9-bdc3-4526-a0c7-b54d881c2feb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>71e287de-c1ca-45c0-b550-042ab98c4da3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>73fdf837-718f-439e-a891-9afa4b82d4cd</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f632adbe-5c9b-4bc6-88d8-d4497680d3f9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/course_and_grade_and_setting</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>13b5cf15-bb96-43cf-a38e-4b1f163e9e34</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>35876df7-19e1-4087-9bd4-aceb253b84bb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>49c3fb66-fa94-4142-8966-1ac8a2576638</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>58065820-603f-4287-9177-d3ebb8adc9b8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list_search</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ef481ceb-0b96-450a-94af-97be1c45a278</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8d8978f4-19e8-4dd1-8ea0-ba1a7356eb34</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6cdebe51-38d4-468b-a909-7cfdf16d9b42</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>d22a318a-9a67-47e5-8691-78c5c9cb957d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
@@ -452,6 +374,48 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>f25ca1c3-3a4a-43dd-b65e-e3e0233d648c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>33074eb3-018b-40bb-9b2e-3321ecf22c60</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Micro Lesson/student_micro_lesson_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b122b3ba-3c49-439b-86e5-255c34b7ae10</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef0219ac-ea27-42db-800a-3a437edef8fa</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c6d43f42-3a57-4614-9588-94e0aa4906b1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/Micro Lesson/student_micro_lesson_list_search</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a69caefe-bd16-4ff0-91dd-8aefaddbfba5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3c27e918-f943-4f64-88af-c7be1c67e809</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>998168fb-8ee1-4e03-a588-5fc134826d4c</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
