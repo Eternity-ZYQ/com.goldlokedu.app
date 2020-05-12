@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>历史消息列表</description>
+   <name>history_msg</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0058f711-d4ae-4b0e-a2f1-7b6ef27a43cf</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>c4002d24-9a24-46f3-867e-38f0358a4754</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>40</defaultValue>
+      <description></description>
+      <id>46063859-713b-47cd-a9b1-f96502ae4226</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

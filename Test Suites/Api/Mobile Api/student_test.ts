@@ -418,4 +418,28 @@
          <variableId>998168fb-8ee1-4e03-a588-5fc134826d4c</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9a2f9f7b-0409-40e3-9c9b-852bb0ca0e7c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Children/history_msg</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c4002d24-9a24-46f3-867e-38f0358a4754</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>46063859-713b-47cd-a9b1-f96502ae4226</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dad4683e-5e98-4161-b32d-93ff580103d0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Children/parent_new_msg_and_send_chat_msg</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

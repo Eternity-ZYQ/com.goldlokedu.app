@@ -18,39 +18,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
+'历史消息列表接口路径'
+def path='Object Repository/Api/Mobile Api/Campus/Contact Children/history_msg'
+'加载文件接口路径'
+def path1='Object Repository/Api/Mobile Api/Campus/Contact Children/dowmload_file'
+'获取历史消息列表数据'
+ResponseObject msg_response=WS.sendRequestAndVerify(findTestObject(path,[('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+def msg_jsonResponse=get_jsonResponse(msg_response)
 
-
-ResponseObject bell_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_search"), FailureHandling.CONTINUE_ON_FAILURE)
-def bell_list_jsonResponse=get_jsonResponse(bell_list_response)
-
-'保存列表数据长度'
-data_size=bell_list_jsonResponse.data.size
-	
-if(data_size>0){
-	
-	for(int index:(0..data_size-1)){
-		
-		if(!bell_list_jsonResponse.data[index].is_read){
-			'未读的才保存reminder_id'
-			reminder_id=bell_list_jsonResponse.data[index].reminder_id
-			
-			return
-		}
-	}
-}
-
-if(reminder_id!=''){
-	
-'发送查看小铃铛信息接口'
-WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Bell/bell_reminder_view",[('reminder_ids'):reminder_id]), FailureHandling.CONTINUE_ON_FAILURE)
-
+if(msg_jsonResponse.data.size>0){
+	WS.comment('列表有数据')
+	for(int x:(0..msg_jsonResponse.data.size-1)){
+		def message_type=msg_jsonResponse.data[x].message_type
+		if(message_type=='Json'){
+		def file_id=msg_jsonResponse.data[x].message.file_id
+			WS.sendRequestAndVerify(findTestObject(path1, [('file_id'):file_id]), FailureHandling.CONTINUE_ON_FAILURE)
+		}	
+	}	
 }else{
 
-WS.comment('没有未读的信息')
+	WS.comment('列表没有数据')
 }
-
-
-
 
 
 
