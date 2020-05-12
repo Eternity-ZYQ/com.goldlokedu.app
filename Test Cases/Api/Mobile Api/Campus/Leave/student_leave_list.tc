@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生请假列表</description>
+   <name>student_leave_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>30af5d4b-bac8-4f03-90c3-8c6420de1fe8</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>08596cef-001e-486a-83dc-6e054f554d26</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>269784e9-749a-49c8-a5ef-20faacb60b4a</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

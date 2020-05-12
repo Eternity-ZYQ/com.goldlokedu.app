@@ -355,7 +355,7 @@
    <testCaseLink>
       <guid>0bd16e6d-647c-4f0e-a6d3-277d1cc35ee9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Menu/menu</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -465,5 +465,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Teacher/send_chat_file</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b0529261-1e29-4b1c-a889-b47c6c2c8622</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/student_leave_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>08596cef-001e-486a-83dc-6e054f554d26</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>269784e9-749a-49c8-a5ef-20faacb60b4a</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

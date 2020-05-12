@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;start_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${date]\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${day_part}\&quot;\n\t},\n\t\&quot;end_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${date01}\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${day_part01}\&quot;\n\t},\n\t\&quot;leave_type\&quot;: \&quot;${leave_type]\&quot;,\n\t\&quot;reason\&quot;: \&quot;${reason]\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;start_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${date]\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${day_part}\&quot;\n\t},\n\t\&quot;end_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${end_date}\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${end_day_part}\&quot;\n\t},\n\t\&quot;leave_type\&quot;: \&quot;${leave_type]\&quot;,\n\t\&quot;reason\&quot;: \&quot;${reason]\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -55,14 +55,14 @@
       <description></description>
       <id>9e4345a0-894c-4a64-8990-56ab2faed39e</id>
       <masked>false</masked>
-      <name>date01</name>
+      <name>end_date</name>
    </variables>
    <variables>
       <defaultValue>'Afternoon'</defaultValue>
       <description></description>
       <id>c7bbf090-6f1e-491f-a5c1-627de425ccdc</id>
       <masked>false</masked>
-      <name>day_part01</name>
+      <name>end_day_part</name>
    </variables>
    <variables>
       <defaultValue>'Sick'</defaultValue>
@@ -80,6 +80,7 @@
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -91,6 +92,10 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
