@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>获取新消息</description>
-   <name>poll_new_chat_record</name>
+   <description>加载文件</description>
+   <name>dowmload_file</name>
    <tag></tag>
-   <elementGuidId>8a4fdf1e-3ed4-43b9-b19c-2901890e91c3</elementGuidId>
+   <elementGuidId>8b58b76f-478d-47b0-a817-7bffe078b523</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/poll?counter=${next_poll_counter}&amp;target_id=${teacher_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/file/${file_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,16 +28,9 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6c1008ef-ad09-4965-a6ba-48945af784c9</id>
+      <id>ae96bba5-0dac-4b7b-a16f-e021f6e40074</id>
       <masked>false</masked>
-      <name>next_poll_counter</name>
-   </variables>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>1fbef809-f2e3-49c6-833e-c3cbbf0d0d57</id>
-      <masked>false</masked>
-      <name>teacher_id</name>
+      <name>file_id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -54,10 +47,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	WS.comment('文件加载成功')
+	
+}else{
 
-	WS.containsString(response, 'next_poll_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.comment('文件加载失败')
 
 }</verificationScript>
    <wsdlAddress></wsdlAddress>

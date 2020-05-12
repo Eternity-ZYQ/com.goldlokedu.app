@@ -25,5 +25,5 @@ WS.sendRequestAndVerify(findTestObject(path), FailureHandling.CONTINUE_ON_FAILUR
 
 def origin='Parent'
 def message_type='Text'
-def message=CustomKeywords.'time.SystemTime.get_system_time'()
+def message=CustomKeywords.'time.SystemTime.get_system_time'()+'发送的文本信息'
 WS.sendRequestAndVerify(findTestObject(path1, [('origin'):origin,('message_type'):message_type,('message'):message]), FailureHandling.CONTINUE_ON_FAILURE)

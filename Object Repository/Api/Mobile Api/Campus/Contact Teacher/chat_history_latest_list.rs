@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=15&amp;target_id=${teacher_id}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/latest?size=${size}&amp;target_id=${teacher_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

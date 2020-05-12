@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>发送消息</description>
-   <name>send_chat_message</name>
+   <description>上传文件</description>
+   <name>upload_file</name>
    <tag></tag>
-   <elementGuidId>2b3e27ef-4046-4e63-8511-52fda3f5d788</elementGuidId>
+   <elementGuidId>49e12fdf-1310-46e4-bde3-70eff74a5c50</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;target_user_id\&quot;: \&quot;${teacher_id}\&quot;,\n\t\&quot;message\&quot;: \&quot;${message}\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;/Users/faz/Desktop/postman/timg.jpeg&quot;,
+      &quot;type&quot;: &quot;File&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>multipart/form-data</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -28,27 +34,27 @@
       <type>Main</type>
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>X-File-Size</name>
+      <type>Main</type>
+      <value>${X-File-Size}</value>
+   </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/create</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/file</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>207554</defaultValue>
       <description></description>
-      <id>f141e244-40bd-4984-9daa-d439333f3167</id>
+      <id>0e023bb7-9339-4110-b9f5-efa2f56447b9</id>
       <masked>false</masked>
-      <name>teacher_id</name>
-   </variables>
-   <variables>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>398bd12d-b69a-4d58-96f7-9fe28b45a639</id>
-      <masked>false</masked>
-      <name>message</name>
+      <name>X-File-Size</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -65,14 +71,17 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-
-	WS.containsString(response, 'next_poll_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
-	WS.containsString(response, 'message_id', false, FailureHandling.CONTINUE_ON_FAILURE)
-	WS.containsString(response, 'message_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
 	
-}
-</verificationScript>
+	WS.containsString(response, 'bucket_name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'content_type', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'file_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'file_name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'file_size', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'object_name', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'url', false, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

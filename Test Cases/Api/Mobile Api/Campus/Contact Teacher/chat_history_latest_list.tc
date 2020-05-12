@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>历史聊天记录</description>
+   <name>chat_history_latest_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>18e071a9-0b75-496c-a8bf-561a50d46156</testCaseGuid>
+   <variable>
+      <defaultValue>20</defaultValue>
+      <description></description>
+      <id>41509884-1ee9-4bb1-8b3a-f346aa4b1168</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

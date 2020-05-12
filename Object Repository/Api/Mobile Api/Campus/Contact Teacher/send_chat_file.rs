@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>获取新消息</description>
-   <name>poll_new_chat_record</name>
+   <description>发送文件,目前是图片</description>
+   <name>send_chat_file</name>
    <tag></tag>
-   <elementGuidId>8a4fdf1e-3ed4-43b9-b19c-2901890e91c3</elementGuidId>
+   <elementGuidId>4f2f5f9b-c8ab-47a4-8c7c-013a7faee08e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n\t\&quot;message\&quot;: ${message},\n\t\&quot;target_user_id\&quot;: \&quot;${teacher_id}\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -18,8 +29,8 @@
       <value>Bearer ${GlobalVariable.access_token}</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/poll?counter=${next_poll_counter}&amp;target_id=${teacher_id}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${GlobalVariable.MobileHost}/homeschool_chat/teacher_parent/app/create</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,14 +39,14 @@
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6c1008ef-ad09-4965-a6ba-48945af784c9</id>
+      <id>78734ea9-1209-4cc7-927e-7eff410eb04f</id>
       <masked>false</masked>
-      <name>next_poll_counter</name>
+      <name>message</name>
    </variables>
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>1fbef809-f2e3-49c6-833e-c3cbbf0d0d57</id>
+      <id>b9d2575b-2bdc-4a63-8a05-034a6987c10e</id>
       <masked>false</masked>
       <name>teacher_id</name>
    </variables>
@@ -54,11 +65,13 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
+
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
-
+	
+	WS.containsString(response, 'message_id', false, FailureHandling.CONTINUE_ON_FAILURE)
+	WS.containsString(response, 'message_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
 	WS.containsString(response, 'next_poll_counter', false, FailureHandling.CONTINUE_ON_FAILURE)
-
+	
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

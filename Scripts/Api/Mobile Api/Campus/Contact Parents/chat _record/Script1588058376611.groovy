@@ -90,11 +90,6 @@ if(jsonResponse.data.size>0){
 
 
 
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response) {
 	

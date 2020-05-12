@@ -439,7 +439,31 @@
    <testCaseLink>
       <guid>dad4683e-5e98-4161-b32d-93ff580103d0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Children/parent_new_msg_and_send_chat_msg</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8ddd6b53-1f6d-4c3f-a50e-b7ee2780cb00</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Teacher/chat_history_latest_list</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>41509884-1ee9-4bb1-8b3a-f346aa4b1168</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ae7b0709-2b6e-49dc-b090-0f4774ef21a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Teacher/send_chat_message</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9e2639d2-24fa-4aed-af94-c64b3081e10c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Teacher/send_chat_file</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
