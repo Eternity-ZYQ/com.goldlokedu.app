@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生撤回请假</description>
+   <name>student_withdraw_leave</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7229db44-a0e1-46da-a9b3-c24cd0c569fd</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>3202da31-4b1b-4a37-8858-333a33ff6eb8</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>1983711d-57de-4460-8299-2332f92a1077</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

@@ -9,7 +9,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;start_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${date]\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${day_part}\&quot;\n\t},\n\t\&quot;end_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${end_date}\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${end_day_part}\&quot;\n\t},\n\t\&quot;leave_type\&quot;: \&quot;${leave_type]\&quot;,\n\t\&quot;reason\&quot;: \&quot;${reason]\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;start_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${date}\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${day_part}\&quot;\n\t},\n\t\&quot;end_date\&quot;: {\n\t\t\&quot;date\&quot;: \&quot;${end_date}\&quot;,\n\t\t\&quot;day_part\&quot;: \&quot;${end_day_part}\&quot;\n\t},\n\t\&quot;leave_type\&quot;: \&quot;${leave_type}\&quot;,\n\t\&quot;reason\&quot;: \&quot;${reason}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -95,7 +95,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	
-	
+	WS.containsString(response, &quot;leave_id&quot;, false, FailureHandling.CONTINUE_ON_FAILURE)
 }</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

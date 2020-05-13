@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>学生发起文本请假</description>
-   <name>student_leave_text</name>
+   <description>学生发起文本及图片请假</description>
+   <name>student_leave_text_and_picture</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5b02c7a3-f830-4820-a9c8-5ddec09b4a0e</testCaseGuid>
+   <testCaseGuid>fb5a0587-0c4c-4610-b03b-ca9624201424</testCaseGuid>
    <variable>
       <defaultValue>['Business', 'Sick']</defaultValue>
       <description></description>
-      <id>12470417-cbd7-4a52-9046-04581486b04e</id>
+      <id>beb5b8cf-d592-425c-b2dc-686ca861b6fe</id>
       <masked>false</masked>
       <name>leave_type</name>
    </variable>
    <variable>
       <defaultValue>['Afternoon', 'Morning']</defaultValue>
       <description></description>
-      <id>95b56152-c60f-43f5-9a41-97dd684ebbec</id>
+      <id>70f9dd04-7c02-4b7b-b34d-77e61f6a451e</id>
       <masked>false</masked>
       <name>day_part</name>
    </variable>

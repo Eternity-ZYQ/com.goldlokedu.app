@@ -18,17 +18,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 
-'学生发起文本请假路径'
-def path='Object Repository/Api/Mobile Api/Campus/Leave/student_leave_text'
+'学生发起文本及图片请假路径'
+def path='Object Repository/Api/Mobile Api/Campus/Leave/student_leave_text_and_picture'
+'上传请假图片的接口路径'
+def path1='Object Repository/Api/Mobile Api/Campus/Leave/upload_picture'
 
+'上传图片'
+ResponseObject picture_response=WS.sendRequestAndVerify(findTestObject(path1), FailureHandling.CONTINUE_ON_FAILURE)
+def data=picture_response.getResponseText()
 def start_date=CustomKeywords.'time.SystemTime.get_start_time'(0)
 def end_date=CustomKeywords.'time.SystemTime.get_future_day_time'(1)
 def start_day_part=day_part[1]
 def end_day_part=day_part[0]
 def leave_type=leave_type[0]
-def reason=CustomKeywords.'time.SystemTime.get_system_time'()+'发起文本请假'
+def reason=CustomKeywords.'time.SystemTime.get_system_time'()+'发起文本带图片请假'
 
-WS.sendRequestAndVerify(findTestObject(path, [('date'):start_date,('day_part'):start_day_part,('end_date'):end_date,('end_day_part'):end_day_part,('leave_type'):leave_type,('reason'):reason]), FailureHandling.CONTINUE_ON_FAILURE)
+WS.sendRequestAndVerify(findTestObject(path, [('date'):start_date,('day_part'):start_day_part,('end_date'):end_date,('end_day_part'):end_day_part,('leave_type'):leave_type,('reason'):reason,('data'):data]), FailureHandling.CONTINUE_ON_FAILURE)
 
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response) {

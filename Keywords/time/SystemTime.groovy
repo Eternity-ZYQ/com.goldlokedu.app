@@ -17,6 +17,8 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.keyword.datetime.DateTimeUtility as DateTimeUtility
+
 
 import internal.GlobalVariable
 
@@ -84,4 +86,38 @@ public class SystemTime {
 
 		return str_time
 	}
+
+
+
+	@Keyword
+	public String get_future_day_time(int days){
+
+		String str_years=new DateTimeUtility().getFutureDateTime(days, null, 'yyyy')
+		int years=Integer.parseInt(str_years)
+		String str_month=new DateTimeUtility().getFutureDateTime(days, null, 'MM')
+		int Month=Integer.parseInt(str_month)
+		String str_day=new DateTimeUtility().getFutureDateTime(days, null,'dd')
+		int day=Integer.parseInt(str_day)
+
+		String time = ''+years+full_time(Month)+full_time(day)+'T'+'235959'+'+0800'
+
+		return time
+	}
+
+	@Keyword
+	public String get_start_time(int days){
+		String str_years=new DateTimeUtility().getFutureDateTime(days, null, 'yyyy')
+		int years=Integer.parseInt(str_years)
+		String str_month=new DateTimeUtility().getFutureDateTime(days, null, 'MM')
+		int Month=Integer.parseInt(str_month)
+		String str_day=new DateTimeUtility().getFutureDateTime(days, null,'dd')
+		int day=Integer.parseInt(str_day)
+
+		String time = ''+years+full_time(Month)+full_time(day)+'T'+'000000'+'+0800'
+
+		return time
+	}
 }
+
+
+

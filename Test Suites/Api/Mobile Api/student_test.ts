@@ -355,7 +355,7 @@
    <testCaseLink>
       <guid>0bd16e6d-647c-4f0e-a6d3-277d1cc35ee9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Menu/menu</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -482,6 +482,60 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>269784e9-749a-49c8-a5ef-20faacb60b4a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7bc429de-e661-486b-a4f0-cfa8529d2e97</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/student_leave_text</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>12470417-cbd7-4a52-9046-04581486b04e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95b56152-c60f-43f5-9a41-97dd684ebbec</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2569cc45-6790-448a-a62c-bdbd43d40a88</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/student_leave_text_and_picture</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>beb5b8cf-d592-425c-b2dc-686ca861b6fe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>70f9dd04-7c02-4b7b-b34d-77e61f6a451e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8488c5df-2451-4682-a9a4-8da25dbc6f9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/student_withdraw_leave</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3202da31-4b1b-4a37-8858-333a33ff6eb8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1983711d-57de-4460-8299-2332f92a1077</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
