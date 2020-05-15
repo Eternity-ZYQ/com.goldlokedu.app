@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>学生考勤日历表</description>
-   <name>month_simple_statics_about_student</name>
+   <description>加载考勤图片,URL全部由参数传回</description>
+   <name>dowmload_picture</name>
    <tag></tag>
-   <elementGuidId>e2734899-cba3-4d60-bcaf-06a50960cd1a</elementGuidId>
+   <elementGuidId>9e9dacf3-5839-4c39-9978-8ec928b1c528</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -19,25 +19,18 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/attendance/general/record/month_simple_statics_about_student?check_month=${check_month}&amp;student_id=${student_id}</restUrl>
+   <restUrl>${pic}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
    <variables>
-      <defaultValue>'2020-04-01'</defaultValue>
-      <description></description>
-      <id>152bbc25-6799-49a0-9ab0-fb9b1d2cdb78</id>
-      <masked>false</masked>
-      <name>check_month</name>
-   </variables>
-   <variables>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f8c0637d-72dd-42d3-b37d-d98465bd6a62</id>
+      <id>c34c828d-fded-4e4c-a770-82416f83bcf8</id>
       <masked>false</masked>
-      <name>student_id</name>
+      <name>pic</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -54,16 +47,12 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-&quot;请求服务器成功:200&quot;
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
+	
+	WS.comment('考勤图片加载成功')
+}else{
 
-	WS.verifyElementPropertyValue(response, 'code', 200, FailureHandling.CONTINUE_ON_FAILURE)
-
-
-}
-
-
-
-</verificationScript>
+	WS.comment('考勤图片加载失败')
+}</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

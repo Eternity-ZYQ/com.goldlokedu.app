@@ -52,8 +52,9 @@ if(t_m_jsonResponse.data.size>0){
 						
 						if(class_detail_jsonResponse.data.detail[y].detail[i].pic!=''){
 							WS.comment('有照片,即将获取')
-							WS.verifyEqual(1, 2)
-							WS.comment('获取照片接口待补充...')
+
+							def pic =class_detail_jsonResponse.data.detail[y].detail[i].pic
+							WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Attendance/dowmload_picture", [('pic'):pic]), FailureHandling.CONTINUE_ON_FAILURE)
 						}else{
 						
 							WS.comment('没有照片')

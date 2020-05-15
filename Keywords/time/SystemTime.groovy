@@ -24,7 +24,7 @@ import internal.GlobalVariable
 
 public class SystemTime {
 
-
+	//获取当前时间:yyyy-MM-dd HH:mm:ss
 	@Keyword
 	public String get_system_time(){
 		Date date = new Date()
@@ -38,7 +38,7 @@ public class SystemTime {
 
 
 
-
+	//获取当前时间:yyyy-MM-dd
 	@Keyword
 	public String get_day_time(){
 		Date date = new Date()
@@ -52,7 +52,7 @@ public class SystemTime {
 
 
 
-
+	//获取与当天年份相差x=year年的日期,格式:20200101T235959+0800,时分秒为实时时间
 	@Keyword
 	public String get_future_time(int year){
 		Date date = new Date()
@@ -72,7 +72,7 @@ public class SystemTime {
 		return time
 	}
 
-
+	//判断日期返回的是两位数:如1月,则返回01,1日则返回01
 	public String full_time(int time){
 		String str_time
 		if(time<10){
@@ -88,7 +88,7 @@ public class SystemTime {
 	}
 
 
-
+	//返回时间点是某日的晚上23点59分59秒,格式:20200101T235959+0800
 	@Keyword
 	public String get_future_day_time(int days){
 
@@ -104,6 +104,8 @@ public class SystemTime {
 		return time
 	}
 
+	
+	//返回时间点是某日的0点0分0秒,格式:20200101T000000+0800
 	@Keyword
 	public String get_start_time(int days){
 		String str_years=new DateTimeUtility().getFutureDateTime(days, null, 'yyyy')

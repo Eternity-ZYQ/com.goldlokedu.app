@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生考勤月日历表</description>
+   <name>month_simple_statics_about_student</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9ff25917-02e1-43cc-a068-e0aa7fc79e74</testCaseGuid>
+</TestCaseEntity>

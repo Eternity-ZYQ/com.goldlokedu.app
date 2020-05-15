@@ -523,7 +523,7 @@
    <testCaseLink>
       <guid>8488c5df-2451-4682-a9a4-8da25dbc6f9d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/student_withdraw_leave</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -537,5 +537,17 @@
          <value></value>
          <variableId>1983711d-57de-4460-8299-2332f92a1077</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>daec2a2f-730f-4dc2-8b84-806100a38e6c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_student_detail</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>70141ca7-98d1-4bf6-bc63-bdb6cfe39b7a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_student</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
