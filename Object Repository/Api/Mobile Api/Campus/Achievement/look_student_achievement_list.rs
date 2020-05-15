@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>查看学生成绩列表---排名及总分</description>
+   <description>查看学生成绩列表---排名及总分教师</description>
    <name>look_student_achievement_list</name>
    <tag></tag>
    <elementGuidId>5f581275-e8ef-48b2-a48c-80af31f5f8b5</elementGuidId>

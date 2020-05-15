@@ -550,4 +550,10 @@
       <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_student</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4c2697cc-a1ed-46c2-a608-eee8fbd6e8bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/student_achievement_list_and_detail</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>班级成绩列表</description>
+   <description>教师查看班级成绩列表</description>
    <name>class_achievement_list</name>
    <tag></tag>
    <elementGuidId>87d02e97-2395-477a-ae60-7009c35938cc</elementGuidId>
