@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生作业列表--默认展示全部</description>
+   <name>student_homework_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e68ec748-0ca3-456e-b90a-b65df0170df4</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>0ae828eb-fffb-4dad-a8c9-5ba6a39081fd</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>5df2c190-86ac-4226-8f0b-9529649ee508</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

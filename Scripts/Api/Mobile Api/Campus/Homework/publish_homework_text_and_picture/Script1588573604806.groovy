@@ -62,7 +62,7 @@ def String set_course_name_and_get_id(){
 	
 	ResponseObject response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Homework/school_manager_course"), FailureHandling.CONTINUE_ON_FAILURE)
 	def jsonResponse =get_jsonResponse(response)
-	def num=(int)(Math.random()*1000)%jsonResponse.data.size+1  //随机取一个数
+	def num=(int)(Math.random()*1000)%jsonResponse.data.size //随机取一个数
 	course_name=jsonResponse.data[num].name
 	def course_id=jsonResponse.data[num].course_id
 	

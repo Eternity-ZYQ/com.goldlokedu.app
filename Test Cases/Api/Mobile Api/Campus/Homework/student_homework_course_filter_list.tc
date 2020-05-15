@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生作业列表--筛选科目</description>
+   <name>student_homework_course_filter_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ade7b970-b5da-4a61-8403-e85a8ffa1d9c</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>f3cd41ef-a622-470e-8cf0-ee299704a33c</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>de9fd71c-1980-4521-9e70-5ec2963476f1</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e03e61a6-8b3e-4ec4-a3de-d4f4fe8c5de5</id>
+      <masked>false</masked>
+      <name>course_name</name>
+   </variable>
+</TestCaseEntity>

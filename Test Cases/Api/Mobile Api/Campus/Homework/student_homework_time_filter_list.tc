@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生作业列表--筛选日期</description>
+   <name>student_homework_time_filter_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abcb37c8-a73c-4cf0-a9a0-39fb0b9ad047</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>101eef70-fc17-4cb7-a63b-ac228fcbf912</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>f1cca661-b626-4a46-8b64-ad1959ec3050</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

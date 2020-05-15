@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>学生作业列表--筛选日期及科目</description>
+   <name>student_homework_time_and_course_filter_list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efdb2e00-5fcc-4852-b34c-e518addfbf98</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>fa39dab4-441a-441b-9bb8-d8132d954fca</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>ecc3b50e-2186-4cc0-aa9f-8ea6aa1c708e</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>96de490e-cc33-4342-8427-15c88034855b</id>
+      <masked>false</masked>
+      <name>course_name</name>
+   </variable>
+</TestCaseEntity>
