@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>选课里列表及详情</description>
+   <name>course_selection_plan_list_and_detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6b231c9-8060-43ea-8537-436ab68b3882</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>d10f3dc5-a89b-4468-80ca-e7ba7fe73ab1</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>10</defaultValue>
+      <description></description>
+      <id>f1f0f06a-fee8-46ff-8ef3-a7b83f884db8</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

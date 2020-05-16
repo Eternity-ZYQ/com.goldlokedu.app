@@ -640,4 +640,22 @@
          <variableId>96de490e-cc33-4342-8427-15c88034855b</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d9ff4bc9-6825-4d0c-8e0a-0a4d2dcf1b5f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Selection/course_selection_plan_list_and_detail</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d10f3dc5-a89b-4468-80ca-e7ba7fe73ab1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f1f0f06a-fee8-46ff-8ef3-a7b83f884db8</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
