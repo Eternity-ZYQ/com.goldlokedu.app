@@ -643,7 +643,7 @@
    <testCaseLink>
       <guid>d9ff4bc9-6825-4d0c-8e0a-0a4d2dcf1b5f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Selection/course_selection_plan_list_and_detail</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -657,5 +657,11 @@
          <value></value>
          <variableId>f1f0f06a-fee8-46ff-8ef3-a7b83f884db8</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9131b882-a9dc-482a-8c6e-f5508d3c6ae0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/My/Individual/student/personal_data</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
