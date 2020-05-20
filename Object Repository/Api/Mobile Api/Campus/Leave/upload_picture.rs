@@ -43,7 +43,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://api.pnyjy.com/leave/attachments/upload</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/leave/attachments/upload</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -36,7 +36,7 @@ if(list_jsonResponse.data.size>0){
 		def mobile=list_jsonResponse.data[x].mobile
 		WS.comment('教师:'+teacher)
 		'手机号不能为空'
-		WS.verifyNotEqual(mobile, '', FailureHandling.CONTINUE_ON_FAILURE)
+		//WS.verifyNotEqual(mobile, '', FailureHandling.CONTINUE_ON_FAILURE)
 		'获取教师头像'
 		WS.sendRequestAndVerify(findTestObject(path1, [('user_id'):user_id]), FailureHandling.CONTINUE_ON_FAILURE)
 		

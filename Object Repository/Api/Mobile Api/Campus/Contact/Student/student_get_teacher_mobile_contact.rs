@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/student/klass_information/7ac583d0-6440-4e4f-a011-6c7f52d31f6c</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/student/klass_information/${GlobalVariable.user_id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

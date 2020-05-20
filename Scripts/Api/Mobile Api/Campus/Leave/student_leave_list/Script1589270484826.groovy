@@ -32,7 +32,7 @@ if(list_jsonResponse.data.size>0){
 	
 	for(int x:(0..list_jsonResponse.data.size-1)){
 		
-		if(list_jsonResponse.data[x].attachments.data.size>0){
+		if(list_jsonResponse.data[x].attachments!=null&&list_jsonResponse.data[x].attachments.data.size>0){
 			WS.comment('第'+(x+1)+'条请假有图片')
 			
 			for(int y:(0..list_jsonResponse.data[x].attachments.data.size-1)){
