@@ -19,7 +19,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://192.168.2.243/content/front/gaokao/bySchool?from=${from}&amp;province=${province}&amp;size=${size}</restUrl>
+   <restUrl>${GlobalVariable.MobileHost}/content/front/gaokao/bySchool?from=${from}&amp;province=${province}&amp;size=${size}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
