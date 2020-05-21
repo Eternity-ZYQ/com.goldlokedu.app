@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>教师用例</description>
-   <name>teacher_test</name>
+   <name>teacher</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>409853036@qq.com;</mailRecipient>

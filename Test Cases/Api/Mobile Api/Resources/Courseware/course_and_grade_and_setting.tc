@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>课件默认列表</description>
+   <description>年级学科设置</description>
    <name>course_and_grade_and_setting</name>
    <tag></tag>
    <comment></comment>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>查看公告类表</description>
+   <description>删除公告</description>
    <name>delete_notice</name>
    <tag></tag>
    <comment></comment>

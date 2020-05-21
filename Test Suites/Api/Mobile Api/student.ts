@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>student_test</name>
+   <name>student</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>409853036@qq.com;</mailRecipient>
