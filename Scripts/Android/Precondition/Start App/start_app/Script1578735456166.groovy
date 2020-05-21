@@ -12,5 +12,5 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-"开启app"
+"开启app,不会卸载"
 Mobile.startApplication(GlobalVariable.G_App_Path, false, FailureHandling.CONTINUE_ON_FAILURE)

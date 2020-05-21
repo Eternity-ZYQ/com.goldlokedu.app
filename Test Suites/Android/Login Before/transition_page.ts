@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>4f848440-3c9b-4acf-a74b-4c5d5ed266de</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Login Module/Transition Page Module/page_one_skip</testCaseId>
    </testCaseLink>
    <testCaseLink>
