@@ -18,7 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 "左滑页面到第二个过渡页"
 CustomKeywords.'public_action.slide_screen.left_slide_screen'()
 
-
-
 "点击第二页跳转"
 Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_two_skip'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)

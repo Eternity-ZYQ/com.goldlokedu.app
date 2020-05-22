@@ -28,4 +28,4 @@ Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/tar
 
 //这里多执行一步是为了后面开启app不用进入过度页
 '选择普宁地区'
-Mobile.tap(findTestObject('Android/City Element/city_puning_text'), GlobalVariable.G_short_timeout)
+Mobile.tap(findTestObject('null'), GlobalVariable.G_short_timeout)

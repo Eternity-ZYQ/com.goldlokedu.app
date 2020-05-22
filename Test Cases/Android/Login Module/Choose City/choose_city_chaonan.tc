@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>选择潮南地区</description>
-   <name>choose_city_chaonan</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>322d7ccf-7d27-454f-a03e-d20ab7781b48</testCaseGuid>
-</TestCaseEntity>

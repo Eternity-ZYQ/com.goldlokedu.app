@@ -39,29 +39,22 @@ public class slide_screen {
 
 
 	}
-	
-	
+
+
 	//向上滑动屏幕
 	@Keyword
 	public void wipe_up(){
 		"获取设备高度"
 		def y=Mobile.getDeviceHeight()
-		
+
 		"获取设备宽度"
 		def x=Mobile.getDeviceWidth()
-		
-		
+
 		"向上滑动屏幕"
 		Mobile.swipe(new BigDecimal(x/2).intValue(), new BigDecimal(y*2/3).intValue(), new BigDecimal(x/2).intValue(), new BigDecimal(y/3).intValue())
-		
-		
-		
-		
-		
+
+
 	}
-	
-	
-	
 
 
 

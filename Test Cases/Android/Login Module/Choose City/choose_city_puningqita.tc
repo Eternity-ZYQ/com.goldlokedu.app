@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>选择普宁-其他地区</description>
-   <name>choose_city_puningqita</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2ee610a4-038d-4bb1-ba96-f7137ee7718c</testCaseGuid>
-</TestCaseEntity>

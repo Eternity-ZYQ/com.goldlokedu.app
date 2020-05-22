@@ -25,5 +25,5 @@ Mobile.tap(findTestObject("Object Repository/Android/Privacy Policy/privacy_poli
 Mobile.tap(findTestObject('Object Repository/Android/Transition Page Element/transition_page_one_skip_btn'), GlobalVariable.G_Timeout,
 	FailureHandling.CONTINUE_ON_FAILURE)
 
-'选择普宁地区'
-Mobile.tap(findTestObject('Android/City Element/city_puning_text'), GlobalVariable.G_Timeout)
+'选择第一个地区'
+Mobile.tap(findTestObject('Object Repository/Android/City Element/city_image'), GlobalVariable.G_Timeout)

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Puningqita Environment</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>ios包名</description>
+      <initValue>'com.goldlokedu.app'</initValue>
+      <name>AppId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>安卓包名</description>
+      <initValue>'com.goldlokedu.tgoldlokedu '</initValue>
+      <name>G_AppId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>超时时间</description>
+      <initValue>5</initValue>
+      <name>G_Timeout</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>测试安装包路径</description>
+      <initValue>'Data Files//Test APK//1.apk'</initValue>
+      <name>G_App_Path</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>短时间超时</description>
+      <initValue>2</initValue>
+      <name>G_short_timeout</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>移动端普宁-其他环境host</description>
+      <initValue>'http://api.xxzyjy.com'</initValue>
+      <name>MobileHost</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

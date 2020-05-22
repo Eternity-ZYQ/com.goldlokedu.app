@@ -1,292 +1,91 @@
 [35m[Appium][39m Welcome to Appium v1.16.0
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 51435
+[35m[Appium][39m   port: 65461
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   chromeDriverPort: 51437
-[35m[Appium][39m   tmpDir: /var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T//Katalon/Appium/Temp1578819534917
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:51435
+[35m[Appium][39m   chromeDriverPort: 65462
+[35m[Appium][39m   tmpDir: /var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T//Katalon/Appium/Temp1590130084075
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:65461
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m9 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m8 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"/Users/faz/Desktop/GLEducation_v1.18.5.0_2020-01-10-17-33_alpha.ipa","noReset":true,"deviceId":"","deviceName":"iPhone 11 Pro Max","fullReset":false,"wdaLocalPort":51454,"newCommandTimeout":1800,"realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","platformVersion":"13.3","automationName":"XCUITest","waitForAppScript":"true;","platformName":"iOS","udid":"F72BCA53-02FE-4542-AF79-8AD3582C1B1A"},"capabilities":{"firstMatch":[{"appium:app":"/Users/faz/Desktop/GLEducation_v1.18.5.0_2020-01-10-17-33_alpha.ipa","appium:automationName":"XCUITest","deviceId":"","appium:deviceName":"iPhone 11 Pro Max","appium:fullReset":false,"appium:newCommandTimeout":1800,"appium:noReset":true,"platformName":"ios","appium:platformVersion":"13.3","realDeviceLogger":"/Applications/Katalon Studio.app/Contents/Eclipse/configuration/resources/tools/deviceconsole","appium:udid":"F72BCA53-02FE-4542-AF79-8AD3582C1B1A","appium:[39m
-[35m[BaseDriver][39m The capabilities ["deviceId","realDeviceLogger"] are not standard capabilities and should have an extension prefix
-[35m[Appium][39m Appium v1.16.0 creating new XCUITestDriver (v3.10.1) session
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.goldlokedu.tgoldlokedu","deviceId":"","deviceName":"HUAWEI COL-AL10 (Android 10)","platform":"ANDROID","appActivity":"com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity","newCommandTimeout":1800,"platformVersion":"10","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"VBJ4C18519001467","systemPort":8283},"capabilities":{"firstMatch":[{"appium:appActivity":"com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity","appium:appPackage":"com.goldlokedu.tgoldlokedu","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"HUAWEI COL-AL10 (Android 10)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"10","appium:systemPort":8283,"appium:udid":"VBJ4C18519001467"}]}}[39m
+[35m[BaseDriver][39m The capabilities ["deviceId","platform"] are not standard capabilities and should have an extension prefix
+[35m[Appium][39m Appium v1.16.0 creating new AndroidUiautomator2Driver (v1.40.0) session
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   deviceId
-[35m[BaseDriver][39m Session created with session id: d77e69a1-e756-4236-9b4f-dce32b6f0447
-[35m[iOSSim][39m Constructing iOS simulator for Xcode version 11.3 with udid 'F72BCA53-02FE-4542-AF79-8AD3582C1B1A'
-[35m[XCUITest][39m Determining device to run tests on: udid: 'F72BCA53-02FE-4542-AF79-8AD3582C1B1A', real device: false
-[35m[BaseDriver][39m Using local app '/Users/faz/Desktop/GLEducation_v1.18.5.0_2020-01-10-17-33_alpha.ipa'
-[35m[BaseDriver][39m Unzipped local app to '/var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T/Katalon/Appium/Temp1578819534917/2020012-39173-9sys2t.2kaa/Payload/GLEducation.app'
-[35m[XCUITest][39m Setting up simulator
-[35m[iOSSim][39m Both Simulator with UDID F72BCA53-02FE-4542-AF79-8AD3582C1B1A and the UI client are currently running
-[35m[XCUITest][39m *********************************
-[35m[XCUITest][39m Simulator architecture appears to be unsupported by the '/var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T/Katalon/Appium/Temp1578819534917/2020012-39173-9sys2t.2kaa/Payload/GLEducation.app' application. Make sure the correct deployment target has been selected for its compilation in Xcode.
-[35m[XCUITest][39m Don't be surprised if the application fails to launch.
-[35m[XCUITest][39m *********************************
-[35m[XCUITest][39m Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
-[35m[XCUITest][39m Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
-[35m[DevCon Factory][39m Requesting connection for device F72BCA53-02FE-4542-AF79-8AD3582C1B1A on local port 51454, device port 51454
-[35m[DevCon Factory][39m Successfully requested the connection for F72BCA53-02FE-4542-AF79-8AD3582C1B1A:51454
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[XCUITest][39m Launching WebDriverAgent on the device
-[35m[WebDriverAgent][39m Fetching dependencies
-[35m[WebDriverAgent][39m Dependencies up-to-date
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"3A048C50-7655-4F57-BBEC-1420AA33A848"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"3A048C50-7655-4F57-BBEC-1420AA33A848"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m-[39m [90m- ms - -[39m
-[35m[HTTP][39m [90m[39m
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"3A048C50-7655-4F57-BBEC-1420AA33A848"}
+[35m[BaseDriver][39m   platform
+[35m[BaseDriver][39m Session created with session id: 68ecc9c2-b16a-4543-b0d9-bc04682732dc
+[35m[UiAutomator2][39m Starting 'com.goldlokedu.tgoldlokedu' directly on the device
+[35m[ADB][39m Found 1 'build-tools' folders under '/Users/faz/.katalon/tools/android_sdk' (newest first):
+[35m[ADB][39m     /Users/faz/.katalon/tools/android_sdk/build-tools/29.0.2
+[35m[ADB][39m Using 'adb' from '/Users/faz/.katalon/tools/android_sdk/platform-tools/adb'
+[35m[AndroidDriver][39m Retrieving device list
+[35m[AndroidDriver][39m Using device: VBJ4C18519001467
+[35m[ADB][39m Using 'adb' from '/Users/faz/.katalon/tools/android_sdk/platform-tools/adb'
+[35m[UiAutomator2][39m Relaxing hidden api policy
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[35m[ADB][39m Using 'apksigner' from '/Users/faz/.katalon/tools/android_sdk/build-tools/29.0.2/apksigner'
+[35m[UiAutomator2][39m Server packages are not going to be (re)installed
+[35m[UiAutomator2][39m Starting UIAutomator2 server 4.5.2
+[35m[UiAutomator2][39m Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.2.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
 [35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[XCUITest][39m Quitting and uninstalling WebDriverAgent
-[35m[XCUITest][39m Shutting down sub-processes
-[35m[XCUITest][39m Shutting down xcodebuild process (pid 39228)
-[35m[XCUITest][39m Launching WebDriverAgent on the device
-[35m[WebDriverAgent][39m Fetching dependencies
-[35m[WebDriverAgent][39m Dependencies up-to-date
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[XCUITest][39m Launching WebDriverAgent on the device
-[35m[WebDriverAgent][39m Fetching dependencies
-[35m[WebDriverAgent][39m Dependencies up-to-date
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"errno":-61,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":51454}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ESOCKETTIMEDOUT","connect":false}
-[35m[XCUITest][39m Getting status of WebDriverAgent on device timed out. Continuing
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[WD Proxy][39m Got an unexpected response with status 500: {"value":{"error":"session not created","message":"Failed to launch com.goldlokedu.app application","traceback":""},"sessionId":"78271365-F005-4C76-A2D1-1EBF1C69DA59"}
-[35m[XCUITest][39m Quitting and uninstalling WebDriverAgent
-[35m[XCUITest][39m Shutting down sub-processes
-[35m[XCUITest][39m Shutting down xcodebuild process (pid 40154)
-[35m[XCUITest][39m WebDriverAgent uninstall failed. Perhaps, it is already uninstalled? Original error: {}
-[35m[DevCon Factory][39m Releasing connections for F72BCA53-02FE-4542-AF79-8AD3582C1B1A device on any port number
-[35m[DevCon Factory][39m Found cached connections to release: ["F72BCA53-02FE-4542-AF79-8AD3582C1B1A:51454"]
-[35m[Appium][39m Received SIGTERM - shutting down
+[35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m Starting 'com.goldlokedu.tgoldlokedu/com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity and waiting for 'com.goldlokedu.tgoldlokedu/com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity'
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 68ecc9c2-b16a-4543-b0d9-bc04682732dc added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m8364 ms - 1308[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc [39m[32m200[39m [90m25 ms - 1240[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc [39m[32m200[39m [90m22 ms - 1240[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":60000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/timeouts [39m[32m200[39m [90m4 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/appium/device/activate_app[39m
+[35m[HTTP][39m [90m{"bundleId":"com.goldlokedu.tgoldlokedu "}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/appium/device/activate_app [39m[32m200[39m [90m448 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (68ecc9c2)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 825a22cf-e3ca-4387-bccb-053c67077de7 with 68ecc9c2-b16a-4543-b0d9-bc04682732dc
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source [39m[32m200[39m [90m136 ms - 6311[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot [39m[32m200[39m [90m624 ms - 337646[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (68ecc9c2)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 825a22cf-e3ca-4387-bccb-053c67077de7 with 68ecc9c2-b16a-4543-b0d9-bc04682732dc
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source [39m[32m200[39m [90m155 ms - 17597[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot [39m[32m200[39m [90m736 ms - 579258[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session 68ecc9c2-b16a-4543-b0d9-bc04682732dc from our master session list
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc [39m[32m200[39m [90m371 ms - 14[39m
+[35m[HTTP][39m [90m[39m

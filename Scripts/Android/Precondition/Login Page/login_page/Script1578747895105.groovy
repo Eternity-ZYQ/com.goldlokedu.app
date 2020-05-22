@@ -21,13 +21,4 @@ Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Choose City/to
 
 
 "选择地区"
-//地区选择普宁
-//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_puning"), null, FailureHandling.STOP_ON_FAILURE)
-//地区选择揭西
-Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_jiexi"), null, FailureHandling.STOP_ON_FAILURE)
-//地区选择普宁其他
-//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_puningqita"), null, FailureHandling.STOP_ON_FAILURE)
-//地区选择潮阳
-//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_chaoyang"), null, FailureHandling.STOP_ON_FAILURE)
-//地区选择潮南
-//Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city_chaonan"), null, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase("Test Cases/Android/Login Module/Choose City/choose_city"), null, FailureHandling.STOP_ON_FAILURE)
