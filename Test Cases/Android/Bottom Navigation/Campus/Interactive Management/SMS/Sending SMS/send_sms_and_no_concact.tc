@@ -6,17 +6,10 @@
    <comment></comment>
    <testCaseGuid>e6952726-bce3-4e1a-85f3-c924d000daa3</testCaseGuid>
    <variable>
-      <defaultValue>'亲,请选择接收人~'</defaultValue>
+      <defaultValue>'亲,请选择接收人～'</defaultValue>
       <description></description>
       <id>8ad2df4e-30fb-475d-a427-1b4fd6d2393f</id>
       <masked>false</masked>
-      <name>sms_toast_no_contact</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>494d9167-cc7d-4cce-931a-b94afc44a927</id>
-      <masked>false</masked>
-      <name>text</name>
+      <name>toast_text</name>
    </variable>
 </TestCaseEntity>

@@ -31,7 +31,7 @@
    <testCaseLink>
       <guid>52f48a48-a0ea-476f-ab04-445d00174f94</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_and_no_concact</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -39,17 +39,11 @@
          <value></value>
          <variableId>8ad2df4e-30fb-475d-a427-1b4fd6d2393f</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>494d9167-cc7d-4cce-931a-b94afc44a927</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>9b16ed6c-7920-4e5e-bec1-c10f44aee985</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_to_all_student</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

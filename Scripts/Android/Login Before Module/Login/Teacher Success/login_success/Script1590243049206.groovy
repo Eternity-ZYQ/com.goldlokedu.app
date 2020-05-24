@@ -3,9 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import org.openqa.selenium.WebElement
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -17,21 +14,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import io.appium.java_client.AppiumDriver
+"前置条件：开启app并到达登录页面"
+Mobile.callTestCase(findTestCase("Test Cases/Android/Login Before Module/Choose City/choose_city"), null, FailureHandling.STOP_ON_FAILURE)
 
-import com.kms.katalon.core.util.KeywordUtil
-'点击发送短信tap栏'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+'清除账号'
+Mobile.clearText(findTestObject('Android/Login Page Element/username_text'), GlobalVariable.G_short_timeout)
 
 
-'点击发送'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"从文件中取出账号密码"
+TestData td=findTestData("Data Files/User Information/Account/teacher")
+account=td.getValue("account", 1)
+password=td.getValue("password", 1)
 
+'输入账号'
+Mobile.setText(findTestObject('Android/Login Page Element/username_text'), account, GlobalVariable.G_short_timeout)
 
-CustomKeywords.'public_action.verifyToast.VerifyToastElementExistByText'(toast_text)
+'输入密码'
+Mobile.setText(findTestObject('Android/Login Page Element/password_text'), password, GlobalVariable.G_short_timeout)
 
+'点击登录按钮登录'
+Mobile.tap(findTestObject('Android/Login Page Element/login_btn'), GlobalVariable.G_short_timeout)
 
-
+Mobile.delay(2)

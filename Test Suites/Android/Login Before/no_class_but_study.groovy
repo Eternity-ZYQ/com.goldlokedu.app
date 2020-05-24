@@ -50,8 +50,6 @@ def tearDown() {
 @SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
-
-	
 	
 }
 
@@ -61,7 +59,7 @@ def setupTestCase() {
 @TearDownTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
 	// Put your code here.
-	"场景还原：关闭app"
+	"场景还原:关闭app"
 	Mobile.closeApplication(FailureHandling.STOP_ON_FAILURE)
 }
 

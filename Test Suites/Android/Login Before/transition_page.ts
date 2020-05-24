@@ -14,18 +14,18 @@
       <guid>4f848440-3c9b-4acf-a74b-4c5d5ed266de</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Transition Page Module/page_one_skip</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Transition Page Module/page_one_skip</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4f17d78b-644a-46c1-ad5e-00d3cdf98638</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Transition Page Module/page_two_skip</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Transition Page Module/page_two_skip</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>31ed6b4f-8768-444d-96fd-d0be96318e2e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Transition Page Module/page_three_experience</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Transition Page Module/page_three_experience</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

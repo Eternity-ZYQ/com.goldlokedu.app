@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>停课不停学弹窗出现后点击取消按钮</description>
+   <name>cancel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d75a89be-8458-4d45-9fd6-03b781da9a5f</testCaseGuid>
+</TestCaseEntity>

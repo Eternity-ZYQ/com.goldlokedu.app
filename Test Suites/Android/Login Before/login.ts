@@ -14,6 +14,6 @@
       <guid>bcc15cfc-f1e0-4bdf-af18-b25bfb8b972e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Login/Teacher Success/login_success</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Login/Teacher Success/login_success</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -47,11 +47,10 @@ def tearDown() {
 /**
  * Run before each test case starts.
  */
-@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
+@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
-	"前置条件------打开已存在的app"
-	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Choose City/to_choose_city_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
+
 }
 
 /**

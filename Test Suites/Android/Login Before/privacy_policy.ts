@@ -14,12 +14,12 @@
       <guid>facd7676-9281-4e56-85e0-833244256cd6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Privacy Policy Page/agree_privacy_policy</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Privacy Policy Page/agree_privacy_policy</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9255c411-d6be-45e0-80fb-6cfb747dc9c6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Privacy Policy Page/disagree_privacy_policy</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Privacy Policy Page/disagree_privacy_policy</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

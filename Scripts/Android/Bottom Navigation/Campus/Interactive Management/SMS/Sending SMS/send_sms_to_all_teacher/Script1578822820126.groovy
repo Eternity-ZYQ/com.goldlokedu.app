@@ -87,7 +87,7 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 //'获取toast内容:发送成功'
-//String text = Mobile.getText(findTestObject('Object Repository/Android/Pubilc Element/toast_element'), 
+//String text = Mobile.getText(findTestObject('null'), 
 //    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 //
 //assert sms_toast_success_text == text

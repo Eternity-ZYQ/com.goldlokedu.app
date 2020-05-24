@@ -47,11 +47,10 @@ def tearDown() {
 /**
  * Run before each test case starts.
  */
-@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
+@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
-	"前置条件：开启app并到达登录页面"
-	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Login Page/login_page"), null, FailureHandling.STOP_ON_FAILURE)
+
 	
 }
 

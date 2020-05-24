@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>处于班级圈页面</description>
-   <name>class_circle_page</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5d1a606f-fcff-4965-9e5b-f7445594a65a</testCaseGuid>
-</TestCaseEntity>

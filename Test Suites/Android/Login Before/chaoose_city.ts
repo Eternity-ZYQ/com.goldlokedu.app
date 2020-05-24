@@ -14,6 +14,6 @@
       <guid>adc5280d-b277-494b-8ad1-70fa7cc5e9d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Android/Login Module/Choose City/choose_city</testCaseId>
+      <testCaseId>Test Cases/Android/Login Before Module/Choose City/choose_city</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

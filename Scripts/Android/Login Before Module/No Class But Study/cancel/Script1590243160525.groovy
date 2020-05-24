@@ -3,9 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import org.openqa.selenium.WebElement
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -17,21 +14,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import io.appium.java_client.AppiumDriver
 
-import com.kms.katalon.core.util.KeywordUtil
-'点击发送短信tap栏'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"前置条件:处于首页，且弹窗未关闭"
+Mobile.callTestCase(findTestCase("Test Cases/Android/Login Before Module/Login/Teacher Success/login_success"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
 
-'点击发送'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+'判断停课不停学弹窗出现'
+boolean is_exist=Mobile.verifyElementExist(findTestObject("Object Repository/Android/No Class But Study/no_class_but_study_layout"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-
-CustomKeywords.'public_action.verifyToast.VerifyToastElementExistByText'(toast_text)
-
-
-
+'是否存在'
+if(is_exist){
+	'点击取消按钮'
+	Mobile.tap(findTestObject("Object Repository/Android/No Class But Study/cancel_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'取消后，弹窗消失'
+	Mobile.verifyElementNotExist(findTestObject("Object Repository/Android/No Class But Study/no_class_but_study_layout"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'处于首页，有小铃铛图标'
+	Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/small_bell_image"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	
+}

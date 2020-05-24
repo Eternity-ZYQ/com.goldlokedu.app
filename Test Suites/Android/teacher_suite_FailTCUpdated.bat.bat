@@ -1,0 +1,1 @@
+katalon -noSplash  -runMode=console -projectPath="E:\庄意强\katalonworkspace\com.goldlokedu.app\com.goldlokedu.app.prj" -retry=0 -testSuitePath="Test Suites/Android/teacher_suite_20200524_004738" -executionProfile="Puning Environment" -browserType="Android"

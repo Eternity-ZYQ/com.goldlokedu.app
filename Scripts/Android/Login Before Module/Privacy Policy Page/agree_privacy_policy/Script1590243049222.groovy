@@ -3,9 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import org.openqa.selenium.WebElement
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,22 +13,22 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+import freemarker.core.BuiltInsForStringsMisc.booleanBI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import io.appium.java_client.AppiumDriver
 
-import com.kms.katalon.core.util.KeywordUtil
-'点击发送短信tap栏'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"前置条件：开启app"
+Mobile.callTestCase(findTestCase("Android/Login Before Module/Start App/start_existing_app"), [:], FailureHandling.STOP_ON_FAILURE)
 
-
-'点击发送'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"判断隐私政策弹框存在"
+boolean is_exist= Mobile.verifyElementExist(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_layout"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 
-CustomKeywords.'public_action.verifyToast.VerifyToastElementExistByText'(toast_text)
-
-
+if(boolean){
+	"存在,则点击同意隐私政策按钮"
+	Mobile.tap(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_agree_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	"点击后,判断隐私政策弹框不存在"
+	Mobile.verifyElementNotExist(findTestObject("Object Repository/Android/Privacy Policy/privacy_policy_layout"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+}
 

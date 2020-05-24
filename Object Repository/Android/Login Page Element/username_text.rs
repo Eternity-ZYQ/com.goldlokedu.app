@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.EditText']</value>
+         <value>//*[@class = 'android.widget.EditText' and @resource-id = 'com.goldlokedu.tgoldlokedu:id/userName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -27,7 +27,7 @@
       <value>18344264447</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
