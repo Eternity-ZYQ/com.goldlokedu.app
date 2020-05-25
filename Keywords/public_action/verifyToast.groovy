@@ -26,37 +26,52 @@ import internal.GlobalVariable
 import io.appium.java_client.AppiumDriver
 
 public class verifyToast {
-	
+
 	//寻找任意toast,并放回对象
 	@Keyword
 	public WebElement findToastElement(){
-		
-		AppiumDriver driver = MobileDriverFactory.getDriver()
-		WebElement toast = driver.findElementByXPath("//android.widget.Toast")
-		println("Toast element: " + toast.getText())
-		if (toast == null) {
-			KeywordUtil.markFailed('ERROR: Toast object not found!')
+
+		try {
+			AppiumDriver driver = MobileDriverFactory.getDriver()
+			WebElement toast = driver.findElementByXPath("//android.widget.Toast")
+
+			println("Toast element: " + toast.getText())
+			if (toast != null) {
+				KeywordUtil.markPassed("Toast "  + " is present")
+			}
+			return toast
+		} catch (Exception e) {
+
+			KeywordUtil.markFailed("Toast " + " is not present")
+
 		}
-		
-		return toast
+
+		return
 
 	}
-	
+
 	//通过给的toast内容验证相应Toast对象是否存在
 	@Keyword
 	public Boolean VerifyToastElementExistByText(String text){
-		
-		AppiumDriver driver = MobileDriverFactory.getDriver()
-		def Xpath="//android.widget.Toast"+"[@text='"+text+"']"
-		WebElement toast = driver.findElementByXPath(Xpath)
-		println("Toast element: " + toast.getText())
-		if (toast == null) {
-			KeywordUtil.markFailed('ERROR: Toast object not found!')
 
+
+		try {
+			AppiumDriver driver = MobileDriverFactory.getDriver()
+			def Xpath="//android.widget.Toast"+"[@text='"+text+"']"
+			WebElement toast = driver.findElementByXPath(Xpath)
+			println("Toast element: " + toast.getText())
+			if (toast != null) {
+				KeywordUtil.markPassed("Toast "  + " is present")
+				return true
+			}
+
+		} catch (Exception e) {
+
+			KeywordUtil.markFailed("Toast " + " is not present")
 			return false
 		}
-		
-		return true
+
+		return
 
 	}
 
