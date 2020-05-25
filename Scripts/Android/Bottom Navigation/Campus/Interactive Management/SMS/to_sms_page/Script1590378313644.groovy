@@ -3,9 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import org.openqa.selenium.WebElement
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -17,25 +14,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import io.appium.java_client.AppiumDriver
 
-import com.kms.katalon.core.util.KeywordUtil
+'登录后处于首页'
+Mobile.callTestCase(findTestCase("Test Cases/Android/Login Before Module/No Class But Study/cancel"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
-'前置条件:进入手机短信页面'
-Mobile.callTestCase(findTestCase("Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/to_sms_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
-
-'点击发送短信tap栏'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-
-
-'点击发送'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
-    GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-
-
-CustomKeywords.'public_action.verifyToast.VerifyToastElementExistByText'(toast_text)
-
-
-
+'点击手机短信模块按钮'
+Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/sms_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)

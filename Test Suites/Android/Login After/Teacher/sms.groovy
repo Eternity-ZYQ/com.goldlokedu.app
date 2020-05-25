@@ -47,12 +47,10 @@ def tearDown() {
 /**
  * Run before each test case starts.
  */
-@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
+@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
-	"前置条件:处于手机短信页面"
-	Mobile.callTestCase(findTestCase("Test Cases/Android/Precondition/Teacher/Bottom Navigation/Campus Page/sms_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
-	
+
 	
 }
 

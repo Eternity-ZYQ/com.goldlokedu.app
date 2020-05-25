@@ -64,4 +64,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Login Before Module/No Class But Study/look</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>75ae1311-ef4d-4adf-9320-e58ea9ea4fe6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_and_no_concact</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8ad2df4e-30fb-475d-a427-1b4fd6d2393f</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

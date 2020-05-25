@@ -101,5 +101,24 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Android/Login Before/no_class_but_study</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Mobile</groupName>
+            <profileName>default</profileName>
+            <runConfigurationData>
+               <entry>
+                  <key>deviceName</key>
+                  <value>HUAWEI COL-AL10 (Android 10)</value>
+               </entry>
+               <entry>
+                  <key>deviceId</key>
+                  <value>VBJ4C18519001467</value>
+               </entry>
+            </runConfigurationData>
+            <runConfigurationId>Android</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Android/Login After/Teacher/sms</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

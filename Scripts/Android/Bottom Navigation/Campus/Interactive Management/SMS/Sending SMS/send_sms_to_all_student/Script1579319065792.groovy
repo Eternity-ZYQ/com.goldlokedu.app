@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWebUIObject
 import org.junit.After as After
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -17,6 +18,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import time.SystemTime as SystemTime
 
+'前置条件:进入手机短信页面'
+Mobile.callTestCase(findTestCase("Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/to_sms_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
+
 '点击发送短信tap栏'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
@@ -30,8 +34,10 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '点击全选按钮'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn'), 
+Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Contacts/checkbox_btn'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+
+
 
 '点击确定按钮'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn'), 
@@ -91,3 +97,5 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 //    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
 //
 //assert sms_toast_success_text == text
+
+

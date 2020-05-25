@@ -30,7 +30,7 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '点击全选按钮'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Teacher Contacts/checkbox_btn'), 
+Mobile.tap(findTestObject('null'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '点击确定按钮'

@@ -35,4 +35,3 @@ Mobile.setText(findTestObject('Android/Login Page Element/password_text'), passw
 '点击登录按钮登录'
 Mobile.tap(findTestObject('Android/Login Page Element/login_btn'), GlobalVariable.G_short_timeout)
 
-Mobile.delay(2)
