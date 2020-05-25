@@ -73,7 +73,6 @@ class findMobileElement {
 			KeywordUtil.markFailed("Object " + to.getObjectId() + " is not present")
 		}
 		return false;
-
 	}
 
 	/**
@@ -84,7 +83,7 @@ class findMobileElement {
 	def WebDriver getCurrentSessionMobileDriver() {
 		return MobileDriverFactory.getDriver();
 	}
-	
+
 
 	/**
 	 * 获取移动端元素通过xpath
@@ -99,44 +98,36 @@ class findMobileElement {
 
 			if (element != null) {
 				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is present")
-				
-				return element
-			}
-			
-		} catch (Exception e) {
-			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is not present")		
-			return
-		}
-		
-	}
-	
-	
-	/**
-	 * 获取移动端元素通过xpath
-	 * @return 返回找到的元素,以TestObject形式
-	 */
-	@Keyword
-	def TestObject byXpathBackTestObject(String xpath){
-		try {
-			KeywordUtil.logInfo("Finding element with xpath:" + xpath)
-			AppiumDriver driver = MobileDriverFactory.getDriver()
-			WebElement element = driver.findElementByXPath(xpath)
 
-			if (element != null) {
-				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is present")
-				TestObject 
 				return element
 			}
-			
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is not present")
 			return
 		}
-		
 	}
-	
-	
 
 	
-	
+	/**
+	 * 获取移动端元素通过xpath
+	 * @return 返回找到的元素列表List
+	 */
+	@Keyword
+	def List byXpathList(String xpath){
+		try {
+			KeywordUtil.logInfo("Finding element with xpath:" + xpath)
+			AppiumDriver driver = MobileDriverFactory.getDriver()
+			WebElement element_list = driver.findElementsByXPath(xpath)
+
+			if (element_list != null) {
+				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is present")
+
+				return element_list
+			}
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is not present")
+			return
+		}
+	}
+
 }

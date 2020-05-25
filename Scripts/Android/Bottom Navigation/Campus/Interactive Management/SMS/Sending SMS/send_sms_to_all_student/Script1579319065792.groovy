@@ -3,8 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWebUIObject
 import org.junit.After as After
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,6 +17,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import public_action.findMobileElement
 import time.SystemTime as SystemTime
 
 '前置条件:进入手机短信页面'
@@ -37,7 +39,9 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Contacts/checkbox_btn'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-
+//def xpath='//android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.ToggleButton'
+//WebElement all_select=CustomKeywords.'public_action.findMobileElement.byXpath'(xpath)
+//all_select.click()
 
 '点击确定按钮'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/sure_btn'), 
@@ -87,15 +91,11 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-//Mobile.delay(5)
+
 '点击立即发送'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/send_immediately_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-//'获取toast内容:发送成功'
-//String text = Mobile.getText(findTestObject('null'), 
-//    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//assert sms_toast_success_text == text
-
+'验证发送成功'
+CustomKeywords.'public_action.verifyToast.VerifyToastElementExistByText'('发送成功')
 
