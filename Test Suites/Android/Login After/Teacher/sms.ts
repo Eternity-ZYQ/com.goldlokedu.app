@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>45529d6d-00cf-4fc3-95b6-e20743aff3d6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_to_all_teacher</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -43,7 +43,7 @@
    <testCaseLink>
       <guid>9b16ed6c-7920-4e5e-bec1-c10f44aee985</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_to_all_student</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

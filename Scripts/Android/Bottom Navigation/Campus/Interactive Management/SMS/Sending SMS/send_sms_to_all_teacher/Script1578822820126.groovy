@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import time.SystemTime as SystemTime
 
+'前置条件:进入手机短信页面'
+Mobile.callTestCase(findTestCase("Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/to_sms_page"), null, FailureHandling.CONTINUE_ON_FAILURE)
+
 '点击发送短信tap栏'
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sending_sms_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
@@ -30,7 +33,7 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '点击全选按钮'
-Mobile.tap(findTestObject('null'), 
+Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/Contacts Select Page/Contacts/checkbox_btn'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '点击确定按钮'
@@ -86,8 +89,5 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/send_immediately_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
-//'获取toast内容:发送成功'
-//String text = Mobile.getText(findTestObject('null'), 
-//    GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//assert sms_toast_success_text == text
+'验证发送成功'
+CustomKeywords.'public_action.verifyToast.VerifyToastElementExistByText'('发送成功')
