@@ -4,6 +4,12 @@
    <name>send_immediately_text</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.TextView' and (text() = '${send_btn_text}' or . = '${send_btn_text}') and @resource-id = 'com.goldlokedu.tgoldlokedu:id/immediately_text']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>立即发送</value>
+      <value>${send_btn_text}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

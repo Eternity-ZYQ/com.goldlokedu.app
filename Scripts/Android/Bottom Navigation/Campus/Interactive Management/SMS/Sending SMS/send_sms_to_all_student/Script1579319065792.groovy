@@ -46,6 +46,8 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavig
 student_contacts_text = Mobile.getText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/student_contacts_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.comment('手机短信页面选择联系人,学生:'+student_contacts_text)
+
 '清空手机短信内容'
 Mobile.clearText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
@@ -85,8 +87,12 @@ Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/In
 Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_send_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
+'获取确认页联系人学生处的文本'
+def student_text=Mobile.getText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/student_contacts_text'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.comment('确认页学生联系人文本:'+student_text)
+
 '点击立即发送'
-Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/send_immediately_text'), 
+Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/SMS Confirmation Box/send_immediately_text',[('send_btn_text'):'立即发送']), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '验证发送成功'

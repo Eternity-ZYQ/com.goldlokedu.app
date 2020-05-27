@@ -76,4 +76,40 @@
          <variableId>8ad2df4e-30fb-475d-a427-1b4fd6d2393f</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>1b303ec6-8aaa-4be8-9a05-0636d48d7d75</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_to_all_student</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c5cac5ae-4873-4dd1-8210-287b57ecfdb2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b1a139b2-88ed-4bb7-ab7a-4866bfc27a2c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d90fb087-7e27-4a45-a56d-1f8f59ec8091</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_sms_to_all_teacher</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d62a8d5e-7219-4b2d-a926-2131fd003109</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>39fc2538-b57e-4fb9-80e8-fa75dc6827c4</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

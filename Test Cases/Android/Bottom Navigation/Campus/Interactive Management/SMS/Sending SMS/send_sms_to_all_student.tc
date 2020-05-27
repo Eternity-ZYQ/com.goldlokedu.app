@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>发送手机短信给全部教师</description>
+   <description>发送手机短信给全部学生</description>
    <name>send_sms_to_all_student</name>
    <tag></tag>
    <comment></comment>
