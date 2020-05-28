@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发送定时短信给教师及学生</description>
+   <name>send_timed_sms</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fc050e67-7c3a-4a84-a89a-d5c34ef52eca</testCaseGuid>
+</TestCaseEntity>

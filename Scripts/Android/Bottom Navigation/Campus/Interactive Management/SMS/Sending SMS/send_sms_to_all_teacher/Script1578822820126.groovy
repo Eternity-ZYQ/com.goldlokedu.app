@@ -48,6 +48,8 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavig
 teacher_contacts_text = Mobile.getText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/teacher_contacts_text'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
+Mobile.comment('手机短信页面选择联系人,教师:'+teacher_contacts_text)
+
 '清空手机短信内容'
 Mobile.clearText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/Sending SMS/sms_content_edittext'), 
     GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)

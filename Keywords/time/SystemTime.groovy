@@ -37,6 +37,14 @@ public class SystemTime {
 	}
 
 
+	//获取当前时间:yyyy-MM-dd HH:mm
+	@Keyword
+	public String get_system_time_tminute(int days){
+		String time=new DateTimeUtility().getFutureDateTime(days, null, 'yyyy-MM-dd HH:mm')
+
+
+		return time
+	}
 
 	//获取当前时间:yyyy-MM-dd
 	@Keyword
