@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>直接播放视频地址</description>
+   <name>test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c35f83e1-52af-49fc-9b25-8869dce9c1ba</testCaseGuid>
+</TestCaseEntity>

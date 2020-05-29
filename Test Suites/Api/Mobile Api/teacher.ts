@@ -13,19 +13,19 @@
    <testCaseLink>
       <guid>d38c978f-0603-4ddd-aabf-28ca37e219a1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Login And Logout/account_empty</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8c7c05be-8594-4b26-a72e-87bcf140d8b2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Login And Logout/account_password_error</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e260cfc6-03e5-4446-a50f-5e9fb2fd8179</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Login And Logout/password_empty</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -37,19 +37,19 @@
    <testCaseLink>
       <guid>bc3db53b-a13e-4b7b-80df-7ee9163bdbd5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Carousel/carousel</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0e401a1e-5a8a-4508-add6-708417c84026</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Menu/menu</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>207d2fc9-9449-48cb-a53e-0b5104ffe6e3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Change City/change_city</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -61,13 +61,13 @@
    <testCaseLink>
       <guid>defb99e4-c770-42f9-be22-ec529103fc19</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Bell/bell_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>de20dd48-ffde-49ec-9921-4c12ad302203</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Bell/reminder_view</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -85,25 +85,25 @@
    <testCaseLink>
       <guid>b556d180-257d-4b41-8a5b-5bccd0ce1d12</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Bell/reminder_view_all</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e69c7c58-48e6-4d1f-8ce5-fbb8c3ad8a53</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Bell/delete_reminder_all</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1f52fbae-28b7-4395-a724-0e06aa9b466d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/add_album</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>971fa24b-2496-423d-9c02-f6fa607bd300</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/album_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -121,7 +121,7 @@
    <testCaseLink>
       <guid>1373e3c1-255d-41b5-9645-5f758c13ea2e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/album_picture_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -139,7 +139,7 @@
    <testCaseLink>
       <guid>6fcba94f-ff53-48a3-80ab-55199cfdceca</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/upload_album_picture</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -157,7 +157,7 @@
    <testCaseLink>
       <guid>3b5ad4a4-077f-40f5-a8e6-32fdc249f408</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/edit_album_name</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -175,7 +175,7 @@
    <testCaseLink>
       <guid>b5a3cb45-edb6-4b5b-9301-3b34a91be59e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/detele_album</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -193,7 +193,7 @@
    <testCaseLink>
       <guid>f55afec4-c037-43d2-8a52-1641a36fa8e7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Album/delete_album_picture</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -211,7 +211,7 @@
    <testCaseLink>
       <guid>41307edd-ec7c-4616-b583-681caa518da7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -241,7 +241,7 @@
    <testCaseLink>
       <guid>6ce3a89e-d42b-4c3c-82c2-3fb697faa3ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/personal_dynamic_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -259,19 +259,19 @@
    <testCaseLink>
       <guid>a7233a9c-9c57-4944-b5f8-0ab278d324d3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/publish_dynamic_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>820d7189-e2c9-469a-8da4-29101e731676</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/publish_dynamic_text_and_picture</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1f2fa7ed-cfa9-4aff-87d2-1d6f768f09e1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_like_and_unlike</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -289,7 +289,7 @@
    <testCaseLink>
       <guid>fee47cd6-cc48-4580-afd2-765aa803817d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_comment</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -307,7 +307,7 @@
    <testCaseLink>
       <guid>b9c3e85a-8411-4cd0-87ba-78b4ee7ab196</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/dynamic_detele_comment</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -325,7 +325,7 @@
    <testCaseLink>
       <guid>f1beed6d-1f63-4ac8-988e-81433bdd3c52</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/detele_personal_dynamic</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -343,7 +343,7 @@
    <testCaseLink>
       <guid>e82b496d-d2dd-4ade-a230-07c8f08059b1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/detele_dynamic</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -361,25 +361,25 @@
    <testCaseLink>
       <guid>5ee8c5d6-d1a1-4460-aa0a-56be875b624e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/teacher_view_class_training_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ff6a3bd9-524c-4a53-84ca-5d5bb365d670</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Class Training/edit_class_training</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>43112f48-5661-4f59-87bc-bbb4d0682ea2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/teacher_new_one_notice</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e53c00ca-8fab-44e5-9cc9-084c85d5615e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/teacher_search_notice_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -397,13 +397,13 @@
    <testCaseLink>
       <guid>e4358f95-5f39-46e0-bdde-5fd9d3bb5a89</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/add_notice</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ad3b64b0-1764-4b78-b3f0-57d81f5770df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Class Circle/Notice/delete_notice</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -421,7 +421,7 @@
    <testCaseLink>
       <guid>4f33778e-3330-4932-91bb-3e75a5cc28b1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Search/search_contact_mobile_name_or_phone_number</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -433,19 +433,19 @@
    <testCaseLink>
       <guid>882c4b26-bbf4-4763-a72c-0c6ab70aa1d5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Student/student_mobile_contact</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9a3e4352-a948-46f4-83af-dde1f229e132</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Teacher/teacher_mobile_contact</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d10533ab-7da6-4c0e-89dc-b604ff7481ef</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sending</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -481,13 +481,13 @@
    <testCaseLink>
       <guid>c9581b76-fa61-41b3-98fc-a0312caf7b75</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_sent</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dd73d7e6-7e76-4910-9e30-891ec45022a8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_template_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -517,7 +517,7 @@
    <testCaseLink>
       <guid>06f193a9-6345-46a2-8a31-b538a9be6157</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/sms_timed_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -535,7 +535,7 @@
    <testCaseLink>
       <guid>80205c56-b80a-4904-8864-c7cd21af60ac</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/search_my_join_vote_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -553,7 +553,7 @@
    <testCaseLink>
       <guid>383a9819-0e58-4cd9-9ac1-15c93d828a82</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/search_my_start_vote_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -571,7 +571,7 @@
    <testCaseLink>
       <guid>014aedad-5241-4053-82e8-a0983289da3f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/publish_vote_text</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -625,7 +625,7 @@
    <testCaseLink>
       <guid>79ad915e-a4b1-48b9-9bbb-50d1e5d71581</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/publish_vote_picture</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -679,7 +679,7 @@
    <testCaseLink>
       <guid>a57d8070-b30e-47fe-9afd-826c439ce5e3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/vote_detail</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -697,7 +697,7 @@
    <testCaseLink>
       <guid>728c0703-b871-4597-b6db-c35fb1d8f157</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/voting_detail_and_vote</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -715,7 +715,7 @@
    <testCaseLink>
       <guid>5ac958c2-21c7-416a-804b-d13f78218c49</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/vote_detail</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -733,7 +733,7 @@
    <testCaseLink>
       <guid>ae29d019-9a74-426f-afeb-06c09df3a94b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Vote/voting_detail_and_vote</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -751,7 +751,7 @@
    <testCaseLink>
       <guid>fa702d40-e6b1-46f4-b7ab-6bb0d8c3c719</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/my_send_notification_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -769,7 +769,7 @@
    <testCaseLink>
       <guid>34e24b57-d8e9-4216-a530-711de581fc94</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/my_received_notification_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -787,7 +787,7 @@
    <testCaseLink>
       <guid>f19129f0-c1f1-4d08-8e0d-bf165a552a8b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/notification_unread</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -805,7 +805,7 @@
    <testCaseLink>
       <guid>d43f8b71-1c64-4daf-bb6d-93cf633b5eb2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/notification_details</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -823,7 +823,7 @@
    <testCaseLink>
       <guid>012fa41b-48a4-4d18-850c-f47be0b810f1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/publish_notification</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -847,7 +847,7 @@
    <testCaseLink>
       <guid>ff5b5b7a-7f05-4331-bbb2-59e23a16fff5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Notification/delete_notification</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -865,25 +865,25 @@
    <testCaseLink>
       <guid>4ebc96c1-57a0-469f-9bd0-05fd7458eb0f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/history</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>60ce70a1-f3cb-4011-9a2c-3c2a4467867e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/student_contact</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9487a465-3de6-4855-8787-55845b13e2de</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/delete_history_item</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3ad88663-e3d6-4eb9-90b5-5b32d004232c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/search_student_by_name</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -895,7 +895,7 @@
    <testCaseLink>
       <guid>28190dfd-6c38-4ac6-b665-77dbc58ff68d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/chat _record</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -907,49 +907,49 @@
    <testCaseLink>
       <guid>71f7f649-0048-4b81-b98c-c8219384564c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/send_chat_message</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4d47790a-8356-4475-8f01-53bd4bd08c6c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact Parents/send_chat_file</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6b98617d-51a8-494c-ad3f-c5ebf3baccc0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b22e4c9a-a95f-4155-bf5d-09adebecb159</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_class_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6fdfffa5-92dc-43cd-a838-2759e91c8db1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/attendance_record_class_detail</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3728f00e-dfec-4af6-a967-aba4cff7e692</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/view_statictics_by_klass_one_day</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4cb358aa-2367-4f3f-affa-863540a378ef</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Attendance/month_simple_statics_about_class</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d31c41cf-db22-4e48-9c87-6c3576c78c5b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/approval_pending_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -979,7 +979,7 @@
    <testCaseLink>
       <guid>ced64aa3-c373-4029-9293-3fad9d822772</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/approved_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1009,7 +1009,7 @@
    <testCaseLink>
       <guid>aa1638e1-91f5-4921-bdf9-d0270753df24</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/agree_leave</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1039,7 +1039,7 @@
    <testCaseLink>
       <guid>f471cc42-a0ee-4600-84a5-f6fe39b630bd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/refuse_leave</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1069,7 +1069,7 @@
    <testCaseLink>
       <guid>27ca77e6-2368-4d06-abb9-7cd6953e5473</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/leave_records</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1087,7 +1087,7 @@
    <testCaseLink>
       <guid>4f8bf4a4-6eaa-40f8-94a3-4480fb923eab</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Leave/leave_records_class</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1105,7 +1105,7 @@
    <testCaseLink>
       <guid>bd9a8c60-d7cf-4dbc-be1d-902439f2f52a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/binging_brand</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1117,7 +1117,7 @@
    <testCaseLink>
       <guid>cf62f890-609e-4d06-9f90-7d18d30e8a72</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/is_bound_brand_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1135,7 +1135,7 @@
    <testCaseLink>
       <guid>843f21c2-d058-46f0-9d98-250aa419738d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Brand/not_bound_brand_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1153,7 +1153,7 @@
    <testCaseLink>
       <guid>6bb62d03-3603-4102-be41-57c728545789</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/teacher_homewrok_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1171,7 +1171,7 @@
    <testCaseLink>
       <guid>fc25411d-bd59-4119-a74e-1432823516b2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/teacher_homework_time_filter_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1189,7 +1189,7 @@
    <testCaseLink>
       <guid>efb8e84f-303b-4ea2-b2fd-1ddeab915c8f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/publish_homework_text</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1201,7 +1201,7 @@
    <testCaseLink>
       <guid>969404b2-1b2d-4d68-aca3-703cb43ec4df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/publish_homework_text_and_picture</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1213,7 +1213,7 @@
    <testCaseLink>
       <guid>c7defb10-34ad-4614-bebd-eeef594d5054</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Homework/delete_homework</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1231,49 +1231,49 @@
    <testCaseLink>
       <guid>4dd459e9-6e1b-4490-9e63-75fb1c530e99</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Schedule/class_course_schedule</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d213618f-640f-4de8-a741-8299fbe3a4a5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Course Schedule/teacher_teach_course_schedule</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ad587733-54e2-4772-acbd-afcd2f15e750</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/achievement_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1bfe450d-6008-47f1-aba9-486de28a5713</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/look_student_achievement_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4cffe64c-9cb8-4e10-bac2-d11de1027753</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Achievement/look_student_achievement_detail</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bd86e7e2-7b76-48b9-ae31-fae32e5d8239</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Interactive Course/Interactive_course_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7588a23a-efee-4ac4-a7f0-e0c2bb0dbf2f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Live/live</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8dfc8ae6-3cb0-462f-aeb4-1ffba7fe287c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/default_and_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1291,7 +1291,7 @@
    <testCaseLink>
       <guid>69ff5c17-8f2f-4d3a-a87d-615c238dd5e7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/select_require_list_filter</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1309,7 +1309,7 @@
    <testCaseLink>
       <guid>9e7e4c50-5410-4694-b7c1-dd1a28cf8c87</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/school_query</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1327,7 +1327,7 @@
    <testCaseLink>
       <guid>d1b7432c-0f35-4457-a6bb-344be758e5de</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Campus/New college entrance examination/college_entrance_exam_information_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1351,19 +1351,19 @@
    <testCaseLink>
       <guid>61720764-dbd0-4979-ab3b-6bd9f1d4eac6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/course_and_grade_and_setting</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f5bb931f-ab36-40f7-b24f-f366490f3116</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>674effb4-670b-41a4-8e22-bea3fefe67aa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Courseware/courseware_list_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1387,7 +1387,7 @@
    <testCaseLink>
       <guid>82b14546-69ea-40f8-b823-e0a010e48ea9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1405,7 +1405,7 @@
    <testCaseLink>
       <guid>6de978e1-e746-483a-9da0-432208464410</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Item Bank/item_bank_list_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1429,7 +1429,7 @@
    <testCaseLink>
       <guid>4e0f85a5-792a-4a7d-82c1-cf4748095b36</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Read Aloud/read_aloud_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1447,7 +1447,7 @@
    <testCaseLink>
       <guid>2523b52c-f2ee-4e50-a57a-d7df2d3cc359</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Micro Lesson/micro_lesson_list</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1465,7 +1465,7 @@
    <testCaseLink>
       <guid>27d04da0-bd84-48a2-862e-66cbb0a836fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/Resources/Micro Lesson/micro_lesson_list_search</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -1489,13 +1489,19 @@
    <testCaseLink>
       <guid>5d861e02-e103-4206-95d2-f4b8e5c50058</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/My/Individual/Teacher/personal_data</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d277e7ae-e885-4124-b8b8-bf59fd966f1a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Api/Mobile Api/My/Help Center/help_center_list_and_details</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1e54367e-b537-40f6-8ef0-d7fd247f34bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Resources/U Class/test</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
