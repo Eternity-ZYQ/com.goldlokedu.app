@@ -1,0 +1,1 @@
+katalon -noSplash  -runMode=console -projectPath="\Users\faz\git\com.goldlokedu.app\com.goldlokedu.app.prj" -retry=0 -testSuitePath="Test Suites/Api/Mobile Api/teacher_20200604_164748" -executionProfile="Puning Environment" -browserType="Firefox"

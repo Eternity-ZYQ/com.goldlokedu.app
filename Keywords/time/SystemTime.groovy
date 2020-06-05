@@ -127,6 +127,19 @@ public class SystemTime {
 
 		return time
 	}
+
+
+	/**
+	 * 时间格式转化:20190220T104545+0800转成2019-02-20 10:45 
+	 * @return 返回转好的时间字符串
+	 */
+	@Keyword
+	def String dataFormat(String date){
+		
+		
+		
+	}
+
 }
 
 

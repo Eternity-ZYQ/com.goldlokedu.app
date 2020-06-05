@@ -15,7 +15,8 @@
     {
       &quot;name&quot;: &quot;file&quot;,
       &quot;value&quot;: &quot;Data Files/Image/Upload Test Image/timg.jpeg&quot;,
-      &quot;type&quot;: &quot;File&quot;
+      &quot;type&quot;: &quot;File&quot;,
+      &quot;contentType&quot;: &quot;&quot;
     }
   ]
 }</httpBodyContent>
@@ -41,6 +42,20 @@
       <type>Main</type>
       <value>${X-File-Size}</value>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Connection</name>
+      <type>Main</type>
+      <value>keep-alive</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Keep-Alive</name>
+      <type>Main</type>
+      <value>timeout=20</value>
+   </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>${GlobalVariable.MobileHost}/album/storage?class_id=${class_id}</restUrl>
@@ -48,7 +63,9 @@
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>''</defaultValue>
       <description></description>

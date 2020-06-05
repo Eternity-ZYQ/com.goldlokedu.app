@@ -10,19 +10,19 @@
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>Puning Environment</profileName>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Api/Mobile Api/student</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Api/Mobile Api/teacher</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>Puning Environment</profileName>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Api/Mobile Api/teacher</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Api/Mobile Api/student</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

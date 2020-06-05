@@ -57,7 +57,7 @@ class findMobileElement {
 			KeywordUtil.logInfo("Finding element with id:" + to.getObjectId())
 
 			WebElement element = MobileElementCommonHelper.findElement(to, timeout)
-			
+
 			if (element != null) {
 				KeywordUtil.markPassed("Object " + to.getObjectId() + " is present")
 			}
