@@ -24,7 +24,9 @@
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>''</defaultValue>
       <description>班级id</description>
@@ -47,7 +49,7 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-WS.comment(&quot;获取班级内学生请求体body:&quot;+request.httpBody)
+WS.comment(&quot;获取班级内学生请求体body:&quot;+request.getBodyContent())
 
 if(WS.verifyResponseStatusCode(response, 200, FailureHandling.CONTINUE_ON_FAILURE)){
 	

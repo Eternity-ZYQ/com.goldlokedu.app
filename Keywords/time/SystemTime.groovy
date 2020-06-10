@@ -5,6 +5,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import java.text.DateFormat
+import java.text.ParseException
 import java.text.SimpleDateFormat as SimpleDateFormat
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -39,7 +42,7 @@ public class SystemTime {
 
 	//获取当前时间:yyyy-MM-dd HH:mm
 	@Keyword
-	public String get_system_time_tminute(int days){
+	public String get_system_time_minute(int days){
 		String time=new DateTimeUtility().getFutureDateTime(days, null, 'yyyy-MM-dd HH:mm')
 
 
@@ -134,10 +137,41 @@ public class SystemTime {
 	 * @return 返回转好的时间字符串
 	 */
 	@Keyword
-	def String dataFormat(String date){
+	def String dataFormat(String time,String timezone){
+
+		def timestamp=getTimeStamp(time,timezone)
+		WS.comment('时间戳:'+timestamp)
+		Date date = new Date(timestamp)
+		SimpleDateFormat df = new SimpleDateFormat('yyyy-MM-dd HH:mm')	
+		def time1 = df.format(date)		
+		WS.comment(time1)
 		
+		return time1
+	}
+	
+	
+	
+	
+	/**
+	 * 将指定时区的指定时间转换为Unix时间戳
+	 * @param time 待转换的时间
+	 * @param timezone 待转换的时间的时区
+	 * @return Unix时间戳
+	 */
+	@Keyword
+	def long getTimeStamp(String time, String timezone){
+		long timestamp1 = 0;
 		
-		
+		DateFormat format = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
+		format.setTimeZone(TimeZone.getTimeZone(timezone));
+		try {
+			Date date = format.parse(time);
+			//timestamp = format.format(date);
+			timestamp1=date.getTime()
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return timestamp1;
 	}
 
 }

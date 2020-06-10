@@ -3,6 +3,12 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+
+import java.text.DateFormat
+import java.text.ParseException
+import java.text.SimpleDateFormat
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -57,3 +63,18 @@ def Object get_jsonResponse(ResponseObject response) {
 	
 	return jsonResponse
 }
+
+/**
+ * 验证元素存在
+ * 
+ * return :存在则返回true ,不存在则返回false
+ **/
+def Boolean verifyElementExist(String time,String content,String address){
+	
+	
+	
+	
+	
+}
+
+
