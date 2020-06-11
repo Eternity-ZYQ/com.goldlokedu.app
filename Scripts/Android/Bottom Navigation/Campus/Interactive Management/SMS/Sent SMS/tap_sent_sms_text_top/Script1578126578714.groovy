@@ -71,7 +71,7 @@ def Object get_jsonResponse(ResponseObject response) {
  **/
 def Boolean verifyElementExist(String time,String content,String address){
 	
-	
+	String xpath=""
 	
 	
 	
