@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>点击已发短信模块</description>
-   <name>tap_sent_sms_text_top</name>
+   <description>已发短信列表数据与接口数据验证</description>
+   <name>sent_sms_items_verify</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ef02b697-5cb4-429e-a3c0-ce601268bec8</testCaseGuid>

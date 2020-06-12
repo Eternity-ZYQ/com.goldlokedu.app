@@ -142,16 +142,16 @@ public class SystemTime {
 		def timestamp=getTimeStamp(time,timezone)
 		WS.comment('时间戳:'+timestamp)
 		Date date = new Date(timestamp)
-		SimpleDateFormat df = new SimpleDateFormat('yyyy-MM-dd HH:mm')	
-		def time1 = df.format(date)		
+		SimpleDateFormat df = new SimpleDateFormat('yyyy-MM-dd HH:mm')
+		def time1 = df.format(date)
 		WS.comment(time1)
-		
+
 		return time1
 	}
-	
-	
-	
-	
+
+
+
+
 	/**
 	 * 将指定时区的指定时间转换为Unix时间戳
 	 * @param time 待转换的时间
@@ -161,7 +161,7 @@ public class SystemTime {
 	@Keyword
 	def long getTimeStamp(String time, String timezone){
 		long timestamp1 = 0;
-		
+
 		DateFormat format = new SimpleDateFormat("yyyyMMdd'T'HHmmss");
 		format.setTimeZone(TimeZone.getTimeZone(timezone));
 		try {

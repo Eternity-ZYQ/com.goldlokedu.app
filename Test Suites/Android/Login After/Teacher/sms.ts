@@ -58,4 +58,22 @@
          <variableId>b1a139b2-88ed-4bb7-ab7a-4866bfc27a2c</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>609601d5-f865-453b-b24c-332e903cce2d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sent SMS/sent_sms_items_verify</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>479b1f21-2608-429b-9208-921a0de55bea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>64aa6ac4-eac4-4c77-9e0f-01b93016e475</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
