@@ -53,8 +53,12 @@ if(list_jsonResponse.data.size>0){
 		def address_str=list_jsonResponse.data[x].address_str				//接受人
 		def payload_content=list_jsonResponse.data[x].payload_content		//短信内容
 		
+		'接口时间格式转换'
 		def time=CustomKeywords.'time.SystemTime.dataFormat'(created_date,'GMT+0800')
-		time=setTimeFormat(time)
+		time=setTimeFormat(time)		//判断是否是当前年份
+//		'滚动到对应时间'
+//		Mobile.scrollToText(time, FailureHandling.CONTINUE_ON_FAILURE)
+		'查找对应元素'
 		verifyElementExist(time,payload_content,address_str)
 	}
 		
