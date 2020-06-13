@@ -443,6 +443,42 @@
       <testCaseId>Test Cases/Api/Mobile Api/Campus/Contact/Teacher/teacher_mobile_contact</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>bdbf8c4e-deba-4f54-9943-2ff5bca28ee1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Api/Mobile Api/Campus/SMS/timed_sms_sending</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bfb19de0-7bf8-498e-88d8-53dbcbcba3ab</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fd02cf98-d46c-449c-9e72-b6c6b12cf326</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9f13d197-d675-4fa6-83a2-959c12774055</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e3ad33e4-7fd1-4476-953f-2c307f5fdaaa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>194e7e72-cdd7-41eb-b044-a0004f00866c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>d10533ab-7da6-4c0e-89dc-b604ff7481ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

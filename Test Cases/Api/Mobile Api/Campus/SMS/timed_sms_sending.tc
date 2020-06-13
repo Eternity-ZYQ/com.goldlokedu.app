@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>发送及时短信用例</description>
-   <name>sms_sending</name>
+   <description>发送定时短信用例</description>
+   <name>timed_sms_sending</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>39d59a2c-a83a-4d06-8cd1-f5222da50db2</testCaseGuid>
+   <testCaseGuid>6d61584d-1347-4029-be00-bab0524b4097</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>9a2b7a6f-8a8a-46a2-9cb0-c88ffe9d35f7</id>
+      <id>bfb19de0-7bf8-498e-88d8-53dbcbcba3ab</id>
       <masked>false</masked>
       <name>address_str</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>18f37f32-5f64-4500-bb16-caa650635753</id>
+      <id>fd02cf98-d46c-449c-9e72-b6c6b12cf326</id>
       <masked>false</masked>
       <name>sms_timed</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>8120cfa5-0ab3-49c3-be4d-4e226ea3aed0</id>
+      <id>9f13d197-d675-4fa6-83a2-959c12774055</id>
       <masked>false</masked>
       <name>sms_signature</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a51aee38-ab76-41a0-9e84-36891e2831f6</id>
+      <id>e3ad33e4-7fd1-4476-953f-2c307f5fdaaa</id>
       <masked>false</masked>
       <name>sms_signature_id</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6bb5a45e-1c4a-4b30-accf-81d69b917fcf</id>
+      <id>194e7e72-cdd7-41eb-b044-a0004f00866c</id>
       <masked>false</masked>
       <name>sms_type</name>
    </variable>

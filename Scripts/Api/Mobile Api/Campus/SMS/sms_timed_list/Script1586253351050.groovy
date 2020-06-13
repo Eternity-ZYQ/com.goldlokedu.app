@@ -11,6 +11,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -34,8 +35,7 @@ if(timer_sms_msg_size>0){
 	WS.comment('定时短信列表数据为空')
 
 }else{
-	WS.verifyEqual('1', '2', FailureHandling.CONTINUE_ON_FAILURE)
-	WS.comment('定时短信接口异常')
+	KeywordUtil.markFailed('定时短信接口异常')
 }
 
 

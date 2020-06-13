@@ -23,11 +23,9 @@ ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Reposit
 def jsonResponse = get_jsonResponse(response)
 
 //必须该学校开通了短信，才能发送短信
-if (jsonResponse.can_send) {
-    '成功发送及时短信'
-    success_now_sms()
-	
-
+if (jsonResponse.can_send) {	
+	'发送定时短信'
+	success_timed_sms()
 } else {
     WS.comment('该学校未开通短信服务')
 }
@@ -48,9 +46,10 @@ def Object get_jsonResponse(ResponseObject response) {
     return jsonResponse
 }
 
-//发送及时短信
-def void success_now_sms() {
-	//成功发送即时短信
+
+//发送定时短信
+def void success_timed_sms() {
+	//成功发送定时短信
 	//sms_type,sms_signature,sms_signature_id,sms_content
 	'保存sms_type到全局变量'
 	save_sms_type()
@@ -59,7 +58,7 @@ def void success_now_sms() {
 	save_sms_signature_and_sms_signature_id()
 	
 	'获取要发送的短信内容sms_content'
-	def sms_content=get_sms_contnt()
+	def sms_content=get_time_sms_contnt()
 	
 	'输出sms_content'
 	WS.comment(sms_content)
@@ -67,15 +66,16 @@ def void success_now_sms() {
 	'组合接口字段address'
 	def address=address_factory()
 	
-	'请求发送短信接口'
-	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_sending',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]),FailureHandling.CONTINUE_ON_FAILURE)
-	
-	//WS.comment(response.responseText)
+	'设置定时发送时间：目前时间+1年'
+	sms_timed=CustomKeywords.'time.SystemTime.get_future_time'(1)
 	
 	
+	'请求发送定时短信接口'
+	WS.sendRequestAndVerify(findTestObject('Object Repository/Api/Mobile Api/Campus/SMS/sms_timed',[('sms_content'):sms_content,('teacher_ids'):GlobalVariable.user_id,('address'):address,('address_str'):address_str,('sms_timed'):sms_timed,('sms_type'):sms_type,('sms_signature'):sms_signature,('sms_signature_id'):sms_signature_id]), FailureHandling.CONTINUE_ON_FAILURE)
+	
+
+		
 }
-
-
 
 //保存sms_type到变量
 def void save_sms_type() {

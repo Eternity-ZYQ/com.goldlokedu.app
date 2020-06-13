@@ -76,4 +76,16 @@
          <variableId>64aa6ac4-eac4-4c77-9e0f-01b93016e475</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9e2866a0-bb51-4ca0-ba3f-75b94a6c4ec0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Sending SMS/send_timed_sms</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>654c7e28-2c86-4067-a3f4-89056eb52432</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/SMS/Timed SMS/detele_timed_sms</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>删除定时短信</description>
+   <name>detele_timed_sms</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7cdf857-af40-40a9-9243-e61e1e80fed4</testCaseGuid>
+</TestCaseEntity>

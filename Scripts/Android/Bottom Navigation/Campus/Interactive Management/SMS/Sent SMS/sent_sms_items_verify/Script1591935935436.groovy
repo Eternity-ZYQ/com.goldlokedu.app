@@ -36,7 +36,10 @@ Mobile.callTestCase(findTestCase("Test Cases/Android/Bottom Navigation/Campus/In
 Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/SMS/sent_sms_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 
 '接口登录教师'
-WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/Login And Logout/teacher_login_success"), null, FailureHandling.CONTINUE_ON_FAILURE)
+if(GlobalVariable.access_token==''){
+	'没有登录过，则进行接口登录'
+	WS.callTestCase(findTestCase("Test Cases/Api/Mobile Api/Login And Logout/teacher_login_success"), null, FailureHandling.CONTINUE_ON_FAILURE)	
+}
 '发送获取已发短信列表数据'
 ResponseObject list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/SMS/sms_sent_list", [('size'):size,('from'):from]), FailureHandling.CONTINUE_ON_FAILURE)
 def list_jsonResponse=get_jsonResponse(list_response)

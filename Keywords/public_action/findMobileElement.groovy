@@ -114,7 +114,7 @@ class findMobileElement {
 
 			if (element_list != null) {
 				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is present")
-			
+
 				return element_list
 			}
 		} catch (Exception e) {
