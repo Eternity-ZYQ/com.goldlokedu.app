@@ -40,7 +40,7 @@ public class SystemTime {
 	}
 
 
-	//获取当前时间:yyyy-MM-dd HH:mm
+	//获取当前相隔days天的时间:yyyy-MM-dd HH:mm
 	@Keyword
 	public String get_system_time_minute(int days){
 		String time=new DateTimeUtility().getFutureDateTime(days, null, 'yyyy-MM-dd HH:mm')

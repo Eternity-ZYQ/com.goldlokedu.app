@@ -1,91 +1,99 @@
 [35m[Appium][39m Welcome to Appium v1.16.0
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 65461
+[35m[Appium][39m   port: 57617
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   chromeDriverPort: 65462
-[35m[Appium][39m   tmpDir: /var/folders/b4/s2gzh32x1yx566t495h7gvpm0000gn/T//Katalon/Appium/Temp1590130084075
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:65461
+[35m[Appium][39m   chromeDriverPort: 57618
+[35m[Appium][39m   tmpDir: C:\Users\ADMINI~1\AppData\Local\Temp\\Katalon\Appium\Temp1592139809941
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:57617
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m8 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m5 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.goldlokedu.tgoldlokedu","deviceId":"","deviceName":"HUAWEI COL-AL10 (Android 10)","platform":"ANDROID","appActivity":"com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity","newCommandTimeout":1800,"platformVersion":"10","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"VBJ4C18519001467","systemPort":8283},"capabilities":{"firstMatch":[{"appium:appActivity":"com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity","appium:appPackage":"com.goldlokedu.tgoldlokedu","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"HUAWEI COL-AL10 (Android 10)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"10","appium:systemPort":8283,"appium:udid":"VBJ4C18519001467"}]}}[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.goldlokedu.tgoldlokedu","deviceId":"","deviceName":"HUAWEI COL-AL10 (Android 10)","platform":"ANDROID","appActivity":"com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity","newCommandTimeout":1800,"platformVersion":"10","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"VBJ4C18519001467","systemPort":8245},"capabilities":{"firstMatch":[{"appium:appActivity":"com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity","appium:appPackage":"com.goldlokedu.tgoldlokedu","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"HUAWEI COL-AL10 (Android 10)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"10","appium:systemPort":8245,"appium:udid":"VBJ4C18519001467"}]}}[39m
 [35m[BaseDriver][39m The capabilities ["deviceId","platform"] are not standard capabilities and should have an extension prefix
 [35m[Appium][39m Appium v1.16.0 creating new AndroidUiautomator2Driver (v1.40.0) session
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   deviceId
 [35m[BaseDriver][39m   platform
-[35m[BaseDriver][39m Session created with session id: 68ecc9c2-b16a-4543-b0d9-bc04682732dc
+[35m[BaseDriver][39m Session created with session id: 4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f
 [35m[UiAutomator2][39m Starting 'com.goldlokedu.tgoldlokedu' directly on the device
-[35m[ADB][39m Found 1 'build-tools' folders under '/Users/faz/.katalon/tools/android_sdk' (newest first):
-[35m[ADB][39m     /Users/faz/.katalon/tools/android_sdk/build-tools/29.0.2
-[35m[ADB][39m Using 'adb' from '/Users/faz/.katalon/tools/android_sdk/platform-tools/adb'
+[35m[ADB][39m Found 3 'build-tools' folders under 'C:\Users\Administrator\.katalon\tools\android_sdk' (newest first):
+[35m[ADB][39m     C:/Users/Administrator/.katalon/tools/android_sdk/build-tools/29.0.2
+[35m[ADB][39m     C:/Users/Administrator/.katalon/tools/android_sdk/build-tools/29.0.0
+[35m[ADB][39m     C:/Users/Administrator/.katalon/tools/android_sdk/build-tools/28.0.3
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe'
 [35m[AndroidDriver][39m Retrieving device list
 [35m[AndroidDriver][39m Using device: VBJ4C18519001467
-[35m[ADB][39m Using 'adb' from '/Users/faz/.katalon/tools/android_sdk/platform-tools/adb'
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\adb.exe'
 [35m[UiAutomator2][39m Relaxing hidden api policy
 [35m[AndroidDriver][39m No app sent in, not parsing package/activity
-[35m[ADB][39m Using 'apksigner' from '/Users/faz/.katalon/tools/android_sdk/build-tools/29.0.2/apksigner'
+[35m[ADB][39m Using 'apksigner.bat' from 'C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\apksigner.bat'
+[35m[ADB][39m Got an error during apksigner execution: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.5.2.apk' exited with code 1
+[35m[ADB][39m apksigner stderr: Error: Unable to access jarfile C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\..\framework\apksigner.jar
+[35m[ADB][39m 
+[35m[ADB][39m Cannot use apksigner tool for signature verification. Original error: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.5.2.apk' exited with code 1
+[35m[ADB][39m Got an error during apksigner execution: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk' exited with code 1
+[35m[ADB][39m apksigner stderr: Error: Unable to access jarfile C:\Users\Administrator\.katalon\tools\android_sdk\platform-tools\..\framework\apksigner.jar
+[35m[ADB][39m 
+[35m[ADB][39m Cannot use apksigner tool for signature verification. Original error: Command 'apksigner.bat verify --print-certs C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk' exited with code 1
 [35m[UiAutomator2][39m Server packages are not going to be (re)installed
 [35m[UiAutomator2][39m Starting UIAutomator2 server 4.5.2
-[35m[UiAutomator2][39m Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.2.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.2.apk' and test from 'C:\Users\Administrator\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
 [35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
 [35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
 [35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'com.goldlokedu.tgoldlokedu/com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity and waiting for 'com.goldlokedu.tgoldlokedu/com.goldlokedu.tgoldlokedu.subject.ui.activity.welcomeActivity.LoginSplashActivity'
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 68ecc9c2-b16a-4543-b0d9-bc04682732dc added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m8364 ms - 1308[39m
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m12155 ms - 1308[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc [39m[32m200[39m [90m25 ms - 1240[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f [39m[32m200[39m [90m9 ms - 1240[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc [39m[32m200[39m [90m22 ms - 1240[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f [39m[32m200[39m [90m9 ms - 1240[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/timeouts[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/timeouts [39m[32m200[39m [90m4 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/timeouts [39m[32m200[39m [90m4 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/appium/device/activate_app[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/appium/device/activate_app[39m
 [35m[HTTP][39m [90m{"bundleId":"com.goldlokedu.tgoldlokedu "}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/appium/device/activate_app [39m[32m200[39m [90m448 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/appium/device/activate_app [39m[32m200[39m [90m558 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (68ecc9c2)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 825a22cf-e3ca-4387-bccb-053c67077de7 with 68ecc9c2-b16a-4543-b0d9-bc04682732dc
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source [39m[32m200[39m [90m136 ms - 6311[39m
+[35m[W3C (4fdcafdc)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 80550bc6-d5cd-445a-a7ba-3dd79d7864fa with 4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/source [39m[32m200[39m [90m690 ms - 6311[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot [39m[32m200[39m [90m624 ms - 337646[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/screenshot [39m[32m200[39m [90m627 ms - 337724[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (68ecc9c2)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 825a22cf-e3ca-4387-bccb-053c67077de7 with 68ecc9c2-b16a-4543-b0d9-bc04682732dc
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/source [39m[32m200[39m [90m155 ms - 17597[39m
+[35m[W3C (4fdcafdc)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 80550bc6-d5cd-445a-a7ba-3dd79d7864fa with 4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/source [39m[32m200[39m [90m551 ms - 39912[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc/screenshot [39m[32m200[39m [90m736 ms - 579258[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f/screenshot [39m[32m200[39m [90m912 ms - 299742[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc[39m
-[35m[HTTP][39m [90m{}[39m
-[35m[Appium][39m Removing session 68ecc9c2-b16a-4543-b0d9-bc04682732dc from our master session list
+[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session '4fdcafdc-a97d-44dc-87bf-301a9fb5ec6f' from our master session list
 [35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/68ecc9c2-b16a-4543-b0d9-bc04682732dc [39m[32m200[39m [90m371 ms - 14[39m
-[35m[HTTP][39m [90m[39m

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>添加短信模板</description>
+   <name>add_sms_template</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5002b7b7-4278-4f57-852a-2e01a37c1232</testCaseGuid>
+   <variable>
+      <defaultValue>6</defaultValue>
+      <description>模板最大数</description>
+      <id>cf37a27d-2ea2-41c9-b50a-94d3ff69a057</id>
+      <masked>false</masked>
+      <name>max_count</name>
+   </variable>
+   <variable>
+      <defaultValue>'模板标题(最多20个字)'</defaultValue>
+      <description>标题输入框hide文字</description>
+      <id>97289ef4-2c08-45f6-8b77-b2fc804eb1c1</id>
+      <masked>false</masked>
+      <name>title_hide</name>
+   </variable>
+   <variable>
+      <defaultValue>'通知内容(最多200个字)'</defaultValue>
+      <description>内容输入框hide文字</description>
+      <id>f3555984-6cab-4f1a-86ad-42478ae8547c</id>
+      <masked>false</masked>
+      <name>content_hide</name>
+   </variable>
+   <variable>
+      <defaultValue>20</defaultValue>
+      <description>标题输入框最大输入字数</description>
+      <id>e0268af2-92fc-4572-ab3a-a90851da023d</id>
+      <masked>false</masked>
+      <name>title_max_count</name>
+   </variable>
+   <variable>
+      <defaultValue>200</defaultValue>
+      <description>内容输入框最大输入字数</description>
+      <id>619a78f6-eddb-458b-8e0f-5c1789697232</id>
+      <masked>false</masked>
+      <name>content_max_count</name>
+   </variable>
+</TestCaseEntity>

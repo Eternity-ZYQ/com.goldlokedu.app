@@ -58,11 +58,6 @@ if(data_size>0){
 
 
 
-
-
-
-
-
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response) {
 	
@@ -139,25 +134,6 @@ def void edit_sms_template(String id,String new_content,String new_title){
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

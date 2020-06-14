@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>编辑短信模板</description>
+   <name>edit_sms_template</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d56c6c0c-05f2-4b7a-a02e-4da7cc489212</testCaseGuid>
+   <variable>
+      <defaultValue>20</defaultValue>
+      <description>标题最大长度</description>
+      <id>1216be31-58c3-48b6-982f-b9714647a774</id>
+      <masked>false</masked>
+      <name>title_max_count</name>
+   </variable>
+   <variable>
+      <defaultValue>200</defaultValue>
+      <description>内容最大长度</description>
+      <id>70751c7e-8b37-4c9a-9c0f-0e4cef1a05ec</id>
+      <masked>false</masked>
+      <name>content_max_count</name>
+   </variable>
+</TestCaseEntity>
