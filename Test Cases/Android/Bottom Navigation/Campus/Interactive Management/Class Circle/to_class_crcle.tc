@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>进入班级圈模块</description>
+   <name>to_class_crcle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>333cf005-47c2-4721-98c9-5e40fed40a22</testCaseGuid>
+</TestCaseEntity>

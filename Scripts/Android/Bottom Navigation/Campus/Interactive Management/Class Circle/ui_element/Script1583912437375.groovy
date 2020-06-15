@@ -17,6 +17,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+'前置条件:进入班级圈模块'
+Mobile.callTestCase(findTestCase("Android/Bottom Navigation/Campus/Interactive Management/Class Circle/to_class_crcle"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
 "班级圈标题"
 String title=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_circle_title"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
@@ -24,11 +26,11 @@ Mobile.verifyMatch("班级圈",title, false, FailureHandling.CONTINUE_ON_FAILURE
 
 
 
-//"切换班级按钮"
-//Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//"切换班级文字"
-//String change_class_text=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_text"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//Mobile.verifyMatch("切换班级",change_class_text, false, FailureHandling.CONTINUE_ON_FAILURE)
+"切换班级按钮"
+Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+"切换班级文字"
+String change_class_text=Mobile.getText(findTestObject("null"), GlobalVariable.G_Timeout, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyMatch("切换班级",change_class_text, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 

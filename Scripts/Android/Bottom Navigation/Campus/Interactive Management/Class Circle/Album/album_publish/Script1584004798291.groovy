@@ -32,13 +32,6 @@ if(Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Ba
 
 
 
-
-
-
-
-
-
-
 //是"创建"按钮,测试用例
 private void is_create_btn(){
 	"点击创建按钮"

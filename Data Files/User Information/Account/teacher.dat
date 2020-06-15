@@ -8,17 +8,23 @@
    <dataFileGUID>ba8826d5-e2ac-4b5d-9b40-5bf0c80a8ac7</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>18344264447 123456a%40</data>
-   <data>17612060806 123456a%40</data>
+   <data>18344264447 123456a%40 null</data>
+   <data>17612060806 123456a%40 null</data>
+   <data>testzyq03 123456a %E6%B2%A1%E6%9C%89%E4%BB%BB%E6%95%99%E7%8F%AD%E7%BA%A7%E7%9A%84%E6%99%AE%E9%80%9A%E6%95%99%E5%B8%88</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>account</name>
-      <size>2</size>
+      <size>3</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>password</name>
-      <size>2</size>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>描述</name>
+      <size>3</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

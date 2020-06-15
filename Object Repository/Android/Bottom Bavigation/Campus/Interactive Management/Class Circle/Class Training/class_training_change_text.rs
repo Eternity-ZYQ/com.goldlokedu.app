@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and (text() = '修改' or . = '修改')]</value>
+         <value>//*[@class = 'android.widget.TextView' and (text() = '修改' or . = '修改') and @package = 'com.goldlokedu.tgoldlokedu' and @ref_element = 'Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Class Training/class_training_change_layout']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -27,7 +27,7 @@
       <value>修改</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
