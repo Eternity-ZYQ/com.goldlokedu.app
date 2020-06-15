@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>发布公告</description>
-   <name>notice_publish</name>
+   <name>notice_view_and_verify_text</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>53e20c29-9718-45cb-af7e-d2e56acc5769</testCaseGuid>

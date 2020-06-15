@@ -26,7 +26,7 @@
       <guid>1b869a68-b123-4060-b5f2-8beba04a1b05</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/Notice/notice_publish</testCaseId>
+      <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/Notice/notice_view_and_verify_text</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e363f2d9-5493-440f-8fee-f7166cdaa3be</guid>
