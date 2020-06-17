@@ -32,11 +32,11 @@ if(jsonResponse.data.size>0){
 	ResponseObject manager_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/My/Individual/Teacher/manager_class"), FailureHandling.CONTINUE_ON_FAILURE)
 	def manager_jsonResponse=get_jsonResponse(manager_response)
 	'获取默认tab的班级名称'
-	def class_name=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_tab_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	class_name=Mobile.getText(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/class_tab_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 	'判断默认的班级是否为班主任管理的班级,还是作为任课教师关联的班级'
 	def is_manager=WS.containsString(manager_response, class_name, false, FailureHandling.OPTIONAL)
 	
-	def klass_id=''			//默认的班级的class_id
+	klass_id=''			//默认的班级的class_id
 	for(int x:(0..jsonResponse.data.size)){
 		'匹配默认班级的名字'
 		def is_match=Mobile.verifyMatch(jsonResponse.data[x].klass_full_name, class_name, false, FailureHandling.OPTIONAL)
@@ -61,13 +61,14 @@ if(jsonResponse.data.size>0){
 	'进行切换班级'
 	page_switch(manager_response,manager_jsonResponse,jsonResponse,is_manager)
 	
-	
+	'切换后的页面操作'
+	operate(!is_manager,class_name)
 	
 }
 
 //切换班级,默认是授课班级的切换为管理班级,若是管理班级则切换为授课班级
 def void page_switch(ResponseObject manager_response,LazyMap manager_jsonResponse,LazyMap jsonResponse,boolean is_manager){
-	def class_name=''			//需要切换到的班级名称
+	//def class_name=''			//需要切换到的班级名称
 	def klass_id=''				//需要切换到的班级的class_id
 	if(manager_jsonResponse.data.size==jsonResponse.data.size){
 		WS.comment('班级圈全部是班主任管理的班级,本次用例结束')
@@ -105,8 +106,6 @@ def void page_switch(ResponseObject manager_response,LazyMap manager_jsonRespons
 			Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 			'授课班级页面UI验证'
 			verifu_page_ui(klass_id)
-			'验证按钮不存在'
-			operate(!is_manager,class_name)
 			
 		}else{
 			WS.comment('已进行授课班级操作,即将进行班主任操作')
@@ -133,17 +132,14 @@ def void page_switch(ResponseObject manager_response,LazyMap manager_jsonRespons
 				Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 				'授课班级页面UI验证'
 				verifu_page_ui(klass_id)
-				'进行修改操作'
-				operate(!is_manager,class_name)
+
 			}else{
 				Mobile.comment('没有管理班级,本次用例结束')
 			}
 			
 		}
 	}
-	
-	
-	
+		
 }
 
 //修改操作步骤

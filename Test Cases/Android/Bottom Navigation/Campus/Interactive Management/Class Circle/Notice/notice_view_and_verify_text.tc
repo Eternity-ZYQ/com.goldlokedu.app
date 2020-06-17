@@ -5,4 +5,32 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>53e20c29-9718-45cb-af7e-d2e56acc5769</testCaseGuid>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>a7ff655e-906d-4d90-b031-48998c360421</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>7bc5ae90-2be3-454b-a09d-8855fcc705bb</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1abeffb4-2699-491c-bac2-aaa314d22ff7</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8f3b439d-21df-4c2d-b3c0-8fcc5614003c</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
 </TestCaseEntity>

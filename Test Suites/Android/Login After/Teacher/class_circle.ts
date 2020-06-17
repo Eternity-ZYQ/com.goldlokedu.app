@@ -21,12 +21,48 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/Class Training/class_training_change</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0520cac9-50e0-4aad-af43-d5fc1680198e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>94ec9f7d-aec5-4759-b76f-4afeec28607a</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>1b869a68-b123-4060-b5f2-8beba04a1b05</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/Notice/notice_view_and_verify_text</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a7ff655e-906d-4d90-b031-48998c360421</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7bc5ae90-2be3-454b-a09d-8855fcc705bb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1abeffb4-2699-491c-bac2-aaa314d22ff7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8f3b439d-21df-4c2d-b3c0-8fcc5614003c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e363f2d9-5493-440f-8fee-f7166cdaa3be</guid>

@@ -99,6 +99,7 @@ class findMobileElement {
 			return
 		}
 	}
+	
 
 
 	/**
@@ -120,6 +121,30 @@ class findMobileElement {
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is not present")
 			return
+		}
+	}
+	
+	
+	
+	/**
+	 * 获取移动端元素通过xpath
+	 * @return 返回找到的元素
+	 */
+	@Keyword
+	def boolean notFindByXpath(String xpath){
+		try {
+			KeywordUtil.logInfo("Finding element with xpath:" + xpath)
+			AppiumDriver driver = MobileDriverFactory.getDriver()
+			WebElement element = driver.findElementByXPath(xpath)
+
+			if (element == null) {
+				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is not present")
+
+				return true
+			}
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is  present")
+			return false
 		}
 	}
 }
