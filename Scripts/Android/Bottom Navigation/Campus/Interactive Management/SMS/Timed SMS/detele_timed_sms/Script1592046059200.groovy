@@ -81,7 +81,7 @@ def String DataFormat(String time){
 	long nowTime = now.getTime()
 	long day = (nowTime - timestamp) / (24 * 60 * 60 * 1000)
 	WS.comment('day:'+day)
-	if (day < 1&&day>0) {  //今天
+	if (day < 1&&day>=0) {  //今天
 		SimpleDateFormat format = new SimpleDateFormat("HH:mm");
 		return format.format(timestamp);
 	}  else {    //非今天

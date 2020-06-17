@@ -11,11 +11,13 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -23,6 +25,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import groovy.json.internal.LazyMap
 import internal.GlobalVariable as GlobalVariable
+import io.appium.java_client.AppiumDriver
 '前提条件:进入班级圈模块' //返回管理和教授的班级数据
 def jsonResponse=Mobile.callTestCase(findTestCase("Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/to_class_crcle"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -49,19 +52,19 @@ if(jsonResponse.data.size>0){
 	}
 	'验证班级圈页面默认班级的公告的UI'
 	verifu_page_ui(klass_id,is_manager,class_name)
-	WS.comment('切换钱的班级id:'+klass_id+',class_name:'+class_name)
-	'点击切换班级按钮'
-	Mobile.tap(findTestObject("Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-	
-	'切换班级页面标题验证'
-	Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_title_text'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-
-	'进行切换班级'
-	page_switch(manager_response,manager_jsonResponse,jsonResponse,is_manager)
-	
-	WS.comment('切换后的班级id:'+klass_id+',class_name:'+class_name)
-	'验证切换班级后的班级的公告的UI'
-	verifu_page_ui(klass_id,!is_manager,class_name)
+//	//WS.comment('切换前的班级id:'+klass_id+',class_name:'+class_name)
+//	'点击切换班级按钮'
+//	Mobile.tap(findTestObject("Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+//	
+//	'切换班级页面标题验证'
+//	Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_title_text'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+//
+//	'进行切换班级'
+//	page_switch(manager_response,manager_jsonResponse,jsonResponse,is_manager)
+//	
+//	//WS.comment('切换后的班级id:'+klass_id+',class_name:'+class_name)
+//	'验证切换班级后的班级的公告的UI'
+//	verifu_page_ui(klass_id,!is_manager,class_name)
 	
 }
 
@@ -103,9 +106,6 @@ def void page_switch(ResponseObject manager_response,LazyMap manager_jsonRespons
 			Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_tips', [('text'):'切换到'+class_name]), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 			'点击切换'
 			Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//			'授课班级页面UI验证'
-//			verifu_page_ui(klass_id,!is_manager,class_name)
-
 			
 		}else{
 			WS.comment('已进行授课班级操作,即将进行班主任操作')
@@ -130,8 +130,6 @@ def void page_switch(ResponseObject manager_response,LazyMap manager_jsonRespons
 				Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_tips', [('text'):'切换到'+class_name]), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 				'点击切换'
 				Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//				'授课班级页面UI验证'
-//				verifu_page_ui(klass_id,!is_manager,class_name)
 
 			}else{
 				Mobile.comment('没有管理班级,本次用例结束')
@@ -180,19 +178,24 @@ def void verifu_page_ui(String klass_id,boolean is_manager,String class_name){
 			CustomKeywords.'public_action.findMobileElement.byXpath'(xpath)													//文本xpath
 			'非班主任没有带删除按钮的文本xpath'
 			def detele_xpath='//android.widget.TextView[@text="'+time+'"]/..//android.widget.TextView[@text="删除"]'
-			
+			//def detele_xpath='fdsfadasfsa'
 			if(is_manager){
 				'找到发布公告按钮'
 				Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_in_publish_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 				'找到对应的删除按钮'
 				CustomKeywords.'public_action.findMobileElement.byXpath'(detele_xpath)
+
 				
 			}else{
 				'找不到发公告按钮'
 				Mobile.verifyElementNotExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_in_publish_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-				'找不到删除按钮'
-				//CustomKeywords.'public_action.findMobileElement.notFindByXpath'(detele_xpath)
+//				'找不到删除按钮'
+//				WebElement bll=CustomKeywords.'public_action.findMobileElement.notFindByXpath'(detele_xpath)
+//				WS.comment('bll:'+bll)
+//				WS.verifyEqual(null, bll, FailureHandling.CONTINUE_ON_FAILURE)
+
 			}
+			
 		
 		}
 		
@@ -224,7 +227,7 @@ def String DataFormat(String time){
 	long nowTime = now.getTime()
 	long day = (nowTime - timestamp) / (24 * 60 * 60 * 1000)
 	WS.comment('day:'+day)
-	if (day < 1&&day>0) {  //今天
+	if (day < 1&&day>=0) {  //今天
 		SimpleDateFormat format = new SimpleDateFormat("HH:mm");
 		return format.format(timestamp);
 	}  else {    //非今天

@@ -5,18 +5,4 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>826417e2-8c22-45e1-8353-4285e99b059c</testCaseGuid>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description>操作的班级</description>
-      <id>0520cac9-50e0-4aad-af43-d5fc1680198e</id>
-      <masked>false</masked>
-      <name>class_name</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description>班级id</description>
-      <id>94ec9f7d-aec5-4759-b76f-4afeec28607a</id>
-      <masked>false</masked>
-      <name>klass_id</name>
-   </variable>
 </TestCaseEntity>

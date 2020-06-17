@@ -88,7 +88,7 @@ class findMobileElement {
 			KeywordUtil.logInfo("Finding element with xpath:" + xpath)
 			AppiumDriver driver = MobileDriverFactory.getDriver()
 			WebElement element = driver.findElementByXPath(xpath)
-
+			
 			if (element != null) {
 				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is present")
 
@@ -96,10 +96,10 @@ class findMobileElement {
 			}
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is not present")
-			return
+			return 
 		}
 	}
-	
+
 
 
 	/**
@@ -123,9 +123,9 @@ class findMobileElement {
 			return
 		}
 	}
-	
-	
-	
+
+
+
 	/**
 	 * 获取移动端元素通过xpath
 	 * @return 返回找到的元素
@@ -134,17 +134,16 @@ class findMobileElement {
 	def boolean notFindByXpath(String xpath){
 		try {
 			KeywordUtil.logInfo("Finding element with xpath:" + xpath)
-			AppiumDriver driver = MobileDriverFactory.getDriver()
-			WebElement element = driver.findElementByXPath(xpath)
+			WebElement element =byXpath(xpath)
 
-			if (element == null) {
+			if (element ==null ) {
 				KeywordUtil.markPassed("Finding element with xpath: " + xpath + " is not present")
-
-				return true
 			}
+			return true
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Finding element with xpath: " + xpath + " is  present")
-			return false
+			
 		}
+		return false
 	}
 }

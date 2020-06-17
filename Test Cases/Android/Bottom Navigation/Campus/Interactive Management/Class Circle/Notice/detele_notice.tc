@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>删除公告</description>
+   <name>detele_notice</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0e0cc4f-2f16-4a05-a4d6-7c1829d36b6b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5ae4c5d2-b0ae-4014-a1e4-db2ad0acb063</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7ec8241c-3d5e-4e52-8ab5-a1dcc762a09d</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>d2a1602a-73e1-4acb-ae0f-3372b136b097</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a608d284-8491-4dd9-9e81-582487d45f7c</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+</TestCaseEntity>
