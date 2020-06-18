@@ -58,7 +58,7 @@ if(jsonResponse.data.size>0){
 	   '进行发布操作'
 	   publish_notice(class_name,klass_id)      
 	}else{
-		WS.comment('没有管理的班级，不进行删除公告用例')
+		WS.comment('没有管理的班级，不进行发布公告的用例')
 	}
 	
 	

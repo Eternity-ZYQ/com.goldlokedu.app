@@ -57,5 +57,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/Album/album_publish</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7cbd3ae2-de12-4265-b0bd-0e345f245f52</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a82fcf91-24e8-4eea-a06a-c2079cf5c2c9</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
