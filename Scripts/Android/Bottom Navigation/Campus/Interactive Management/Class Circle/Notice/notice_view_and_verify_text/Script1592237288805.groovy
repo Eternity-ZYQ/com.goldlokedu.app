@@ -52,19 +52,19 @@ if(jsonResponse.data.size>0){
 	}
 	'验证班级圈页面默认班级的公告的UI'
 	verifu_page_ui(klass_id,is_manager,class_name)
-//	//WS.comment('切换前的班级id:'+klass_id+',class_name:'+class_name)
-//	'点击切换班级按钮'
-//	Mobile.tap(findTestObject("Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//	
-//	'切换班级页面标题验证'
-//	Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_title_text'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//	'进行切换班级'
-//	page_switch(manager_response,manager_jsonResponse,jsonResponse,is_manager)
-//	
-//	//WS.comment('切换后的班级id:'+klass_id+',class_name:'+class_name)
-//	'验证切换班级后的班级的公告的UI'
-//	verifu_page_ui(klass_id,!is_manager,class_name)
+	//WS.comment('切换前的班级id:'+klass_id+',class_name:'+class_name)
+	'点击切换班级按钮'
+	Mobile.tap(findTestObject("Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	
+	'切换班级页面标题验证'
+	Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_title_text'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+
+	'进行切换班级'
+	page_switch(manager_response,manager_jsonResponse,jsonResponse,is_manager)
+	
+	//WS.comment('切换后的班级id:'+klass_id+',class_name:'+class_name)
+	'验证切换班级后的班级的公告的UI'
+	verifu_page_ui(klass_id,!is_manager,class_name)
 	
 }
 
@@ -183,25 +183,18 @@ def void verifu_page_ui(String klass_id,boolean is_manager,String class_name){
 				'找到发布公告按钮'
 				Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_in_publish_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 				'找到对应的删除按钮'
-				CustomKeywords.'public_action.findMobileElement.byXpath'(detele_xpath)
-
-				
+				CustomKeywords.'public_action.findMobileElement.byXpath'(detele_xpath)		
 			}else{
 				'找不到发公告按钮'
 				Mobile.verifyElementNotExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_in_publish_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-//				'找不到删除按钮'
-//				WebElement bll=CustomKeywords.'public_action.findMobileElement.notFindByXpath'(detele_xpath)
-//				WS.comment('bll:'+bll)
-//				WS.verifyEqual(null, bll, FailureHandling.CONTINUE_ON_FAILURE)
+				'找不到删除按钮'
+				CustomKeywords.'public_action.findMobileElement.notFindByXpath'(detele_xpath)
 
-			}
-			
-		
+			}	
 		}
 		
 		'点击返回按钮,返回班级圈页面'
 		Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/back_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-		
 		
 	}else if(WS.verifyResponseStatusCode(notice_response, 404, FailureHandling.OPTIONAL)&&notice_jsonResponse.code==404){
 		'没有公告的时候,验证提示'

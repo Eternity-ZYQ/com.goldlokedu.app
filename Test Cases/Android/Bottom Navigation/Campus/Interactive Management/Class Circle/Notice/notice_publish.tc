@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发布公告</description>
+   <name>notice_publish</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5ea49a7-ff56-44e4-9104-2a4f2decd616</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bb22c35b-7474-42ef-8541-5c0629772825</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4b648509-3908-4dfb-b228-e0808aadf9a2</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+</TestCaseEntity>

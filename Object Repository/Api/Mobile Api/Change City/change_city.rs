@@ -12,12 +12,14 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.MobileHost}/user_profile/general/available_district</restUrl>
+   <restUrl>http://api.pnyjy.com/user_profile/general/available_district</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.model.FailureHandling
