@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>上传相片</description>
-   <name>album_publish</name>
+   <description>删除相册</description>
+   <name>detele_album</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>7d1b8311-7295-4caa-a736-446a14ab7fed</testCaseGuid>
+   <testCaseGuid>da4bb67b-f61e-4501-8c2d-d4c51ff5635b</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7cbd3ae2-de12-4265-b0bd-0e345f245f52</id>
-      <masked>false</masked>
-      <name>klass_id</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>a82fcf91-24e8-4eea-a06a-c2079cf5c2c9</id>
+      <id>977be22c-2c10-4eee-b279-fba18f020408</id>
       <masked>false</masked>
       <name>class_name</name>
    </variable>
    <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>985ff641-aeb8-4587-9315-01a1cda26041</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+   <variable>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>f410a983-2a91-477c-a365-8839ade75743</id>
+      <id>689ea835-a620-4425-988c-1cbe3b3ce8ce</id>
       <masked>false</masked>
       <name>from</name>
    </variable>
    <variable>
       <defaultValue>3</defaultValue>
       <description></description>
-      <id>d6e69745-19dc-4bf4-82bf-1d7493db4a91</id>
+      <id>7d51f0f3-bee0-45cb-a6d0-b0b925cbb6be</id>
       <masked>false</masked>
       <name>size</name>
    </variable>
