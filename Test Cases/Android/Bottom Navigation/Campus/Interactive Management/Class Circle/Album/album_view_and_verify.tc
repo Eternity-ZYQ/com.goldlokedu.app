@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>班级相册查看及权限UI验证</description>
+   <name>album_view_and_verify</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>19228194-ea3c-4494-8ee8-771093b0142e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3d90e204-f7bc-41bb-bde4-d340f28dc4d4</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3d17f0c2-ddee-4552-a46a-6e4dcffb914c</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>4d4a3c6b-b46d-4a1d-b4a9-b016b39d512e</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>251dd330-05f7-4dcf-addd-a10fe8cb73a0</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+</TestCaseEntity>

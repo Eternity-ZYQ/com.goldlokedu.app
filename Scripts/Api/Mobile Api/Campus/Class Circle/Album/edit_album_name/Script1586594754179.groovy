@@ -48,8 +48,6 @@ for(int x:(0..class_information_jsonResponse.data.size-1)){
 				
 				'发送编辑相册名称接口'
 				WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Album/edit_album_name",[('album_name'):album_name,('class_id'):class_id,('album_id'):get_album_list_jsonResponse.albums[0].album_id]), FailureHandling.CONTINUE_ON_FAILURE)
-				
-				
 			}else{
 			
 				WS.comment('不是'+class_name+'的班主任')

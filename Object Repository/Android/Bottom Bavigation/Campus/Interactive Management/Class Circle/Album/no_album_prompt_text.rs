@@ -4,6 +4,12 @@
    <name>no_album_prompt_text</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.TextView' and (text() = '${text}' or . = '${text}') and @resource-id = 'com.goldlokedu.tgoldlokedu:id/two_text']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>暂无相册～</value>
+      <value>${text}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
