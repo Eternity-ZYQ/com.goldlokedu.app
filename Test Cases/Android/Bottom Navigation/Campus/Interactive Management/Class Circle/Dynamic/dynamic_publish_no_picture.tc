@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>发布动态</description>
+   <name>dynamic_publish_no_picture</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>150b0e20-f21b-4b15-bc6f-d9e36e315d14</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1716f148-2dba-4e3c-9837-74bbb7e95d84</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+</TestCaseEntity>
