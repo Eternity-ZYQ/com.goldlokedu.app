@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>我的动态页面切换学年</description>
+   <name>my_dynamic_switch_year</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b841e25-51e2-4ae5-a846-094be852e53d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dea17076-bdb4-4943-905e-40bec3c8107e</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>464d4440-53fc-41fc-8c3d-dad3c5960a20</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>221f78a7-19c4-407c-bdbb-ef6d7833dc97</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

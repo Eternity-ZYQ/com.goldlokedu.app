@@ -217,13 +217,13 @@ def String DataFormat(String time){
 	long timestamp=CustomKeywords.'time.SystemTime.getTimeStamp'(time, 'GMT+0800')
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 	Date now = sdf.parse(sdf.format(new Date()))
-	long nowTime = now.getTime()
-	long day = (nowTime - timestamp) / (24 * 60 * 60 * 1000)
-	WS.comment('day:'+day)
-	if (day < 1&&day>=0) {  //今天
+	long startTime = now.getTime()
+	long endTime=startTime+24 * 60 * 60 * 1000-1
+
+	if(timestamp>=startTime&&timestamp<=endTime){ //今天
 		SimpleDateFormat format = new SimpleDateFormat("HH:mm");
 		return format.format(timestamp);
-	}  else {    //非今天
+	}else{//非今天
 		SimpleDateFormat format = new SimpleDateFormat("MM/dd HH:mm");
 		return format.format(timestamp);
 	}

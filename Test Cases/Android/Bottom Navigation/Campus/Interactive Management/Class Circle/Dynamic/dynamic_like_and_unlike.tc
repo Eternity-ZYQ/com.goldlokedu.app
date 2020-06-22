@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>动态点赞及取消点赞</description>
+   <name>dynamic_like_and_unlike</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a2c0468-d1d2-4c0b-a440-d5e33ee7effc</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a8aad639-c292-4818-8bc0-94ecac6aac85</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>b9065a1a-3d2e-44a1-90db-ceeac70e4dad</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

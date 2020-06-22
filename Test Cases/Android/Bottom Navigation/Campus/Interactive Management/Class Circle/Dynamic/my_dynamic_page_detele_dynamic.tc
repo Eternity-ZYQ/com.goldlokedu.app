@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>我的动态页面删除动态</description>
+   <name>my_dynamic_page_detele_dynamic</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>025dfd72-74b6-4475-a522-729431c62698</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>de43f22e-d99f-416b-b30c-929c39c460ce</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>b151a078-faed-4c84-9dd8-d2686f738171</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>436439e5-8b03-4a0d-91cc-99e5bc80fdb1</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
