@@ -19,4 +19,18 @@
       <masked>false</masked>
       <name>size</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b8a754a2-56da-400c-b150-13ead9ff6150</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8daf6258-3f4f-4de9-abc3-92cb33360e08</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
 </TestCaseEntity>

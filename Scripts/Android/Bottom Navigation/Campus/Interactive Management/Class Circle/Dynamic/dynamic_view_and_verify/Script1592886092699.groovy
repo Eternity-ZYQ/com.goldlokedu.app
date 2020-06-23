@@ -11,13 +11,12 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -25,7 +24,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import groovy.json.JsonSlurper
 import groovy.json.internal.LazyMap
 import internal.GlobalVariable as GlobalVariable
-import io.appium.java_client.AppiumDriver
+
 '前提条件:进入班级圈模块' //返回管理和教授的班级数据
 def jsonResponse=Mobile.callTestCase(findTestCase("Test Cases/Android/Bottom Navigation/Campus/Interactive Management/Class Circle/to_class_crcle"), null, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -50,9 +49,13 @@ if(jsonResponse.data.size>0){
 			break
 		}
 	}
-	'验证班级圈页面默认班级的公告的UI'
-	verifu_page_ui(klass_id,is_manager,class_name)
+	'验证班级圈页面默认班级的动态的UI'
+	verify_and_operate(is_manager,klass_id,class_name)
 	//WS.comment('切换前的班级id:'+klass_id+',class_name:'+class_name)
+	
+	'点击左上角返回键,返回班级圈'
+	Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_inside_back_layout'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	
 	'点击切换班级按钮'
 	Mobile.tap(findTestObject("Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Change Class/change_class_btn"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 	
@@ -63,8 +66,8 @@ if(jsonResponse.data.size>0){
 	page_switch(manager_response,manager_jsonResponse,jsonResponse,is_manager)
 	
 	//WS.comment('切换后的班级id:'+klass_id+',class_name:'+class_name)
-	'验证切换班级后的班级的公告的UI'
-	verifu_page_ui(klass_id,!is_manager,class_name)
+	'验证切换班级后的动态的公告的UI'
+	verify_and_operate(!is_manager,klass_id,class_name)
 	
 }
 
@@ -85,8 +88,7 @@ def void page_switch(ResponseObject manager_response,LazyMap manager_jsonRespons
 					'是授课班级,拿到class_id'
 					klass_id=jsonResponse.data[y].klass_id   //授课班级的class_id
 					break
-				}
-				
+				}		
 			}
 			'获取年级名称'
 			def grade_name=class_name[0..2]
@@ -134,79 +136,83 @@ def void page_switch(ResponseObject manager_response,LazyMap manager_jsonRespons
 			}else{
 				Mobile.comment('没有管理班级,本次用例结束')
 			}
-			
 		}
-	}
-		
+	}	
 }
 
-//验证班级圈页面班训的UI
-def void verifu_page_ui(String klass_id,boolean is_manager,String class_name){
-	'发送获取最新班级公告数据接口'
-	ResponseObject notice_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/new_one_notice", [('class_id'):klass_id]), FailureHandling.CONTINUE_ON_FAILURE)
-	def notice_jsonResponse=get_jsonResponse(notice_response)
-
-	if(WS.verifyResponseStatusCode(notice_response, 200, FailureHandling.OPTIONAL)&&notice_jsonResponse.content!=""){
-		'若是有最新公告内容,则保存下来'
-		def notice_content=notice_jsonResponse.content							//公告内容																	//公告内容文本
-		def created_date=notice_jsonResponse.created_date						//公告发布时间													//公告发布时间
-		long timestamp=CustomKeywords.'time.SystemTime.getTimeStamp'(created_date,'GMT+0800')		//转换成时间戳
-		Date date = new Date(timestamp)
-		SimpleDateFormat df = new SimpleDateFormat('MM/dd')
-		def time = df.format(date)
-		'有公告的时候,验证公告内容'
-		Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_content_text', [('text'):time+' '+notice_content]), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		'点击更多按钮'
-		Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_more_or_publish', [('text'):'更多']), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		'验证进入更多页面后,班级公告列表页面的名称:四年级三班公告'
-		Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_class_name_title_text', [('text'):class_name+'公告']), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-		
-		'发送获取班级公告列表接口'
-		ResponseObject notice_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Notice/search_notice_list", [('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-		def notice_list_jsonResponse=get_jsonResponse(notice_list_response)
-		for(int x:(0..notice_list_jsonResponse.data.size-1)){
-			def content=notice_list_jsonResponse.data[x].content			//公告内容
-			created_date=notice_list_jsonResponse.data[x].created_date	//发布时间
-
-			'时间转换'
-			time=DataFormat(created_date)
-			'公告内容的xpath'
-			def xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]'
-			'找到对应公告内容'
-			CustomKeywords.'public_action.findMobileElement.byXpath'(xpath)													//文本xpath
-			'非班主任没有带删除按钮的文本xpath'
-			def detele_xpath='//android.widget.TextView[@text="'+time+'"]/..//android.widget.TextView[@text="删除"]'
-			//def detele_xpath='fdsfadasfsa'
-			if(is_manager){
-				'找到发布公告按钮'
-				Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_in_publish_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-				'找到对应的删除按钮'
-				CustomKeywords.'public_action.findMobileElement.byXpath'(detele_xpath)		
-			}else{
-				'找不到发公告按钮'
-				Mobile.verifyElementNotExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_in_publish_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-				'找不到删除按钮'
-				CustomKeywords.'public_action.findMobileElement.notFindByXpath'(detele_xpath)
-			}	
-		}	
-		'点击返回按钮,返回班级圈页面'
-		Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/back_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-		
-	}else if(WS.verifyResponseStatusCode(notice_response, 404, FailureHandling.OPTIONAL)&&notice_jsonResponse.code==404){
-		'没有公告的时候,验证提示'
-		Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/no_notice_promp_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
-		if(is_manager){   
-			'是教师管理的班级,则有发布按钮'
-			Mobile.verifyElementExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_more_or_publish", [('text'):'发布']), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+//页面验证及操作
+def void verify_and_operate(boolean is_manager,String klass_id,String class_name){
+	def content=''						//动态内容
+	def created=''						//动态创建时间
+	def time=''							//转换后的时间
+	def like_address=''					//点赞按钮的用户名字文本
+	'获取班级动态列表信息'				
+	ResponseObject search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+	def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
+	
+	if(search_dynamic_list_jsonResponse.data.size>0){
+		if(search_dynamic_list_jsonResponse.data[0].article!=null){
+			'第一条是班级文章,调用接口发送一条动态'
+			WS.callTestCase(findTestCase('Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/publish_dynamic_text'), null, FailureHandling.CONTINUE_ON_FAILURE)
+			'重新获取动态列表数据'
+			search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+			search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
 		}
-		'更多按钮不存在'
-		Mobile.verifyElementNotExist(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Notice/notice_more_or_publish", [('text'):'更多']), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)	
+		content=search_dynamic_list_jsonResponse.data[0].content
+		created=search_dynamic_list_jsonResponse.data[0].created
+		time=DataFormat(created)
+		def xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]'
+		'找到班级圈页面最新动态内容'
+		CustomKeywords.'public_action.findMobileElement.byXpath'(xpath)
+		if(search_dynamic_list_jsonResponse.data[0].pictures!=null&&search_dynamic_list_jsonResponse.data[0].pictures.data.size>0){
+			'动态第一条有带图,找到图片布局'
+			Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_outside_picture_layout'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+		}
+		
+	}else{
+		WS.comment(class_name+'动态列表没有数据,即将验证提示语')
+		Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_no_data_tip'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 	}
+	
+	'点击更多按钮'
+	Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_more_text'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	'验证班级动态title'
+	Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_title',[('text'):class_name+'动态']), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	'获取点赞按钮xpath'
+	def like_btn_xpath=get_like_btn_xpath(time, content)
+	'找到点赞按钮'
+	CustomKeywords.'public_action.findMobileElement.byXpath'(like_btn_xpath)
+	'获取评论按钮xpath'
+	def commemt_btn_xpath=get_comment_btn_xpath(time, content)
+	'找到评论按钮'
+	CustomKeywords.'public_action.findMobileElement.byXpath'(commemt_btn_xpath)
+	'生成点赞人列表文本'
+	if(search_dynamic_list_jsonResponse.data[0].favorites.size>0){
+		'获取like_address'
+		like_address=get_like_address(search_dynamic_list_jsonResponse)
+		'获取xpath'
+		def like_address_xpath=get_like_address_xpath(time,content,like_address)
+		'验证第一条动态点赞用户名字存在'
+		CustomKeywords.'public_action.findMobileElement.byXpath'(like_address_xpath)
+	}else{
+		'获取like_address'
+		like_address=''
+		'获取xpath'
+		def like_address_xpath=get_like_address_xpath(time,content,like_address)
+		'验证没有点赞用户文本列表控件'
+		CustomKeywords.'public_action.findMobileElement.notFindByXpath'(like_address_xpath)
+	}
+	'是否有带图片'
+	if(search_dynamic_list_jsonResponse.data[0].pictures!=null&&search_dynamic_list_jsonResponse.data[0].pictures.data.size>0){
+		'动态第一条有带图,找到图片布局xpath'
+		def picture_layout_xpath=get_inside_picture_layout_xpath(time, content)
+		'找到图片布局'
+		CustomKeywords.'public_action.findMobileElement.byXpath'(picture_layout_xpath)
+	}
+	
 }
 
-//时间转换，今天则返回HH:mm，否则返回MM/dd HH:mm
+//时间转换，今天则返回HH:mm，否则返回MM-dd HH:mm
 def String DataFormat(String time){
 	long timestamp=CustomKeywords.'time.SystemTime.getTimeStamp'(time, 'GMT+0800')
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -218,13 +224,65 @@ def String DataFormat(String time){
 		SimpleDateFormat format = new SimpleDateFormat("HH:mm");
 		return format.format(timestamp);
 	}else{//非今天
-		SimpleDateFormat format = new SimpleDateFormat("MM/dd HH:mm");
+		SimpleDateFormat format = new SimpleDateFormat("MM-dd HH:mm");
 		return format.format(timestamp);
 	}
 
 }
 
+//返回对应删除按钮xpath
+def String get_detele_btn_xpath(String time,String content){
+	String xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//android.widget.TextView[@text="删除"]'
+	return xpath
+}
 
+//返回对应的评论按钮xpath
+def String get_comment_btn_xpath(String time,String content){
+	String xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//*[@resource-id="com.goldlokedu.tgoldlokedu:id/comment_texts"]'
+	return xpath
+}
+
+//点赞按钮xpath获取,动态获取
+def String get_like_btn_xpath(String time,String content){
+	'点赞按钮的xpath'
+	def like_btn_xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//*[@resource-id="com.goldlokedu.tgoldlokedu:id/laud"]'
+	
+	return like_btn_xpath
+}
+
+//已点赞的用户名字xpath获取
+def String get_like_address_xpath(String time,String content,String like_address){
+	def like_address_xpath=''
+	if(like_address!=''){
+		'已点赞的用户名字xpath'
+		like_address_xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//android.widget.TextView[@resource-id="com.goldlokedu.tgoldlokedu:id/loves" and @text="'+like_address+'"]'
+	}else{
+		'已点赞的用户名字xpath'
+		like_address_xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//android.widget.TextView[@resource-id="com.goldlokedu.tgoldlokedu:id/loves"]'
+	
+	}
+
+	return like_address_xpath
+}
+
+def String get_like_address(LazyMap search_dynamic_list_jsonResponse){
+	def like_address=''
+	for(int x:(0..search_dynamic_list_jsonResponse.data[0].favorites.size-1)){
+		def creator_name=search_dynamic_list_jsonResponse.data[0].favorites[x].creator_name
+		if(x==0){
+			like_address=like_address+creator_name
+		}else{
+			like_address=like_address+','+creator_name
+		}
+	}
+	return like_address
+}
+
+def String get_inside_picture_layout_xpath(String time,String content){
+	def xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//android.widget.FrameLayout[@resource-id="com.goldlokedu.tgoldlokedu:id/Pictures_View"]'
+	
+	return xpath
+}
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response) {
 	
@@ -234,6 +292,4 @@ def Object get_jsonResponse(ResponseObject response) {
 	
 	return jsonResponse
 }
-
-
 

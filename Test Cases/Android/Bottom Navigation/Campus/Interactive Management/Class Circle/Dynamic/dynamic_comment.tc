@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>动态评论</description>
+   <name>dynamic_comment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2d7edf84-fd3c-45a2-943b-de2b31471c92</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>17a0a7f7-7d43-4222-a9d6-628667f6dc7a</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>b435b53e-6bb5-4bc1-9e75-5b7f8df46b7b</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>bd5b385a-e4e3-419a-9063-67ff10e1ba16</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>44ea310c-a5af-444e-be27-a674317a64c8</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+</TestCaseEntity>

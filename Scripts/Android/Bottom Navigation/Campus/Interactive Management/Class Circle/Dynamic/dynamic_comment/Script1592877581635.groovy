@@ -22,7 +22,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import groovy.json.JsonSlurper
-import groovy.json.internal.LazyMap
 import internal.GlobalVariable as GlobalVariable
 
 '前提条件:进入班级圈模块' //返回管理和教授的班级数据
@@ -45,98 +44,41 @@ if(jsonResponse.data.size>0){
 	'接口发送获取班级动态列表数据'
 	ResponseObject search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
 	def search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
+	
 	if(search_dynamic_list_jsonResponse.data.size==0||search_dynamic_list_jsonResponse.data[0].article!=null){
 		'没有动态则调用接口发布一条动态'
 		WS.callTestCase(findTestCase('Test Cases/Api/Mobile Api/Campus/Class Circle/Class Dynamic/publish_dynamic_text'), null, FailureHandling.CONTINUE_ON_FAILURE)
 		'接口发送重新获取班级动态列表数据'
-		 search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-		 search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
+		search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
+		search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
 	}
 	'点击更多'
 	Mobile.tap(findTestObject("Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_more_text"), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 	def content=search_dynamic_list_jsonResponse.data[0].content		//第一条动态内容
 	def created=search_dynamic_list_jsonResponse.data[0].created		//第一条动态的接口时间字段
 	def time=DataFormat(created)
-	def like=search_dynamic_list_jsonResponse.data[0].like				//本人否点赞过第一条动态
-	'验证点赞前页面'
-	verify_operate(search_dynamic_list_jsonResponse)
-	
-	'获取点赞按钮xpath'
-	def like_btn_xpath=get_like_btn_xpath(time, content)
-	'找到点赞按钮'
-	WebElement like_btn=CustomKeywords.'public_action.findMobileElement.byXpath'(like_btn_xpath)
-	'点击点赞按钮'
-	like_btn.click()
-	'接口发送重新获取我的动态列表数据'
-	search_dynamic_list_response=WS.sendRequestAndVerify(findTestObject("Object Repository/Api/Mobile Api/Campus/Class Circle/Class Dynamic/search_dynamic_list",[('class_id'):klass_id,('from'):from,('size'):size]), FailureHandling.CONTINUE_ON_FAILURE)
-	search_dynamic_list_jsonResponse=get_jsonResponse(search_dynamic_list_response)
-	
-	def new_like=search_dynamic_list_jsonResponse.data[0].like				//点及点赞按钮后的状态
-	'验证点赞前后两次状态相反'
-	Mobile.verifyEqual(like, !new_like, FailureHandling.CONTINUE_ON_FAILURE)
-	
+	'获取评论元素的xpath'
+	def xpath=get_comment_btn_xpath(time, content)
+	'找到评论按钮'
+	WebElement comment_btn=CustomKeywords.'public_action.findMobileElement.byXpath'(xpath)
+	'点击评论按钮'
+	comment_btn.click()
+	'生成输入的内容'
+	String comment_content=CustomKeywords.'time.SystemTime.get_system_time'()+'Android app发送动态评论'
+	'输入动态评论内容'
+	Mobile.setText(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_commet_edittext'), comment_content, GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	'点击发送'
+	Mobile.tap(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_comment_send_btn'), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
+	'验证评论出现在评论区'
+	Mobile.verifyElementExist(findTestObject('Object Repository/Android/Bottom Bavigation/Campus/Interactive Management/Class Circle/Dynamic/dynamic_comment_content_text', [('text'):GlobalVariable.user_name+': '+comment_content]), GlobalVariable.G_short_timeout, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-def void verify_operate(LazyMap search_dynamic_list_jsonResponse){
-	def content=search_dynamic_list_jsonResponse.data[0].content		//第一条动态内容
-	def created=search_dynamic_list_jsonResponse.data[0].created		//第一条动态的接口时间字段
-	def time=DataFormat(created)												//时间转换
-	def like_address=''															//点赞人的名字显示
-	'生成点赞人列表文本'
-	if(search_dynamic_list_jsonResponse.data[0].favorites.size>0){
-		'获取like_address'
-		like_address=get_like_address(search_dynamic_list_jsonResponse)
-		'获取xpath'
-		def like_address_xpath=get_like_address_xpath(time,content,like_address)
-		'验证第一条动态点赞用户名字存在'
-		CustomKeywords.'public_action.findMobileElement.byXpath'(like_address_xpath)
-	}else{
-		'获取like_address'
-		like_address=''
-		'获取xpath'
-		def like_address_xpath=get_like_address_xpath(time,content,like_address)
-		'验证没有点赞用户文本列表控件'
-		CustomKeywords.'public_action.findMobileElement.notFindByXpath'(like_address_xpath)
-	}
-	
+//返回对应的评论按钮xpath
+def String get_comment_btn_xpath(String time,String content){
+	String xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//*[@resource-id="com.goldlokedu.tgoldlokedu:id/comment_texts"]'
+	return xpath
 }
 
-
-def String get_like_address(LazyMap search_dynamic_list_jsonResponse){
-	def like_address=''
-	for(int x:(0..search_dynamic_list_jsonResponse.data[0].favorites.size-1)){
-		def creator_name=search_dynamic_list_jsonResponse.data[0].favorites[x].creator_name
-		if(x==0){
-			like_address=like_address+creator_name
-		}else{
-			like_address=like_address+','+creator_name
-		}
-	}
-	return like_address
-}
-
-//点赞按钮xpath获取,动态获取
-def String get_like_btn_xpath(String time,String content){
-	'点赞按钮的xpath'
-	def like_btn_xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//*[@resource-id="com.goldlokedu.tgoldlokedu:id/laud"]'
-	
-	return like_btn_xpath
-}
-
-//已点赞的用户名字xpath获取
-def String get_like_address_xpath(String time,String content,String like_address){
-	def like_address_xpath=''
-	if(like_address!=''){
-		'已点赞的用户名字xpath'
-		like_address_xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//android.widget.TextView[@resource-id="com.goldlokedu.tgoldlokedu:id/loves" and @text="'+like_address+'"]'
-	}else{
-		'已点赞的用户名字xpath'
-		like_address_xpath='//android.widget.TextView[@text="'+time+'"]/../../android.widget.TextView[@text="'+content+'"]/..//android.widget.TextView[@resource-id="com.goldlokedu.tgoldlokedu:id/loves"]'
-	
-	}
-
-	return like_address_xpath
-}
 //时间转换，今天则返回HH:mm，否则返回MM-dd HH:mm
 def String DataFormat(String time){
 	long timestamp=CustomKeywords.'time.SystemTime.getTimeStamp'(time, 'GMT+0800')
@@ -154,6 +96,7 @@ def String DataFormat(String time){
 	}
 
 }
+
 
 //获取返回体json解析
 def Object get_jsonResponse(ResponseObject response){

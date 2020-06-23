@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>动态查看及验证</description>
+   <name>dynamic_view_and_verify</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f030b2d1-5a88-4c06-ba66-f8bc2db1cbcd</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c5f973ba-fefd-4846-b236-1032d5814e84</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ccb6e497-d856-4d59-8eb6-be1ae6f54774</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>411c9ca4-1e70-4620-88d0-3a6b1fb9e1d0</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>384d74a1-8bce-4045-a17b-680e52fcd832</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>

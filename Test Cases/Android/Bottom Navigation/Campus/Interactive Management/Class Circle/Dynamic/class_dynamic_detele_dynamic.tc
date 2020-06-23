@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>班级动态页面删除动态:班主任才有的权限</description>
+   <name>class_dynamic_detele_dynamic</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c3b1120-70b5-4c2a-b6ea-efd1e31913ef</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>68d8fe36-799c-455e-9c75-a967451b8d8e</id>
+      <masked>false</masked>
+      <name>class_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>59c56489-b08b-45de-af2c-e0907fa86185</id>
+      <masked>false</masked>
+      <name>klass_id</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>3c517987-fa33-4ebe-9564-53fe9f2ec32e</id>
+      <masked>false</masked>
+      <name>from</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>e1e050b8-1f62-4e7d-be7f-8afdec2fa045</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+</TestCaseEntity>
